@@ -1,0 +1,18 @@
+requests
+loguru
+pandas
+numpy
+scikit-learn
+xgboost
+keras
+optuna
+tqdm
+statsmodels
+prophet
+shap
+lightgbm
+catboost
+torch==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+torchvision==0.16.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+tensorflow==2.15.0

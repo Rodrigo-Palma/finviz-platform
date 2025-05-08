@@ -1,0 +1,14 @@
+Ordem
+coletor.py
+cdi-selic.py
+tesouro.py
+engenharia.py
+feature_selection.py
+ml_otimizador_janela.py
+gpu-teste.py
+ml_pipeline_finance.py
+ml_pipeline_finance_deep.py
+ml_pipeline_finance_deep2.py
+ml_pipeline_finance_deep3.py
+ml_pipeline_forecasting.py
+ml_predict_pipeline_finance.py
