@@ -1,0 +1,69 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.env
+.venv
+venv/
+env/
+
+# Logs and data outputs
+logs/
+*.log
+*.csv
+*.xlsx
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# Python distribution files
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Model files (if generated)
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.sav
+*.pt
+
+# Local configuration files
+*.ini
+*.cfg
+*.yaml
+*.yml
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.env
+
+# Ignore specific folders
+/dados/
+/dados_transformados/
+/logs
+
+# Ignore common project-specific files
+*.sqlite
+*.db
+shap_plots
