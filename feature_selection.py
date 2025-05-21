@@ -26,7 +26,7 @@ os.makedirs('shap_plots', exist_ok=True)
 def carregar_dados(caminho_arquivo, limiar_preenchimento=0.1):
     df = pd.read_csv(caminho_arquivo)
     if 'Date' in df.columns:
-        df['Date'] = pd.to_datetime(df['Date'])
+        df['Date'] = pd.to_datetime(df['Date'], format='mixed')
 
     df = df.dropna(subset=['Adj Close'])
     df['Target'] = (df.groupby('Ticker')['Adj Close'].shift(-1) > df['Adj Close']).astype(int)
@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 logger.warning(f"Arquivo ignorado (sem dados válidos): {arquivo}")
                 continue
 
-            features_importantes = selecionar_features_com_optuna(df, features, n_trials=30)
+            features_importantes = selecionar_features_com_optuna(df, features, n_trials=10)
             logger.info(f"Features selecionadas para {arquivo}: {features_importantes}")
             features_totais[arquivo] = features_importantes
 

@@ -13,11 +13,18 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ==========================
-# CONFIGURAÇÃO DO LOGGER
+# CONFIGURAÇÃO DE PASTAS
 # ==========================
 os.makedirs('logs', exist_ok=True)
-logger.add('logs/ml_otimizador_janela.log', level='INFO', rotation='10 MB', encoding='utf-8')
 os.makedirs('otimizacao_janela', exist_ok=True)
+os.makedirs('dados_transformados', exist_ok=True)
+os.makedirs('selecionadas', exist_ok=True)
+
+# ==========================
+# CONFIGURAÇÃO DO LOGGER
+# ==========================
+from loguru import logger
+logger.add('logs/ml_otimizador_janela.log', level='INFO', rotation='10 MB', encoding='utf-8')
 
 # ==========================
 # FUNÇÕES AUXILIARES
