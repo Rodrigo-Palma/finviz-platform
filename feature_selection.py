@@ -6,13 +6,13 @@ import shap
 import matplotlib.pyplot as plt
 import warnings
 import optuna
-
 from loguru import logger
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, roc_auc_score
 from sklearn.feature_selection import SelectFromModel
 from xgboost import XGBClassifier
+from tqdm import tqdm
 
 warnings.filterwarnings("ignore")
 
@@ -21,12 +21,14 @@ os.makedirs('logs', exist_ok=True)
 logger.add("logs/feature_selection_optuna.log", level="INFO", rotation="10 MB", encoding="utf-8")
 os.makedirs('selecionadas', exist_ok=True)
 os.makedirs('shap_plots', exist_ok=True)
+SEED = 42
+MIN_LINHAS = 100
 
 # ========== FUNÇÕES ==========
 def carregar_dados(caminho_arquivo, limiar_preenchimento=0.1):
     df = pd.read_csv(caminho_arquivo)
     if 'Date' in df.columns:
-        df['Date'] = pd.to_datetime(df['Date'], format='mixed')
+        df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
 
     df = df.dropna(subset=['Adj Close'])
     df['Target'] = (df.groupby('Ticker')['Adj Close'].shift(-1) > df['Adj Close']).astype(int)
@@ -42,13 +44,14 @@ def carregar_dados(caminho_arquivo, limiar_preenchimento=0.1):
     removidas = set(df.columns) - set(colunas_validas) - set(colunas_excluidas)
     if removidas:
         logger.warning(f"Removendo colunas com preenchimento insuficiente: {list(removidas)}")
+    logger.info(f"{os.path.basename(caminho_arquivo)}: {len(colunas_validas)} features válidas após limpeza.")
 
     df[colunas_validas] = df[colunas_validas].replace([np.inf, -np.inf], np.nan)
     df[colunas_validas] = df[colunas_validas].fillna(df[colunas_validas].mean())
 
     df = df[np.isfinite(df[colunas_validas]).all(axis=1)]
-    if df.empty:
-        logger.warning(f"Arquivo sem dados válidos após limpeza: {caminho_arquivo}")
+    if df.empty or len(df) < MIN_LINHAS:
+        logger.warning(f"Arquivo sem dados válidos após limpeza ou muito pequeno: {caminho_arquivo}")
         return pd.DataFrame(), []
 
     scaler = StandardScaler()
@@ -56,12 +59,12 @@ def carregar_dados(caminho_arquivo, limiar_preenchimento=0.1):
 
     return df, colunas_validas
 
-def avaliar_features(df, features, top_k):
+def avaliar_features(df, features, top_k, seed=SEED):
     X = df[features]
     y = df["Target"]
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=False, test_size=0.2)
-    model = XGBClassifier(use_label_encoder=False, eval_metric="logloss", verbosity=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=False, test_size=0.2, random_state=seed)
+    model = XGBClassifier(use_label_encoder=False, eval_metric="logloss", verbosity=0, random_state=seed)
     model.fit(X_train, y_train)
 
     explainer = shap.TreeExplainer(model)
@@ -80,25 +83,31 @@ def avaliar_features(df, features, top_k):
 
     return auc, acc, top_features, shap_values, top_k
 
-def selecionar_features_com_optuna(df, features, n_trials=25):
+def selecionar_features_com_optuna(df, features, n_trials=25, nome_dataset=None):
+    trial_metrics = []
     def objective(trial):
         top_k = trial.suggest_int("top_k", 10, min(30, len(features)))
-        auc, acc, _, _, _ = avaliar_features(df, features, top_k)
-        return auc  # ou usar acc para acurácia
+        auc, acc, _, _, _ = avaliar_features(df, features, top_k, seed=SEED)
+        trial_metrics.append({'top_k': top_k, 'auc': auc, 'acc': acc})
+        return auc
 
     study = optuna.create_study(direction="maximize")
-    study.optimize(objective, n_trials=n_trials)
+    study.optimize(objective, n_trials=n_trials, n_jobs=1)
 
     best_k = study.best_params["top_k"]
     logger.info(f"Melhor número de features: {best_k}")
-    auc, acc, top_features, shap_values, _ = avaliar_features(df, features, best_k)
+    auc, acc, top_features, shap_values, _ = avaliar_features(df, features, best_k, seed=SEED)
 
     shap.summary_plot(shap_values, df[features], plot_type="bar", show=False)
     plt.tight_layout()
-    plt.savefig(f"shap_plots/shap_summary_{np.random.randint(10000)}.png")
+    shap_name = f"shap_plots/shap_summary_{nome_dataset}.png" if nome_dataset else f"shap_plots/shap_summary_{np.random.randint(10000)}.png"
+    plt.savefig(shap_name)
     plt.close()
 
     logger.info(f"Acurácia: {acc:.4f} | AUC: {auc:.4f}")
+    # Salva métricas dos trials
+    if nome_dataset:
+        pd.DataFrame(trial_metrics).to_csv(f'selecionadas/optuna_trials_{nome_dataset}.csv', index=False)
     return top_features
 
 # ========== EXECUÇÃO ==========
@@ -107,8 +116,8 @@ if __name__ == "__main__":
 
     arquivos = [f for f in os.listdir("dados_transformados") if f.endswith(".csv")]
     features_totais = {}
-
-    for arquivo in arquivos:
+    
+    for arquivo in tqdm(arquivos, desc="Selecionando features"):
         try:
             caminho = os.path.join("dados_transformados", arquivo)
             df, features = carregar_dados(caminho)
@@ -117,7 +126,7 @@ if __name__ == "__main__":
                 logger.warning(f"Arquivo ignorado (sem dados válidos): {arquivo}")
                 continue
 
-            features_importantes = selecionar_features_com_optuna(df, features, n_trials=10)
+            features_importantes = selecionar_features_com_optuna(df, features, n_trials=10, nome_dataset=arquivo.replace('.csv',''))
             logger.info(f"Features selecionadas para {arquivo}: {features_importantes}")
             features_totais[arquivo] = features_importantes
 
