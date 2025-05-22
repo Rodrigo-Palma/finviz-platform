@@ -5,6 +5,7 @@ import numpy as np
 from datetime import timedelta
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
+from sklearn.preprocessing import StandardScaler
 from xgboost import XGBClassifier
 from tqdm import tqdm
 from loguru import logger
@@ -26,16 +27,32 @@ os.makedirs('selecionadas', exist_ok=True)
 from loguru import logger
 logger.add('logs/ml_otimizador_janela.log', level='INFO', rotation='10 MB', encoding='utf-8')
 
+SEED = 42
+
 # ==========================
 # FUNÇÕES AUXILIARES
 # ==========================
 
 def preparar_dados(caminho_arquivo, features):
     df = pd.read_csv(caminho_arquivo)
-    df['Date'] = pd.to_datetime(df['Date'], utc=False)
-    df = df.dropna(subset=features + ['Adj Close'])
+    # Conversão robusta de datas
+    df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
+    # Validação de features
+    features_validas = [f for f in features if f in df.columns]
+    if len(features_validas) != len(features):
+        logger.warning(f"Features ausentes: {set(features) - set(features_validas)}")
+    df = df.dropna(subset=features_validas + ['Adj Close'])
+    # Tratamento de valores infinitos
+    inf_mask = np.isinf(df[features_validas].values)
+    if inf_mask.any():
+        logger.warning(f"Encontrados {inf_mask.sum()} valores infinitos. Substituindo por NaN.")
+        df[features_validas] = df[features_validas].replace([np.inf, -np.inf], np.nan)
+        df = df.dropna(subset=features_validas)
+    # Padronização
+    if len(df) > 0 and len(features_validas) > 0:
+        df[features_validas] = StandardScaler().fit_transform(df[features_validas])
     df['Target'] = (df.groupby('Ticker')['Adj Close'].shift(-1) > df['Adj Close']).astype(int)
-    return df
+    return df, features_validas
 
 def treinar_avaliar(df, features, meses_retroativos, min_amostras=100):
     data_limite = df['Date'].max() - timedelta(days=30*meses_retroativos)
@@ -47,8 +64,8 @@ def treinar_avaliar(df, features, meses_retroativos, min_amostras=100):
     X = df_recente[features]
     y = df_recente['Target']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=False, test_size=0.2)
-    model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+    X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=False, test_size=0.2, random_state=SEED)
+    model = XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=SEED)
     model.fit(X_train, y_train)
     preds = model.predict(X_test)
     probs = model.predict_proba(X_test)[:, 1]
@@ -76,6 +93,7 @@ if __name__ == "__main__":
 
     arquivos = [f for f in os.listdir('dados_transformados') if f.endswith('.csv')]
     resultados = []
+    todas_metricas = []
 
     # Carrega features selecionadas
     with open('selecionadas/features_selecionadas.json', 'r') as f:
@@ -88,14 +106,25 @@ if __name__ == "__main__":
                 logger.warning(f"Sem features para {arquivo}, pulando...")
                 continue
 
-            df = preparar_dados(caminho, features_especificas[arquivo])
+            df, features_validas = preparar_dados(caminho, features_especificas[arquivo])
+            if len(features_validas) == 0 or len(df) == 0:
+                logger.warning(f"Sem features válidas ou dados para {arquivo}, pulando...")
+                continue
             melhor_roc = 0
             melhor_acc = 0
             melhor_f1 = 0
             melhor_janela = None
 
-            for meses in janelas_meses:
-                acc, f1, roc = treinar_avaliar(df, features_especificas[arquivo], meses)
+            for meses in tqdm(janelas_meses, desc=f"{arquivo}", leave=False):
+                acc, f1, roc = treinar_avaliar(df, features_validas, meses)
+                todas_metricas.append({
+                    'Dataset': arquivo,
+                    'Janela': formatar_nome_janela(meses),
+                    'ROC_AUC': roc,
+                    'Accuracy': acc,
+                    'F1_Score': f1
+                })
+                logger.info(f"{arquivo} | Janela: {formatar_nome_janela(meses)} | ROC-AUC={roc} | Acc={acc} | F1={f1}")
                 if roc is not None and roc > melhor_roc:
                     melhor_roc = roc
                     melhor_acc = acc
@@ -117,4 +146,6 @@ if __name__ == "__main__":
 
     df_resultados = pd.DataFrame(resultados)
     df_resultados.to_csv('otimizacao_janela/melhores_janelas.csv', index=False)
-    logger.info("Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv")
+    df_metricas = pd.DataFrame(todas_metricas)
+    df_metricas.to_csv('otimizacao_janela/todas_metricas_janelas.csv', index=False)
+    logger.info("Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv e todas_metricas_janelas.csv")

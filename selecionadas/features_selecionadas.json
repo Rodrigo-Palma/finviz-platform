@@ -21,7 +21,13 @@
         "MACD",
         "Return_1d_lag3",
         "Volume",
-        "MACD_lag3"
+        "MACD_lag3",
+        "RSI_14_lag5",
+        "MACD_lag2",
+        "Open",
+        "Volatility_5d",
+        "ATR",
+        "OBV"
     ],
     "bdrs.csv": [
         "Return_1d",
@@ -51,7 +57,9 @@
         "RSI_14",
         "RSI_14_lag2",
         "Return_1d_lag3",
-        "MACD_Histogram"
+        "MACD_Histogram",
+        "MACD_lag5",
+        "MACD_lag1"
     ],
     "commodities.csv": [
         "Return_1d",
@@ -129,15 +137,7 @@
         "MACD_Histogram",
         "Return_1d_lag5",
         "Return_20d",
-        "RSI_14_lag2",
-        "SMA_100",
-        "MACD_lag5",
-        "Volatility_20d",
-        "MACD_lag2",
-        "MACD_lag1",
-        "MACD_lag3",
-        "MACD_Signal",
-        "EMA_100"
+        "RSI_14_lag2"
     ],
     "moedas.csv": [
         "High",
@@ -151,6 +151,12 @@
         "Sharpe_20d",
         "RSI_14_lag1",
         "Low",
-        "SMA_100"
+        "SMA_100",
+        "Return_5d",
+        "RSI_14_lag2",
+        "RSI_14_lag5",
+        "Return_1d_lag2",
+        "RSI_14",
+        "Volatility_20d"
     ]
 }
