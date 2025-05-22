@@ -133,13 +133,20 @@ if __name__ == "__main__":
             caminho_arquivo = os.path.join('dados', arquivo)
             df_novo = pd.read_csv(caminho_arquivo)
             if 'Date' in df_novo.columns:
-                df_novo['Date'] = pd.to_datetime(df_novo['Date'])
+                try:
+                    df_novo['Date'] = pd.to_datetime(df_novo['Date'], format='mixed', errors='coerce')
+                except TypeError:
+                    # Para pandas <2.0, format='mixed' não existe
+                    df_novo['Date'] = pd.to_datetime(df_novo['Date'], errors='coerce')
 
             caminho_saida = os.path.join('dados_transformados', arquivo)
             if os.path.exists(caminho_saida):
                 df_existente = pd.read_csv(caminho_saida)
                 if 'Date' in df_existente.columns:
-                    df_existente['Date'] = pd.to_datetime(df_existente['Date'])
+                    try:
+                        df_existente['Date'] = pd.to_datetime(df_existente['Date'], format='mixed', errors='coerce')
+                    except TypeError:
+                        df_existente['Date'] = pd.to_datetime(df_existente['Date'], errors='coerce')
                 df_merged = pd.concat([df_existente, df_novo]).drop_duplicates(subset=['Date', 'Ticker']).reset_index(drop=True)
             else:
                 df_merged = df_novo
