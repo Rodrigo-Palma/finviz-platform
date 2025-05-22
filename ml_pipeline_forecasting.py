@@ -19,12 +19,20 @@ warnings.filterwarnings("ignore")
 np.random.seed(42)
 
 # ==========================================
-# CONFIGURACAO DO LOGGER E PASTAS
+# CONFIGURACAO DE DIRETORIOS
 # ==========================================
-os.makedirs('logs', exist_ok=True)
-os.makedirs('modelos_forecasting', exist_ok=True)
-os.makedirs('logs/previsoes', exist_ok=True)
-logger.add('logs/forecast_pipeline.log', level='INFO', rotation='10 MB', encoding='utf-8')
+RESULTS_DIR = os.path.join('resultados', 'forecasting_arima_prophet')
+PLOTS_DIR = os.path.join(RESULTS_DIR, 'plots')
+RESIDUOS_DIR = os.path.join(RESULTS_DIR, 'residuos')
+PREVISOES_DIR = os.path.join(RESULTS_DIR, 'previsoes')
+METRICAS_DIR = os.path.join(RESULTS_DIR, 'metricas')
+MODELOS_DIR = os.path.join('modelos_forecasting')
+LOGS_DIR = 'logs'
+
+for d in [RESULTS_DIR, PLOTS_DIR, RESIDUOS_DIR, PREVISOES_DIR, METRICAS_DIR, MODELOS_DIR, LOGS_DIR]:
+    os.makedirs(d, exist_ok=True)
+
+logger.add(os.path.join(LOGS_DIR, 'forecast_pipeline.log'), level='INFO', rotation='10 MB', encoding='utf-8')
 
 # ==========================================
 # FUNCOES DE FORECAST
@@ -107,14 +115,14 @@ def plotar_e_salvar(real, previsto, arquivo, ticker, modelo):
     plt.title(f'{arquivo} | {ticker} | {modelo}')
     plt.legend()
     plt.tight_layout()
-    nome = f'logs/previsoes/plot_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.png'
+    nome = os.path.join(PLOTS_DIR, f'plot_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.png')
     plt.savefig(nome)
     plt.close()
 
 def salvar_residuos(real, previsto, arquivo, ticker, modelo):
     residuos = np.array(real) - np.array(previsto)
     df_res = pd.DataFrame({'real': real, 'previsto': previsto, 'residuo': residuos})
-    nome = f'logs/previsoes/residuos_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.csv'
+    nome = os.path.join(RESIDUOS_DIR, f'residuos_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.csv')
     df_res.to_csv(nome, index=False)
 
 # ==========================================
@@ -123,7 +131,6 @@ def salvar_residuos(real, previsto, arquivo, ticker, modelo):
 
 if __name__ == "__main__":
     logger.info("Iniciando pipeline de forecasting para financas...")
-
     arquivos = [f for f in os.listdir('dados_transformados') if f.endswith('.csv')]
     metricas = []
     previsoes = []
@@ -197,9 +204,9 @@ if __name__ == "__main__":
 
                     # Salvar modelos + min/max
                     if modelo_arima is not None:
-                        pickle.dump({'modelo': modelo_arima, 'min': min_valor, 'max': max_valor}, open(f'modelos_forecasting/{ticker}_arima.pkl', 'wb'))
+                        pickle.dump({'modelo': modelo_arima, 'min': min_valor, 'max': max_valor}, open(os.path.join(MODELOS_DIR, f'{ticker}_arima.pkl'), 'wb'))
                     if modelo_prophet is not None:
-                        pickle.dump({'modelo': modelo_prophet, 'min': min_valor, 'max': max_valor}, open(f'modelos_forecasting/{ticker}_prophet.pkl', 'wb'))
+                        pickle.dump({'modelo': modelo_prophet, 'min': min_valor, 'max': max_valor}, open(os.path.join(MODELOS_DIR, f'{ticker}_prophet.pkl'), 'wb'))
 
                 except Exception as e_ticker:
                     logger.exception(f"Erro ao processar ticker {ticker} em {arquivo}: {e_ticker}")
@@ -208,6 +215,6 @@ if __name__ == "__main__":
             logger.exception(f"Erro ao processar {arquivo}: {e}")
 
     # Salvar métricas e previsões
-    pd.DataFrame(metricas).to_csv('logs/previsoes/metricas_forecasting.csv', index=False)
-    pd.DataFrame(previsoes).to_csv('logs/previsoes/previsoes_forecasting.csv', index=False)
+    pd.DataFrame(metricas).to_csv(os.path.join(METRICAS_DIR, 'metricas_forecasting.csv'), index=False)
+    pd.DataFrame(previsoes).to_csv(os.path.join(PREVISOES_DIR, 'previsoes_forecasting.csv'), index=False)
     logger.info("Pipeline de forecasting finalizado!")

@@ -28,12 +28,18 @@ N_TRIALS = 50
 MIN_REGISTROS = 100
 
 # =======================
-# LOGGER E PASTAS
+# CONFIGURACAO DE DIRETORIOS
 # =======================
-os.makedirs('logs', exist_ok=True)
-os.makedirs('modelos', exist_ok=True)
-os.makedirs('resultados_avaliacao', exist_ok=True)
-logger.add('logs/ml_pipeline_finance.log', level='INFO', rotation='10 MB', encoding='utf-8')
+RESULTS_DIR = os.path.join('resultados', 'financeiro')
+AVALIACAO_DIR = os.path.join(RESULTS_DIR, 'avaliacao')
+MODELOS_DIR = os.path.join(RESULTS_DIR, 'modelos')
+TRIALS_DIR = os.path.join(RESULTS_DIR, 'trials')
+LOGS_DIR = 'logs'
+
+for d in [RESULTS_DIR, AVALIACAO_DIR, MODELOS_DIR, TRIALS_DIR, LOGS_DIR]:
+    os.makedirs(d, exist_ok=True)
+
+logger.add(os.path.join(LOGS_DIR, 'ml_pipeline_finance.log'), level='INFO', rotation='10 MB', encoding='utf-8')
 
 # =======================
 # FUNÇÕES DE PIPELINE
@@ -190,7 +196,7 @@ def treinar_modelo(df, features, modelo='xgb'):
 
         best_params = study.best_trial.params
         logger.info(f"Melhores parâmetros para {modelo} (modelo {i+1}): {best_params}")
-        study.trials_dataframe().to_csv(f'resultados_avaliacao/trials_{modelo}_{i+1}.csv', index=False)
+        study.trials_dataframe().to_csv(os.path.join(TRIALS_DIR, f'trials_{modelo}_{i+1}.csv'), index=False)
 
         if modelo == 'xgb':
             best_params.update({
@@ -286,7 +292,7 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
     df_result.loc['cv_mean'] = [mean_acc, mean_roc, None, None]
     df_result.loc['cv_std'] = [std_acc, std_roc, None, None]
     df_result.loc['overfit'] = [overfit_acc, overfit_roc, None, None]
-    df_result.to_csv(f'resultados_avaliacao/avaliacao_{nome_modelo}.csv')
+    df_result.to_csv(os.path.join(AVALIACAO_DIR, f'avaliacao_{nome_modelo}.csv'))
     
     return models, weights
 
@@ -332,7 +338,7 @@ if __name__ == "__main__":
             fim = time.time()
 
             # Salva os modelos e pesos
-            nome_modelo = os.path.join('modelos', arquivo.replace('.csv', '_modelo.pkl'))
+            nome_modelo = os.path.join(MODELOS_DIR, arquivo.replace('.csv', '_modelo.pkl'))
             joblib.dump((models, weights), nome_modelo)
             logger.info(f"Modelo salvo: {nome_modelo} | Tempo total: {fim - inicio:.2f}s")
 
