@@ -2,18 +2,24 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 
 # Virtual Environments
 .env
 .venv
 venv/
 env/
+ENV/
 
 # Logs and data outputs
 logs/
 *.log
 *.csv
 *.xlsx
+*.xls
+*.db
+*.sqlite3
 
 # Jupyter notebooks checkpoints
 .ipynb_checkpoints
@@ -21,7 +27,17 @@ logs/
 # Python distribution files
 build/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
 *.egg
 
 # IDE files
@@ -29,9 +45,16 @@ dist/
 .idea/
 *.sublime-workspace
 *.sublime-project
+*.swp
+*.swo
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Temporary files
@@ -67,3 +90,6 @@ Thumbs.db
 *.sqlite
 *.db
 shap_plots
+
+# Results and data
+resultados/
