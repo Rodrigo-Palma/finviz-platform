@@ -1,0 +1,7 @@
+2025-06-05 11:21:00.164 | INFO     | __main__:<module>:55 - Iniciando selic_meta (BCB Séries 4189)
+2025-06-05 11:21:00.958 | INFO     | __main__:<module>:71 - Nenhuma atualização para selic_meta
+2025-06-05 11:21:00.961 | INFO     | __main__:<module>:55 - Iniciando cdi_over (BCB Séries 4390)
+2025-06-05 11:21:01.628 | INFO     | __main__:<module>:71 - Nenhuma atualização para cdi_over
+2025-06-05 11:21:07.541 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
+2025-06-05 11:21:07.748 | INFO     | __main__:salvar_historico_incremental:85 - Histórico atualizado com 58 novos registros.
+2025-06-05 11:21:07.748 | INFO     | __main__:<module>:98 - Coleta e salvamento concluídos com sucesso!

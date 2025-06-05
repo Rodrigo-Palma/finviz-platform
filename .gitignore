@@ -12,15 +12,6 @@ venv/
 env/
 ENV/
 
-# Logs and data outputs
-logs/
-*.log
-*.csv
-*.xlsx
-*.xls
-*.db
-*.sqlite3
-
 # Jupyter notebooks checkpoints
 .ipynb_checkpoints
 
@@ -62,12 +53,7 @@ Thumbs.db
 *.temp
 
 # Model files (if generated)
-*.h5
-*.pkl
-*.pickle
-*.joblib
-*.sav
-*.pt
+
 
 # Local configuration files
 *.ini
@@ -82,14 +68,10 @@ Thumbs.db
 *.env
 
 # Ignore specific folders
-/dados/
-/dados_transformados/
-/logs
 
 # Ignore common project-specific files
 *.sqlite
 *.db
-shap_plots
+
 
 # Results and data
-resultados/
