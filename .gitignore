@@ -68,6 +68,8 @@ Thumbs.db
 *.env
 
 # Ignore specific folders
+modelos_forecasting/
+dados_transformados/
 
 # Ignore common project-specific files
 *.sqlite
