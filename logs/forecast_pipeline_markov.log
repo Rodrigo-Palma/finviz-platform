@@ -1,689 +1,472 @@
-2025-06-05 13:17:39.864 | INFO     | __main__:<module>:1038 - Iniciando pipeline de forecasting Markov...
-2025-06-05 13:17:39.864 | INFO     | __main__:<module>:1042 - Utilizando CPU para processamento (NumPy)
-2025-06-05 13:17:40.249 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | ADA-USD
-2025-06-05 13:17:41.500 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.232941, std: 0.127623, R² médio: -57.480792
-2025-06-05 13:17:41.523 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:41.525 | INFO     | __main__:<module>:1121 - criptos.csv | ADA-USD | Ensemble -> MSE: 0.032295, MAE: 0.173084, R²: -11.653152, Direção: 55.17%
-2025-06-05 13:17:41.945 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | AVAX-USD
-2025-06-05 13:17:42.687 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 553.702998, std: 244.260966, R² médio: -10.339405
-2025-06-05 13:17:42.706 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:42.709 | INFO     | __main__:<module>:1121 - criptos.csv | AVAX-USD | Ensemble -> MSE: 20390.247023, MAE: 142.576430, R²: -6364.818997, Direção: 68.97%
-2025-06-05 13:17:42.986 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | BNB-USD
-2025-06-05 13:17:44.068 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 83394.938099, std: 73706.948532, R² médio: -15.981580
-2025-06-05 13:17:44.089 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:17:44.090 | INFO     | __main__:<module>:1121 - criptos.csv | BNB-USD | Ensemble -> MSE: 5528924498.301212, MAE: 74318.839996, R²: -12665822.010726, Direção: 65.52%
-2025-06-05 13:17:44.481 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | BTC-USD
-2025-06-05 13:17:45.845 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 505891606.007243, std: 394132381.042098, R² médio: -2.224579
-2025-06-05 13:17:45.867 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:45.876 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | DOGE-USD
-2025-06-05 13:17:47.148 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.011878, std: 0.009216, R² médio: -14.197917
-2025-06-05 13:17:47.169 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:47.177 | INFO     | __main__:<module>:1121 - criptos.csv | DOGE-USD | Ensemble -> MSE: 0.010181, MAE: 0.097821, R²: -20.081000, Direção: 58.62%
-2025-06-05 13:17:47.454 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | DOT-USD
-2025-06-05 13:17:48.205 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 81.151457, std: 42.357867, R² médio: -57.348445
-2025-06-05 13:17:48.224 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:48.226 | INFO     | __main__:<module>:1121 - criptos.csv | DOT-USD | Ensemble -> MSE: 147.417326, MAE: 12.098684, R²: -913.879582, Direção: 51.72%
-2025-06-05 13:17:48.487 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | ETH-USD
-2025-06-05 13:17:49.677 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 2215407.774235, std: 1786470.358667, R² médio: -10.906747
-2025-06-05 13:17:49.698 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:17:49.699 | INFO     | __main__:<module>:1121 - criptos.csv | ETH-USD | Ensemble -> MSE: 2515542481770.078613, MAE: 1577323.156597, R²: -46299019.630888, Direção: 65.52%
-2025-06-05 13:17:50.011 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | LINK-USD
-2025-06-05 13:17:51.093 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 153.412785, std: 104.055434, R² médio: -4.160467
-2025-06-05 13:17:51.114 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:51.116 | INFO     | __main__:<module>:1121 - criptos.csv | LINK-USD | Ensemble -> MSE: 2294.029307, MAE: 47.835483, R²: -1707.194128, Direção: 68.97%
-2025-06-05 13:17:51.363 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | LTC-USD
-2025-06-05 13:17:52.736 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 4527.949942, std: 971.351901, R² médio: -5.973737
-2025-06-05 13:17:52.759 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:52.761 | INFO     | __main__:<module>:1121 - criptos.csv | LTC-USD | Ensemble -> MSE: 2126743.765949, MAE: 1457.078759, R²: -68992.383508, Direção: 68.97%
-2025-06-05 13:17:53.109 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | MATIC-USD
-2025-06-05 13:17:53.966 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.694368, std: 0.736140, R² médio: -8.979418
-2025-06-05 13:17:53.986 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:17:53.987 | INFO     | __main__:<module>:1121 - criptos.csv | MATIC-USD | Ensemble -> MSE: 0.385533, MAE: 0.603331, R²: -24980.167346, Direção: 24.14%
-2025-06-05 13:17:54.240 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | NEAR-USD
-2025-06-05 13:17:55.007 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 13.265541, std: 8.748781, R² médio: -25.778065
-2025-06-05 13:17:55.026 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:55.027 | INFO     | __main__:<module>:1121 - criptos.csv | NEAR-USD | Ensemble -> MSE: 5.678042, MAE: 2.373201, R²: -73.370882, Direção: 58.62%
-2025-06-05 13:17:55.304 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | SHIB-USD
-2025-06-05 13:17:55.370 | ERROR    | __main__:<module>:1097 - Erro Ensemble criptos.csv | SHIB-USD: Input X contains infinity or a value too large for dtype('float32').
-Traceback (most recent call last):
-
-> File "/Users/rodrigopalma/finviz-platform/ml_pipeline_forecasting_markov.py", line 1072, in <module>
-    modelo_ensemble.fit(df_ticker, categoria)
-    │               │   │          └ 'CRYPTO'
-    │               │   └                     Date      Open      High       Low     Close  ...  Volatilidade_1h     Volume_MA Volatilidade_Preco  Volu...
-    │               └ <function EnsembleMarkovForecaster.fit at 0x315c6b7e0>
-    └ <__main__.EnsembleMarkovForecaster object at 0x3814b28a0>
-
-  File "/Users/rodrigopalma/finviz-platform/ml_pipeline_forecasting_markov.py", line 416, in fit
-    self.rf.fit(X, y)
-    │    │  │   │  └ array([9.99999997e-07, 9.99999997e-07, 1.99999999e-06, ...,
-    │    │  │   │           1.31630641e-05, 1.29447180e-05, 1.27894191e-05])
-    │    │  │   └ array([[ 1.99999999e-07,  4.99999999e-08,  1.99999999e-08, ...,
-    │    │  │              0.00000000e+00,  0.00000000e+00,  0.00000000e+00],
-    │    │  │      ...
-    │    │  └ <function BaseForest.fit at 0x315974680>
-    │    └ RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-    │                            n_estimators=200, n_jobs=-...
-    └ <__main__.EnsembleMarkovForecaster object at 0x3814b28a0>
-
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/base.py", line 1473, in wrapper
-    return fit_method(estimator, *args, **kwargs)
-           │          │           │       └ {}
-           │          │           └ (array([[ 1.99999999e-07,  4.99999999e-08,  1.99999999e-08, ...,
-           │          │                      0.00000000e+00,  0.00000000e+00,  0.00000000e+00],
-           │          │             ...
-           │          └ RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-           │                                  n_estimators=200, n_jobs=-...
-           └ <function BaseForest.fit at 0x3159745e0>
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 377, in fit
-    estimator._compute_missing_values_in_feature_mask(
-    │         └ <function BaseDecisionTree._compute_missing_values_in_feature_mask at 0x14d58f420>
-    └ DecisionTreeRegressor()
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/tree/_classes.py", line 222, in _compute_missing_values_in_feature_mask
-    _assert_all_finite_element_wise(X, xp=np, allow_nan=True, **common_kwargs)
-    │                               │     │                     └ {'estimator_name': 'RandomForestRegressor', 'input_name': 'X'}
-    │                               │     └ <module 'numpy' from '/opt/anaconda3/lib/python3.12/site-packages/numpy/__init__.py'>
-    │                               └ array([[ 2.00000002e-07,  5.00000006e-08,  1.99999999e-08, ...,
-    │                                          0.00000000e+00,  0.00000000e+00,  0.00000000e+00],
-    │                                  ...
-    └ <function _assert_all_finite_element_wise at 0x1493dba60>
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/utils/validation.py", line 172, in _assert_all_finite_element_wise
-    raise ValueError(msg_err)
-                     └ "Input X contains infinity or a value too large for dtype('float32')."
-
-ValueError: Input X contains infinity or a value too large for dtype('float32').
-2025-06-05 13:17:55.403 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | SOL-USD
-2025-06-05 13:17:56.369 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 10490.920739, std: 6569.212143, R² médio: -32.340404
-2025-06-05 13:17:56.389 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:56.390 | INFO     | __main__:<module>:1121 - criptos.csv | SOL-USD | Ensemble -> MSE: 35037672.949421, MAE: 5911.546519, R²: -333928.352875, Direção: 62.07%
-2025-06-05 13:17:56.678 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | SUI-USD
-2025-06-05 13:17:57.171 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.000010, std: 0.000008, R² médio: -201.631810
-2025-06-05 13:17:57.190 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:17:57.191 | INFO     | __main__:<module>:1121 - criptos.csv | SUI-USD | Ensemble -> MSE: 0.000017, MAE: 0.004056, R²: -4029.358946, Direção: 13.79%
-2025-06-05 13:17:57.458 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | TON-USD
-2025-06-05 13:17:58.266 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 4.123537, std: 0.969659, R² médio: -15.720304
-2025-06-05 13:17:58.286 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: ALTA_VOLATILIDADE
-2025-06-05 13:17:58.287 | INFO     | __main__:<module>:1121 - criptos.csv | TON-USD | Ensemble -> MSE: 3.628659, MAE: 1.698870, R²: -2.500193, Direção: 72.41%
-2025-06-05 13:17:58.533 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | UNI-USD
-2025-06-05 13:17:59.277 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.000000, std: 0.000000, R² médio: -12.440662
-2025-06-05 13:17:59.297 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: SOBREVENDIDO
-2025-06-05 13:17:59.298 | INFO     | __main__:<module>:1121 - criptos.csv | UNI-USD | Ensemble -> MSE: 0.000000, MAE: 0.000053, R²: -173.873301, Direção: 17.24%
-2025-06-05 13:17:59.610 | INFO     | __main__:<module>:1061 - Iniciando criptos.csv | XRP-USD
-2025-06-05 13:18:00.676 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.130943, std: 0.047693, R² médio: -12.791124
-2025-06-05 13:18:00.697 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:00.755 | INFO     | __main__:<module>:1061 - Iniciando moedas.csv | EURBRL=X
-2025-06-05 13:18:01.500 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1.579793, std: 1.295955, R² médio: -21.877717
-2025-06-05 13:18:01.519 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:01.520 | INFO     | __main__:<module>:1121 - moedas.csv | EURBRL=X | Ensemble -> MSE: 0.381430, MAE: 0.592583, R²: -97.756966, Direção: 41.38%
-2025-06-05 13:18:01.914 | INFO     | __main__:<module>:1061 - Iniciando moedas.csv | USDBRL=X
-2025-06-05 13:18:02.504 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1.444089, std: 0.851399, R² médio: -23.215684
-2025-06-05 13:18:02.523 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:02.524 | INFO     | __main__:<module>:1121 - moedas.csv | USDBRL=X | Ensemble -> MSE: 1.053569, MAE: 1.022998, R²: -991.236911, Direção: 37.93%
-2025-06-05 13:18:03.527 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | AAPL34.SA
-2025-06-05 13:18:04.454 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 526.132577, std: 428.136577, R² médio: -22.485553
-2025-06-05 13:18:04.475 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:04.476 | INFO     | __main__:<module>:1121 - bdrs.csv | AAPL34.SA | Ensemble -> MSE: 1686661.215520, MAE: 1298.495754, R²: -761576.097277, Direção: 68.97%
-2025-06-05 13:18:04.758 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | AIRB34.SA
-2025-06-05 13:18:05.298 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 121.620468, std: 53.071472, R² médio: -8.927637
-2025-06-05 13:18:05.317 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:05.318 | INFO     | __main__:<module>:1121 - bdrs.csv | AIRB34.SA | Ensemble -> MSE: 127359.408179, MAE: 356.725488, R²: -61460.955911, Direção: 79.31%
-2025-06-05 13:18:05.626 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | AMGN34.SA
-2025-06-05 13:18:06.558 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 427.632935, std: 460.054301, R² médio: -21.939979
-2025-06-05 13:18:06.578 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:06.579 | INFO     | __main__:<module>:1121 - bdrs.csv | AMGN34.SA | Ensemble -> MSE: 1000825.230570, MAE: 1000.103937, R²: -266946.427892, Direção: 55.17%
-2025-06-05 13:18:06.866 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | AMZO34.SA
-2025-06-05 13:18:07.867 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 469.906277, std: 426.893507, R² médio: -22.625751
-2025-06-05 13:18:07.888 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:07.895 | INFO     | __main__:<module>:1121 - bdrs.csv | AMZO34.SA | Ensemble -> MSE: 1221817.655530, MAE: 1104.624437, R²: -215798.754614, Direção: 68.97%
-2025-06-05 13:18:08.158 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | AURA33.SA
-2025-06-05 13:18:08.754 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 27.904319, std: 22.607607, R² médio: -8.189218
-2025-06-05 13:18:08.773 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:08.782 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | BABA34.SA
-2025-06-05 13:18:09.574 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 408.083669, std: 193.271634, R² médio: -94.460853
-2025-06-05 13:18:09.592 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:09.593 | INFO     | __main__:<module>:1121 - bdrs.csv | BABA34.SA | Ensemble -> MSE: 144487.433766, MAE: 379.933619, R²: -137758.319579, Direção: 65.52%
-2025-06-05 13:18:09.852 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | BERK34.SA
-2025-06-05 13:18:10.845 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1412.136020, std: 1413.538160, R² médio: -20.396831
-2025-06-05 13:18:10.865 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:10.866 | INFO     | __main__:<module>:1121 - bdrs.csv | BERK34.SA | Ensemble -> MSE: 33396469.400462, MAE: 5777.476890, R²: -2115514.098748, Direção: 72.41%
-2025-06-05 13:18:11.222 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | BKNG34.SA
-2025-06-05 13:18:11.766 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1025.795135, std: 1040.266819, R² médio: -13.355426
-2025-06-05 13:18:11.785 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:11.791 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | BOAC34.SA
-2025-06-05 13:18:12.987 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 452.012562, std: 304.402580, R² médio: -7.800134
-2025-06-05 13:18:13.008 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:13.015 | INFO     | __main__:<module>:1121 - bdrs.csv | BOAC34.SA | Ensemble -> MSE: 1230490.322599, MAE: 1108.388504, R²: -199029.266562, Direção: 58.62%
-2025-06-05 13:18:13.285 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | CHVX34.SA
-2025-06-05 13:18:14.202 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 675.151066, std: 715.986387, R² médio: -15.760817
-2025-06-05 13:18:14.223 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:14.224 | INFO     | __main__:<module>:1121 - bdrs.csv | CHVX34.SA | Ensemble -> MSE: 3598472.754980, MAE: 1896.909760, R²: -2763958.714605, Direção: 86.21%
-2025-06-05 13:18:14.511 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | CMCS34.SA
-2025-06-05 13:18:15.464 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 246.447854, std: 258.988807, R² médio: -10.897696
-2025-06-05 13:18:15.486 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:15.489 | INFO     | __main__:<module>:1121 - bdrs.csv | CMCS34.SA | Ensemble -> MSE: 267033.176833, MAE: 516.671478, R²: -718770.806750, Direção: 68.97%
-2025-06-05 13:18:15.763 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | COCA34.SA
-2025-06-05 13:18:16.723 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 429.715399, std: 379.604779, R² médio: -32.921970
-2025-06-05 13:18:16.743 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:16.744 | INFO     | __main__:<module>:1121 - bdrs.csv | COCA34.SA | Ensemble -> MSE: 1184741.683998, MAE: 1088.419783, R²: -1161577.454575, Direção: 72.41%
-2025-06-05 13:18:17.000 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | DISB34.SA
-2025-06-05 13:18:18.026 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 243.579080, std: 209.603977, R² médio: -6.002585
-2025-06-05 13:18:18.047 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:18.048 | INFO     | __main__:<module>:1121 - bdrs.csv | DISB34.SA | Ensemble -> MSE: 270392.621758, MAE: 518.305043, R²: -24937.626640, Direção: 68.97%
-2025-06-05 13:18:18.301 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | GMCO34.SA
-2025-06-05 13:18:19.190 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 542.934587, std: 487.772798, R² médio: -5.613041
-2025-06-05 13:18:19.210 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:19.211 | INFO     | __main__:<module>:1121 - bdrs.csv | GMCO34.SA | Ensemble -> MSE: 1955310.363065, MAE: 1397.729969, R²: -355696.513928, Direção: 65.52%
-2025-06-05 13:18:19.480 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | GOGL34.SA
-2025-06-05 13:18:20.403 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 717.395644, std: 641.540295, R² médio: -9.727218
-2025-06-05 13:18:20.423 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:20.424 | INFO     | __main__:<module>:1121 - bdrs.csv | GOGL34.SA | Ensemble -> MSE: 4294999.379368, MAE: 2071.741417, R²: -632008.801704, Direção: 62.07%
-2025-06-05 13:18:20.770 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | HOME34.SA
-2025-06-05 13:18:21.723 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 820.787942, std: 746.039886, R² médio: -14.427037
-2025-06-05 13:18:21.742 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:21.752 | INFO     | __main__:<module>:1121 - bdrs.csv | HOME34.SA | Ensemble -> MSE: 3276038.840191, MAE: 1809.768560, R²: -1639232.226193, Direção: 51.72%
-2025-06-05 13:18:22.015 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | INBR32.SA
-2025-06-05 13:18:22.472 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 118.188052, std: 90.877539, R² médio: -13.161245
-2025-06-05 13:18:22.490 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:22.492 | INFO     | __main__:<module>:1121 - bdrs.csv | INBR32.SA | Ensemble -> MSE: 146576.914759, MAE: 382.707640, R²: -91803.839375, Direção: 65.52%
-2025-06-05 13:18:22.757 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | ITLC34.SA
-2025-06-05 13:18:23.800 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 267.099225, std: 157.058821, R² médio: -8.404083
-2025-06-05 13:18:23.820 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:23.821 | INFO     | __main__:<module>:1121 - bdrs.csv | ITLC34.SA | Ensemble -> MSE: 79279.760911, MAE: 281.494839, R²: -205639.285260, Direção: 58.62%
-2025-06-05 13:18:24.078 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | IVVB11.SA
-2025-06-05 13:18:25.039 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 19073.478105, std: 19555.307060, R² médio: -45.959609
-2025-06-05 13:18:25.059 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:25.060 | INFO     | __main__:<module>:1121 - bdrs.csv | IVVB11.SA | Ensemble -> MSE: 1480528829.927165, MAE: 38463.747722, R²: -15745805.028276, Direção: 58.62%
-2025-06-05 13:18:25.351 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | JNJB34.SA
-2025-06-05 13:18:26.301 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 312.060499, std: 219.952922, R² médio: -21.684148
-2025-06-05 13:18:26.321 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_BAIXA
-2025-06-05 13:18:26.322 | INFO     | __main__:<module>:1121 - bdrs.csv | JNJB34.SA | Ensemble -> MSE: 722316.319268, MAE: 849.841651, R²: -649999.564213, Direção: 58.62%
-2025-06-05 13:18:26.591 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | JPMC34.SA
-2025-06-05 13:18:27.627 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1127.686004, std: 816.506766, R² médio: -7.062186
-2025-06-05 13:18:27.648 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:27.666 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | M1TA34.SA
-2025-06-05 13:18:28.817 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 961.758687, std: 1216.525257, R² médio: -4.484211
-2025-06-05 13:18:28.837 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:28.867 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | MELI34.SA
-2025-06-05 13:18:29.627 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1395.830957, std: 834.038285, R² médio: -11.491218
-2025-06-05 13:18:29.646 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:29.652 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | MSCD34.SA
-2025-06-05 13:18:30.798 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1018.166303, std: 945.809252, R² médio: -22.163929
-2025-06-05 13:18:30.818 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:30.820 | INFO     | __main__:<module>:1121 - bdrs.csv | MSCD34.SA | Ensemble -> MSE: 9070646.018699, MAE: 3010.608411, R²: -1015419.978293, Direção: 55.17%
-2025-06-05 13:18:31.128 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | MSFT34.SA
-2025-06-05 13:18:32.166 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1817.888391, std: 2066.435448, R² médio: -18.321244
-2025-06-05 13:18:32.187 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:32.188 | INFO     | __main__:<module>:1121 - bdrs.csv | MSFT34.SA | Ensemble -> MSE: 11243608.438399, MAE: 3348.057760, R²: -397175.796585, Direção: 58.62%
-2025-06-05 13:18:32.476 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | NFLX34.SA
-2025-06-05 13:18:33.437 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 843.246817, std: 744.966135, R² médio: -10.874415
-2025-06-05 13:18:33.458 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:33.466 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | NIKE34.SA
-2025-06-05 13:18:34.588 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 811.143099, std: 839.332262, R² médio: -11.225368
-2025-06-05 13:18:34.608 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:34.611 | INFO     | __main__:<module>:1121 - bdrs.csv | NIKE34.SA | Ensemble -> MSE: 700378.678900, MAE: 836.564688, R²: -469009.725009, Direção: 65.52%
-2025-06-05 13:18:34.870 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | NVDC34.SA
-2025-06-05 13:18:35.566 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 6.666445, std: 10.061516, R² médio: -4.893380
-2025-06-05 13:18:35.584 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:35.593 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | PFIZ34.SA
-2025-06-05 13:18:36.554 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 334.217224, std: 270.435828, R² médio: -11.573076
-2025-06-05 13:18:36.575 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:36.576 | INFO     | __main__:<module>:1121 - bdrs.csv | PFIZ34.SA | Ensemble -> MSE: 312089.918909, MAE: 558.604313, R²: -589650.071103, Direção: 62.07%
-2025-06-05 13:18:36.881 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | RIGG34.SA
-2025-06-05 13:18:37.726 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 273.865587, std: 209.982104, R² médio: -9.584166
-2025-06-05 13:18:37.746 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:37.747 | INFO     | __main__:<module>:1121 - bdrs.csv | RIGG34.SA | Ensemble -> MSE: 46500.447293, MAE: 215.363235, R²: -50224.959146, Direção: 62.07%
-2025-06-05 13:18:38.015 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | SSFO34.SA
-2025-06-05 13:18:38.967 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 780.436779, std: 538.783040, R² médio: -8.464865
-2025-06-05 13:18:38.988 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:38.991 | INFO     | __main__:<module>:1121 - bdrs.csv | SSFO34.SA | Ensemble -> MSE: 3564929.996736, MAE: 1887.356173, R²: -463269.951033, Direção: 75.86%
-2025-06-05 13:18:39.252 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | TSLA34.SA
-2025-06-05 13:18:40.080 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 640.323772, std: 449.827164, R² médio: -5.940607
-2025-06-05 13:18:40.104 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:40.105 | INFO     | __main__:<module>:1121 - bdrs.csv | TSLA34.SA | Ensemble -> MSE: 1862450.946464, MAE: 1359.390699, R²: -69513.049333, Direção: 72.41%
-2025-06-05 13:18:40.375 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | TSMC34.SA
-2025-06-05 13:18:41.035 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1237.486221, std: 1092.724988, R² médio: -12.352269
-2025-06-05 13:18:41.053 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:41.063 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | UNHH34.SA
-2025-06-05 13:18:41.918 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 184.309424, std: 71.732388, R² médio: -25.819323
-2025-06-05 13:18:41.937 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: ALTA_VOLATILIDADE
-2025-06-05 13:18:41.939 | INFO     | __main__:<module>:1121 - bdrs.csv | UNHH34.SA | Ensemble -> MSE: 340476.488394, MAE: 578.047127, R²: -19438.754130, Direção: 62.07%
-2025-06-05 13:18:42.274 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | VERZ34.SA
-2025-06-05 13:18:43.310 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 164.682354, std: 132.142063, R² médio: -24.875235
-2025-06-05 13:18:43.332 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:43.333 | INFO     | __main__:<module>:1121 - bdrs.csv | VERZ34.SA | Ensemble -> MSE: 127223.002465, MAE: 356.658736, R²: -276395.540290, Direção: 72.41%
-2025-06-05 13:18:43.613 | INFO     | __main__:<module>:1061 - Iniciando bdrs.csv | VISA34.SA
-2025-06-05 13:18:44.642 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1149.847399, std: 884.041632, R² médio: -42.726180
-2025-06-05 13:18:44.663 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:18:44.664 | INFO     | __main__:<module>:1121 - bdrs.csv | VISA34.SA | Ensemble -> MSE: 7947378.922933, MAE: 2818.195000, R²: -1176056.357030, Direção: 72.41%
-2025-06-05 13:18:44.993 | INFO     | __main__:<module>:1061 - Iniciando juros.csv | EDV
-2025-06-05 13:18:45.572 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 953.702421, std: 716.075474, R² médio: -25.902957
-2025-06-05 13:18:45.590 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:45.591 | INFO     | __main__:<module>:1121 - juros.csv | EDV | Ensemble -> MSE: 3184668.597028, MAE: 1784.231358, R²: -1091624.305402, Direção: 65.52%
-2025-06-05 13:18:45.884 | INFO     | __main__:<module>:1061 - Iniciando juros.csv | ^FVX
-2025-06-05 13:18:46.510 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 3.125110, std: 2.711793, R² médio: -19.780126
-2025-06-05 13:18:46.528 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:46.530 | INFO     | __main__:<module>:1121 - juros.csv | ^FVX | Ensemble -> MSE: 20.098843, MAE: 4.481787, R²: -1666.773780, Direção: 58.62%
-2025-06-05 13:18:46.773 | INFO     | __main__:<module>:1061 - Iniciando juros.csv | ^IRX
-2025-06-05 13:18:47.371 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 5.780624, std: 4.111724, R² médio: -558.673164
-2025-06-05 13:18:47.389 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:47.390 | INFO     | __main__:<module>:1121 - juros.csv | ^IRX | Ensemble -> MSE: 26.809035, MAE: 5.167062, R²: -36379.909292, Direção: 31.03%
-2025-06-05 13:18:47.655 | INFO     | __main__:<module>:1061 - Iniciando juros.csv | ^TNX
-2025-06-05 13:18:48.270 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1.583998, std: 0.759728, R² médio: -10.999550
-2025-06-05 13:18:48.289 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:48.291 | INFO     | __main__:<module>:1121 - juros.csv | ^TNX | Ensemble -> MSE: 11.271162, MAE: 3.355932, R²: -929.369628, Direção: 51.72%
-2025-06-05 13:18:48.624 | INFO     | __main__:<module>:1061 - Iniciando juros.csv | ^TYX
-2025-06-05 13:18:49.181 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1.398007, std: 1.309352, R² médio: -14.128889
-2025-06-05 13:18:49.200 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:49.201 | INFO     | __main__:<module>:1121 - juros.csv | ^TYX | Ensemble -> MSE: 11.089657, MAE: 3.327681, R²: -877.219625, Direção: 51.72%
-2025-06-05 13:18:51.301 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ABEV3.SA
-2025-06-05 13:18:52.263 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 3.302026, std: 0.638631, R² médio: -2.450621
-2025-06-05 13:18:52.285 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:52.286 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ABEV3.SA | Ensemble -> MSE: 655.166119, MAE: 25.594777, R²: -27939.544099, Direção: 62.07%
-2025-06-05 13:18:52.551 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ALOS3.SA
-2025-06-05 13:18:53.257 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 26.678970, std: 17.623639, R² médio: -6.102622
-2025-06-05 13:18:53.276 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:18:53.277 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ALOS3.SA | Ensemble -> MSE: 12776.350820, MAE: 113.014521, R²: -71680.941913, Direção: 68.97%
-2025-06-05 13:18:53.530 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | AMOB3.SA
-2025-06-05 13:18:53.773 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.003457, std: 0.002402, R² médio: -32.815780
-2025-06-05 13:18:53.793 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: SOBRECOMPRADO
-2025-06-05 13:18:53.797 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ASAI3.SA
-2025-06-05 13:18:54.536 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 25.648412, std: 20.743068, R² médio: -16.092255
-2025-06-05 13:18:54.555 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:18:54.567 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ASAI3.SA | Ensemble -> MSE: 1974.898133, MAE: 44.360434, R²: -2346.447008, Direção: 48.28%
-2025-06-05 13:18:54.804 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | AURE3.SA
-2025-06-05 13:18:55.260 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1.182126, std: 0.761839, R² médio: -4.524990
-2025-06-05 13:18:55.278 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:18:55.283 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | AZUL4.SA
-2025-06-05 13:18:56.312 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 433.612918, std: 232.413391, R² médio: -23.585005
-2025-06-05 13:18:56.332 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: ALTA_VOLATILIDADE
-2025-06-05 13:18:56.333 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | AZUL4.SA | Ensemble -> MSE: 2931.909118, MAE: 53.139127, R²: -31400.198239, Direção: 55.17%
-2025-06-05 13:18:56.578 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | AZZA3.SA
-2025-06-05 13:18:57.607 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 859.099919, std: 690.335010, R² médio: -9.282646
-2025-06-05 13:18:57.628 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:18:57.629 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | AZZA3.SA | Ensemble -> MSE: 949909.173024, MAE: 967.089887, R²: -34515.966490, Direção: 65.52%
-2025-06-05 13:18:57.970 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | B3SA3.SA
-2025-06-05 13:18:58.977 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 34.631607, std: 22.911150, R² médio: -13.088438
-2025-06-05 13:18:59.084 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:18:59.089 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | B3SA3.SA | Ensemble -> MSE: 3438.763658, MAE: 58.607988, R²: -10580.983614, Direção: 72.41%
-2025-06-05 13:18:59.384 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BBAS3.SA
-2025-06-05 13:19:00.494 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 83.038468, std: 81.520097, R² médio: -27.074534
-2025-06-05 13:19:00.515 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:00.518 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BBAS3.SA | Ensemble -> MSE: 39053.908022, MAE: 197.232781, R²: -5922.424250, Direção: 79.31%
-2025-06-05 13:19:00.807 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BBDC3.SA
-2025-06-05 13:19:01.864 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 18.351432, std: 10.428569, R² médio: -7.215382
-2025-06-05 13:19:01.887 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:01.905 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BBDC3.SA | Ensemble -> MSE: 1973.745554, MAE: 44.349525, R²: -2957.237681, Direção: 65.52%
-2025-06-05 13:19:02.213 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BBDC4.SA
-2025-06-05 13:19:03.236 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 31.395596, std: 23.320171, R² médio: -7.815561
-2025-06-05 13:19:03.260 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:03.261 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BBDC4.SA | Ensemble -> MSE: 4883.969028, MAE: 69.767430, R²: -3732.532812, Direção: 72.41%
-2025-06-05 13:19:03.561 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BBSE3.SA
-2025-06-05 13:19:04.648 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 63.729402, std: 74.284454, R² médio: -7.058601
-2025-06-05 13:19:04.669 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:04.678 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BEEF3.SA
-2025-06-05 13:19:05.924 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 8.270464, std: 2.901616, R² médio: -4.292780
-2025-06-05 13:19:05.945 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:05.947 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BEEF3.SA | Ensemble -> MSE: 333.997621, MAE: 18.226467, R²: -519.076031, Direção: 55.17%
-2025-06-05 13:19:06.223 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BPAC11.SA
-2025-06-05 13:19:07.061 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 179.167128, std: 162.922585, R² médio: -20.091188
-2025-06-05 13:19:07.080 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:07.081 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BPAC11.SA | Ensemble -> MSE: 177123.717518, MAE: 420.591339, R²: -89431.632377, Direção: 55.17%
-2025-06-05 13:19:07.348 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BRAP4.SA
-2025-06-05 13:19:08.328 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 73.634539, std: 53.108541, R² médio: -17.428764
-2025-06-05 13:19:08.349 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:08.351 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BRAP4.SA | Ensemble -> MSE: 15498.824649, MAE: 124.472773, R²: -66527.522411, Direção: 65.52%
-2025-06-05 13:19:08.699 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BRAV3.SA
-2025-06-05 13:19:09.247 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 112.243946, std: 69.524379, R² médio: -10.377892
-2025-06-05 13:19:09.266 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:09.267 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BRAV3.SA | Ensemble -> MSE: 42592.175956, MAE: 206.314781, R²: -76379.307099, Direção: 68.97%
-2025-06-05 13:19:09.530 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BRFS3.SA
-2025-06-05 13:19:10.505 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 446.482220, std: 170.035209, R² médio: -25.604805
-2025-06-05 13:19:10.526 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:10.529 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BRFS3.SA | Ensemble -> MSE: 137821.027712, MAE: 371.057114, R²: -137208.436783, Direção: 55.17%
-2025-06-05 13:19:10.856 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | BRKM5.SA
-2025-06-05 13:19:11.920 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 303.117810, std: 48.674985, R² médio: -5.709622
-2025-06-05 13:19:11.941 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:11.944 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | BRKM5.SA | Ensemble -> MSE: 31030.589680, MAE: 176.109300, R²: -156991.447456, Direção: 82.76%
-2025-06-05 13:19:12.230 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CCRO3.SA
-2025-06-05 13:19:13.250 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 5.644314, std: 1.411259, R² médio: -2.922471
-2025-06-05 13:19:13.272 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:13.273 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CCRO3.SA | Ensemble -> MSE: 990.526185, MAE: 31.471316, R²: -16998.189244, Direção: 79.31%
-2025-06-05 13:19:13.533 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CMIG4.SA
-2025-06-05 13:19:14.551 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 12.526201, std: 14.687885, R² médio: -12.010581
-2025-06-05 13:19:14.572 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:14.576 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CMIG4.SA | Ensemble -> MSE: 704.902923, MAE: 26.545830, R²: -9973.076866, Direção: 68.97%
-2025-06-05 13:19:14.834 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CMIN3.SA
-2025-06-05 13:19:15.414 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 2.454045, std: 0.546015, R² médio: -5.707390
-2025-06-05 13:19:15.433 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:15.434 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CMIN3.SA | Ensemble -> MSE: 54.173297, MAE: 7.346310, R²: -290.305020, Direção: 55.17%
-2025-06-05 13:19:15.728 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | COGN3.SA
-2025-06-05 13:19:16.773 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 44.694703, std: 21.632525, R² médio: -82.634134
-2025-06-05 13:19:16.795 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:16.796 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | COGN3.SA | Ensemble -> MSE: 277.428115, MAE: 16.619396, R²: -7162.965534, Direção: 62.07%
-2025-06-05 13:19:17.177 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CPFE3.SA
-2025-06-05 13:19:18.172 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 83.382006, std: 76.172121, R² médio: -16.299114
-2025-06-05 13:19:18.194 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:18.206 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CPFE3.SA | Ensemble -> MSE: 133265.379290, MAE: 364.948649, R²: -80048.831055, Direção: 79.31%
-2025-06-05 13:19:18.458 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CPLE6.SA
-2025-06-05 13:19:19.431 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 12.423123, std: 13.501182, R² médio: -29.966016
-2025-06-05 13:19:19.451 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:19.454 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CPLE6.SA | Ensemble -> MSE: 1165.728393, MAE: 34.128912, R²: -5271.667519, Direção: 68.97%
-2025-06-05 13:19:19.731 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CRFB3.SA
-2025-06-05 13:19:20.594 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 27.803530, std: 17.997373, R² médio: -5.928163
-2025-06-05 13:19:20.614 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:20.616 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CRFB3.SA | Ensemble -> MSE: 2496.915143, MAE: 49.963003, R²: -310435.959361, Direção: 37.93%
-2025-06-05 13:19:20.877 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CSAN3.SA
-2025-06-05 13:19:21.857 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 49.089806, std: 41.577708, R² médio: -9.285287
-2025-06-05 13:19:21.877 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:21.879 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CSAN3.SA | Ensemble -> MSE: 2308.463249, MAE: 48.037187, R²: -32029.331082, Direção: 58.62%
-2025-06-05 13:19:22.137 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CSNA3.SA
-2025-06-05 13:19:23.164 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 32.255312, std: 21.978264, R² médio: -4.283147
-2025-06-05 13:19:23.185 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:23.189 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CSNA3.SA | Ensemble -> MSE: 2994.642514, MAE: 54.691909, R²: -19850.702263, Direção: 62.07%
-2025-06-05 13:19:23.437 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CVCB3.SA
-2025-06-05 13:19:24.450 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 406.080032, std: 151.664845, R² médio: -172.939581
-2025-06-05 13:19:24.474 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:24.484 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CVCB3.SA | Ensemble -> MSE: 2413.687325, MAE: 49.112940, R²: -136804.383357, Direção: 55.17%
-2025-06-05 13:19:24.733 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CXSE3.SA
-2025-06-05 13:19:25.297 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 19.916183, std: 19.204460, R² médio: -35.159114
-2025-06-05 13:19:25.407 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:25.408 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CXSE3.SA | Ensemble -> MSE: 2149.658567, MAE: 46.352641, R²: -7047.930096, Direção: 72.41%
-2025-06-05 13:19:25.774 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | CYRE3.SA
-2025-06-05 13:19:26.843 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 71.257978, std: 38.848722, R² médio: -8.150339
-2025-06-05 13:19:26.866 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:26.867 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | CYRE3.SA | Ensemble -> MSE: 27104.354266, MAE: 164.603410, R²: -76013.940862, Direção: 68.97%
-2025-06-05 13:19:27.152 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | EGIE3.SA
-2025-06-05 13:19:28.200 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 160.563197, std: 85.424478, R² médio: -36.254081
-2025-06-05 13:19:28.221 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:28.233 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | EGIE3.SA | Ensemble -> MSE: 140678.567317, MAE: 375.030525, R²: -253887.542157, Direção: 72.41%
-2025-06-05 13:19:28.499 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ELET3.SA
-2025-06-05 13:19:29.506 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 291.107350, std: 127.455876, R² médio: -17.688073
-2025-06-05 13:19:29.527 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:29.528 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ELET3.SA | Ensemble -> MSE: 302996.133054, MAE: 550.383817, R²: -419586.335554, Direção: 72.41%
-2025-06-05 13:19:29.790 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ELET6.SA
-2025-06-05 13:19:30.903 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 215.395208, std: 100.267065, R² médio: -14.723746
-2025-06-05 13:19:30.923 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:30.925 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ELET6.SA | Ensemble -> MSE: 342648.632247, MAE: 585.346722, R²: -1009906.214085, Direção: 65.52%
-2025-06-05 13:19:31.231 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | EMBR3.SA
-2025-06-05 13:19:32.175 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 50.204100, std: 25.935653, R² médio: -3.515672
-2025-06-05 13:19:32.196 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:32.205 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ENEV3.SA
-2025-06-05 13:19:33.315 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 50.576568, std: 37.818037, R² médio: -25.726830
-2025-06-05 13:19:33.337 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:33.338 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ENEV3.SA | Ensemble -> MSE: 3340.060660, MAE: 57.770719, R²: -18371.352258, Direção: 65.52%
-2025-06-05 13:19:33.586 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ENGI11.SA
-2025-06-05 13:19:34.574 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 220.088875, std: 105.527363, R² médio: -22.932942
-2025-06-05 13:19:34.674 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:34.676 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ENGI11.SA | Ensemble -> MSE: 304558.807558, MAE: 551.761894, R²: -224599.877206, Direção: 65.52%
-2025-06-05 13:19:34.967 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | EQTL3.SA
-2025-06-05 13:19:36.057 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 131.291656, std: 100.695577, R² médio: -29.678490
-2025-06-05 13:19:36.079 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:36.086 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | EQTL3.SA | Ensemble -> MSE: 99277.187909, MAE: 315.061940, R²: -400428.236235, Direção: 65.52%
-2025-06-05 13:19:36.351 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | FLRY3.SA
-2025-06-05 13:19:37.356 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 66.736631, std: 39.546753, R² médio: -18.264416
-2025-06-05 13:19:37.376 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:37.378 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | FLRY3.SA | Ensemble -> MSE: 6060.670932, MAE: 77.847797, R²: -165310.144313, Direção: 68.97%
-2025-06-05 13:19:37.657 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | GGBR4.SA
-2025-06-05 13:19:38.632 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 66.020169, std: 47.895898, R² médio: -23.273752
-2025-06-05 13:19:38.653 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:38.654 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | GGBR4.SA | Ensemble -> MSE: 9159.025199, MAE: 95.673744, R²: -38421.136908, Direção: 75.86%
-2025-06-05 13:19:38.946 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | GOAU4.SA
-2025-06-05 13:19:39.925 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 16.977561, std: 12.639131, R² médio: -17.383758
-2025-06-05 13:19:39.946 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:39.948 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | GOAU4.SA | Ensemble -> MSE: 744.227530, MAE: 27.266013, R²: -14852.253081, Direção: 65.52%
-2025-06-05 13:19:40.252 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | HAPV3.SA
-2025-06-05 13:19:41.081 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 28.339242, std: 10.314776, R² médio: -29.342959
-2025-06-05 13:19:41.101 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:41.102 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | HAPV3.SA | Ensemble -> MSE: 275.388987, MAE: 16.574822, R²: -4735.571793, Direção: 55.17%
-2025-06-05 13:19:41.390 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | HYPE3.SA
-2025-06-05 13:19:42.391 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 95.648980, std: 49.300087, R² médio: -8.089122
-2025-06-05 13:19:42.412 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:42.413 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | HYPE3.SA | Ensemble -> MSE: 52344.116194, MAE: 228.673129, R²: -42573.541797, Direção: 65.52%
-2025-06-05 13:19:42.772 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | IGTI11.SA
-2025-06-05 13:19:43.262 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 5.940709, std: 2.252430, R² médio: -2.480249
-2025-06-05 13:19:43.280 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:43.281 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | IGTI11.SA | Ensemble -> MSE: 3164.523338, MAE: 56.231202, R²: -4024.460375, Direção: 68.97%
-2025-06-05 13:19:43.584 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | IRBR3.SA
-2025-06-05 13:19:44.419 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 68033.632299, std: 22344.832671, R² médio: -473.885403
-2025-06-05 13:19:44.438 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:44.439 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | IRBR3.SA | Ensemble -> MSE: 103384630.120216, MAE: 10166.967226, R²: -69624356.827306, Direção: 72.41%
-2025-06-05 13:19:44.687 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ISAE4.SA
-2025-06-05 13:19:45.698 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 103.628786, std: 59.818079, R² médio: -51.093662
-2025-06-05 13:19:45.718 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:45.725 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | ISAE4.SA | Ensemble -> MSE: 23048.200542, MAE: 151.811955, R²: -205036.418334, Direção: 65.52%
-2025-06-05 13:19:45.980 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ITSA4.SA
-2025-06-05 13:19:47.073 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 6.455767, std: 2.435447, R² médio: -11.577485
-2025-06-05 13:19:47.094 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: SOBRECOMPRADO
-2025-06-05 13:19:47.122 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | ITUB4.SA
-2025-06-05 13:19:48.304 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 61.937893, std: 27.028704, R² médio: -8.181962
-2025-06-05 13:19:48.325 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:48.346 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | JBSS3.SA
-2025-06-05 13:19:49.522 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 138.422765, std: 95.162580, R² médio: -4.949167
-2025-06-05 13:19:49.543 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:49.567 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | KLBN11.SA
-2025-06-05 13:19:50.697 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 28.943995, std: 23.605557, R² médio: -12.073312
-2025-06-05 13:19:50.719 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:50.720 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | KLBN11.SA | Ensemble -> MSE: 6485.504961, MAE: 80.525322, R²: -34657.778671, Direção: 58.62%
-2025-06-05 13:19:50.973 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | LREN3.SA
-2025-06-05 13:19:52.036 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 143.005044, std: 78.907293, R² médio: -14.490501
-2025-06-05 13:19:52.057 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:52.060 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | LREN3.SA | Ensemble -> MSE: 33072.634808, MAE: 181.087448, R²: -12113.495973, Direção: 72.41%
-2025-06-05 13:19:52.353 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | LWSA3.SA
-2025-06-05 13:19:53.015 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 78.413821, std: 29.038442, R² médio: -60.219969
-2025-06-05 13:19:53.034 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:19:53.035 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | LWSA3.SA | Ensemble -> MSE: 1137.896710, MAE: 33.710625, R²: -42819.090500, Direção: 68.97%
-2025-06-05 13:19:53.445 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | MGLU3.SA
-2025-06-05 13:19:54.280 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 2307.451110, std: 1694.339681, R² médio: -30.510384
-2025-06-05 13:19:54.301 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:54.304 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | MGLU3.SA | Ensemble -> MSE: 155604.529653, MAE: 394.160842, R²: -604621.439555, Direção: 79.31%
-2025-06-05 13:19:54.576 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | MRFG3.SA
-2025-06-05 13:19:55.609 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 35.676477, std: 27.693034, R² médio: -2.782248
-2025-06-05 13:19:55.617 | ERROR    | __main__:<module>:1097 - Erro Ensemble acoes_ibov.csv | MRFG3.SA: Input X contains infinity or a value too large for dtype('float32').
-Traceback (most recent call last):
-
-> File "/Users/rodrigopalma/finviz-platform/ml_pipeline_forecasting_markov.py", line 1078, in <module>
-    pred_ensemble = modelo_ensemble.predict(df_ticker)
-                    │               │       └                     Date       Open       High        Low      Close  ...     P/L_Ratio  Razao_Volume_Preco Momentum_Preco  V...
-                    │               └ <function EnsembleMarkovForecaster.predict at 0x315c6b9c0>
-                    └ <__main__.EnsembleMarkovForecaster object at 0x169a2a960>
-
-  File "/Users/rodrigopalma/finviz-platform/ml_pipeline_forecasting_markov.py", line 510, in predict
-    pred_rf = self.rf.predict(X[-n_steps:])
-              │    │  │       │  └ 30
-              │    │  │       └ array([[ 0.        ,  0.        ,  0.        , ...,  0.        ,
-              │    │  │                  0.        ,  0.        ],
-              │    │  │                [ 0.        ,  0. ...
-              │    │  └ <function ForestRegressor.predict at 0x315975260>
-              │    └ RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-              │                            n_estimators=200, n_jobs=-...
-              └ <__main__.EnsembleMarkovForecaster object at 0x169a2a960>
-
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 1063, in predict
-    X = self._validate_X_predict(X)
-        │    │                   └ array([[ 0.00000000e+00,  0.00000000e+00,  0.00000000e+00,
-        │    │                              0.00000000e+00,  0.00000000e+00,  2.00727653e+01,
-        │    │                            ...
-        │    └ <function BaseForest._validate_X_predict at 0x315974860>
-        └ RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-                                n_estimators=200, n_jobs=-...
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 641, in _validate_X_predict
-    X = self._validate_data(
-        │    └ <function BaseEstimator._validate_data at 0x14aae1300>
-        └ RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-                                n_estimators=200, n_jobs=-...
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/base.py", line 633, in _validate_data
-    out = check_array(X, input_name="X", **check_params)
-          │           │                    └ {'estimator': RandomForestRegressor(max_depth=10, min_samples_leaf=2, min_samples_split=5,
-          │           │                                            n_estimators...
-          │           └ array([[ 0.00000000e+00,  0.00000000e+00,  0.00000000e+00,
-          │                      0.00000000e+00,  0.00000000e+00,  2.00727653e+01,
-          │                    ...
-          └ <function check_array at 0x1493e4540>
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1064, in check_array
-    _assert_all_finite(
-    └ <function _assert_all_finite at 0x1493db9c0>
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/utils/validation.py", line 123, in _assert_all_finite
-    _assert_all_finite_element_wise(
-    └ <function _assert_all_finite_element_wise at 0x1493dba60>
-  File "/opt/anaconda3/lib/python3.12/site-packages/sklearn/utils/validation.py", line 172, in _assert_all_finite_element_wise
-    raise ValueError(msg_err)
-                     └ "Input X contains infinity or a value too large for dtype('float32')."
-
-ValueError: Input X contains infinity or a value too large for dtype('float32').
-2025-06-05 13:19:55.658 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | MRVE3.SA
-2025-06-05 13:19:56.623 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 28.241410, std: 11.772344, R² médio: -7.657583
-2025-06-05 13:19:56.645 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:56.646 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | MRVE3.SA | Ensemble -> MSE: 1034.483879, MAE: 32.138071, R²: -8568.881906, Direção: 65.52%
-2025-06-05 13:19:56.911 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | MULT3.SA
-2025-06-05 13:19:58.010 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 37.541214, std: 12.814023, R² médio: -8.314373
-2025-06-05 13:19:58.031 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:19:58.033 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | MULT3.SA | Ensemble -> MSE: 22140.658309, MAE: 148.789446, R²: -76588.223209, Direção: 79.31%
-2025-06-05 13:19:58.355 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | NTCO3.SA
-2025-06-05 13:19:58.980 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 524.562434, std: 251.976028, R² médio: -139.231770
-2025-06-05 13:19:58.999 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:19:59.000 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | NTCO3.SA | Ensemble -> MSE: 25170.175308, MAE: 158.523896, R²: -78738.317578, Direção: 65.52%
-2025-06-05 13:19:59.290 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PCAR3.SA
-2025-06-05 13:20:00.063 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 46.597537, std: 33.242177, R² médio: -45.559392
-2025-06-05 13:20:00.085 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:00.086 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | PCAR3.SA | Ensemble -> MSE: 827.908053, MAE: 28.603795, R²: -3377.578445, Direção: 55.17%
-2025-06-05 13:20:00.420 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PETR3.SA
-2025-06-05 13:20:01.440 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 183.576262, std: 272.396346, R² médio: -16.466567
-2025-06-05 13:20:01.461 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:01.467 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | PETR3.SA | Ensemble -> MSE: 126962.866861, MAE: 356.270203, R²: -177478.356638, Direção: 62.07%
-2025-06-05 13:20:01.828 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PETR4.SA
-2025-06-05 13:20:02.669 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 92.218486, std: 137.417199, R² médio: -6.123538
-2025-06-05 13:20:02.691 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:02.692 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | PETR4.SA | Ensemble -> MSE: 72622.840872, MAE: 269.432792, R²: -113481.309944, Direção: 65.52%
-2025-06-05 13:20:02.947 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PETZ3.SA
-2025-06-05 13:20:03.556 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 43.511458, std: 25.155977, R² médio: -121.743807
-2025-06-05 13:20:03.575 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:03.576 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | PETZ3.SA | Ensemble -> MSE: 1264.198963, MAE: 35.540794, R²: -47789.560940, Direção: 55.17%
-2025-06-05 13:20:03.848 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | POMO4.SA
-2025-06-05 13:20:04.719 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 0.813057, std: 0.300408, R² médio: -7.484529
-2025-06-05 13:20:04.740 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:04.749 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PRIO3.SA
-2025-06-05 13:20:05.627 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 420.959292, std: 480.187283, R² médio: -21.202521
-2025-06-05 13:20:05.648 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:05.649 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | PRIO3.SA | Ensemble -> MSE: 291488.556394, MAE: 539.137539, R²: -62336.004437, Direção: 75.86%
-2025-06-05 13:20:05.924 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | PSSA3.SA
-2025-06-05 13:20:06.938 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 60.878963, std: 50.849384, R² médio: -9.022969
-2025-06-05 13:20:06.960 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:06.974 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RADL3.SA
-2025-06-05 13:20:08.135 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 68.571612, std: 37.358250, R² médio: -11.810910
-2025-06-05 13:20:08.156 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_BAIXA
-2025-06-05 13:20:08.157 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RADL3.SA | Ensemble -> MSE: 14326.567364, MAE: 118.772644, R²: -2921.955893, Direção: 55.17%
-2025-06-05 13:20:08.417 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RAIL3.SA
-2025-06-05 13:20:09.463 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 52.536474, std: 40.904876, R² médio: -8.052481
-2025-06-05 13:20:09.485 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:09.486 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RAIL3.SA | Ensemble -> MSE: 16997.943497, MAE: 130.319736, R²: -34480.029316, Direção: 72.41%
-2025-06-05 13:20:09.742 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RAIZ4.SA
-2025-06-05 13:20:10.272 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 3.281677, std: 1.087072, R² médio: -28.292515
-2025-06-05 13:20:10.291 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:10.292 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RAIZ4.SA | Ensemble -> MSE: 15.137751, MAE: 3.884839, R²: -1060.586275, Direção: 48.28%
-2025-06-05 13:20:10.550 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RDOR3.SA
-2025-06-05 13:20:11.085 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 471.477319, std: 92.644120, R² médio: -59.152815
-2025-06-05 13:20:11.104 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:11.105 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RDOR3.SA | Ensemble -> MSE: 297323.058183, MAE: 544.144635, R²: -55889.026772, Direção: 55.17%
-2025-06-05 13:20:11.470 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RECV3.SA
-2025-06-05 13:20:11.962 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 26.196781, std: 11.710337, R² médio: -8.496661
-2025-06-05 13:20:11.981 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:11.992 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RECV3.SA | Ensemble -> MSE: 4315.899094, MAE: 65.645263, R²: -7452.512121, Direção: 55.17%
-2025-06-05 13:20:12.259 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | RENT3.SA
-2025-06-05 13:20:13.241 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 619.093350, std: 424.077122, R² médio: -14.532529
-2025-06-05 13:20:13.263 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:13.269 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | RENT3.SA | Ensemble -> MSE: 591868.456323, MAE: 769.256377, R²: -469970.419468, Direção: 51.72%
-2025-06-05 13:20:13.529 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | SANB11.SA
-2025-06-05 13:20:14.510 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 113.464444, std: 61.170252, R² médio: -12.183535
-2025-06-05 13:20:14.530 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:14.531 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | SANB11.SA | Ensemble -> MSE: 55835.188536, MAE: 236.223039, R²: -89595.282766, Direção: 65.52%
-2025-06-05 13:20:14.821 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | SBSP3.SA
-2025-06-05 13:20:15.754 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 518.354141, std: 505.005470, R² médio: -5.861015
-2025-06-05 13:20:15.776 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:15.784 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | SLCE3.SA
-2025-06-05 13:20:16.994 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 79.550997, std: 54.133639, R² médio: -64.727918
-2025-06-05 13:20:17.017 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:17.018 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | SLCE3.SA | Ensemble -> MSE: 13355.880392, MAE: 115.485556, R²: -70700.189067, Direção: 58.62%
-2025-06-05 13:20:17.288 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | SMTO3.SA
-2025-06-05 13:20:18.316 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 111.238496, std: 85.614489, R² médio: -5.705324
-2025-06-05 13:20:18.337 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:18.338 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | SMTO3.SA | Ensemble -> MSE: 52311.402006, MAE: 228.638544, R²: -92206.223117, Direção: 68.97%
-2025-06-05 13:20:18.628 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | STBP3.SA
-2025-06-05 13:20:19.495 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 11.489628, std: 13.156980, R² médio: -6.015045
-2025-06-05 13:20:19.515 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:19.522 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | SUZB3.SA
-2025-06-05 13:20:20.437 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 426.864359, std: 184.955127, R² médio: -14.348066
-2025-06-05 13:20:20.458 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:20.459 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | SUZB3.SA | Ensemble -> MSE: 687139.655769, MAE: 828.817425, R²: -426265.728320, Direção: 75.86%
-2025-06-05 13:20:20.722 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | TAEE11.SA
-2025-06-05 13:20:21.713 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 172.397534, std: 129.494930, R² médio: -61.564466
-2025-06-05 13:20:21.817 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:21.818 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | TAEE11.SA | Ensemble -> MSE: 91323.546339, MAE: 302.177846, R²: -515890.552050, Direção: 65.52%
-2025-06-05 13:20:22.148 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | TIMS3.SA
-2025-06-05 13:20:23.026 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 14.219022, std: 10.719998, R² médio: -12.685605
-2025-06-05 13:20:23.047 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:23.059 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | TOTS3.SA
-2025-06-05 13:20:24.197 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 183.906039, std: 136.398078, R² médio: -16.681719
-2025-06-05 13:20:24.218 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:24.220 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | TOTS3.SA | Ensemble -> MSE: 175116.561593, MAE: 417.895500, R²: -34585.478707, Direção: 65.52%
-2025-06-05 13:20:24.483 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | UGPA3.SA
-2025-06-05 13:20:25.432 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 26.488559, std: 22.724733, R² médio: -8.778257
-2025-06-05 13:20:25.452 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:25.456 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | UGPA3.SA | Ensemble -> MSE: 7456.167856, MAE: 86.320816, R²: -19207.100702, Direção: 62.07%
-2025-06-05 13:20:25.697 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | USIM5.SA
-2025-06-05 13:20:26.684 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 16.588448, std: 10.231394, R² médio: -9.313958
-2025-06-05 13:20:26.705 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_BAIXA
-2025-06-05 13:20:26.708 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | USIM5.SA | Ensemble -> MSE: 353.917972, MAE: 18.790923, R²: -12701.375006, Direção: 58.62%
-2025-06-05 13:20:26.988 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | VALE3.SA
-2025-06-05 13:20:27.966 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 974.065945, std: 704.039872, R² médio: -26.705158
-2025-06-05 13:20:27.989 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:27.992 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | VALE3.SA | Ensemble -> MSE: 1482254.758718, MAE: 1217.378859, R²: -1580628.285355, Direção: 65.52%
-2025-06-05 13:20:28.246 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | VAMO3.SA
-2025-06-05 13:20:28.787 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 16.076359, std: 10.990819, R² médio: -16.873217
-2025-06-05 13:20:28.806 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:28.807 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | VAMO3.SA | Ensemble -> MSE: 481.875666, MAE: 21.921137, R²: -4112.887321, Direção: 72.41%
-2025-06-05 13:20:29.055 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | VBBR3.SA
-2025-06-05 13:20:29.887 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 12.383482, std: 2.728906, R² médio: -0.856785
-2025-06-05 13:20:29.907 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:29.908 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | VBBR3.SA | Ensemble -> MSE: 7129.544764, MAE: 84.407325, R²: -11169.355984, Direção: 58.62%
-2025-06-05 13:20:30.291 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | VIVA3.SA
-2025-06-05 13:20:30.909 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 33.966955, std: 10.285670, R² médio: -2.810490
-2025-06-05 13:20:30.929 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:30.930 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | VIVA3.SA | Ensemble -> MSE: 18447.190314, MAE: 135.549830, R²: -5166.006195, Direção: 65.52%
-2025-06-05 13:20:31.203 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | VIVT3.SA
-2025-06-05 13:20:32.268 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 59.140015, std: 49.624295, R² médio: -20.877996
-2025-06-05 13:20:32.289 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:32.290 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | VIVT3.SA | Ensemble -> MSE: 34053.463368, MAE: 184.514072, R²: -84956.107830, Direção: 75.86%
-2025-06-05 13:20:32.562 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | WEGE3.SA
-2025-06-05 13:20:33.588 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 315.737370, std: 257.953622, R² médio: -10.035152
-2025-06-05 13:20:33.608 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:33.609 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | WEGE3.SA | Ensemble -> MSE: 482689.094608, MAE: 693.856064, R²: -79474.431141, Direção: 62.07%
-2025-06-05 13:20:33.902 | INFO     | __main__:<module>:1061 - Iniciando acoes_ibov.csv | YDUQ3.SA
-2025-06-05 13:20:34.911 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 161.306279, std: 21.676392, R² médio: -5.754408
-2025-06-05 13:20:34.932 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:34.936 | INFO     | __main__:<module>:1121 - acoes_ibov.csv | YDUQ3.SA | Ensemble -> MSE: 30963.942028, MAE: 175.744061, R²: -38617.310657, Direção: 72.41%
-2025-06-05 13:20:35.411 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | BZ=F
-2025-06-05 13:20:36.360 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 629.586723, std: 423.199333, R² médio: -4.165939
-2025-06-05 13:20:36.381 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:36.382 | INFO     | __main__:<module>:1121 - commodities.csv | BZ=F | Ensemble -> MSE: 3687508.196681, MAE: 1920.047663, R²: -1490678.473319, Direção: 82.76%
-2025-06-05 13:20:36.661 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | GC=F
-2025-06-05 13:20:37.680 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 243895.780813, std: 184010.108416, R² médio: -18.978799
-2025-06-05 13:20:37.701 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:37.735 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | KC=F
-2025-06-05 13:20:38.867 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 3227.435208, std: 3084.794796, R² médio: -4.929259
-2025-06-05 13:20:38.888 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:38.895 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | LE=F
-2025-06-05 13:20:39.883 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 1352.663745, std: 1586.176166, R² médio: -11.746908
-2025-06-05 13:20:39.904 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL
-2025-06-05 13:20:39.912 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | SI=F
-2025-06-05 13:20:40.851 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 40.441136, std: 33.076623, R² médio: -5.499056
-2025-06-05 13:20:40.872 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: TENDENCIA_ALTA
-2025-06-05 13:20:40.874 | INFO     | __main__:<module>:1121 - commodities.csv | SI=F | Ensemble -> MSE: 51133.346808, MAE: 226.112335, R²: -66328.922979, Direção: 86.21%
-2025-06-05 13:20:41.166 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | ZC=F
-2025-06-05 13:20:42.164 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 18716.352423, std: 22068.378609, R² médio: -4.689942
-2025-06-05 13:20:42.186 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:42.187 | INFO     | __main__:<module>:1121 - commodities.csv | ZC=F | Ensemble -> MSE: 3565156185.751982, MAE: 59685.946651, R²: -20313081.631179, Direção: 68.97%
-2025-06-05 13:20:42.429 | INFO     | __main__:<module>:1061 - Iniciando commodities.csv | ZS=F
-2025-06-05 13:20:43.472 | INFO     | __main__:<module>:1076 - Validação Cruzada - MSE médio: 96387.788352, std: 72463.084168, R² médio: -8.243017
-2025-06-05 13:20:43.492 | INFO     | __main__:<module>:1082 - Regime de mercado identificado: LATERAL_ESTRITO
-2025-06-05 13:20:43.499 | INFO     | __main__:<module>:1121 - commodities.csv | ZS=F | Ensemble -> MSE: 94749752518.181396, MAE: 307807.583167, R²: -576937181.972026, Direção: 75.86%
-2025-06-05 13:20:44.004 | INFO     | __main__:<module>:1162 - Pipeline de forecasting Markov finalizado!
+2025-06-06 18:35:16.078 | INFO     | __main__:<module>:296 - Iniciando pipeline de forecasting Markov...
+2025-06-06 18:35:20.024 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ABEV3.SA
+2025-06-06 18:35:20.046 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ALOS3.SA
+2025-06-06 18:35:20.066 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | AMOB3.SA
+2025-06-06 18:35:20.102 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ASAI3.SA
+2025-06-06 18:35:22.570 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:35:23.173 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:23.293 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:24.315 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:35:25.927 | WARNING  | __main__:treinar_modelo_hmm:221 - Falha ao treinar HMM com 3 estados: startprob_ must sum to 1 (got nan)
+2025-06-06 18:35:29.139 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMOB3.SA_HMM _ ALTA.png
+2025-06-06 18:35:29.148 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | AURE3.SA
+2025-06-06 18:35:30.073 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:35:30.627 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ASAI3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:30.628 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | AZUL4.SA
+2025-06-06 18:35:31.258 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ABEV3.SA_HMM _ BAIXA.png
+2025-06-06 18:35:31.259 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | AZZA3.SA
+2025-06-06 18:35:31.502 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:31.563 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:35:32.146 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ALOS3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:32.146 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | B3SA3.SA
+2025-06-06 18:35:33.252 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:35.328 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AURE3.SA_HMM _ BAIXA.png
+2025-06-06 18:35:35.329 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BBAS3.SA
+2025-06-06 18:35:37.748 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:39.014 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AZUL4.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:39.023 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BBDC3.SA
+2025-06-06 18:35:39.505 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_B3SA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:39.516 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BBDC4.SA
+2025-06-06 18:35:39.910 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AZZA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:39.912 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BBSE3.SA
+2025-06-06 18:35:40.033 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:35:40.139 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:41.002 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:35:44.047 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBAS3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:44.049 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BEEF3.SA
+2025-06-06 18:35:45.591 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:46.795 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBDC3.SA_HMM _ BAIXA.png
+2025-06-06 18:35:46.806 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BPAC11.SA
+2025-06-06 18:35:47.230 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:47.750 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBDC4.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:47.751 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BRAP4.SA
+2025-06-06 18:35:47.983 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:49.162 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBSE3.SA_HMM _ BAIXA.png
+2025-06-06 18:35:49.169 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BRAV3.SA
+2025-06-06 18:35:49.623 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:51.671 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BPAC11.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:51.682 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BRFS3.SA
+2025-06-06 18:35:52.392 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:52.645 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BEEF3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:52.649 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | BRKM5.SA
+2025-06-06 18:35:54.012 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRAP4.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:54.013 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CCRO3.SA
+2025-06-06 18:35:54.597 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:35:55.076 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:35:57.313 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRAV3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:57.314 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CMIG4.SA
+2025-06-06 18:35:57.906 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:35:58.915 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRFS3.SA_HMM _ MÉDIA.png
+2025-06-06 18:35:58.925 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CMIN3.SA
+2025-06-06 18:35:59.277 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:36:01.103 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRKM5.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:01.107 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | COGN3.SA
+2025-06-06 18:36:01.482 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CCRO3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:01.499 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CPFE3.SA
+2025-06-06 18:36:03.059 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:36:03.344 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:03.821 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMIG4.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:03.823 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CPLE6.SA
+2025-06-06 18:36:04.322 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:05.085 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMIN3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:05.086 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CRFB3.SA
+2025-06-06 18:36:06.551 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:08.802 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CPFE3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:08.810 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CSAN3.SA
+2025-06-06 18:36:09.539 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:09.750 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_COGN3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:09.752 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CSNA3.SA
+2025-06-06 18:36:10.906 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CPLE6.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:10.915 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CVCB3.SA
+2025-06-06 18:36:11.316 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:11.688 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:36:13.413 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CRFB3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:13.424 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CXSE3.SA
+2025-06-06 18:36:14.548 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:36:15.745 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CVCB3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:15.752 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | CYRE3.SA
+2025-06-06 18:36:16.461 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CSAN3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:16.467 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | EGIE3.SA
+2025-06-06 18:36:16.855 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:17.470 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:36:18.253 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CSNA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:18.255 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ELET3.SA
+2025-06-06 18:36:19.742 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:20.034 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CXSE3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:20.035 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ELET6.SA
+2025-06-06 18:36:21.806 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:23.045 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CYRE3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:23.047 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | EMBR3.SA
+2025-06-06 18:36:24.132 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:36:24.554 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EGIE3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:24.555 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ENEV3.SA
+2025-06-06 18:36:25.860 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:26.170 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ELET3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:26.188 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ENGI11.SA
+2025-06-06 18:36:26.884 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:36:28.317 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ELET6.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:28.318 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | EQTL3.SA
+2025-06-06 18:36:29.032 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:36:29.550 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EMBR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:29.556 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | FLRY3.SA
+2025-06-06 18:36:30.487 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:36:32.416 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ENGI11.SA_HMM _ BAIXA.png
+2025-06-06 18:36:32.416 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | GGBR4.SA
+2025-06-06 18:36:33.242 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:33.828 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ENEV3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:33.842 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | GOAU4.SA
+2025-06-06 18:36:34.387 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:36:35.717 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_FLRY3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:35.718 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | HAPV3.SA
+2025-06-06 18:36:36.436 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:36:36.451 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EQTL3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:36.468 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | HYPE3.SA
+2025-06-06 18:36:37.629 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:36:39.529 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GOAU4.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:39.531 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | IGTI11.SA
+2025-06-06 18:36:40.420 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:36:41.073 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GGBR4.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:41.074 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | IRBR3.SA
+2025-06-06 18:36:42.580 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:36:43.135 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HAPV3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:43.136 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ISAE4.SA
+2025-06-06 18:36:44.563 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HYPE3.SA_HMM _ BAIXA.png
+2025-06-06 18:36:44.564 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ITSA4.SA
+2025-06-06 18:36:44.733 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:36:45.031 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:36:46.203 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IGTI11.SA_HMM _ BAIXA.png
+2025-06-06 18:36:46.205 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | ITUB4.SA
+2025-06-06 18:36:47.182 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:36:49.121 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IRBR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:36:49.125 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | JBSS3.SA
+2025-06-06 18:36:49.782 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ISAE4.SA_HMM _ BAIXA.png
+2025-06-06 18:36:49.783 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | KLBN11.SA
+2025-06-06 18:36:53.201 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:36:54.298 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:36:57.340 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITSA4.SA_HMM _ BAIXA.png
+2025-06-06 18:36:57.343 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | LREN3.SA
+2025-06-06 18:36:59.058 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:00.984 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITUB4.SA_HMM _ BAIXA.png
+2025-06-06 18:37:00.986 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | LWSA3.SA
+2025-06-06 18:37:02.148 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:03.133 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JBSS3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:03.147 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | MGLU3.SA
+2025-06-06 18:37:04.158 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_KLBN11.SA_HMM _ BAIXA.png
+2025-06-06 18:37:04.160 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | MRFG3.SA
+2025-06-06 18:37:04.280 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:05.514 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:06.033 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LREN3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:06.036 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | MRVE3.SA
+2025-06-06 18:37:06.623 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:07.166 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LWSA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:07.167 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | MULT3.SA
+2025-06-06 18:37:08.570 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:37:11.127 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MRFG3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:11.129 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | NTCO3.SA
+2025-06-06 18:37:11.547 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MGLU3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:11.549 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PCAR3.SA
+2025-06-06 18:37:11.661 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:12.260 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:12.518 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MRVE3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:12.539 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PETR3.SA
+2025-06-06 18:37:13.211 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:15.149 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MULT3.SA_HMM _ BAIXA.png
+2025-06-06 18:37:15.151 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PETR4.SA
+2025-06-06 18:37:16.718 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:16.736 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NTCO3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:16.736 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PETZ3.SA
+2025-06-06 18:37:17.329 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:18.357 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PCAR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:18.374 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | POMO4.SA
+2025-06-06 18:37:19.039 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:20.803 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:20.816 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PRIO3.SA
+2025-06-06 18:37:21.451 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:22.532 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETR4.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:22.543 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | PSSA3.SA
+2025-06-06 18:37:23.266 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETZ3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:23.267 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RADL3.SA
+2025-06-06 18:37:23.359 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:37:23.644 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:37:25.180 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_POMO4.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:25.182 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RAIL3.SA
+2025-06-06 18:37:28.049 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:28.486 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PRIO3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:28.487 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RAIZ4.SA
+2025-06-06 18:37:28.833 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PSSA3.SA_HMM _ BAIXA.png
+2025-06-06 18:37:28.834 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RDOR3.SA
+2025-06-06 18:37:28.879 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:29.191 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:29.859 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RADL3.SA_HMM _ BAIXA.png
+2025-06-06 18:37:29.860 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RECV3.SA
+2025-06-06 18:37:30.251 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:34.112 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RAIZ4.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:34.112 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | RENT3.SA
+2025-06-06 18:37:34.517 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:34.723 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RAIL3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:34.724 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | SANB11.SA
+2025-06-06 18:37:35.057 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:37:35.351 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RDOR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:35.358 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | SBSP3.SA
+2025-06-06 18:37:35.941 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RECV3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:35.942 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | SLCE3.SA
+2025-06-06 18:37:36.402 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:37.892 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:40.604 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RENT3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:40.609 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | SMTO3.SA
+2025-06-06 18:37:42.172 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SANB11.SA_HMM _ BAIXA.png
+2025-06-06 18:37:42.178 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | STBP3.SA
+2025-06-06 18:37:42.406 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:42.703 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:43.851 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SBSP3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:43.852 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | SUZB3.SA
+2025-06-06 18:37:44.434 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:37:45.640 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SLCE3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:45.642 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | TAEE11.SA
+2025-06-06 18:37:47.534 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:37:48.498 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SMTO3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:48.499 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | TIMS3.SA
+2025-06-06 18:37:48.993 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_STBP3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:48.996 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | TOTS3.SA
+2025-06-06 18:37:49.053 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:37:49.811 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:49.964 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SUZB3.SA_HMM _ BAIXA.png
+2025-06-06 18:37:49.965 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | UGPA3.SA
+2025-06-06 18:37:50.719 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:37:53.895 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TAEE11.SA_HMM _ BAIXA.png
+2025-06-06 18:37:53.907 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | USIM5.SA
+2025-06-06 18:37:55.809 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:56.245 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TIMS3.SA_HMM _ BAIXA.png
+2025-06-06 18:37:56.249 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | VALE3.SA
+2025-06-06 18:37:56.627 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_UGPA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:56.628 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | VAMO3.SA
+2025-06-06 18:37:56.983 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:37:57.686 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:37:58.225 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TOTS3.SA_HMM _ MÉDIA.png
+2025-06-06 18:37:58.227 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | VBBR3.SA
+2025-06-06 18:37:58.672 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:38:02.087 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_USIM5.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:02.089 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | VIVA3.SA
+2025-06-06 18:38:02.770 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:38:03.114 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VAMO3.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:03.115 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | VIVT3.SA
+2025-06-06 18:38:04.205 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VALE3.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:04.207 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | WEGE3.SA
+2025-06-06 18:38:04.317 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:05.203 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:09.969 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VBBR3.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:09.979 | INFO     | __main__:processar_ticker:268 - Iniciando acoes_ibov.csv | YDUQ3.SA
+2025-06-06 18:38:10.927 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VIVA3.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:11.128 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:38:12.786 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_WEGE3.SA_HMM _ BAIXA.png
+2025-06-06 18:38:13.689 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VIVT3.SA_HMM _ BAIXA.png
+2025-06-06 18:38:14.926 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_YDUQ3.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:16.518 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | AAPL34.SA
+2025-06-06 18:38:16.527 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | AIRB34.SA
+2025-06-06 18:38:16.537 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | AMGN34.SA
+2025-06-06 18:38:16.548 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | AMZO34.SA
+2025-06-06 18:38:17.453 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:38:17.765 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:38:17.818 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:18.118 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:21.635 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para AAPL34.SA: <matplotlib.backends.backend_agg.RendererAgg object at 0x0000023FA6D44910>
+2025-06-06 18:38:21.651 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | AURA33.SA
+2025-06-06 18:38:23.051 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:38:23.195 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AIRB34.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:23.197 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | BABA34.SA
+2025-06-06 18:38:24.220 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:38:25.378 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMGN34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:25.391 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | BERK34.SA
+2025-06-06 18:38:26.140 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:28.231 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMZO34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:28.241 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | BKNG34.SA
+2025-06-06 18:38:28.788 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:38:29.611 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AURA33.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:29.612 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | BOAC34.SA
+2025-06-06 18:38:30.616 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BABA34.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:30.672 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | CHVX34.SA
+2025-06-06 18:38:31.062 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:32.361 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:38:34.911 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BKNG34.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:34.912 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | CMCS34.SA
+2025-06-06 18:38:35.597 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:36.336 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BERK34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:36.338 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | COCA34.SA
+2025-06-06 18:38:37.346 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:38:40.820 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BOAC34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:40.821 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | DISB34.SA
+2025-06-06 18:38:42.488 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CHVX34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:42.507 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | GMCO34.SA
+2025-06-06 18:38:42.584 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:43.507 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:38:45.562 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_COCA34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:45.564 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | GOGL34.SA
+2025-06-06 18:38:46.021 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: BAIXA
+2025-06-06 18:38:46.901 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMCS34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:46.905 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | HOME34.SA
+2025-06-06 18:38:48.929 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:38:50.313 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DISB34.SA_HMM _ BAIXA.png
+2025-06-06 18:38:50.321 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | INBR32.SA
+2025-06-06 18:38:51.590 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GMCO34.SA_HMM _ MÉDIA.png
+2025-06-06 18:38:51.596 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | ITLC34.SA
+2025-06-06 18:38:52.458 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:38:54.703 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:00.755 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_INBR32.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:00.765 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | IVVB11.SA
+2025-06-06 18:39:01.989 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:39:04.165 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GOGL34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:04.183 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | JNJB34.SA
+2025-06-06 18:39:05.254 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HOME34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:05.256 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | JPMC34.SA
+2025-06-06 18:39:05.534 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:06.274 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITLC34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:06.293 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | M1TA34.SA
+2025-06-06 18:39:06.358 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:39:07.293 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:39:09.558 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IVVB11.SA_HMM _ BAIXA.png
+2025-06-06 18:39:09.560 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | MELI34.SA
+2025-06-06 18:39:10.248 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:39:13.388 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JNJB34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:13.395 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | MSCD34.SA
+2025-06-06 18:39:13.753 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JPMC34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:13.769 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | MSFT34.SA
+2025-06-06 18:39:14.480 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_M1TA34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:14.481 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | NFLX34.SA
+2025-06-06 18:39:14.771 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:15.082 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:15.258 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:39:16.102 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MELI34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:16.103 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | NIKE34.SA
+2025-06-06 18:39:16.780 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:19.982 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MSCD34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:20.003 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | NVDC34.SA
+2025-06-06 18:39:21.092 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:21.527 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NFLX34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:21.529 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | PFIZ34.SA
+2025-06-06 18:39:22.256 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:39:23.181 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MSFT34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:23.182 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | RIGG34.SA
+2025-06-06 18:39:24.308 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:39:26.096 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NIKE34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:26.105 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | SSFO34.SA
+2025-06-06 18:39:27.229 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:28.474 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PFIZ34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:28.485 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | TSLA34.SA
+2025-06-06 18:39:29.309 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NVDC34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:29.310 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | TSMC34.SA
+2025-06-06 18:39:29.633 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:39:30.033 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:30.942 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RIGG34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:30.946 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | UNHH34.SA
+2025-06-06 18:39:32.701 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:34.173 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SSFO34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:34.189 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | VERZ34.SA
+2025-06-06 18:39:35.568 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TSLA34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:35.570 | INFO     | __main__:processar_ticker:268 - Iniciando bdrs.csv | VISA34.SA
+2025-06-06 18:39:35.853 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:37.099 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TSMC34.SA_HMM _ MÉDIA.png
+2025-06-06 18:39:37.260 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:39:39.120 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_UNHH34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:40.307 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VERZ34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:40.796 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VISA34.SA_HMM _ BAIXA.png
+2025-06-06 18:39:41.113 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | BZ=F
+2025-06-06 18:39:41.119 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | GC=F
+2025-06-06 18:39:41.123 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | KC=F
+2025-06-06 18:39:41.129 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | LE=F
+2025-06-06 18:39:41.591 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:42.028 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:39:42.335 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:42.544 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:46.893 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BZ=F_HMM _ MÉDIA.png
+2025-06-06 18:39:46.894 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | SI=F
+2025-06-06 18:39:47.331 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_KC=F_HMM _ MÉDIA.png
+2025-06-06 18:39:47.333 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | ZC=F
+2025-06-06 18:39:48.009 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LE=F_HMM _ BAIXA.png
+2025-06-06 18:39:48.015 | INFO     | __main__:processar_ticker:268 - Iniciando commodities.csv | ZS=F
+2025-06-06 18:39:48.435 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:48.525 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:39:48.669 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GC=F_HMM _ BAIXA.png
+2025-06-06 18:39:48.782 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:39:52.883 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ZC=F_HMM _ BAIXA.png
+2025-06-06 18:39:53.083 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SI=F_HMM _ BAIXA.png
+2025-06-06 18:39:53.253 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ZS=F_HMM _ BAIXA.png
+2025-06-06 18:39:54.098 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | ADA-USD
+2025-06-06 18:39:54.105 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | AVAX-USD
+2025-06-06 18:39:54.114 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | BNB-USD
+2025-06-06 18:39:54.155 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | BTC-USD
+2025-06-06 18:39:54.997 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: MÉDIA
+2025-06-06 18:39:55.106 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:39:55.156 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: ALTA
+2025-06-06 18:39:55.327 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: ALTA
+2025-06-06 18:39:59.713 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AVAX-USD_HMM _ ALTA.png
+2025-06-06 18:39:59.725 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | DOGE-USD
+2025-06-06 18:40:00.111 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:40:00.984 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BNB-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:01.003 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | DOT-USD
+2025-06-06 18:40:01.937 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:40:02.515 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ADA-USD_HMM _ ALTA.png
+2025-06-06 18:40:02.517 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | ETH-USD
+2025-06-06 18:40:03.395 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BTC-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:03.397 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | LINK-USD
+2025-06-06 18:40:03.452 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:40:04.779 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: ALTA
+2025-06-06 18:40:07.203 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DOGE-USD_HMM _ ALTA.png
+2025-06-06 18:40:07.207 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | LTC-USD
+2025-06-06 18:40:08.709 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: MÉDIA
+2025-06-06 18:40:09.022 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DOT-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:09.037 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | MATIC-USD
+2025-06-06 18:40:10.442 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: ALTA
+2025-06-06 18:40:11.102 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ETH-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:11.105 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | NEAR-USD
+2025-06-06 18:40:11.862 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:40:11.908 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LINK-USD_HMM _ ALTA.png
+2025-06-06 18:40:11.910 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | SHIB-USD
+2025-06-06 18:40:12.413 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:40:15.135 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MATIC-USD_HMM _ ALTA.png
+2025-06-06 18:40:15.140 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | SOL-USD
+2025-06-06 18:40:16.461 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: ALTA
+2025-06-06 18:40:17.151 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LTC-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:17.167 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | SUI-USD
+2025-06-06 18:40:17.519 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: ALTA
+2025-06-06 18:40:18.117 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SHIB-USD_HMM _ ALTA.png
+2025-06-06 18:40:18.119 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | TON-USD
+2025-06-06 18:40:18.326 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:40:19.973 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NEAR-USD_HMM _ ALTA.png
+2025-06-06 18:40:19.989 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | UNI-USD
+2025-06-06 18:40:20.159 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: ALTA
+2025-06-06 18:40:23.033 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SUI-USD_HMM _ ALTA.png
+2025-06-06 18:40:23.044 | INFO     | __main__:processar_ticker:268 - Iniciando criptos.csv | XRP-USD
+2025-06-06 18:40:23.748 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:40:24.319 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SOL-USD_HMM _ ALTA.png
+2025-06-06 18:40:24.804 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TON-USD_HMM _ ALTA.png
+2025-06-06 18:40:24.977 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_UNI-USD_HMM _ ALTA.png
+2025-06-06 18:40:26.992 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_XRP-USD_HMM _ MÉDIA.png
+2025-06-06 18:40:27.242 | INFO     | __main__:processar_ticker:268 - Iniciando juros.csv | EDV
+2025-06-06 18:40:27.245 | INFO     | __main__:processar_ticker:268 - Iniciando juros.csv | ^FVX
+2025-06-06 18:40:27.247 | INFO     | __main__:processar_ticker:268 - Iniciando juros.csv | ^IRX
+2025-06-06 18:40:27.254 | INFO     | __main__:processar_ticker:268 - Iniciando juros.csv | ^TNX
+2025-06-06 18:40:27.263 | ERROR    | __main__:identificar_regime:76 - Erro ao identificar regime de mercado: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 2493 and the array at index 1 has size 2500
+2025-06-06 18:40:27.264 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: ERRO, Volatilidade: DESCONHECIDO
+2025-06-06 18:40:27.267 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:27.272 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para ^IRX: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:27.274 | INFO     | __main__:processar_ticker:268 - Iniciando juros.csv | ^TYX
+2025-06-06 18:40:27.885 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:40:27.890 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:27.891 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para ^TYX: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:27.967 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:40:27.970 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:27.972 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para ^TNX: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:27.998 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_BAIXA, Volatilidade: BAIXA
+2025-06-06 18:40:28.030 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: TENDENCIA_ALTA, Volatilidade: MÉDIA
+2025-06-06 18:40:28.033 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:28.034 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para ^FVX: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:30.101 | INFO     | __main__:plotar_e_salvar:135 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EDV_HMM _ BAIXA.png
+2025-06-06 18:40:30.207 | INFO     | __main__:processar_ticker:268 - Iniciando moedas.csv | EURBRL=X
+2025-06-06 18:40:30.208 | INFO     | __main__:processar_ticker:268 - Iniciando moedas.csv | USDBRL=X
+2025-06-06 18:40:30.638 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:40:30.640 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:30.641 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para USDBRL=X: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:30.932 | INFO     | __main__:processar_ticker:276 - Regime de mercado identificado: LATERAL, Volatilidade: BAIXA
+2025-06-06 18:40:30.937 | ERROR    | __main__:treinar_modelo_hmm:263 - Erro no treinamento do HMM: Dados insuficientes após o pré-processamento
+2025-06-06 18:40:30.939 | ERROR    | __main__:plotar_e_salvar:138 - Erro ao salvar gráfico para EURBRL=X: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-06-06 18:40:31.851 | INFO     | __main__:<module>:324 - Pipeline finalizado com sucesso!
