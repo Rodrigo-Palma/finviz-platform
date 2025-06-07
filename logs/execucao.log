@@ -1,52 +1,7 @@
-2025-06-05 11:21:00.164 | INFO     | __main__:<module>:55 - Iniciando selic_meta (BCB Séries 4189)
-2025-06-05 11:21:00.958 | INFO     | __main__:<module>:71 - Nenhuma atualização para selic_meta
-2025-06-05 11:21:00.961 | INFO     | __main__:<module>:55 - Iniciando cdi_over (BCB Séries 4390)
-2025-06-05 11:21:01.628 | INFO     | __main__:<module>:71 - Nenhuma atualização para cdi_over
-2025-06-05 11:21:07.541 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
-2025-06-05 11:21:07.748 | INFO     | __main__:salvar_historico_incremental:85 - Histórico atualizado com 58 novos registros.
-2025-06-05 11:21:07.748 | INFO     | __main__:<module>:98 - Coleta e salvamento concluídos com sucesso!
-2025-06-06 09:21:04.421 | INFO     | __main__:<module>:181 - Iniciando coleta para acoes_ibov.csv (87 tickers)
-2025-06-06 09:22:13.398 | INFO     | __main__:<module>:192 - Atualizados 1 registros para CCRO3.SA
-2025-06-06 09:26:14.473 | INFO     | __main__:<module>:210 - Arquivo salvo: dados\acoes_ibov.csv (190561 registros)
-2025-06-06 09:26:14.599 | INFO     | __main__:<module>:181 - Iniciando coleta para bdrs.csv (36 tickers)
-2025-06-06 09:27:25.028 | INFO     | __main__:<module>:192 - Atualizados 1 registros para AMGN34.SA
-2025-06-06 09:27:44.495 | INFO     | __main__:<module>:192 - Atualizados 1 registros para CMCS34.SA
-2025-06-06 09:28:17.601 | INFO     | __main__:<module>:210 - Arquivo salvo: dados\bdrs.csv (77508 registros)
-2025-06-06 09:28:17.632 | INFO     | __main__:<module>:181 - Iniciando coleta para commodities.csv (7 tickers)
-2025-06-06 09:28:19.934 | INFO     | __main__:<module>:192 - Atualizados 1 registros para BZ=F
-2025-06-06 09:28:23.400 | INFO     | __main__:<module>:192 - Atualizados 1 registros para GC=F
-2025-06-06 09:28:26.486 | INFO     | __main__:<module>:192 - Atualizados 1 registros para SI=F
-2025-06-06 09:28:30.414 | INFO     | __main__:<module>:192 - Atualizados 1 registros para ZS=F
-2025-06-06 09:28:33.378 | INFO     | __main__:<module>:192 - Atualizados 1 registros para ZC=F
-2025-06-06 09:28:36.411 | INFO     | __main__:<module>:192 - Atualizados 1 registros para KC=F
-2025-06-06 09:28:40.533 | INFO     | __main__:<module>:210 - Arquivo salvo: dados\commodities.csv (17647 registros)
-2025-06-06 09:28:40.553 | INFO     | __main__:<module>:181 - Iniciando coleta para moedas.csv (2 tickers)
-2025-06-06 09:28:42.865 | INFO     | __main__:<module>:192 - Atualizados 1 registros para USDBRL=X
-2025-06-06 09:28:46.040 | INFO     | __main__:<module>:192 - Atualizados 1 registros para EURBRL=X
-2025-06-06 09:28:47.096 | INFO     | __main__:<module>:210 - Arquivo salvo: dados\moedas.csv (5220 registros)
-2025-06-06 09:28:47.185 | INFO     | __main__:<module>:181 - Iniciando coleta para criptos.csv (17 tickers)
-2025-06-06 09:28:49.696 | INFO     | __main__:<module>:192 - Atualizados 1 registros para BTC-USD
-2025-06-06 09:28:53.382 | INFO     | __main__:<module>:192 - Atualizados 1 registros para ETH-USD
-2025-06-06 09:28:57.230 | INFO     | __main__:<module>:192 - Atualizados 1 registros para BNB-USD
-2025-06-06 09:29:00.474 | INFO     | __main__:<module>:192 - Atualizados 1 registros para SOL-USD
-2025-06-06 09:29:03.859 | INFO     | __main__:<module>:192 - Atualizados 1 registros para XRP-USD
-2025-06-06 09:29:07.199 | INFO     | __main__:<module>:192 - Atualizados 1 registros para ADA-USD
-2025-06-06 09:29:10.806 | INFO     | __main__:<module>:192 - Atualizados 1 registros para DOGE-USD
-2025-06-06 09:29:15.564 | INFO     | __main__:<module>:192 - Atualizados 1 registros para AVAX-USD
-2025-06-06 09:29:19.283 | INFO     | __main__:<module>:192 - Atualizados 1 registros para DOT-USD
-2025-06-06 09:29:25.957 | INFO     | __main__:<module>:192 - Atualizados 1 registros para LTC-USD
-2025-06-06 09:29:29.457 | INFO     | __main__:<module>:192 - Atualizados 1 registros para LINK-USD
-2025-06-06 09:29:32.451 | INFO     | __main__:<module>:192 - Atualizados 1 registros para SHIB-USD
-2025-06-06 09:29:35.914 | INFO     | __main__:<module>:192 - Atualizados 1 registros para TON-USD
-2025-06-06 09:29:39.300 | INFO     | __main__:<module>:192 - Atualizados 1 registros para NEAR-USD
-2025-06-06 09:29:48.992 | INFO     | __main__:<module>:210 - Arquivo salvo: dados\criptos.csv (39454 registros)
-2025-06-06 09:29:49.019 | INFO     | __main__:<module>:181 - Iniciando coleta para juros.csv (5 tickers)
-2025-06-06 09:30:04.841 | INFO     | __main__:<module>:212 - Nenhuma atualização para juros.csv
-2025-06-06 09:30:04.842 | INFO     | __main__:<module>:214 - Coleta completa!
-2025-06-06 09:31:54.034 | INFO     | __main__:<module>:55 - Iniciando selic_meta (BCB Séries 4189)
-2025-06-06 09:31:55.149 | INFO     | __main__:<module>:71 - Nenhuma atualização para selic_meta
-2025-06-06 09:31:55.160 | INFO     | __main__:<module>:55 - Iniciando cdi_over (BCB Séries 4390)
-2025-06-06 09:31:55.868 | INFO     | __main__:<module>:71 - Nenhuma atualização para cdi_over
-2025-06-06 09:31:57.143 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
-2025-06-06 09:31:57.861 | INFO     | __main__:salvar_historico_incremental:85 - Histórico atualizado com 58 novos registros.
-2025-06-06 09:31:57.862 | INFO     | __main__:<module>:98 - Coleta e salvamento concluídos com sucesso!
+2025-06-07 10:59:25.942 | INFO     | __main__:<module>:55 - Iniciando selic_meta (BCB Séries 4189)
+2025-06-07 10:59:26.831 | INFO     | __main__:<module>:70 - Salvo 121 novos registros em dados/juros_brasil_selic_meta.csv
+2025-06-07 10:59:26.831 | INFO     | __main__:<module>:55 - Iniciando cdi_over (BCB Séries 4390)
+2025-06-07 10:59:27.547 | INFO     | __main__:<module>:70 - Salvo 121 novos registros em dados/juros_brasil_cdi_over.csv
+2025-06-07 11:01:54.336 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
+2025-06-07 11:01:54.575 | INFO     | __main__:salvar_historico_incremental:86 - Histórico atualizado com 58 novos registros.
+2025-06-07 11:01:54.575 | INFO     | __main__:<module>:99 - Coleta e salvamento concluídos com sucesso!

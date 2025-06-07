@@ -59,7 +59,7 @@ def salvar_historico_incremental(df_novo):
     df_novo['Data_Coleta'] = pd.to_datetime(df_novo['Data_Coleta'])
 
     if os.path.exists(CSV_HISTORICO):
-        df_antigo = pd.read_csv(CSV_HISTORICO, sep=";", parse_dates=["Data_Coleta"])
+        df_antigo = pd.read_csv(CSV_HISTORICO, sep=";", decimal=",", parse_dates=["Data_Coleta"])
 
         registros_existentes = df_antigo[['Data_Coleta', 'Titulo']].drop_duplicates()
         df_novo_filtrado = df_novo.merge(
@@ -81,7 +81,8 @@ def salvar_historico_incremental(df_novo):
         df_final = df_novo
         df_novo_filtrado = df_novo
 
-    df_final.to_csv(CSV_HISTORICO, sep=";", index=False)
+    # 🚀 Salva CSV com delimitador ; e separador decimal ,
+    df_final.to_csv(CSV_HISTORICO, sep=";", decimal=",", index=False)
     logger.info(f"Histórico atualizado com {len(df_novo_filtrado)} novos registros.")
 
 # ─── EXECUÇÃO PRINCIPAL ──────────────────────────────────────────────────

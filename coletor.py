@@ -196,19 +196,22 @@ if __name__ == '__main__':
                 logger.exception(f"Erro coletando {ticker}: {e}")
             time.sleep(1)
 
-        if novos:
-            df_final = pd.concat([df_exist] + novos, ignore_index=True)
-            df_final.drop_duplicates(['Date', 'Ticker'], inplace=True)
-            df_final.sort_values(['Ticker', 'Date'], inplace=True)
+            if novos:
+                df_final = pd.concat([df_exist] + novos, ignore_index=True)
+                df_final.drop_duplicates(['Date', 'Ticker'], inplace=True)
+                df_final.sort_values(['Ticker', 'Date'], inplace=True)
 
-            # REMOVE 'Volume' se for todo 0
-            if (df_final['Volume'] == 0).all():
-                df_final = df_final.drop(columns=['Volume'])
-                logger.info(f"Coluna Volume removida de {arquivo} (todos zeros)")
+                # REMOVE 'Volume' se for todo 0
+                if 'Volume' in df_final.columns and (df_final['Volume'] == 0).all():
+                    df_final = df_final.drop(columns=['Volume'])
+                    logger.info(f"Coluna Volume removida de {arquivo} (todos zeros)")
 
-            df_final.to_csv(caminho, index=False)
-            logger.info(f"Arquivo salvo: {caminho} ({len(df_final)} registros)")
-        else:
-            logger.info(f"Nenhuma atualização para {arquivo}")
+                # 🚀 Salva CSV com delimitador ; e separador decimal ,
+                df_final.to_csv(caminho, index=False, sep=';', decimal=',')
+
+                logger.info(f"Arquivo salvo: {caminho} ({len(df_final)} registros)")
+            else:
+                logger.info(f"Nenhuma atualização para {arquivo}")
+
 
     logger.info("Coleta completa!")

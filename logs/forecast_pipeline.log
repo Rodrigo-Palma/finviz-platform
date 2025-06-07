@@ -1,928 +1,464 @@
-2025-06-05 11:44:49.404 | INFO     | __main__:<module>:133 - Iniciando pipeline de forecasting para financas...
-2025-06-05 11:44:49.747 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ADA-USD
-2025-06-05 11:45:08.361 | INFO     | __main__:<module>:192 - criptos.csv | ADA-USD | ARIMA(2, 1, 2) -> MSE: 0.006829, MAE: 0.066057
-2025-06-05 11:45:08.549 | INFO     | __main__:<module>:200 - criptos.csv | ADA-USD | Prophet(False, False) -> MSE: 0.006482, MAE: 0.067340
-2025-06-05 11:45:08.618 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | AVAX-USD
-2025-06-05 11:45:20.616 | INFO     | __main__:<module>:192 - criptos.csv | AVAX-USD | ARIMA(3, 1, 2) -> MSE: 9.536212, MAE: 2.594108
-2025-06-05 11:45:20.669 | INFO     | __main__:<module>:200 - criptos.csv | AVAX-USD | Prophet(False, False) -> MSE: 3.103874, MAE: 1.420930
-2025-06-05 11:45:20.734 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BNB-USD
-2025-06-05 11:45:40.347 | INFO     | __main__:<module>:192 - criptos.csv | BNB-USD | ARIMA(4, 1, 0) -> MSE: 475.351993, MAE: 13.958748
-2025-06-05 11:45:40.399 | INFO     | __main__:<module>:200 - criptos.csv | BNB-USD | Prophet(True, False) -> MSE: 10597.158794, MAE: 99.303196
-2025-06-05 11:45:40.473 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BTC-USD
-2025-06-05 11:46:30.186 | INFO     | __main__:<module>:192 - criptos.csv | BTC-USD | ARIMA(2, 1, 0) -> MSE: 10978046.207512, MAE: 2401.258418
-2025-06-05 11:46:30.240 | INFO     | __main__:<module>:200 - criptos.csv | BTC-USD | Prophet(False, True) -> MSE: 12889694.415763, MAE: 2978.044395
-2025-06-05 11:46:30.302 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOGE-USD
-2025-06-05 11:46:55.713 | INFO     | __main__:<module>:192 - criptos.csv | DOGE-USD | ARIMA(4, 0, 2) -> MSE: 0.001219, MAE: 0.030727
-2025-06-05 11:46:55.770 | INFO     | __main__:<module>:200 - criptos.csv | DOGE-USD | Prophet(True, True) -> MSE: 0.003445, MAE: 0.054447
-2025-06-05 11:46:55.838 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOT-USD
-2025-06-05 11:47:06.513 | INFO     | __main__:<module>:192 - criptos.csv | DOT-USD | ARIMA(4, 0, 2) -> MSE: 0.304641, MAE: 0.465543
-2025-06-05 11:47:06.568 | INFO     | __main__:<module>:200 - criptos.csv | DOT-USD | Prophet(False, False) -> MSE: 0.293981, MAE: 0.450150
-2025-06-05 11:47:06.632 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ETH-USD
-2025-06-05 11:47:27.302 | INFO     | __main__:<module>:192 - criptos.csv | ETH-USD | ARIMA(2, 1, 0) -> MSE: 65760.162314, MAE: 131.193930
-2025-06-05 11:47:27.354 | INFO     | __main__:<module>:200 - criptos.csv | ETH-USD | Prophet(True, False) -> MSE: 198626.519053, MAE: 337.998985
-2025-06-05 11:47:27.415 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LINK-USD
-2025-06-05 11:47:48.918 | INFO     | __main__:<module>:192 - criptos.csv | LINK-USD | ARIMA(4, 1, 2) -> MSE: 4.224831, MAE: 1.698681
-2025-06-05 11:47:48.973 | INFO     | __main__:<module>:200 - criptos.csv | LINK-USD | Prophet(True, False) -> MSE: 1.480536, MAE: 1.080050
-2025-06-05 11:47:49.048 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LTC-USD
-2025-06-05 11:48:13.488 | INFO     | __main__:<module>:192 - criptos.csv | LTC-USD | ARIMA(3, 0, 2) -> MSE: 95.261122, MAE: 8.234104
-2025-06-05 11:48:13.570 | INFO     | __main__:<module>:200 - criptos.csv | LTC-USD | Prophet(False, True) -> MSE: 43.876192, MAE: 5.558780
-2025-06-05 11:48:13.635 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | MATIC-USD
-2025-06-05 11:48:28.377 | INFO     | __main__:<module>:192 - criptos.csv | MATIC-USD | ARIMA(3, 0, 0) -> MSE: 0.000376, MAE: 0.017225
-2025-06-05 11:48:28.434 | INFO     | __main__:<module>:200 - criptos.csv | MATIC-USD | Prophet(False, False) -> MSE: 0.000303, MAE: 0.014092
-2025-06-05 11:48:28.502 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | NEAR-USD
-2025-06-05 11:48:46.450 | INFO     | __main__:<module>:192 - criptos.csv | NEAR-USD | ARIMA(1, 0, 0) -> MSE: 0.122720, MAE: 0.301878
-2025-06-05 11:48:46.504 | INFO     | __main__:<module>:200 - criptos.csv | NEAR-USD | Prophet(False, False) -> MSE: 0.088953, MAE: 0.248602
-2025-06-05 11:48:46.587 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SHIB-USD
-2025-06-05 11:49:03.034 | INFO     | __main__:<module>:192 - criptos.csv | SHIB-USD | ARIMA(5, 0, 0) -> MSE: 0.000000, MAE: 0.000002
-2025-06-05 11:49:03.089 | INFO     | __main__:<module>:200 - criptos.csv | SHIB-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000001
-2025-06-05 11:49:03.156 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SOL-USD
-2025-06-05 11:49:14.420 | INFO     | __main__:<module>:192 - criptos.csv | SOL-USD | ARIMA(1, 0, 0) -> MSE: 394.804070, MAE: 17.854651
-2025-06-05 11:49:14.477 | INFO     | __main__:<module>:200 - criptos.csv | SOL-USD | Prophet(False, False) -> MSE: 195.084744, MAE: 10.196968
-2025-06-05 11:49:14.567 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SUI-USD
-2025-06-05 11:49:22.064 | INFO     | __main__:<module>:192 - criptos.csv | SUI-USD | ARIMA(1, 0, 2) -> MSE: 0.000000, MAE: 0.000192
-2025-06-05 11:49:22.122 | INFO     | __main__:<module>:200 - criptos.csv | SUI-USD | Prophet(True, True) -> MSE: 0.000001, MAE: 0.000998
-2025-06-05 11:49:22.180 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | TON-USD
-2025-06-05 11:49:34.196 | INFO     | __main__:<module>:192 - criptos.csv | TON-USD | ARIMA(3, 0, 0) -> MSE: 2.535936, MAE: 1.498979
-2025-06-05 11:49:34.251 | INFO     | __main__:<module>:200 - criptos.csv | TON-USD | Prophet(False, False) -> MSE: 4.603949, MAE: 1.956466
-2025-06-05 11:49:34.313 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | UNI-USD
-2025-06-05 11:49:52.967 | INFO     | __main__:<module>:192 - criptos.csv | UNI-USD | ARIMA(2, 0, 1) -> MSE: 0.000001, MAE: 0.000701
-2025-06-05 11:49:53.023 | INFO     | __main__:<module>:200 - criptos.csv | UNI-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000051
-2025-06-05 11:49:53.091 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | XRP-USD
-2025-06-05 11:50:14.163 | INFO     | __main__:<module>:192 - criptos.csv | XRP-USD | ARIMA(1, 0, 0) -> MSE: 0.045522, MAE: 0.186870
-2025-06-05 11:50:14.216 | INFO     | __main__:<module>:200 - criptos.csv | XRP-USD | Prophet(False, True) -> MSE: 0.021727, MAE: 0.128634
-2025-06-05 11:50:14.302 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | EURBRL=X
-2025-06-05 11:50:22.803 | INFO     | __main__:<module>:192 - moedas.csv | EURBRL=X | ARIMA(1, 1, 1) -> MSE: 0.004935, MAE: 0.056014
-2025-06-05 11:50:22.858 | INFO     | __main__:<module>:200 - moedas.csv | EURBRL=X | Prophet(False, False) -> MSE: 0.003658, MAE: 0.049510
-2025-06-05 11:50:22.920 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | USDBRL=X
-2025-06-05 11:50:29.752 | INFO     | __main__:<module>:192 - moedas.csv | USDBRL=X | ARIMA(1, 1, 0) -> MSE: 0.004850, MAE: 0.061813
-2025-06-05 11:50:29.808 | INFO     | __main__:<module>:200 - moedas.csv | USDBRL=X | Prophet(True, True) -> MSE: 0.026923, MAE: 0.148210
-2025-06-05 11:50:30.549 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AAPL34.SA
-2025-06-05 11:50:51.990 | INFO     | __main__:<module>:192 - bdrs.csv | AAPL34.SA | ARIMA(1, 1, 0) -> MSE: 3.002247, MAE: 1.337618
-2025-06-05 11:50:52.042 | INFO     | __main__:<module>:200 - bdrs.csv | AAPL34.SA | Prophet(True, False) -> MSE: 147.344166, MAE: 11.961452
-2025-06-05 11:50:52.097 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AIRB34.SA
-2025-06-05 11:51:01.009 | INFO     | __main__:<module>:192 - bdrs.csv | AIRB34.SA | ARIMA(5, 0, 2) -> MSE: 3.881045, MAE: 1.620752
-2025-06-05 11:51:01.062 | INFO     | __main__:<module>:200 - bdrs.csv | AIRB34.SA | Prophet(False, False) -> MSE: 2.774295, MAE: 1.363777
-2025-06-05 11:51:01.124 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMGN34.SA
-2025-06-05 11:51:28.932 | INFO     | __main__:<module>:192 - bdrs.csv | AMGN34.SA | ARIMA(4, 1, 2) -> MSE: 10.256443, MAE: 2.613793
-2025-06-05 11:51:28.987 | INFO     | __main__:<module>:200 - bdrs.csv | AMGN34.SA | Prophet(True, True) -> MSE: 136.883021, MAE: 11.519721
-2025-06-05 11:51:29.060 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMZO34.SA
-2025-06-05 11:51:46.454 | INFO     | __main__:<module>:192 - bdrs.csv | AMZO34.SA | ARIMA(2, 1, 0) -> MSE: 12.180813, MAE: 2.605318
-2025-06-05 11:51:46.508 | INFO     | __main__:<module>:200 - bdrs.csv | AMZO34.SA | Prophet(False, False) -> MSE: 116.712909, MAE: 10.608475
-2025-06-05 11:51:46.573 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AURA33.SA
-2025-06-05 11:52:05.333 | INFO     | __main__:<module>:192 - bdrs.csv | AURA33.SA | ARIMA(3, 1, 2) -> MSE: 151.096993, MAE: 11.478426
-2025-06-05 11:52:05.389 | INFO     | __main__:<module>:200 - bdrs.csv | AURA33.SA | Prophet(False, False) -> MSE: 18.395839, MAE: 3.147032
-2025-06-05 11:52:05.454 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BABA34.SA
-2025-06-05 11:52:17.772 | INFO     | __main__:<module>:192 - bdrs.csv | BABA34.SA | ARIMA(2, 1, 2) -> MSE: 1.648110, MAE: 0.979174
-2025-06-05 11:52:17.831 | INFO     | __main__:<module>:200 - bdrs.csv | BABA34.SA | Prophet(True, False) -> MSE: 6.599018, MAE: 2.066203
-2025-06-05 11:52:17.886 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BERK34.SA
-2025-06-05 11:52:51.901 | INFO     | __main__:<module>:192 - bdrs.csv | BERK34.SA | ARIMA(2, 1, 2) -> MSE: 83.643503, MAE: 8.250713
-2025-06-05 11:52:51.958 | INFO     | __main__:<module>:200 - bdrs.csv | BERK34.SA | Prophet(True, True) -> MSE: 65.218254, MAE: 6.936431
-2025-06-05 11:52:52.018 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BKNG34.SA
-2025-06-05 11:53:09.705 | INFO     | __main__:<module>:192 - bdrs.csv | BKNG34.SA | ARIMA(4, 1, 0) -> MSE: 101.388769, MAE: 7.903892
-2025-06-05 11:53:09.761 | INFO     | __main__:<module>:200 - bdrs.csv | BKNG34.SA | Prophet(True, False) -> MSE: 80.986796, MAE: 6.941313
-2025-06-05 11:53:09.822 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BOAC34.SA
-2025-06-05 11:53:36.694 | INFO     | __main__:<module>:192 - bdrs.csv | BOAC34.SA | ARIMA(2, 1, 2) -> MSE: 6.739205, MAE: 2.102481
-2025-06-05 11:53:36.750 | INFO     | __main__:<module>:200 - bdrs.csv | BOAC34.SA | Prophet(True, False) -> MSE: 64.223979, MAE: 7.641441
-2025-06-05 11:53:36.811 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CHVX34.SA
-2025-06-05 11:53:58.423 | INFO     | __main__:<module>:192 - bdrs.csv | CHVX34.SA | ARIMA(2, 1, 2) -> MSE: 2.383768, MAE: 1.223885
-2025-06-05 11:53:58.484 | INFO     | __main__:<module>:200 - bdrs.csv | CHVX34.SA | Prophet(False, False) -> MSE: 156.013487, MAE: 12.430974
-2025-06-05 11:53:58.552 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CMCS34.SA
-2025-06-05 11:54:27.263 | INFO     | __main__:<module>:192 - bdrs.csv | CMCS34.SA | ARIMA(4, 1, 2) -> MSE: 0.379349, MAE: 0.489963
-2025-06-05 11:54:27.316 | INFO     | __main__:<module>:200 - bdrs.csv | CMCS34.SA | Prophet(True, False) -> MSE: 18.870485, MAE: 4.289345
-2025-06-05 11:54:27.400 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | COCA34.SA
-2025-06-05 11:54:50.153 | INFO     | __main__:<module>:192 - bdrs.csv | COCA34.SA | ARIMA(2, 1, 2) -> MSE: 2.003525, MAE: 1.263188
-2025-06-05 11:54:50.208 | INFO     | __main__:<module>:200 - bdrs.csv | COCA34.SA | Prophet(False, True) -> MSE: 3.956897, MAE: 1.685542
-2025-06-05 11:54:50.272 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | DISB34.SA
-2025-06-05 11:55:07.340 | INFO     | __main__:<module>:192 - bdrs.csv | DISB34.SA | ARIMA(2, 1, 0) -> MSE: 17.465686, MAE: 2.701289
-2025-06-05 11:55:07.391 | INFO     | __main__:<module>:200 - bdrs.csv | DISB34.SA | Prophet(False, False) -> MSE: 14.876127, MAE: 2.459799
-2025-06-05 11:55:07.453 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GMCO34.SA
-2025-06-05 11:55:23.671 | INFO     | __main__:<module>:192 - bdrs.csv | GMCO34.SA | ARIMA(2, 1, 0) -> MSE: 6.509384, MAE: 2.202569
-2025-06-05 11:55:23.727 | INFO     | __main__:<module>:200 - bdrs.csv | GMCO34.SA | Prophet(False, False) -> MSE: 182.724324, MAE: 13.354290
-2025-06-05 11:55:23.790 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GOGL34.SA
-2025-06-05 11:55:42.682 | INFO     | __main__:<module>:192 - bdrs.csv | GOGL34.SA | ARIMA(2, 0, 1) -> MSE: 10.148009, MAE: 2.525486
-2025-06-05 11:55:42.736 | INFO     | __main__:<module>:200 - bdrs.csv | GOGL34.SA | Prophet(False, False) -> MSE: 265.563001, MAE: 16.136051
-2025-06-05 11:55:42.793 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | HOME34.SA
-2025-06-05 11:56:03.056 | INFO     | __main__:<module>:192 - bdrs.csv | HOME34.SA | ARIMA(4, 1, 0) -> MSE: 2.036321, MAE: 1.067554
-2025-06-05 11:56:03.109 | INFO     | __main__:<module>:200 - bdrs.csv | HOME34.SA | Prophet(True, True) -> MSE: 110.437724, MAE: 10.443639
-2025-06-05 11:56:03.179 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | INBR32.SA
-2025-06-05 11:56:10.930 | INFO     | __main__:<module>:192 - bdrs.csv | INBR32.SA | ARIMA(1, 1, 1) -> MSE: 1.592093, MAE: 1.035923
-2025-06-05 11:56:10.983 | INFO     | __main__:<module>:200 - bdrs.csv | INBR32.SA | Prophet(True, True) -> MSE: 8.239261, MAE: 2.677010
-2025-06-05 11:56:11.075 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | ITLC34.SA
-2025-06-05 11:56:30.441 | INFO     | __main__:<module>:192 - bdrs.csv | ITLC34.SA | ARIMA(2, 1, 1) -> MSE: 0.584248, MAE: 0.518033
-2025-06-05 11:56:30.494 | INFO     | __main__:<module>:200 - bdrs.csv | ITLC34.SA | Prophet(True, False) -> MSE: 1.204057, MAE: 0.961905
-2025-06-05 11:56:30.549 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | IVVB11.SA
-2025-06-05 11:57:03.894 | INFO     | __main__:<module>:192 - bdrs.csv | IVVB11.SA | ARIMA(2, 1, 0) -> MSE: 143.858034, MAE: 8.758812
-2025-06-05 11:57:03.951 | INFO     | __main__:<module>:200 - bdrs.csv | IVVB11.SA | Prophet(True, False) -> MSE: 1985.765394, MAE: 43.987878
-2025-06-05 11:57:04.016 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JNJB34.SA
-2025-06-05 11:57:23.070 | INFO     | __main__:<module>:192 - bdrs.csv | JNJB34.SA | ARIMA(2, 1, 2) -> MSE: 1.593566, MAE: 1.014912
-2025-06-05 11:57:23.124 | INFO     | __main__:<module>:200 - bdrs.csv | JNJB34.SA | Prophet(True, False) -> MSE: 11.232424, MAE: 3.108852
-2025-06-05 11:57:23.187 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JPMC34.SA
-2025-06-05 11:57:54.963 | INFO     | __main__:<module>:192 - bdrs.csv | JPMC34.SA | ARIMA(4, 1, 0) -> MSE: 20.704751, MAE: 3.593267
-2025-06-05 11:57:55.019 | INFO     | __main__:<module>:200 - bdrs.csv | JPMC34.SA | Prophet(True, False) -> MSE: 101.064818, MAE: 9.263724
-2025-06-05 11:57:55.090 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | M1TA34.SA
-2025-06-05 11:58:26.981 | INFO     | __main__:<module>:192 - bdrs.csv | M1TA34.SA | ARIMA(4, 1, 0) -> MSE: 200.985471, MAE: 11.749736
-2025-06-05 11:58:27.035 | INFO     | __main__:<module>:200 - bdrs.csv | M1TA34.SA | Prophet(False, False) -> MSE: 399.068806, MAE: 18.733297
-2025-06-05 11:58:27.104 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MELI34.SA
-2025-06-05 11:58:38.948 | INFO     | __main__:<module>:192 - bdrs.csv | MELI34.SA | ARIMA(1, 1, 0) -> MSE: 56.308915, MAE: 5.149079
-2025-06-05 11:58:39.007 | INFO     | __main__:<module>:200 - bdrs.csv | MELI34.SA | Prophet(False, True) -> MSE: 52.839860, MAE: 6.852796
-2025-06-05 11:58:39.070 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSCD34.SA
-2025-06-05 11:59:12.797 | INFO     | __main__:<module>:192 - bdrs.csv | MSCD34.SA | ARIMA(2, 1, 0) -> MSE: 11.907936, MAE: 2.386928
-2025-06-05 11:59:12.851 | INFO     | __main__:<module>:200 - bdrs.csv | MSCD34.SA | Prophet(True, False) -> MSE: 12.487681, MAE: 2.634795
-2025-06-05 11:59:12.910 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSFT34.SA
-2025-06-05 11:59:49.866 | INFO     | __main__:<module>:192 - bdrs.csv | MSFT34.SA | ARIMA(2, 0, 1) -> MSE: 45.051827, MAE: 4.279009
-2025-06-05 11:59:49.923 | INFO     | __main__:<module>:200 - bdrs.csv | MSFT34.SA | Prophet(False, False) -> MSE: 83.710846, MAE: 7.748686
-2025-06-05 11:59:49.986 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NFLX34.SA
-2025-06-05 12:00:24.551 | INFO     | __main__:<module>:192 - bdrs.csv | NFLX34.SA | ARIMA(1, 1, 0) -> MSE: 68.075362, MAE: 6.995896
-2025-06-05 12:00:24.607 | INFO     | __main__:<module>:200 - bdrs.csv | NFLX34.SA | Prophet(True, True) -> MSE: 133.407793, MAE: 11.076659
-2025-06-05 12:00:24.664 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NIKE34.SA
-2025-06-05 12:00:51.433 | INFO     | __main__:<module>:192 - bdrs.csv | NIKE34.SA | ARIMA(3, 1, 1) -> MSE: 2.397683, MAE: 1.182172
-2025-06-05 12:00:51.486 | INFO     | __main__:<module>:200 - bdrs.csv | NIKE34.SA | Prophet(True, False) -> MSE: 5.764336, MAE: 1.990888
-2025-06-05 12:00:51.543 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NVDC34.SA
-2025-06-05 12:01:10.347 | INFO     | __main__:<module>:192 - bdrs.csv | NVDC34.SA | ARIMA(2, 1, 0) -> MSE: 4.329775, MAE: 1.615139
-2025-06-05 12:01:10.404 | INFO     | __main__:<module>:200 - bdrs.csv | NVDC34.SA | Prophet(True, False) -> MSE: 9.571575, MAE: 2.889554
-2025-06-05 12:01:10.459 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | PFIZ34.SA
-2025-06-05 12:01:39.405 | INFO     | __main__:<module>:192 - bdrs.csv | PFIZ34.SA | ARIMA(2, 1, 1) -> MSE: 0.550138, MAE: 0.512586
-2025-06-05 12:01:39.462 | INFO     | __main__:<module>:200 - bdrs.csv | PFIZ34.SA | Prophet(True, False) -> MSE: 3.322822, MAE: 1.694356
-2025-06-05 12:01:39.526 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | RIGG34.SA
-2025-06-05 12:01:57.232 | INFO     | __main__:<module>:192 - bdrs.csv | RIGG34.SA | ARIMA(1, 0, 0) -> MSE: 2.130739, MAE: 1.264864
-2025-06-05 12:01:57.288 | INFO     | __main__:<module>:200 - bdrs.csv | RIGG34.SA | Prophet(True, False) -> MSE: 2.984965, MAE: 1.319503
-2025-06-05 12:01:57.346 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | SSFO34.SA
-2025-06-05 12:02:15.548 | INFO     | __main__:<module>:192 - bdrs.csv | SSFO34.SA | ARIMA(2, 1, 0) -> MSE: 22.610845, MAE: 3.863494
-2025-06-05 12:02:15.600 | INFO     | __main__:<module>:200 - bdrs.csv | SSFO34.SA | Prophet(True, False) -> MSE: 209.312146, MAE: 14.146103
-2025-06-05 12:02:15.663 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSLA34.SA
-2025-06-05 12:02:31.442 | INFO     | __main__:<module>:192 - bdrs.csv | TSLA34.SA | ARIMA(1, 1, 0) -> MSE: 28.328331, MAE: 4.998349
-2025-06-05 12:02:31.497 | INFO     | __main__:<module>:200 - bdrs.csv | TSLA34.SA | Prophet(True, True) -> MSE: 19.804565, MAE: 4.059883
-2025-06-05 12:02:31.557 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSMC34.SA
-2025-06-05 12:02:41.078 | INFO     | __main__:<module>:192 - bdrs.csv | TSMC34.SA | ARIMA(2, 1, 0) -> MSE: 184.792351, MAE: 10.611932
-2025-06-05 12:02:41.136 | INFO     | __main__:<module>:200 - bdrs.csv | TSMC34.SA | Prophet(True, False) -> MSE: 205.678952, MAE: 12.710719
-2025-06-05 12:02:41.196 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | UNHH34.SA
-2025-06-05 12:02:54.990 | INFO     | __main__:<module>:192 - bdrs.csv | UNHH34.SA | ARIMA(1, 1, 1) -> MSE: 30.122326, MAE: 3.814765
-2025-06-05 12:02:55.044 | INFO     | __main__:<module>:200 - bdrs.csv | UNHH34.SA | Prophet(True, True) -> MSE: 267.954234, MAE: 15.585658
-2025-06-05 12:02:55.097 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VERZ34.SA
-2025-06-05 12:03:24.278 | INFO     | __main__:<module>:192 - bdrs.csv | VERZ34.SA | ARIMA(3, 1, 2) -> MSE: 0.661588, MAE: 0.697181
-2025-06-05 12:03:24.331 | INFO     | __main__:<module>:200 - bdrs.csv | VERZ34.SA | Prophet(True, True) -> MSE: 7.006112, MAE: 2.513513
-2025-06-05 12:03:24.388 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VISA34.SA
-2025-06-05 12:03:59.723 | INFO     | __main__:<module>:192 - bdrs.csv | VISA34.SA | ARIMA(2, 1, 0) -> MSE: 12.739221, MAE: 2.753772
-2025-06-05 12:03:59.776 | INFO     | __main__:<module>:200 - bdrs.csv | VISA34.SA | Prophet(False, False) -> MSE: 4.606657, MAE: 1.783442
-2025-06-05 12:03:59.909 | INFO     | __main__:<module>:150 - Iniciando juros.csv | EDV
-2025-06-05 12:04:09.928 | INFO     | __main__:<module>:192 - juros.csv | EDV | ARIMA(2, 1, 2) -> MSE: 2.952239, MAE: 1.427649
-2025-06-05 12:04:09.983 | INFO     | __main__:<module>:200 - juros.csv | EDV | Prophet(False, False) -> MSE: 5.839090, MAE: 2.075142
-2025-06-05 12:04:10.051 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^FVX
-2025-06-05 12:04:18.843 | INFO     | __main__:<module>:192 - juros.csv | ^FVX | ARIMA(2, 1, 0) -> MSE: 0.014479, MAE: 0.101046
-2025-06-05 12:04:18.896 | INFO     | __main__:<module>:200 - juros.csv | ^FVX | Prophet(True, True) -> MSE: 0.018977, MAE: 0.107224
-2025-06-05 12:04:18.959 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^IRX
-2025-06-05 12:04:31.912 | INFO     | __main__:<module>:192 - juros.csv | ^IRX | ARIMA(5, 1, 1) -> MSE: 0.000833, MAE: 0.022882
-2025-06-05 12:04:31.967 | INFO     | __main__:<module>:200 - juros.csv | ^IRX | Prophet(True, False) -> MSE: 0.001210, MAE: 0.026539
-2025-06-05 12:04:32.032 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TNX
-2025-06-05 12:04:40.102 | INFO     | __main__:<module>:192 - juros.csv | ^TNX | ARIMA(2, 1, 0) -> MSE: 0.013130, MAE: 0.097790
-2025-06-05 12:04:40.154 | INFO     | __main__:<module>:200 - juros.csv | ^TNX | Prophet(False, True) -> MSE: 0.013629, MAE: 0.090250
-2025-06-05 12:04:40.212 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TYX
-2025-06-05 12:04:48.455 | INFO     | __main__:<module>:192 - juros.csv | ^TYX | ARIMA(2, 1, 0) -> MSE: 0.012719, MAE: 0.095358
-2025-06-05 12:04:48.508 | INFO     | __main__:<module>:200 - juros.csv | ^TYX | Prophet(False, False) -> MSE: 0.018256, MAE: 0.113689
-2025-06-05 12:04:50.209 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ABEV3.SA
-2025-06-05 12:05:19.848 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ABEV3.SA | ARIMA(2, 1, 2) -> MSE: 0.124401, MAE: 0.322686
-2025-06-05 12:05:19.903 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ABEV3.SA | Prophet(False, True) -> MSE: 5.129280, MAE: 2.259273
-2025-06-05 12:05:19.966 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ALOS3.SA
-2025-06-05 12:05:32.190 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ALOS3.SA | ARIMA(5, 0, 2) -> MSE: 0.451209, MAE: 0.569004
-2025-06-05 12:05:32.247 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ALOS3.SA | Prophet(True, True) -> MSE: 2.417281, MAE: 1.429762
-2025-06-05 12:05:32.307 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AMOB3.SA
-2025-06-05 12:05:34.047 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AMOB3.SA | ARIMA(2, 1, 0) -> MSE: 106.759530, MAE: 8.953589
-2025-06-05 12:05:34.103 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AMOB3.SA | Prophet(False, True) -> MSE: 33.980714, MAE: 5.735558
-2025-06-05 12:05:34.160 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ASAI3.SA
-2025-06-05 12:05:41.225 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ASAI3.SA | ARIMA(2, 0, 1) -> MSE: 2.813034, MAE: 1.433500
-2025-06-05 12:05:41.281 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ASAI3.SA | Prophet(True, False) -> MSE: 5.235345, MAE: 2.029766
-2025-06-05 12:05:41.342 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AURE3.SA
-2025-06-05 12:05:47.560 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AURE3.SA | ARIMA(4, 1, 0) -> MSE: 0.558496, MAE: 0.627508
-2025-06-05 12:05:47.617 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AURE3.SA | Prophet(True, False) -> MSE: 0.421452, MAE: 0.538603
-2025-06-05 12:05:47.713 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZUL4.SA
-2025-06-05 12:06:07.870 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AZUL4.SA | ARIMA(4, 1, 2) -> MSE: 0.169372, MAE: 0.289424
-2025-06-05 12:06:07.925 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AZUL4.SA | Prophet(False, False) -> MSE: 0.722371, MAE: 0.838070
-2025-06-05 12:06:07.993 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZZA3.SA
-2025-06-05 12:06:27.484 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AZZA3.SA | ARIMA(4, 1, 0) -> MSE: 51.023327, MAE: 5.165265
-2025-06-05 12:06:27.573 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AZZA3.SA | Prophet(False, False) -> MSE: 181.621941, MAE: 12.214293
-2025-06-05 12:06:27.644 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | B3SA3.SA
-2025-06-05 12:06:55.214 | INFO     | __main__:<module>:192 - acoes_ibov.csv | B3SA3.SA | ARIMA(1, 1, 1) -> MSE: 0.351711, MAE: 0.528122
-2025-06-05 12:06:55.272 | INFO     | __main__:<module>:200 - acoes_ibov.csv | B3SA3.SA | Prophet(False, False) -> MSE: 9.095293, MAE: 2.960299
-2025-06-05 12:06:55.338 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBAS3.SA
-2025-06-05 12:07:24.538 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBAS3.SA | ARIMA(1, 1, 1) -> MSE: 23.319026, MAE: 4.094083
-2025-06-05 12:07:24.592 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBAS3.SA | Prophet(True, False) -> MSE: 10.190661, MAE: 2.535861
-2025-06-05 12:07:24.660 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC3.SA
-2025-06-05 12:07:42.622 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBDC3.SA | ARIMA(4, 1, 2) -> MSE: 1.673617, MAE: 1.038156
-2025-06-05 12:07:42.674 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBDC3.SA | Prophet(False, True) -> MSE: 3.732346, MAE: 1.749950
-2025-06-05 12:07:42.733 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC4.SA
-2025-06-05 12:07:59.486 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBDC4.SA | ARIMA(2, 0, 1) -> MSE: 2.926508, MAE: 1.303526
-2025-06-05 12:07:59.543 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBDC4.SA | Prophet(False, False) -> MSE: 7.248276, MAE: 2.434170
-2025-06-05 12:07:59.606 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBSE3.SA
-2025-06-05 12:08:20.219 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBSE3.SA | ARIMA(4, 1, 0) -> MSE: 12.740335, MAE: 3.000295
-2025-06-05 12:08:20.274 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBSE3.SA | Prophet(False, True) -> MSE: 4.929096, MAE: 1.458825
-2025-06-05 12:08:20.340 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BEEF3.SA
-2025-06-05 12:08:48.786 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BEEF3.SA | ARIMA(1, 1, 2) -> MSE: 1.223084, MAE: 0.762121
-2025-06-05 12:08:48.840 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BEEF3.SA | Prophet(True, False) -> MSE: 1.640976, MAE: 1.029041
-2025-06-05 12:08:48.905 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BPAC11.SA
-2025-06-05 12:09:02.304 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BPAC11.SA | ARIMA(2, 1, 0) -> MSE: 3.300476, MAE: 1.264175
-2025-06-05 12:09:02.357 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BPAC11.SA | Prophet(True, False) -> MSE: 33.499994, MAE: 5.630580
-2025-06-05 12:09:02.421 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAP4.SA
-2025-06-05 12:09:30.361 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRAP4.SA | ARIMA(4, 1, 2) -> MSE: 0.406871, MAE: 0.484701
-2025-06-05 12:09:30.418 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRAP4.SA | Prophet(False, False) -> MSE: 0.267029, MAE: 0.379888
-2025-06-05 12:09:30.488 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAV3.SA
-2025-06-05 12:09:39.526 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRAV3.SA | ARIMA(1, 0, 2) -> MSE: 5.524350, MAE: 2.249776
-2025-06-05 12:09:39.582 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRAV3.SA | Prophet(True, False) -> MSE: 6.707676, MAE: 2.196151
-2025-06-05 12:09:39.644 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRFS3.SA
-2025-06-05 12:10:05.938 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRFS3.SA | ARIMA(4, 1, 2) -> MSE: 1.348718, MAE: 0.796949
-2025-06-05 12:10:05.993 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRFS3.SA | Prophet(True, False) -> MSE: 31.573207, MAE: 5.482293
-2025-06-05 12:10:06.057 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRKM5.SA
-2025-06-05 12:10:27.072 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRKM5.SA | ARIMA(2, 1, 0) -> MSE: 0.223909, MAE: 0.368712
-2025-06-05 12:10:27.126 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRKM5.SA | Prophet(True, True) -> MSE: 1.284444, MAE: 1.023316
-2025-06-05 12:10:27.183 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CCRO3.SA
-2025-06-05 12:10:52.633 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CCRO3.SA | ARIMA(3, 1, 1) -> MSE: 0.064459, MAE: 0.204087
-2025-06-05 12:10:52.712 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CCRO3.SA | Prophet(True, False) -> MSE: 1.688092, MAE: 1.274914
-2025-06-05 12:10:52.773 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIG4.SA
-2025-06-05 12:11:27.743 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CMIG4.SA | ARIMA(4, 1, 2) -> MSE: 0.080791, MAE: 0.243538
-2025-06-05 12:11:27.795 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CMIG4.SA | Prophet(False, False) -> MSE: 0.638047, MAE: 0.756203
-2025-06-05 12:11:27.860 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIN3.SA
-2025-06-05 12:11:40.261 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CMIN3.SA | ARIMA(1, 1, 1) -> MSE: 0.709258, MAE: 0.723173
-2025-06-05 12:11:40.317 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CMIN3.SA | Prophet(True, False) -> MSE: 0.166219, MAE: 0.347738
-2025-06-05 12:11:40.375 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | COGN3.SA
-2025-06-05 12:12:09.033 | INFO     | __main__:<module>:192 - acoes_ibov.csv | COGN3.SA | ARIMA(1, 1, 2) -> MSE: 0.100417, MAE: 0.250738
-2025-06-05 12:12:09.089 | INFO     | __main__:<module>:200 - acoes_ibov.csv | COGN3.SA | Prophet(True, True) -> MSE: 1.883544, MAE: 1.358187
-2025-06-05 12:12:09.150 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPFE3.SA
-2025-06-05 12:12:31.910 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CPFE3.SA | ARIMA(2, 1, 0) -> MSE: 3.031002, MAE: 1.378171
-2025-06-05 12:12:31.966 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CPFE3.SA | Prophet(False, True) -> MSE: 13.505716, MAE: 3.453613
-2025-06-05 12:12:32.025 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPLE6.SA
-2025-06-05 12:13:05.806 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CPLE6.SA | ARIMA(4, 1, 2) -> MSE: 0.375209, MAE: 0.449301
-2025-06-05 12:13:05.864 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CPLE6.SA | Prophet(False, False) -> MSE: 1.649768, MAE: 1.208650
-2025-06-05 12:13:05.931 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CRFB3.SA
-2025-06-05 12:13:21.206 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CRFB3.SA | ARIMA(2, 1, 0) -> MSE: 0.009770, MAE: 0.075097
-2025-06-05 12:13:21.261 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CRFB3.SA | Prophet(False, False) -> MSE: 3.337654, MAE: 1.825986
-2025-06-05 12:13:21.321 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSAN3.SA
-2025-06-05 12:13:38.180 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CSAN3.SA | ARIMA(4, 1, 0) -> MSE: 0.211832, MAE: 0.408182
-2025-06-05 12:13:38.232 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CSAN3.SA | Prophet(True, False) -> MSE: 0.131767, MAE: 0.323798
-2025-06-05 12:13:38.290 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSNA3.SA
-2025-06-05 12:13:59.753 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CSNA3.SA | ARIMA(3, 0, 2) -> MSE: 0.480740, MAE: 0.601445
-2025-06-05 12:13:59.836 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CSNA3.SA | Prophet(True, False) -> MSE: 0.162536, MAE: 0.302699
-2025-06-05 12:13:59.901 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CVCB3.SA
-2025-06-05 12:14:20.379 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CVCB3.SA | ARIMA(2, 1, 2) -> MSE: 0.092556, MAE: 0.274049
-2025-06-05 12:14:20.435 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CVCB3.SA | Prophet(False, False) -> MSE: 0.473262, MAE: 0.672512
-2025-06-05 12:14:20.500 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CXSE3.SA
-2025-06-05 12:14:32.656 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CXSE3.SA | ARIMA(3, 1, 2) -> MSE: 1.068965, MAE: 0.876323
-2025-06-05 12:14:32.711 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CXSE3.SA | Prophet(True, True) -> MSE: 0.310462, MAE: 0.400409
-2025-06-05 12:14:32.773 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CYRE3.SA
-2025-06-05 12:15:02.458 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CYRE3.SA | ARIMA(4, 1, 2) -> MSE: 0.480661, MAE: 0.589682
-2025-06-05 12:15:02.513 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CYRE3.SA | Prophet(False, True) -> MSE: 5.778468, MAE: 2.319438
-2025-06-05 12:15:02.572 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EGIE3.SA
-2025-06-05 12:15:31.719 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EGIE3.SA | ARIMA(4, 1, 2) -> MSE: 0.681068, MAE: 0.657580
-2025-06-05 12:15:31.775 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EGIE3.SA | Prophet(True, False) -> MSE: 0.801948, MAE: 0.733720
-2025-06-05 12:15:31.864 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET3.SA
-2025-06-05 12:15:57.899 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ELET3.SA | ARIMA(1, 1, 2) -> MSE: 2.060269, MAE: 1.147297
-2025-06-05 12:15:57.958 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ELET3.SA | Prophet(False, False) -> MSE: 11.771466, MAE: 3.314191
-2025-06-05 12:15:58.024 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET6.SA
-2025-06-05 12:16:16.937 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ELET6.SA | ARIMA(1, 1, 0) -> MSE: 0.741948, MAE: 0.702910
-2025-06-05 12:16:16.990 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ELET6.SA | Prophet(True, False) -> MSE: 10.410780, MAE: 3.123662
-2025-06-05 12:16:17.048 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EMBR3.SA
-2025-06-05 12:16:48.420 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EMBR3.SA | ARIMA(4, 1, 0) -> MSE: 4.257163, MAE: 1.694047
-2025-06-05 12:16:48.476 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EMBR3.SA | Prophet(False, True) -> MSE: 4.826553, MAE: 1.870881
-2025-06-05 12:16:48.541 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENEV3.SA
-2025-06-05 12:17:04.693 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ENEV3.SA | ARIMA(2, 1, 0) -> MSE: 0.205765, MAE: 0.338642
-2025-06-05 12:17:04.751 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ENEV3.SA | Prophet(True, True) -> MSE: 1.265545, MAE: 1.050440
-2025-06-05 12:17:04.816 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENGI11.SA
-2025-06-05 12:17:23.043 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ENGI11.SA | ARIMA(2, 1, 0) -> MSE: 2.807639, MAE: 1.369983
-2025-06-05 12:17:23.097 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ENGI11.SA | Prophet(True, True) -> MSE: 24.576115, MAE: 4.800483
-2025-06-05 12:17:23.159 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EQTL3.SA
-2025-06-05 12:17:50.578 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EQTL3.SA | ARIMA(4, 1, 2) -> MSE: 0.265349, MAE: 0.414620
-2025-06-05 12:17:50.631 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EQTL3.SA | Prophet(False, False) -> MSE: 15.216274, MAE: 3.870417
-2025-06-05 12:17:50.695 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | FLRY3.SA
-2025-06-05 12:18:10.515 | INFO     | __main__:<module>:192 - acoes_ibov.csv | FLRY3.SA | ARIMA(4, 1, 0) -> MSE: 0.108607, MAE: 0.275324
-2025-06-05 12:18:10.573 | INFO     | __main__:<module>:200 - acoes_ibov.csv | FLRY3.SA | Prophet(True, True) -> MSE: 0.023330, MAE: 0.127841
-2025-06-05 12:18:10.638 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GGBR4.SA
-2025-06-05 12:18:33.486 | INFO     | __main__:<module>:192 - acoes_ibov.csv | GGBR4.SA | ARIMA(2, 1, 2) -> MSE: 1.558278, MAE: 1.149729
-2025-06-05 12:18:33.538 | INFO     | __main__:<module>:200 - acoes_ibov.csv | GGBR4.SA | Prophet(True, True) -> MSE: 0.440840, MAE: 0.536351
-2025-06-05 12:18:33.596 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GOAU4.SA
-2025-06-05 12:18:58.226 | INFO     | __main__:<module>:192 - acoes_ibov.csv | GOAU4.SA | ARIMA(2, 1, 2) -> MSE: 0.379820, MAE: 0.573818
-2025-06-05 12:18:58.281 | INFO     | __main__:<module>:200 - acoes_ibov.csv | GOAU4.SA | Prophet(True, True) -> MSE: 0.748205, MAE: 0.823864
-2025-06-05 12:18:58.343 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HAPV3.SA
-2025-06-05 12:19:12.525 | INFO     | __main__:<module>:192 - acoes_ibov.csv | HAPV3.SA | ARIMA(2, 1, 0) -> MSE: 0.095835, MAE: 0.219363
-2025-06-05 12:19:12.579 | INFO     | __main__:<module>:200 - acoes_ibov.csv | HAPV3.SA | Prophet(True, False) -> MSE: 0.176208, MAE: 0.344615
-2025-06-05 12:19:12.642 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HYPE3.SA
-2025-06-05 12:19:29.222 | INFO     | __main__:<module>:192 - acoes_ibov.csv | HYPE3.SA | ARIMA(2, 1, 0) -> MSE: 6.437207, MAE: 2.285662
-2025-06-05 12:19:29.280 | INFO     | __main__:<module>:200 - acoes_ibov.csv | HYPE3.SA | Prophet(True, False) -> MSE: 44.815920, MAE: 6.523046
-2025-06-05 12:19:29.337 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IGTI11.SA
-2025-06-05 12:19:35.834 | INFO     | __main__:<module>:192 - acoes_ibov.csv | IGTI11.SA | ARIMA(2, 0, 1) -> MSE: 1.892879, MAE: 1.132070
-2025-06-05 12:19:35.888 | INFO     | __main__:<module>:200 - acoes_ibov.csv | IGTI11.SA | Prophet(True, True) -> MSE: 11.232435, MAE: 3.236592
-2025-06-05 12:19:35.945 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IRBR3.SA
-2025-06-05 12:19:53.535 | INFO     | __main__:<module>:192 - acoes_ibov.csv | IRBR3.SA | ARIMA(3, 0, 1) -> MSE: 4.626761, MAE: 1.811812
-2025-06-05 12:19:53.588 | INFO     | __main__:<module>:200 - acoes_ibov.csv | IRBR3.SA | Prophet(False, False) -> MSE: 1.408505, MAE: 1.013421
-2025-06-05 12:19:53.646 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ISAE4.SA
-2025-06-05 12:20:14.943 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ISAE4.SA | ARIMA(4, 1, 0) -> MSE: 0.114195, MAE: 0.244452
-2025-06-05 12:20:14.999 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ISAE4.SA | Prophet(False, True) -> MSE: 0.189884, MAE: 0.361946
-2025-06-05 12:20:15.063 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITSA4.SA
-2025-06-05 12:20:42.673 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ITSA4.SA | ARIMA(2, 1, 1) -> MSE: 0.073801, MAE: 0.235519
-2025-06-05 12:20:42.726 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ITSA4.SA | Prophet(False, False) -> MSE: 0.790452, MAE: 0.852811
-2025-06-05 12:20:42.787 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITUB4.SA
-2025-06-05 12:21:12.660 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ITUB4.SA | ARIMA(1, 1, 1) -> MSE: 1.504305, MAE: 1.036455
-2025-06-05 12:21:12.718 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ITUB4.SA | Prophet(False, False) -> MSE: 9.703887, MAE: 2.903811
-2025-06-05 12:21:12.777 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | JBSS3.SA
-2025-06-05 12:21:50.343 | INFO     | __main__:<module>:192 - acoes_ibov.csv | JBSS3.SA | ARIMA(1, 1, 1) -> MSE: 19.114860, MAE: 3.729888
-2025-06-05 12:21:50.398 | INFO     | __main__:<module>:200 - acoes_ibov.csv | JBSS3.SA | Prophet(False, False) -> MSE: 7.298027, MAE: 2.147851
-2025-06-05 12:21:50.459 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | KLBN11.SA
-2025-06-05 12:22:16.722 | INFO     | __main__:<module>:192 - acoes_ibov.csv | KLBN11.SA | ARIMA(2, 0, 1) -> MSE: 0.688776, MAE: 0.705852
-2025-06-05 12:22:16.782 | INFO     | __main__:<module>:200 - acoes_ibov.csv | KLBN11.SA | Prophet(True, True) -> MSE: 5.058413, MAE: 2.206621
-2025-06-05 12:22:16.839 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LREN3.SA
-2025-06-05 12:22:45.434 | INFO     | __main__:<module>:192 - acoes_ibov.csv | LREN3.SA | ARIMA(4, 1, 2) -> MSE: 6.599148, MAE: 1.979873
-2025-06-05 12:22:45.488 | INFO     | __main__:<module>:200 - acoes_ibov.csv | LREN3.SA | Prophet(True, True) -> MSE: 12.439788, MAE: 3.058191
-2025-06-05 12:22:45.553 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LWSA3.SA
-2025-06-05 12:22:57.012 | INFO     | __main__:<module>:192 - acoes_ibov.csv | LWSA3.SA | ARIMA(1, 0, 0) -> MSE: 0.231428, MAE: 0.459640
-2025-06-05 12:22:57.066 | INFO     | __main__:<module>:200 - acoes_ibov.csv | LWSA3.SA | Prophet(True, True) -> MSE: 0.419543, MAE: 0.627248
-2025-06-05 12:22:57.122 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MGLU3.SA
-2025-06-05 12:23:26.080 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MGLU3.SA | ARIMA(4, 1, 2) -> MSE: 0.677048, MAE: 0.695426
-2025-06-05 12:23:26.135 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MGLU3.SA | Prophet(False, True) -> MSE: 47.568957, MAE: 6.845282
-2025-06-05 12:23:26.196 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRFG3.SA
-2025-06-05 12:23:59.256 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MRFG3.SA | ARIMA(4, 1, 0) -> MSE: 8.086601, MAE: 2.139962
-2025-06-05 12:23:59.310 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MRFG3.SA | Prophet(False, True) -> MSE: 18.617606, MAE: 3.805175
-2025-06-05 12:23:59.376 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRVE3.SA
-2025-06-05 12:24:14.517 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MRVE3.SA | ARIMA(2, 1, 0) -> MSE: 0.513867, MAE: 0.629557
-2025-06-05 12:24:14.574 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MRVE3.SA | Prophet(True, False) -> MSE: 0.417037, MAE: 0.553498
-2025-06-05 12:24:14.636 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MULT3.SA
-2025-06-05 12:24:41.227 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MULT3.SA | ARIMA(1, 1, 1) -> MSE: 0.536648, MAE: 0.632138
-2025-06-05 12:24:41.285 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MULT3.SA | Prophet(True, False) -> MSE: 6.601870, MAE: 2.519565
-2025-06-05 12:24:41.345 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | NTCO3.SA
-2025-06-05 12:24:52.024 | INFO     | __main__:<module>:192 - acoes_ibov.csv | NTCO3.SA | ARIMA(2, 1, 0) -> MSE: 0.704210, MAE: 0.627004
-2025-06-05 12:24:52.083 | INFO     | __main__:<module>:200 - acoes_ibov.csv | NTCO3.SA | Prophet(False, False) -> MSE: 0.442731, MAE: 0.601197
-2025-06-05 12:24:52.145 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PCAR3.SA
-2025-06-05 12:25:10.725 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PCAR3.SA | ARIMA(4, 1, 0) -> MSE: 0.360924, MAE: 0.348009
-2025-06-05 12:25:10.783 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PCAR3.SA | Prophet(True, False) -> MSE: 19.006444, MAE: 4.344002
-2025-06-05 12:25:10.844 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR3.SA
-2025-06-05 12:25:39.341 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETR3.SA | ARIMA(1, 1, 1) -> MSE: 3.042126, MAE: 1.526142
-2025-06-05 12:25:39.395 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETR3.SA | Prophet(True, False) -> MSE: 84.632468, MAE: 9.160111
-2025-06-05 12:25:39.450 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR4.SA
-2025-06-05 12:26:10.497 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETR4.SA | ARIMA(1, 1, 1) -> MSE: 2.635629, MAE: 1.413774
-2025-06-05 12:26:10.553 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETR4.SA | Prophet(True, True) -> MSE: 65.768221, MAE: 8.070725
-2025-06-05 12:26:10.611 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETZ3.SA
-2025-06-05 12:26:19.473 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETZ3.SA | ARIMA(4, 1, 0) -> MSE: 0.046905, MAE: 0.169446
-2025-06-05 12:26:19.530 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETZ3.SA | Prophet(True, True) -> MSE: 0.049477, MAE: 0.179888
-2025-06-05 12:26:19.620 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | POMO4.SA
-2025-06-05 12:26:46.019 | INFO     | __main__:<module>:192 - acoes_ibov.csv | POMO4.SA | ARIMA(4, 1, 2) -> MSE: 0.284302, MAE: 0.472189
-2025-06-05 12:26:46.074 | INFO     | __main__:<module>:200 - acoes_ibov.csv | POMO4.SA | Prophet(True, False) -> MSE: 1.105012, MAE: 1.029132
-2025-06-05 12:26:46.138 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PRIO3.SA
-2025-06-05 12:27:02.423 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PRIO3.SA | ARIMA(1, 1, 0) -> MSE: 13.661554, MAE: 2.997662
-2025-06-05 12:27:02.481 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PRIO3.SA | Prophet(True, False) -> MSE: 12.216427, MAE: 2.732272
-2025-06-05 12:27:02.540 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PSSA3.SA
-2025-06-05 12:27:38.463 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PSSA3.SA | ARIMA(1, 1, 2) -> MSE: 36.535762, MAE: 4.968719
-2025-06-05 12:27:38.518 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PSSA3.SA | Prophet(False, True) -> MSE: 45.412415, MAE: 5.918537
-2025-06-05 12:27:38.580 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RADL3.SA
-2025-06-05 12:28:05.030 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RADL3.SA | ARIMA(1, 1, 1) -> MSE: 7.160102, MAE: 1.709780
-2025-06-05 12:28:05.085 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RADL3.SA | Prophet(True, True) -> MSE: 27.512379, MAE: 4.775730
-2025-06-05 12:28:05.149 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIL3.SA
-2025-06-05 12:28:27.960 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RAIL3.SA | ARIMA(2, 1, 0) -> MSE: 1.286420, MAE: 0.907160
-2025-06-05 12:28:28.015 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RAIL3.SA | Prophet(True, True) -> MSE: 0.412600, MAE: 0.551952
-2025-06-05 12:28:28.073 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIZ4.SA
-2025-06-05 12:28:34.721 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RAIZ4.SA | ARIMA(1, 1, 0) -> MSE: 0.039655, MAE: 0.168023
-2025-06-05 12:28:34.775 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RAIZ4.SA | Prophet(True, True) -> MSE: 0.086744, MAE: 0.254690
-2025-06-05 12:28:34.836 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RDOR3.SA
-2025-06-05 12:28:46.247 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RDOR3.SA | ARIMA(1, 1, 1) -> MSE: 7.688641, MAE: 2.122757
-2025-06-05 12:28:46.303 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RDOR3.SA | Prophet(True, False) -> MSE: 4.585323, MAE: 1.969649
-2025-06-05 12:28:46.363 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RECV3.SA
-2025-06-05 12:28:57.649 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RECV3.SA | ARIMA(1, 1, 1) -> MSE: 0.812281, MAE: 0.694169
-2025-06-05 12:28:57.706 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RECV3.SA | Prophet(False, False) -> MSE: 0.765632, MAE: 0.798148
-2025-06-05 12:28:57.773 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RENT3.SA
-2025-06-05 12:29:16.207 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RENT3.SA | ARIMA(4, 1, 0) -> MSE: 3.832111, MAE: 1.612435
-2025-06-05 12:29:16.263 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RENT3.SA | Prophet(False, False) -> MSE: 131.169594, MAE: 11.392640
-2025-06-05 12:29:16.328 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SANB11.SA
-2025-06-05 12:29:34.987 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SANB11.SA | ARIMA(2, 1, 0) -> MSE: 0.874602, MAE: 0.843605
-2025-06-05 12:29:35.043 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SANB11.SA | Prophet(False, False) -> MSE: 5.725938, MAE: 2.262018
-2025-06-05 12:29:35.103 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SBSP3.SA
-2025-06-05 12:30:12.391 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SBSP3.SA | ARIMA(1, 1, 1) -> MSE: 6.389200, MAE: 1.982852
-2025-06-05 12:30:12.449 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SBSP3.SA | Prophet(False, True) -> MSE: 46.596134, MAE: 6.595671
-2025-06-05 12:30:12.514 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SLCE3.SA
-2025-06-05 12:30:41.583 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SLCE3.SA | ARIMA(1, 1, 1) -> MSE: 0.279508, MAE: 0.377919
-2025-06-05 12:30:41.638 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SLCE3.SA | Prophet(False, True) -> MSE: 1.869914, MAE: 1.292388
-2025-06-05 12:30:41.699 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SMTO3.SA
-2025-06-05 12:30:59.143 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SMTO3.SA | ARIMA(1, 0, 0) -> MSE: 0.565844, MAE: 0.618884
-2025-06-05 12:30:59.199 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SMTO3.SA | Prophet(False, False) -> MSE: 2.246655, MAE: 1.240820
-2025-06-05 12:30:59.256 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | STBP3.SA
-2025-06-05 12:31:36.977 | INFO     | __main__:<module>:192 - acoes_ibov.csv | STBP3.SA | ARIMA(1, 1, 1) -> MSE: 0.014622, MAE: 0.103521
-2025-06-05 12:31:37.033 | INFO     | __main__:<module>:200 - acoes_ibov.csv | STBP3.SA | Prophet(False, True) -> MSE: 0.744029, MAE: 0.860706
-2025-06-05 12:31:37.091 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SUZB3.SA
-2025-06-05 12:31:58.542 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SUZB3.SA | ARIMA(2, 1, 0) -> MSE: 1.919868, MAE: 1.110981
-2025-06-05 12:31:58.601 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SUZB3.SA | Prophet(True, False) -> MSE: 41.351996, MAE: 6.317474
-2025-06-05 12:31:58.658 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TAEE11.SA
-2025-06-05 12:32:28.197 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TAEE11.SA | ARIMA(1, 1, 1) -> MSE: 0.544851, MAE: 0.619446
-2025-06-05 12:32:28.255 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TAEE11.SA | Prophet(True, False) -> MSE: 1.570980, MAE: 1.173739
-2025-06-05 12:32:28.317 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TIMS3.SA
-2025-06-05 12:33:01.340 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TIMS3.SA | ARIMA(4, 1, 2) -> MSE: 0.783403, MAE: 0.748362
-2025-06-05 12:33:01.393 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TIMS3.SA | Prophet(False, True) -> MSE: 4.108438, MAE: 1.962982
-2025-06-05 12:33:01.453 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TOTS3.SA
-2025-06-05 12:33:16.819 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TOTS3.SA | ARIMA(4, 1, 0) -> MSE: 5.459626, MAE: 2.004239
-2025-06-05 12:33:16.874 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TOTS3.SA | Prophet(False, True) -> MSE: 61.371190, MAE: 7.519288
-2025-06-05 12:33:16.935 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | UGPA3.SA
-2025-06-05 12:33:35.166 | INFO     | __main__:<module>:192 - acoes_ibov.csv | UGPA3.SA | ARIMA(1, 0, 2) -> MSE: 1.107791, MAE: 0.863963
-2025-06-05 12:33:35.224 | INFO     | __main__:<module>:200 - acoes_ibov.csv | UGPA3.SA | Prophet(True, True) -> MSE: 12.204843, MAE: 3.398742
-2025-06-05 12:33:35.285 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | USIM5.SA
-2025-06-05 12:33:52.907 | INFO     | __main__:<module>:192 - acoes_ibov.csv | USIM5.SA | ARIMA(1, 0, 0) -> MSE: 0.075893, MAE: 0.224374
-2025-06-05 12:33:52.988 | INFO     | __main__:<module>:200 - acoes_ibov.csv | USIM5.SA | Prophet(True, False) -> MSE: 0.031213, MAE: 0.148886
-2025-06-05 12:33:53.047 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VALE3.SA
-2025-06-05 12:34:17.121 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VALE3.SA | ARIMA(2, 0, 1) -> MSE: 1.180509, MAE: 0.873766
-2025-06-05 12:34:17.178 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VALE3.SA | Prophet(False, False) -> MSE: 1.020006, MAE: 0.828205
-2025-06-05 12:34:17.246 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VAMO3.SA
-2025-06-05 12:34:24.967 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VAMO3.SA | ARIMA(2, 1, 0) -> MSE: 0.212655, MAE: 0.381307
-2025-06-05 12:34:25.025 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VAMO3.SA | Prophet(True, True) -> MSE: 0.297323, MAE: 0.439984
-2025-06-05 12:34:25.088 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VBBR3.SA
-2025-06-05 12:34:37.787 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VBBR3.SA | ARIMA(1, 0, 0) -> MSE: 1.563570, MAE: 1.074785
-2025-06-05 12:34:37.860 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VBBR3.SA | Prophet(False, False) -> MSE: 1.002131, MAE: 0.772071
-2025-06-05 12:34:37.918 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVA3.SA
-2025-06-05 12:34:47.433 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VIVA3.SA | ARIMA(1, 0, 2) -> MSE: 8.751582, MAE: 2.407264
-2025-06-05 12:34:47.489 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VIVA3.SA | Prophet(False, False) -> MSE: 35.754356, MAE: 5.617978
-2025-06-05 12:34:47.550 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVT3.SA
-2025-06-05 12:35:27.104 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VIVT3.SA | ARIMA(5, 1, 2) -> MSE: 1.763992, MAE: 1.196421
-2025-06-05 12:35:27.162 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VIVT3.SA | Prophet(False, True) -> MSE: 0.790825, MAE: 0.712214
-2025-06-05 12:35:27.236 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | WEGE3.SA
-2025-06-05 12:35:42.469 | INFO     | __main__:<module>:192 - acoes_ibov.csv | WEGE3.SA | ARIMA(2, 1, 0) -> MSE: 6.780627, MAE: 1.643822
-2025-06-05 12:35:42.524 | INFO     | __main__:<module>:200 - acoes_ibov.csv | WEGE3.SA | Prophet(True, False) -> MSE: 58.651703, MAE: 7.147194
-2025-06-05 12:35:42.583 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | YDUQ3.SA
-2025-06-05 12:36:10.341 | INFO     | __main__:<module>:192 - acoes_ibov.csv | YDUQ3.SA | ARIMA(1, 1, 1) -> MSE: 6.095673, MAE: 2.302293
-2025-06-05 12:36:10.397 | INFO     | __main__:<module>:200 - acoes_ibov.csv | YDUQ3.SA | Prophet(False, False) -> MSE: 23.331402, MAE: 4.736777
-2025-06-05 12:36:10.636 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | BZ=F
-2025-06-05 12:36:32.490 | INFO     | __main__:<module>:192 - commodities.csv | BZ=F | ARIMA(1, 0, 0) -> MSE: 5.105916, MAE: 1.727761
-2025-06-05 12:36:32.546 | INFO     | __main__:<module>:200 - commodities.csv | BZ=F | Prophet(False, True) -> MSE: 69.232633, MAE: 7.824832
-2025-06-05 12:36:32.608 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | GC=F
-2025-06-05 12:37:06.186 | INFO     | __main__:<module>:192 - commodities.csv | GC=F | ARIMA(2, 0, 1) -> MSE: 15483.845586, MAE: 108.404808
-2025-06-05 12:37:06.241 | INFO     | __main__:<module>:200 - commodities.csv | GC=F | Prophet(True, True) -> MSE: 40509.974579, MAE: 185.269872
-2025-06-05 12:37:06.302 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | KC=F
-2025-06-05 12:37:33.137 | INFO     | __main__:<module>:192 - commodities.csv | KC=F | ARIMA(3, 0, 2) -> MSE: 989.438007, MAE: 25.933303
-2025-06-05 12:37:33.192 | INFO     | __main__:<module>:200 - commodities.csv | KC=F | Prophet(True, True) -> MSE: 667.176339, MAE: 22.097296
-2025-06-05 12:37:33.255 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | LE=F
-2025-06-05 12:37:56.850 | INFO     | __main__:<module>:192 - commodities.csv | LE=F | ARIMA(2, 1, 0) -> MSE: 4.161636, MAE: 1.546416
-2025-06-05 12:37:56.904 | INFO     | __main__:<module>:200 - commodities.csv | LE=F | Prophet(False, True) -> MSE: 142.902193, MAE: 11.633659
-2025-06-05 12:37:56.967 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | SI=F
-2025-06-05 12:38:13.248 | INFO     | __main__:<module>:192 - commodities.csv | SI=F | ARIMA(2, 1, 0) -> MSE: 9.932795, MAE: 3.032815
-2025-06-05 12:38:13.329 | INFO     | __main__:<module>:200 - commodities.csv | SI=F | Prophet(False, False) -> MSE: 1.015141, MAE: 0.905935
-2025-06-05 12:38:13.389 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZC=F
-2025-06-05 12:38:33.219 | INFO     | __main__:<module>:192 - commodities.csv | ZC=F | ARIMA(3, 0, 2) -> MSE: 236.900202, MAE: 10.978058
-2025-06-05 12:38:33.273 | INFO     | __main__:<module>:200 - commodities.csv | ZC=F | Prophet(True, True) -> MSE: 1232.939389, MAE: 31.670510
-2025-06-05 12:38:33.341 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZS=F
-2025-06-05 12:38:49.407 | INFO     | __main__:<module>:192 - commodities.csv | ZS=F | ARIMA(3, 0, 2) -> MSE: 678.240681, MAE: 23.074204
-2025-06-05 12:38:49.460 | INFO     | __main__:<module>:200 - commodities.csv | ZS=F | Prophet(True, True) -> MSE: 14429.330407, MAE: 119.348588
-2025-06-05 12:38:49.530 | INFO     | __main__:<module>:220 - Pipeline de forecasting finalizado!
-2025-06-06 09:51:05.006 | INFO     | __main__:<module>:133 - Iniciando pipeline de forecasting para financas...
-2025-06-06 09:51:08.212 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ABEV3.SA
-2025-06-06 09:51:43.147 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ABEV3.SA | ARIMA(1, 0, 2) -> MSE: 0.087267, MAE: 0.263168
-2025-06-06 09:51:43.791 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ABEV3.SA | Prophet(False, False) -> MSE: 4.915882, MAE: 2.213097
-2025-06-06 09:51:44.014 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ALOS3.SA
-2025-06-06 09:52:10.880 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ALOS3.SA | ARIMA(3, 0, 2) -> MSE: 0.550606, MAE: 0.636793
-2025-06-06 09:52:11.115 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ALOS3.SA | Prophet(True, False) -> MSE: 1.672378, MAE: 1.149461
-2025-06-06 09:52:11.346 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AMOB3.SA
-2025-06-06 09:52:20.454 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AMOB3.SA | ARIMA(1, 1, 0) -> MSE: 105.707593, MAE: 8.909819
-2025-06-06 09:52:20.700 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AMOB3.SA | Prophet(False, False) -> MSE: 26.836292, MAE: 4.745952
-2025-06-06 09:52:20.930 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ASAI3.SA
-2025-06-06 09:52:41.296 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ASAI3.SA | ARIMA(1, 0, 0) -> MSE: 3.022804, MAE: 1.520464
-2025-06-06 09:52:41.574 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ASAI3.SA | Prophet(True, True) -> MSE: 7.499903, MAE: 2.479204
-2025-06-06 09:52:41.804 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AURE3.SA
-2025-06-06 09:53:00.366 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AURE3.SA | ARIMA(2, 1, 0) -> MSE: 0.621910, MAE: 0.662738
-2025-06-06 09:53:00.612 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AURE3.SA | Prophet(True, True) -> MSE: 2.174853, MAE: 1.316954
-2025-06-06 09:53:00.842 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZUL4.SA
-2025-06-06 09:53:35.906 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AZUL4.SA | ARIMA(5, 1, 2) -> MSE: 0.199616, MAE: 0.299538
-2025-06-06 09:53:36.224 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AZUL4.SA | Prophet(False, False) -> MSE: 0.054629, MAE: 0.136095
-2025-06-06 09:53:36.678 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZZA3.SA
-2025-06-06 09:54:15.609 | INFO     | __main__:<module>:192 - acoes_ibov.csv | AZZA3.SA | ARIMA(2, 1, 0) -> MSE: 52.145974, MAE: 5.208516
-2025-06-06 09:54:15.934 | INFO     | __main__:<module>:200 - acoes_ibov.csv | AZZA3.SA | Prophet(False, True) -> MSE: 144.814075, MAE: 10.535951
-2025-06-06 09:54:16.275 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | B3SA3.SA
-2025-06-06 09:54:51.603 | INFO     | __main__:<module>:192 - acoes_ibov.csv | B3SA3.SA | ARIMA(1, 1, 0) -> MSE: 0.362812, MAE: 0.535985
-2025-06-06 09:54:52.111 | INFO     | __main__:<module>:200 - acoes_ibov.csv | B3SA3.SA | Prophet(False, True) -> MSE: 7.108251, MAE: 2.600201
-2025-06-06 09:54:52.581 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBAS3.SA
-2025-06-06 09:55:33.657 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBAS3.SA | ARIMA(1, 1, 0) -> MSE: 23.399751, MAE: 4.104248
-2025-06-06 09:55:33.974 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBAS3.SA | Prophet(True, False) -> MSE: 9.963075, MAE: 2.551488
-2025-06-06 09:55:34.251 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC3.SA
-2025-06-06 09:56:11.803 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBDC3.SA | ARIMA(5, 1, 2) -> MSE: 1.687908, MAE: 1.020060
-2025-06-06 09:56:12.025 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBDC3.SA | Prophet(False, True) -> MSE: 3.076535, MAE: 1.546062
-2025-06-06 09:56:12.265 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC4.SA
-2025-06-06 09:56:53.739 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBDC4.SA | ARIMA(3, 0, 2) -> MSE: 2.817604, MAE: 1.258030
-2025-06-06 09:56:54.205 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBDC4.SA | Prophet(False, True) -> MSE: 6.034463, MAE: 2.171400
-2025-06-06 09:56:54.493 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBSE3.SA
-2025-06-06 09:57:36.086 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BBSE3.SA | ARIMA(3, 1, 2) -> MSE: 12.165993, MAE: 2.916532
-2025-06-06 09:57:36.600 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BBSE3.SA | Prophet(False, False) -> MSE: 4.713498, MAE: 1.444662
-2025-06-06 09:57:37.016 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BEEF3.SA
-2025-06-06 09:58:22.734 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BEEF3.SA | ARIMA(4, 0, 0) -> MSE: 0.671530, MAE: 0.521008
-2025-06-06 09:58:23.231 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BEEF3.SA | Prophet(True, False) -> MSE: 1.466513, MAE: 1.086967
-2025-06-06 09:58:23.719 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BPAC11.SA
-2025-06-06 09:59:10.700 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BPAC11.SA | ARIMA(1, 1, 0) -> MSE: 3.431040, MAE: 1.274078
-2025-06-06 09:59:10.931 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BPAC11.SA | Prophet(True, True) -> MSE: 21.905721, MAE: 4.474925
-2025-06-06 09:59:11.163 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAP4.SA
-2025-06-06 09:59:44.497 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRAP4.SA | ARIMA(1, 1, 0) -> MSE: 0.361899, MAE: 0.473408
-2025-06-06 09:59:44.732 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRAP4.SA | Prophet(False, True) -> MSE: 0.559825, MAE: 0.613534
-2025-06-06 09:59:44.975 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAV3.SA
-2025-06-06 10:00:02.219 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRAV3.SA | ARIMA(1, 0, 1) -> MSE: 9.992569, MAE: 3.028637
-2025-06-06 10:00:02.656 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRAV3.SA | Prophet(False, False) -> MSE: 3.393828, MAE: 1.647658
-2025-06-06 10:00:03.027 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRFS3.SA
-2025-06-06 10:00:26.806 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRFS3.SA | ARIMA(1, 1, 0) -> MSE: 1.232525, MAE: 0.762203
-2025-06-06 10:00:27.039 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRFS3.SA | Prophet(True, True) -> MSE: 18.530255, MAE: 3.865813
-2025-06-06 10:00:27.288 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRKM5.SA
-2025-06-06 10:01:05.934 | INFO     | __main__:<module>:192 - acoes_ibov.csv | BRKM5.SA | ARIMA(1, 1, 0) -> MSE: 0.243830, MAE: 0.381013
-2025-06-06 10:01:06.259 | INFO     | __main__:<module>:200 - acoes_ibov.csv | BRKM5.SA | Prophet(True, True) -> MSE: 1.645064, MAE: 1.165032
-2025-06-06 10:01:06.550 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CCRO3.SA
-2025-06-06 10:01:48.682 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CCRO3.SA | ARIMA(5, 0, 2) -> MSE: 0.107197, MAE: 0.263406
-2025-06-06 10:01:48.939 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CCRO3.SA | Prophet(True, True) -> MSE: 0.640633, MAE: 0.708132
-2025-06-06 10:01:49.238 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIG4.SA
-2025-06-06 10:02:59.083 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CMIG4.SA | ARIMA(4, 0, 2) -> MSE: 0.083129, MAE: 0.245101
-2025-06-06 10:02:59.309 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CMIG4.SA | Prophet(False, False) -> MSE: 0.242301, MAE: 0.440655
-2025-06-06 10:02:59.545 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIN3.SA
-2025-06-06 10:03:14.996 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CMIN3.SA | ARIMA(1, 0, 1) -> MSE: 0.555602, MAE: 0.666822
-2025-06-06 10:03:15.255 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CMIN3.SA | Prophet(False, False) -> MSE: 0.141125, MAE: 0.338091
-2025-06-06 10:03:15.459 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | COGN3.SA
-2025-06-06 10:03:43.330 | INFO     | __main__:<module>:192 - acoes_ibov.csv | COGN3.SA | ARIMA(3, 1, 0) -> MSE: 0.102870, MAE: 0.252434
-2025-06-06 10:03:43.544 | INFO     | __main__:<module>:200 - acoes_ibov.csv | COGN3.SA | Prophet(True, True) -> MSE: 0.934576, MAE: 0.903933
-2025-06-06 10:03:43.773 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPFE3.SA
-2025-06-06 10:04:11.526 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CPFE3.SA | ARIMA(1, 1, 0) -> MSE: 2.520504, MAE: 1.247980
-2025-06-06 10:04:11.785 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CPFE3.SA | Prophet(False, True) -> MSE: 9.706321, MAE: 2.881037
-2025-06-06 10:04:11.994 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPLE6.SA
-2025-06-06 10:05:15.534 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CPLE6.SA | ARIMA(5, 1, 2) -> MSE: 0.296903, MAE: 0.391347
-2025-06-06 10:05:15.803 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CPLE6.SA | Prophet(False, False) -> MSE: 1.161928, MAE: 0.993750
-2025-06-06 10:05:16.091 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CRFB3.SA
-2025-06-06 10:05:39.902 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CRFB3.SA | ARIMA(1, 1, 0) -> MSE: 0.007828, MAE: 0.065332
-2025-06-06 10:05:40.117 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CRFB3.SA | Prophet(True, False) -> MSE: 2.334455, MAE: 1.514853
-2025-06-06 10:05:40.330 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSAN3.SA
-2025-06-06 10:06:07.793 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CSAN3.SA | ARIMA(2, 1, 0) -> MSE: 0.199264, MAE: 0.395090
-2025-06-06 10:06:08.040 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CSAN3.SA | Prophet(False, False) -> MSE: 0.165675, MAE: 0.370764
-2025-06-06 10:06:08.304 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSNA3.SA
-2025-06-06 10:06:39.847 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CSNA3.SA | ARIMA(3, 0, 2) -> MSE: 0.468277, MAE: 0.595499
-2025-06-06 10:06:40.069 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CSNA3.SA | Prophet(True, False) -> MSE: 0.548233, MAE: 0.689723
-2025-06-06 10:06:40.303 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CVCB3.SA
-2025-06-06 10:07:23.524 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CVCB3.SA | ARIMA(3, 0, 2) -> MSE: 0.115012, MAE: 0.316613
-2025-06-06 10:07:23.784 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CVCB3.SA | Prophet(False, True) -> MSE: 0.471849, MAE: 0.658613
-2025-06-06 10:07:24.044 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CXSE3.SA
-2025-06-06 10:07:35.324 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CXSE3.SA | ARIMA(3, 1, 0) -> MSE: 0.809600, MAE: 0.769867
-2025-06-06 10:07:35.555 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CXSE3.SA | Prophet(True, False) -> MSE: 0.254105, MAE: 0.374346
-2025-06-06 10:07:35.787 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CYRE3.SA
-2025-06-06 10:08:10.530 | INFO     | __main__:<module>:192 - acoes_ibov.csv | CYRE3.SA | ARIMA(5, 1, 2) -> MSE: 0.596046, MAE: 0.657067
-2025-06-06 10:08:10.752 | INFO     | __main__:<module>:200 - acoes_ibov.csv | CYRE3.SA | Prophet(False, True) -> MSE: 4.171304, MAE: 1.944355
-2025-06-06 10:08:11.017 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EGIE3.SA
-2025-06-06 10:08:45.026 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EGIE3.SA | ARIMA(1, 1, 0) -> MSE: 0.865476, MAE: 0.768470
-2025-06-06 10:08:45.252 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EGIE3.SA | Prophet(True, True) -> MSE: 0.689843, MAE: 0.671109
-2025-06-06 10:08:45.496 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET3.SA
-2025-06-06 10:09:13.144 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ELET3.SA | ARIMA(1, 1, 2) -> MSE: 1.522902, MAE: 0.937930
-2025-06-06 10:09:13.423 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ELET3.SA | Prophet(True, True) -> MSE: 11.558595, MAE: 3.041113
-2025-06-06 10:09:13.656 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET6.SA
-2025-06-06 10:09:41.323 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ELET6.SA | ARIMA(1, 1, 0) -> MSE: 0.740879, MAE: 0.697485
-2025-06-06 10:09:41.609 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ELET6.SA | Prophet(True, True) -> MSE: 8.761928, MAE: 2.713224
-2025-06-06 10:09:41.901 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EMBR3.SA
-2025-06-06 10:10:58.909 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EMBR3.SA | ARIMA(2, 1, 0) -> MSE: 4.130083, MAE: 1.670143
-2025-06-06 10:10:59.149 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EMBR3.SA | Prophet(True, True) -> MSE: 4.804588, MAE: 1.884145
-2025-06-06 10:10:59.393 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENEV3.SA
-2025-06-06 10:11:42.846 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ENEV3.SA | ARIMA(1, 1, 0) -> MSE: 0.209947, MAE: 0.350937
-2025-06-06 10:11:43.127 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ENEV3.SA | Prophet(True, True) -> MSE: 0.990832, MAE: 0.901264
-2025-06-06 10:11:43.407 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENGI11.SA
-2025-06-06 10:12:10.778 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ENGI11.SA | ARIMA(1, 1, 0) -> MSE: 2.856234, MAE: 1.377683
-2025-06-06 10:12:11.003 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ENGI11.SA | Prophet(True, True) -> MSE: 15.036314, MAE: 3.650857
-2025-06-06 10:12:11.241 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EQTL3.SA
-2025-06-06 10:12:47.137 | INFO     | __main__:<module>:192 - acoes_ibov.csv | EQTL3.SA | ARIMA(2, 1, 0) -> MSE: 0.462522, MAE: 0.523103
-2025-06-06 10:12:47.477 | INFO     | __main__:<module>:200 - acoes_ibov.csv | EQTL3.SA | Prophet(False, True) -> MSE: 12.531281, MAE: 3.481282
-2025-06-06 10:12:47.827 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | FLRY3.SA
-2025-06-06 10:13:25.457 | INFO     | __main__:<module>:192 - acoes_ibov.csv | FLRY3.SA | ARIMA(4, 0, 2) -> MSE: 0.105078, MAE: 0.270416
-2025-06-06 10:13:25.730 | INFO     | __main__:<module>:200 - acoes_ibov.csv | FLRY3.SA | Prophet(False, False) -> MSE: 0.036192, MAE: 0.149636
-2025-06-06 10:13:25.967 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GGBR4.SA
-2025-06-06 10:13:56.782 | INFO     | __main__:<module>:192 - acoes_ibov.csv | GGBR4.SA | ARIMA(1, 1, 0) -> MSE: 1.819898, MAE: 1.245589
-2025-06-06 10:13:56.999 | INFO     | __main__:<module>:200 - acoes_ibov.csv | GGBR4.SA | Prophet(True, False) -> MSE: 0.564026, MAE: 0.597076
-2025-06-06 10:13:57.231 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GOAU4.SA
-2025-06-06 10:14:33.622 | INFO     | __main__:<module>:192 - acoes_ibov.csv | GOAU4.SA | ARIMA(1, 1, 0) -> MSE: 0.444688, MAE: 0.621793
-2025-06-06 10:14:33.941 | INFO     | __main__:<module>:200 - acoes_ibov.csv | GOAU4.SA | Prophet(True, False) -> MSE: 0.753517, MAE: 0.816190
-2025-06-06 10:14:34.265 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HAPV3.SA
-2025-06-06 10:14:59.833 | INFO     | __main__:<module>:192 - acoes_ibov.csv | HAPV3.SA | ARIMA(3, 1, 0) -> MSE: 0.095266, MAE: 0.219602
-2025-06-06 10:15:00.089 | INFO     | __main__:<module>:200 - acoes_ibov.csv | HAPV3.SA | Prophet(False, True) -> MSE: 0.141211, MAE: 0.311090
-2025-06-06 10:15:00.368 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HYPE3.SA
-2025-06-06 10:15:31.723 | INFO     | __main__:<module>:192 - acoes_ibov.csv | HYPE3.SA | ARIMA(4, 1, 0) -> MSE: 6.303945, MAE: 2.255348
-2025-06-06 10:15:31.957 | INFO     | __main__:<module>:200 - acoes_ibov.csv | HYPE3.SA | Prophet(True, True) -> MSE: 30.696077, MAE: 5.275667
-2025-06-06 10:15:32.201 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IGTI11.SA
-2025-06-06 10:15:54.019 | INFO     | __main__:<module>:192 - acoes_ibov.csv | IGTI11.SA | ARIMA(1, 0, 0) -> MSE: 1.815710, MAE: 1.111795
-2025-06-06 10:15:54.309 | INFO     | __main__:<module>:200 - acoes_ibov.csv | IGTI11.SA | Prophet(False, True) -> MSE: 7.632927, MAE: 2.573800
-2025-06-06 10:15:54.582 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IRBR3.SA
-2025-06-06 10:16:31.903 | INFO     | __main__:<module>:192 - acoes_ibov.csv | IRBR3.SA | ARIMA(5, 1, 1) -> MSE: 8.157140, MAE: 2.600775
-2025-06-06 10:16:32.145 | INFO     | __main__:<module>:200 - acoes_ibov.csv | IRBR3.SA | Prophet(False, False) -> MSE: 1.840797, MAE: 1.080047
-2025-06-06 10:16:32.426 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ISAE4.SA
-2025-06-06 10:17:09.705 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ISAE4.SA | ARIMA(2, 1, 0) -> MSE: 0.120384, MAE: 0.256855
-2025-06-06 10:17:09.932 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ISAE4.SA | Prophet(False, False) -> MSE: 0.246271, MAE: 0.425266
-2025-06-06 10:17:10.200 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITSA4.SA
-2025-06-06 10:17:42.334 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ITSA4.SA | ARIMA(5, 1, 2) -> MSE: 0.078668, MAE: 0.251416
-2025-06-06 10:17:42.597 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ITSA4.SA | Prophet(False, True) -> MSE: 0.560772, MAE: 0.691861
-2025-06-06 10:17:42.840 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITUB4.SA
-2025-06-06 10:18:16.368 | INFO     | __main__:<module>:192 - acoes_ibov.csv | ITUB4.SA | ARIMA(3, 0, 2) -> MSE: 1.505928, MAE: 1.055311
-2025-06-06 10:18:16.592 | INFO     | __main__:<module>:200 - acoes_ibov.csv | ITUB4.SA | Prophet(False, True) -> MSE: 9.842086, MAE: 2.886394
-2025-06-06 10:18:16.808 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | JBSS3.SA
-2025-06-06 10:18:44.208 | INFO     | __main__:<module>:192 - acoes_ibov.csv | JBSS3.SA | ARIMA(1, 1, 0) -> MSE: 17.380715, MAE: 3.623922
-2025-06-06 10:18:44.473 | INFO     | __main__:<module>:200 - acoes_ibov.csv | JBSS3.SA | Prophet(False, False) -> MSE: 6.918847, MAE: 2.124844
-2025-06-06 10:18:44.693 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | KLBN11.SA
-2025-06-06 10:19:17.725 | INFO     | __main__:<module>:192 - acoes_ibov.csv | KLBN11.SA | ARIMA(2, 1, 1) -> MSE: 0.428714, MAE: 0.511877
-2025-06-06 10:19:17.949 | INFO     | __main__:<module>:200 - acoes_ibov.csv | KLBN11.SA | Prophet(True, True) -> MSE: 3.108430, MAE: 1.600255
-2025-06-06 10:19:18.179 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LREN3.SA
-2025-06-06 10:19:56.399 | INFO     | __main__:<module>:192 - acoes_ibov.csv | LREN3.SA | ARIMA(5, 0, 2) -> MSE: 6.517054, MAE: 1.954494
-2025-06-06 10:19:56.672 | INFO     | __main__:<module>:200 - acoes_ibov.csv | LREN3.SA | Prophet(True, True) -> MSE: 10.957285, MAE: 2.856305
-2025-06-06 10:19:56.900 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LWSA3.SA
-2025-06-06 10:20:18.603 | INFO     | __main__:<module>:192 - acoes_ibov.csv | LWSA3.SA | ARIMA(1, 1, 0) -> MSE: 0.153816, MAE: 0.357733
-2025-06-06 10:20:18.872 | INFO     | __main__:<module>:200 - acoes_ibov.csv | LWSA3.SA | Prophet(True, True) -> MSE: 0.390610, MAE: 0.609636
-2025-06-06 10:20:19.098 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MGLU3.SA
-2025-06-06 10:20:51.718 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MGLU3.SA | ARIMA(1, 1, 0) -> MSE: 0.759756, MAE: 0.736779
-2025-06-06 10:20:52.263 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MGLU3.SA | Prophet(False, True) -> MSE: 34.576710, MAE: 5.846161
-2025-06-06 10:20:52.798 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRFG3.SA
-2025-06-06 10:22:00.791 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MRFG3.SA | ARIMA(5, 1, 2) -> MSE: 8.767454, MAE: 2.234625
-2025-06-06 10:22:01.015 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MRFG3.SA | Prophet(False, False) -> MSE: 14.952467, MAE: 3.279738
-2025-06-06 10:22:01.352 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRVE3.SA
-2025-06-06 10:22:35.451 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MRVE3.SA | ARIMA(5, 0, 2) -> MSE: 0.612661, MAE: 0.685292
-2025-06-06 10:22:35.677 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MRVE3.SA | Prophet(True, True) -> MSE: 0.111378, MAE: 0.281942
-2025-06-06 10:22:35.914 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MULT3.SA
-2025-06-06 10:23:13.087 | INFO     | __main__:<module>:192 - acoes_ibov.csv | MULT3.SA | ARIMA(5, 0, 1) -> MSE: 0.530681, MAE: 0.626467
-2025-06-06 10:23:13.329 | INFO     | __main__:<module>:200 - acoes_ibov.csv | MULT3.SA | Prophet(True, True) -> MSE: 3.677921, MAE: 1.751367
-2025-06-06 10:23:13.660 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | NTCO3.SA
-2025-06-06 10:23:40.125 | INFO     | __main__:<module>:192 - acoes_ibov.csv | NTCO3.SA | ARIMA(3, 1, 2) -> MSE: 0.654425, MAE: 0.601875
-2025-06-06 10:23:40.360 | INFO     | __main__:<module>:200 - acoes_ibov.csv | NTCO3.SA | Prophet(False, False) -> MSE: 0.438638, MAE: 0.599570
-2025-06-06 10:23:40.604 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PCAR3.SA
-2025-06-06 10:24:15.111 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PCAR3.SA | ARIMA(5, 1, 2) -> MSE: 0.364166, MAE: 0.371031
-2025-06-06 10:24:15.394 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PCAR3.SA | Prophet(True, True) -> MSE: 15.896050, MAE: 3.970971
-2025-06-06 10:24:15.635 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR3.SA
-2025-06-06 10:24:53.732 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETR3.SA | ARIMA(4, 1, 0) -> MSE: 3.206544, MAE: 1.571272
-2025-06-06 10:24:54.064 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETR3.SA | Prophet(True, False) -> MSE: 76.704844, MAE: 8.715945
-2025-06-06 10:24:54.343 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR4.SA
-2025-06-06 10:25:33.188 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETR4.SA | ARIMA(4, 1, 0) -> MSE: 2.736676, MAE: 1.443717
-2025-06-06 10:25:33.480 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETR4.SA | Prophet(True, False) -> MSE: 63.838613, MAE: 7.949130
-2025-06-06 10:25:33.778 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETZ3.SA
-2025-06-06 10:25:56.542 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PETZ3.SA | ARIMA(1, 1, 2) -> MSE: 0.041065, MAE: 0.159646
-2025-06-06 10:25:56.851 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PETZ3.SA | Prophet(False, True) -> MSE: 0.043470, MAE: 0.177982
-2025-06-06 10:25:57.105 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | POMO4.SA
-2025-06-06 10:26:29.832 | INFO     | __main__:<module>:192 - acoes_ibov.csv | POMO4.SA | ARIMA(5, 1, 0) -> MSE: 0.336856, MAE: 0.515390
-2025-06-06 10:26:30.107 | INFO     | __main__:<module>:200 - acoes_ibov.csv | POMO4.SA | Prophet(True, False) -> MSE: 1.212011, MAE: 1.077698
-2025-06-06 10:26:30.390 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PRIO3.SA
-2025-06-06 10:27:09.782 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PRIO3.SA | ARIMA(5, 1, 0) -> MSE: 13.389627, MAE: 2.937805
-2025-06-06 10:27:10.042 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PRIO3.SA | Prophet(True, False) -> MSE: 10.799612, MAE: 2.499578
-2025-06-06 10:27:10.334 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PSSA3.SA
-2025-06-06 10:28:09.195 | INFO     | __main__:<module>:192 - acoes_ibov.csv | PSSA3.SA | ARIMA(1, 1, 0) -> MSE: 37.108483, MAE: 5.006845
-2025-06-06 10:28:09.402 | INFO     | __main__:<module>:200 - acoes_ibov.csv | PSSA3.SA | Prophet(False, False) -> MSE: 38.577407, MAE: 5.298244
-2025-06-06 10:28:09.686 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RADL3.SA
-2025-06-06 10:28:47.306 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RADL3.SA | ARIMA(1, 1, 0) -> MSE: 7.075363, MAE: 1.703798
-2025-06-06 10:28:47.780 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RADL3.SA | Prophet(False, True) -> MSE: 23.057494, MAE: 4.300215
-2025-06-06 10:28:48.531 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIL3.SA
-2025-06-06 10:29:41.715 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RAIL3.SA | ARIMA(1, 1, 0) -> MSE: 1.341461, MAE: 0.940941
-2025-06-06 10:29:42.156 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RAIL3.SA | Prophet(True, False) -> MSE: 0.490357, MAE: 0.562313
-2025-06-06 10:29:42.620 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIZ4.SA
-2025-06-06 10:30:13.251 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RAIZ4.SA | ARIMA(1, 1, 0) -> MSE: 0.039243, MAE: 0.166962
-2025-06-06 10:30:13.880 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RAIZ4.SA | Prophet(True, False) -> MSE: 0.069438, MAE: 0.207918
-2025-06-06 10:30:14.539 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RDOR3.SA
-2025-06-06 10:30:33.113 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RDOR3.SA | ARIMA(2, 1, 2) -> MSE: 7.781920, MAE: 2.129970
-2025-06-06 10:30:33.478 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RDOR3.SA | Prophet(True, False) -> MSE: 8.897463, MAE: 2.650734
-2025-06-06 10:30:33.708 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RECV3.SA
-2025-06-06 10:30:54.840 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RECV3.SA | ARIMA(1, 0, 0) -> MSE: 2.136525, MAE: 1.201012
-2025-06-06 10:30:55.092 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RECV3.SA | Prophet(True, False) -> MSE: 0.922948, MAE: 0.905924
-2025-06-06 10:30:55.294 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RENT3.SA
-2025-06-06 10:31:26.330 | INFO     | __main__:<module>:192 - acoes_ibov.csv | RENT3.SA | ARIMA(5, 1, 2) -> MSE: 4.129315, MAE: 1.687676
-2025-06-06 10:31:26.577 | INFO     | __main__:<module>:200 - acoes_ibov.csv | RENT3.SA | Prophet(False, True) -> MSE: 93.402912, MAE: 9.593572
-2025-06-06 10:31:26.783 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SANB11.SA
-2025-06-06 10:31:58.323 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SANB11.SA | ARIMA(1, 1, 0) -> MSE: 0.886522, MAE: 0.847232
-2025-06-06 10:31:58.724 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SANB11.SA | Prophet(False, True) -> MSE: 4.093006, MAE: 1.834943
-2025-06-06 10:31:59.030 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SBSP3.SA
-2025-06-06 10:33:12.420 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SBSP3.SA | ARIMA(1, 1, 0) -> MSE: 6.649241, MAE: 2.111314
-2025-06-06 10:33:12.884 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SBSP3.SA | Prophet(False, True) -> MSE: 44.519456, MAE: 6.321494
-2025-06-06 10:33:13.204 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SLCE3.SA
-2025-06-06 10:34:07.068 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SLCE3.SA | ARIMA(5, 1, 0) -> MSE: 0.100727, MAE: 0.244017
-2025-06-06 10:34:07.438 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SLCE3.SA | Prophet(True, False) -> MSE: 1.605076, MAE: 1.247021
-2025-06-06 10:34:07.885 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SMTO3.SA
-2025-06-06 10:35:15.436 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SMTO3.SA | ARIMA(1, 0, 0) -> MSE: 0.565418, MAE: 0.624236
-2025-06-06 10:35:15.684 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SMTO3.SA | Prophet(False, True) -> MSE: 1.771543, MAE: 1.058510
-2025-06-06 10:35:16.082 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | STBP3.SA
-2025-06-06 10:36:57.193 | INFO     | __main__:<module>:192 - acoes_ibov.csv | STBP3.SA | ARIMA(2, 1, 2) -> MSE: 0.015815, MAE: 0.108271
-2025-06-06 10:36:57.827 | INFO     | __main__:<module>:200 - acoes_ibov.csv | STBP3.SA | Prophet(False, False) -> MSE: 0.847777, MAE: 0.919997
-2025-06-06 10:36:58.401 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SUZB3.SA
-2025-06-06 10:38:06.577 | INFO     | __main__:<module>:192 - acoes_ibov.csv | SUZB3.SA | ARIMA(5, 1, 0) -> MSE: 2.072668, MAE: 1.161420
-2025-06-06 10:38:06.909 | INFO     | __main__:<module>:200 - acoes_ibov.csv | SUZB3.SA | Prophet(True, True) -> MSE: 31.932122, MAE: 5.510050
-2025-06-06 10:38:07.255 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TAEE11.SA
-2025-06-06 10:38:38.767 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TAEE11.SA | ARIMA(1, 1, 2) -> MSE: 0.333109, MAE: 0.430057
-2025-06-06 10:38:38.965 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TAEE11.SA | Prophet(True, True) -> MSE: 2.380254, MAE: 1.442790
-2025-06-06 10:38:39.306 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TIMS3.SA
-2025-06-06 10:39:48.155 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TIMS3.SA | ARIMA(3, 1, 0) -> MSE: 0.950824, MAE: 0.843085
-2025-06-06 10:39:48.434 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TIMS3.SA | Prophet(False, False) -> MSE: 2.902124, MAE: 1.632196
-2025-06-06 10:39:48.763 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TOTS3.SA
-2025-06-06 10:40:23.940 | INFO     | __main__:<module>:192 - acoes_ibov.csv | TOTS3.SA | ARIMA(4, 1, 2) -> MSE: 5.574777, MAE: 2.006867
-2025-06-06 10:40:24.333 | INFO     | __main__:<module>:200 - acoes_ibov.csv | TOTS3.SA | Prophet(False, True) -> MSE: 49.245143, MAE: 6.656500
-2025-06-06 10:40:24.681 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | UGPA3.SA
-2025-06-06 10:40:57.177 | INFO     | __main__:<module>:192 - acoes_ibov.csv | UGPA3.SA | ARIMA(1, 0, 1) -> MSE: 1.160445, MAE: 0.907885
-2025-06-06 10:40:57.389 | INFO     | __main__:<module>:200 - acoes_ibov.csv | UGPA3.SA | Prophet(True, False) -> MSE: 15.127609, MAE: 3.800323
-2025-06-06 10:40:57.597 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | USIM5.SA
-2025-06-06 10:41:24.361 | INFO     | __main__:<module>:192 - acoes_ibov.csv | USIM5.SA | ARIMA(1, 1, 0) -> MSE: 0.088387, MAE: 0.243592
-2025-06-06 10:41:24.621 | INFO     | __main__:<module>:200 - acoes_ibov.csv | USIM5.SA | Prophet(True, False) -> MSE: 0.027686, MAE: 0.141393
-2025-06-06 10:41:24.861 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VALE3.SA
-2025-06-06 10:42:01.892 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VALE3.SA | ARIMA(1, 1, 0) -> MSE: 1.312773, MAE: 0.923310
-2025-06-06 10:42:02.153 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VALE3.SA | Prophet(False, True) -> MSE: 2.714914, MAE: 1.323828
-2025-06-06 10:42:02.441 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VAMO3.SA
-2025-06-06 10:42:24.684 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VAMO3.SA | ARIMA(4, 1, 1) -> MSE: 0.213881, MAE: 0.381340
-2025-06-06 10:42:24.930 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VAMO3.SA | Prophet(True, False) -> MSE: 0.196093, MAE: 0.340923
-2025-06-06 10:42:25.140 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VBBR3.SA
-2025-06-06 10:42:53.353 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VBBR3.SA | ARIMA(5, 0, 2) -> MSE: 1.384200, MAE: 1.041721
-2025-06-06 10:42:53.755 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VBBR3.SA | Prophet(False, False) -> MSE: 0.678283, MAE: 0.675005
-2025-06-06 10:42:54.037 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVA3.SA
-2025-06-06 10:43:10.886 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VIVA3.SA | ARIMA(3, 0, 2) -> MSE: 8.439284, MAE: 2.383982
-2025-06-06 10:43:11.159 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VIVA3.SA | Prophet(True, False) -> MSE: 23.334130, MAE: 4.342038
-2025-06-06 10:43:11.442 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVT3.SA
-2025-06-06 10:44:27.405 | INFO     | __main__:<module>:192 - acoes_ibov.csv | VIVT3.SA | ARIMA(4, 1, 0) -> MSE: 2.384720, MAE: 1.408479
-2025-06-06 10:44:27.651 | INFO     | __main__:<module>:200 - acoes_ibov.csv | VIVT3.SA | Prophet(False, False) -> MSE: 0.344318, MAE: 0.468627
-2025-06-06 10:44:27.915 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | WEGE3.SA
-2025-06-06 10:45:12.082 | INFO     | __main__:<module>:192 - acoes_ibov.csv | WEGE3.SA | ARIMA(1, 1, 1) -> MSE: 6.129085, MAE: 1.575261
-2025-06-06 10:45:12.325 | INFO     | __main__:<module>:200 - acoes_ibov.csv | WEGE3.SA | Prophet(True, False) -> MSE: 47.471713, MAE: 6.411510
-2025-06-06 10:45:12.568 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | YDUQ3.SA
-2025-06-06 10:45:54.654 | INFO     | __main__:<module>:192 - acoes_ibov.csv | YDUQ3.SA | ARIMA(2, 0, 1) -> MSE: 6.363139, MAE: 2.358128
-2025-06-06 10:45:54.898 | INFO     | __main__:<module>:200 - acoes_ibov.csv | YDUQ3.SA | Prophet(False, True) -> MSE: 13.060079, MAE: 3.416977
-2025-06-06 10:45:56.130 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AAPL34.SA
-2025-06-06 10:46:23.892 | INFO     | __main__:<module>:192 - bdrs.csv | AAPL34.SA | ARIMA(3, 1, 0) -> MSE: 2.824052, MAE: 1.305370
-2025-06-06 10:46:24.176 | INFO     | __main__:<module>:200 - bdrs.csv | AAPL34.SA | Prophet(True, False) -> MSE: 127.377945, MAE: 11.094729
-2025-06-06 10:46:24.451 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AIRB34.SA
-2025-06-06 10:46:52.671 | INFO     | __main__:<module>:192 - bdrs.csv | AIRB34.SA | ARIMA(3, 1, 2) -> MSE: 3.903146, MAE: 1.628866
-2025-06-06 10:46:53.177 | INFO     | __main__:<module>:200 - bdrs.csv | AIRB34.SA | Prophet(False, True) -> MSE: 3.183391, MAE: 1.444261
-2025-06-06 10:46:53.662 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMGN34.SA
-2025-06-06 10:47:34.889 | INFO     | __main__:<module>:192 - bdrs.csv | AMGN34.SA | ARIMA(5, 1, 0) -> MSE: 10.854798, MAE: 2.691214
-2025-06-06 10:47:35.481 | INFO     | __main__:<module>:200 - bdrs.csv | AMGN34.SA | Prophet(True, True) -> MSE: 100.513861, MAE: 9.832347
-2025-06-06 10:47:35.986 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMZO34.SA
-2025-06-06 10:48:09.741 | INFO     | __main__:<module>:192 - bdrs.csv | AMZO34.SA | ARIMA(1, 1, 0) -> MSE: 12.617648, MAE: 2.654514
-2025-06-06 10:48:09.968 | INFO     | __main__:<module>:200 - bdrs.csv | AMZO34.SA | Prophet(False, True) -> MSE: 95.386740, MAE: 9.539633
-2025-06-06 10:48:10.209 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AURA33.SA
-2025-06-06 10:48:40.111 | INFO     | __main__:<module>:192 - bdrs.csv | AURA33.SA | ARIMA(2, 1, 1) -> MSE: 213.112199, MAE: 14.155705
-2025-06-06 10:48:40.315 | INFO     | __main__:<module>:200 - bdrs.csv | AURA33.SA | Prophet(False, True) -> MSE: 17.668361, MAE: 3.113505
-2025-06-06 10:48:40.538 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BABA34.SA
-2025-06-06 10:49:13.514 | INFO     | __main__:<module>:192 - bdrs.csv | BABA34.SA | ARIMA(2, 1, 0) -> MSE: 1.627037, MAE: 0.966094
-2025-06-06 10:49:13.811 | INFO     | __main__:<module>:200 - bdrs.csv | BABA34.SA | Prophet(True, True) -> MSE: 5.390029, MAE: 1.835146
-2025-06-06 10:49:14.103 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BERK34.SA
-2025-06-06 10:50:20.772 | INFO     | __main__:<module>:192 - bdrs.csv | BERK34.SA | ARIMA(5, 1, 2) -> MSE: 79.296294, MAE: 8.015566
-2025-06-06 10:50:20.983 | INFO     | __main__:<module>:200 - bdrs.csv | BERK34.SA | Prophet(True, True) -> MSE: 53.623487, MAE: 6.250534
-2025-06-06 10:50:21.239 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BKNG34.SA
-2025-06-06 10:51:01.454 | INFO     | __main__:<module>:192 - bdrs.csv | BKNG34.SA | ARIMA(2, 1, 0) -> MSE: 102.363406, MAE: 7.932807
-2025-06-06 10:51:01.804 | INFO     | __main__:<module>:200 - bdrs.csv | BKNG34.SA | Prophet(True, True) -> MSE: 76.746688, MAE: 6.637400
-2025-06-06 10:51:02.121 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BOAC34.SA
-2025-06-06 10:51:33.184 | INFO     | __main__:<module>:192 - bdrs.csv | BOAC34.SA | ARIMA(1, 1, 0) -> MSE: 7.143616, MAE: 2.145889
-2025-06-06 10:51:33.481 | INFO     | __main__:<module>:200 - bdrs.csv | BOAC34.SA | Prophet(True, True) -> MSE: 45.075827, MAE: 6.260118
-2025-06-06 10:51:33.719 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CHVX34.SA
-2025-06-06 10:52:07.843 | INFO     | __main__:<module>:192 - bdrs.csv | CHVX34.SA | ARIMA(4, 1, 0) -> MSE: 1.530474, MAE: 1.006959
-2025-06-06 10:52:08.127 | INFO     | __main__:<module>:200 - bdrs.csv | CHVX34.SA | Prophet(False, False) -> MSE: 113.831297, MAE: 10.619688
-2025-06-06 10:52:08.362 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CMCS34.SA
-2025-06-06 10:52:41.171 | INFO     | __main__:<module>:192 - bdrs.csv | CMCS34.SA | ARIMA(4, 1, 2) -> MSE: 0.493771, MAE: 0.550586
-2025-06-06 10:52:41.387 | INFO     | __main__:<module>:200 - bdrs.csv | CMCS34.SA | Prophet(True, True) -> MSE: 12.755055, MAE: 3.469138
-2025-06-06 10:52:41.622 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | COCA34.SA
-2025-06-06 10:53:25.477 | INFO     | __main__:<module>:192 - bdrs.csv | COCA34.SA | ARIMA(5, 1, 0) -> MSE: 2.321264, MAE: 1.377163
-2025-06-06 10:53:25.727 | INFO     | __main__:<module>:200 - bdrs.csv | COCA34.SA | Prophet(False, True) -> MSE: 3.889729, MAE: 1.646350
-2025-06-06 10:53:25.954 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | DISB34.SA
-2025-06-06 10:53:57.024 | INFO     | __main__:<module>:192 - bdrs.csv | DISB34.SA | ARIMA(1, 1, 0) -> MSE: 17.382947, MAE: 2.705741
-2025-06-06 10:53:57.299 | INFO     | __main__:<module>:200 - bdrs.csv | DISB34.SA | Prophet(False, False) -> MSE: 13.857137, MAE: 2.410089
-2025-06-06 10:53:57.522 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GMCO34.SA
-2025-06-06 10:54:24.438 | INFO     | __main__:<module>:192 - bdrs.csv | GMCO34.SA | ARIMA(4, 0, 2) -> MSE: 8.957241, MAE: 2.615454
-2025-06-06 10:54:24.691 | INFO     | __main__:<module>:200 - bdrs.csv | GMCO34.SA | Prophet(False, True) -> MSE: 134.179700, MAE: 11.384279
-2025-06-06 10:54:24.908 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GOGL34.SA
-2025-06-06 10:54:52.864 | INFO     | __main__:<module>:192 - bdrs.csv | GOGL34.SA | ARIMA(4, 1, 0) -> MSE: 10.761712, MAE: 2.605580
-2025-06-06 10:54:53.310 | INFO     | __main__:<module>:200 - bdrs.csv | GOGL34.SA | Prophet(False, False) -> MSE: 221.569247, MAE: 14.707536
-2025-06-06 10:54:53.710 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | HOME34.SA
-2025-06-06 10:55:14.210 | INFO     | __main__:<module>:192 - bdrs.csv | HOME34.SA | ARIMA(3, 1, 0) -> MSE: 2.170261, MAE: 1.092258
-2025-06-06 10:55:14.451 | INFO     | __main__:<module>:200 - bdrs.csv | HOME34.SA | Prophet(True, True) -> MSE: 84.427921, MAE: 9.072062
-2025-06-06 10:55:14.667 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | INBR32.SA
-2025-06-06 10:55:29.349 | INFO     | __main__:<module>:192 - bdrs.csv | INBR32.SA | ARIMA(1, 1, 0) -> MSE: 1.563508, MAE: 1.015274
-2025-06-06 10:55:29.592 | INFO     | __main__:<module>:200 - bdrs.csv | INBR32.SA | Prophet(True, False) -> MSE: 1.818064, MAE: 1.063298
-2025-06-06 10:55:29.809 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | ITLC34.SA
-2025-06-06 10:55:51.501 | INFO     | __main__:<module>:192 - bdrs.csv | ITLC34.SA | ARIMA(1, 0, 0) -> MSE: 0.487388, MAE: 0.539989
-2025-06-06 10:55:51.748 | INFO     | __main__:<module>:200 - bdrs.csv | ITLC34.SA | Prophet(True, True) -> MSE: 1.071536, MAE: 0.903126
-2025-06-06 10:55:51.995 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | IVVB11.SA
-2025-06-06 10:56:56.842 | INFO     | __main__:<module>:192 - bdrs.csv | IVVB11.SA | ARIMA(4, 1, 0) -> MSE: 151.719982, MAE: 8.939529
-2025-06-06 10:56:57.140 | INFO     | __main__:<module>:200 - bdrs.csv | IVVB11.SA | Prophet(True, True) -> MSE: 1682.482769, MAE: 40.395679
-2025-06-06 10:56:57.356 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JNJB34.SA
-2025-06-06 10:57:17.984 | INFO     | __main__:<module>:192 - bdrs.csv | JNJB34.SA | ARIMA(3, 1, 0) -> MSE: 1.595616, MAE: 1.059799
-2025-06-06 10:57:18.247 | INFO     | __main__:<module>:200 - bdrs.csv | JNJB34.SA | Prophet(True, True) -> MSE: 7.041386, MAE: 2.363246
-2025-06-06 10:57:18.503 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JPMC34.SA
-2025-06-06 10:58:20.515 | INFO     | __main__:<module>:192 - bdrs.csv | JPMC34.SA | ARIMA(5, 1, 2) -> MSE: 22.049429, MAE: 3.642070
-2025-06-06 10:58:20.725 | INFO     | __main__:<module>:200 - bdrs.csv | JPMC34.SA | Prophet(True, True) -> MSE: 91.963545, MAE: 8.768712
-2025-06-06 10:58:20.980 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | M1TA34.SA
-2025-06-06 10:59:22.044 | INFO     | __main__:<module>:192 - bdrs.csv | M1TA34.SA | ARIMA(3, 1, 2) -> MSE: 213.497321, MAE: 12.131554
-2025-06-06 10:59:22.299 | INFO     | __main__:<module>:200 - bdrs.csv | M1TA34.SA | Prophet(False, True) -> MSE: 344.437720, MAE: 17.147238
-2025-06-06 10:59:22.545 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MELI34.SA
-2025-06-06 10:59:40.385 | INFO     | __main__:<module>:192 - bdrs.csv | MELI34.SA | ARIMA(3, 1, 0) -> MSE: 56.411646, MAE: 5.166894
-2025-06-06 10:59:40.614 | INFO     | __main__:<module>:200 - bdrs.csv | MELI34.SA | Prophet(False, True) -> MSE: 42.012365, MAE: 6.094780
-2025-06-06 10:59:40.857 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSCD34.SA
-2025-06-06 11:00:42.102 | INFO     | __main__:<module>:192 - bdrs.csv | MSCD34.SA | ARIMA(1, 1, 0) -> MSE: 12.464778, MAE: 2.449800
-2025-06-06 11:00:42.339 | INFO     | __main__:<module>:200 - bdrs.csv | MSCD34.SA | Prophet(True, True) -> MSE: 11.368919, MAE: 2.434171
-2025-06-06 11:00:42.618 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSFT34.SA
-2025-06-06 11:01:52.652 | INFO     | __main__:<module>:192 - bdrs.csv | MSFT34.SA | ARIMA(1, 1, 0) -> MSE: 48.372538, MAE: 4.471158
-2025-06-06 11:01:52.865 | INFO     | __main__:<module>:200 - bdrs.csv | MSFT34.SA | Prophet(False, True) -> MSE: 80.996695, MAE: 7.508030
-2025-06-06 11:01:53.065 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NFLX34.SA
-2025-06-06 11:02:46.442 | INFO     | __main__:<module>:192 - bdrs.csv | NFLX34.SA | ARIMA(1, 1, 0) -> MSE: 66.367381, MAE: 6.905868
-2025-06-06 11:02:46.968 | INFO     | __main__:<module>:200 - bdrs.csv | NFLX34.SA | Prophet(False, False) -> MSE: 125.260445, MAE: 10.653465
-2025-06-06 11:02:47.461 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NIKE34.SA
-2025-06-06 11:03:30.636 | INFO     | __main__:<module>:192 - bdrs.csv | NIKE34.SA | ARIMA(1, 1, 0) -> MSE: 2.632059, MAE: 1.241154
-2025-06-06 11:03:30.843 | INFO     | __main__:<module>:200 - bdrs.csv | NIKE34.SA | Prophet(True, False) -> MSE: 4.094193, MAE: 1.648482
-2025-06-06 11:03:31.061 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NVDC34.SA
-2025-06-06 11:04:09.574 | INFO     | __main__:<module>:192 - bdrs.csv | NVDC34.SA | ARIMA(4, 0, 2) -> MSE: 4.412156, MAE: 1.611312
-2025-06-06 11:04:09.799 | INFO     | __main__:<module>:200 - bdrs.csv | NVDC34.SA | Prophet(False, False) -> MSE: 9.619496, MAE: 2.857205
-2025-06-06 11:04:10.042 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | PFIZ34.SA
-2025-06-06 11:04:35.185 | INFO     | __main__:<module>:192 - bdrs.csv | PFIZ34.SA | ARIMA(2, 1, 0) -> MSE: 0.448047, MAE: 0.521380
-2025-06-06 11:04:35.544 | INFO     | __main__:<module>:200 - bdrs.csv | PFIZ34.SA | Prophet(True, True) -> MSE: 0.787031, MAE: 0.702600
-2025-06-06 11:04:35.932 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | RIGG34.SA
-2025-06-06 11:05:15.043 | INFO     | __main__:<module>:192 - bdrs.csv | RIGG34.SA | ARIMA(1, 0, 0) -> MSE: 2.975661, MAE: 1.560807
-2025-06-06 11:05:15.381 | INFO     | __main__:<module>:200 - bdrs.csv | RIGG34.SA | Prophet(True, True) -> MSE: 3.996709, MAE: 1.665196
-2025-06-06 11:05:15.635 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | SSFO34.SA
-2025-06-06 11:05:41.611 | INFO     | __main__:<module>:192 - bdrs.csv | SSFO34.SA | ARIMA(3, 1, 2) -> MSE: 22.939651, MAE: 3.873746
-2025-06-06 11:05:41.817 | INFO     | __main__:<module>:200 - bdrs.csv | SSFO34.SA | Prophet(True, False) -> MSE: 185.705604, MAE: 13.274819
-2025-06-06 11:05:42.045 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSLA34.SA
-2025-06-06 11:06:08.067 | INFO     | __main__:<module>:192 - bdrs.csv | TSLA34.SA | ARIMA(1, 1, 0) -> MSE: 30.548059, MAE: 5.152862
-2025-06-06 11:06:08.310 | INFO     | __main__:<module>:200 - bdrs.csv | TSLA34.SA | Prophet(True, True) -> MSE: 21.737857, MAE: 4.152811
-2025-06-06 11:06:08.582 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSMC34.SA
-2025-06-06 11:06:31.629 | INFO     | __main__:<module>:192 - bdrs.csv | TSMC34.SA | ARIMA(4, 1, 2) -> MSE: 190.641919, MAE: 10.756200
-2025-06-06 11:06:31.915 | INFO     | __main__:<module>:200 - bdrs.csv | TSMC34.SA | Prophet(True, False) -> MSE: 282.282952, MAE: 15.254397
-2025-06-06 11:06:32.188 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | UNHH34.SA
-2025-06-06 11:06:56.933 | INFO     | __main__:<module>:192 - bdrs.csv | UNHH34.SA | ARIMA(1, 1, 0) -> MSE: 29.545028, MAE: 3.734952
-2025-06-06 11:06:57.203 | INFO     | __main__:<module>:200 - bdrs.csv | UNHH34.SA | Prophet(True, False) -> MSE: 219.711337, MAE: 13.895528
-2025-06-06 11:06:57.406 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VERZ34.SA
-2025-06-06 11:07:27.338 | INFO     | __main__:<module>:192 - bdrs.csv | VERZ34.SA | ARIMA(2, 1, 1) -> MSE: 0.631310, MAE: 0.678061
-2025-06-06 11:07:27.560 | INFO     | __main__:<module>:200 - bdrs.csv | VERZ34.SA | Prophet(True, False) -> MSE: 5.918615, MAE: 2.299840
-2025-06-06 11:07:27.783 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VISA34.SA
-2025-06-06 11:08:28.211 | INFO     | __main__:<module>:192 - bdrs.csv | VISA34.SA | ARIMA(2, 1, 2) -> MSE: 13.707931, MAE: 2.822157
-2025-06-06 11:08:28.410 | INFO     | __main__:<module>:200 - bdrs.csv | VISA34.SA | Prophet(False, False) -> MSE: 5.044699, MAE: 1.843825
-2025-06-06 11:08:28.924 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | BZ=F
-2025-06-06 11:09:09.939 | INFO     | __main__:<module>:192 - commodities.csv | BZ=F | ARIMA(5, 1, 2) -> MSE: 3.273390, MAE: 1.269626
-2025-06-06 11:09:10.147 | INFO     | __main__:<module>:200 - commodities.csv | BZ=F | Prophet(False, False) -> MSE: 62.846237, MAE: 7.767027
-2025-06-06 11:09:10.367 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | GC=F
-2025-06-06 11:10:12.238 | INFO     | __main__:<module>:192 - commodities.csv | GC=F | ARIMA(1, 1, 0) -> MSE: 10389.166815, MAE: 82.688702
-2025-06-06 11:10:12.494 | INFO     | __main__:<module>:200 - commodities.csv | GC=F | Prophet(True, True) -> MSE: 34496.141686, MAE: 173.856651
-2025-06-06 11:10:12.709 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | KC=F
-2025-06-06 11:11:21.393 | INFO     | __main__:<module>:192 - commodities.csv | KC=F | ARIMA(5, 1, 2) -> MSE: 692.945562, MAE: 21.998923
-2025-06-06 11:11:21.692 | INFO     | __main__:<module>:200 - commodities.csv | KC=F | Prophet(True, True) -> MSE: 681.260659, MAE: 22.154703
-2025-06-06 11:11:21.970 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | LE=F
-2025-06-06 11:11:57.783 | INFO     | __main__:<module>:192 - commodities.csv | LE=F | ARIMA(2, 1, 0) -> MSE: 3.330692, MAE: 1.459612
-2025-06-06 11:11:58.000 | INFO     | __main__:<module>:200 - commodities.csv | LE=F | Prophet(False, True) -> MSE: 104.355336, MAE: 10.027570
-2025-06-06 11:11:58.253 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | SI=F
-2025-06-06 11:12:30.092 | INFO     | __main__:<module>:192 - commodities.csv | SI=F | ARIMA(1, 1, 0) -> MSE: 10.749517, MAE: 3.101314
-2025-06-06 11:12:30.348 | INFO     | __main__:<module>:200 - commodities.csv | SI=F | Prophet(False, False) -> MSE: 1.313118, MAE: 1.021979
-2025-06-06 11:12:30.557 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZC=F
-2025-06-06 11:13:02.799 | INFO     | __main__:<module>:192 - commodities.csv | ZC=F | ARIMA(4, 1, 0) -> MSE: 151.811174, MAE: 9.148005
-2025-06-06 11:13:03.073 | INFO     | __main__:<module>:200 - commodities.csv | ZC=F | Prophet(True, False) -> MSE: 1939.684658, MAE: 42.774540
-2025-06-06 11:13:03.298 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZS=F
-2025-06-06 11:13:39.588 | INFO     | __main__:<module>:192 - commodities.csv | ZS=F | ARIMA(2, 1, 2) -> MSE: 424.971037, MAE: 17.114163
-2025-06-06 11:13:39.812 | INFO     | __main__:<module>:200 - commodities.csv | ZS=F | Prophet(True, True) -> MSE: 12200.253139, MAE: 109.409874
-2025-06-06 11:13:40.671 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ADA-USD
-2025-06-06 11:14:12.697 | INFO     | __main__:<module>:192 - criptos.csv | ADA-USD | ARIMA(4, 0, 1) -> MSE: 0.011244, MAE: 0.094983
-2025-06-06 11:14:12.924 | INFO     | __main__:<module>:200 - criptos.csv | ADA-USD | Prophet(True, False) -> MSE: 0.003612, MAE: 0.051030
-2025-06-06 11:14:13.142 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | AVAX-USD
-2025-06-06 11:14:35.661 | INFO     | __main__:<module>:192 - criptos.csv | AVAX-USD | ARIMA(4, 0, 2) -> MSE: 11.899182, MAE: 2.935929
-2025-06-06 11:14:35.913 | INFO     | __main__:<module>:200 - criptos.csv | AVAX-USD | Prophet(False, True) -> MSE: 2.533351, MAE: 1.300361
-2025-06-06 11:14:36.148 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BNB-USD
-2025-06-06 11:15:15.406 | INFO     | __main__:<module>:192 - criptos.csv | BNB-USD | ARIMA(4, 1, 2) -> MSE: 388.819508, MAE: 15.914568
-2025-06-06 11:15:15.597 | INFO     | __main__:<module>:200 - criptos.csv | BNB-USD | Prophet(True, False) -> MSE: 6525.451399, MAE: 77.872275
-2025-06-06 11:15:15.814 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BTC-USD
-2025-06-06 11:16:38.303 | INFO     | __main__:<module>:192 - criptos.csv | BTC-USD | ARIMA(1, 1, 0) -> MSE: 9002596.995102, MAE: 2136.662484
-2025-06-06 11:16:38.584 | INFO     | __main__:<module>:200 - criptos.csv | BTC-USD | Prophet(False, False) -> MSE: 9056513.401837, MAE: 2210.187568
-2025-06-06 11:16:38.810 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOGE-USD
-2025-06-06 11:17:25.995 | INFO     | __main__:<module>:192 - criptos.csv | DOGE-USD | ARIMA(5, 1, 2) -> MSE: 0.001697, MAE: 0.036477
-2025-06-06 11:17:26.193 | INFO     | __main__:<module>:200 - criptos.csv | DOGE-USD | Prophet(True, False) -> MSE: 0.002348, MAE: 0.044847
-2025-06-06 11:17:26.395 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOT-USD
-2025-06-06 11:17:51.181 | INFO     | __main__:<module>:192 - criptos.csv | DOT-USD | ARIMA(5, 1, 0) -> MSE: 0.534916, MAE: 0.619717
-2025-06-06 11:17:51.426 | INFO     | __main__:<module>:200 - criptos.csv | DOT-USD | Prophet(False, True) -> MSE: 0.265423, MAE: 0.424796
-2025-06-06 11:17:51.684 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ETH-USD
-2025-06-06 11:18:28.436 | INFO     | __main__:<module>:192 - criptos.csv | ETH-USD | ARIMA(2, 1, 2) -> MSE: 27337.241820, MAE: 109.654972
-2025-06-06 11:18:28.638 | INFO     | __main__:<module>:200 - criptos.csv | ETH-USD | Prophet(True, False) -> MSE: 85063.774141, MAE: 206.673617
-2025-06-06 11:18:28.847 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LINK-USD
-2025-06-06 11:19:14.318 | INFO     | __main__:<module>:192 - criptos.csv | LINK-USD | ARIMA(5, 0, 2) -> MSE: 6.977619, MAE: 2.413100
-2025-06-06 11:19:14.528 | INFO     | __main__:<module>:200 - criptos.csv | LINK-USD | Prophet(True, True) -> MSE: 1.165458, MAE: 0.944669
-2025-06-06 11:19:14.737 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LTC-USD
-2025-06-06 11:20:06.932 | INFO     | __main__:<module>:192 - criptos.csv | LTC-USD | ARIMA(5, 0, 2) -> MSE: 158.756227, MAE: 11.439647
-2025-06-06 11:20:07.251 | INFO     | __main__:<module>:200 - criptos.csv | LTC-USD | Prophet(False, False) -> MSE: 40.567091, MAE: 5.571206
-2025-06-06 11:20:07.571 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | MATIC-USD
-2025-06-06 11:20:37.377 | INFO     | __main__:<module>:192 - criptos.csv | MATIC-USD | ARIMA(5, 1, 0) -> MSE: 0.001366, MAE: 0.025836
-2025-06-06 11:20:37.634 | INFO     | __main__:<module>:200 - criptos.csv | MATIC-USD | Prophet(False, False) -> MSE: 0.001208, MAE: 0.030844
-2025-06-06 11:20:37.876 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | NEAR-USD
-2025-06-06 11:20:59.618 | INFO     | __main__:<module>:192 - criptos.csv | NEAR-USD | ARIMA(1, 0, 0) -> MSE: 0.181393, MAE: 0.360626
-2025-06-06 11:20:59.873 | INFO     | __main__:<module>:200 - criptos.csv | NEAR-USD | Prophet(False, True) -> MSE: 0.059470, MAE: 0.195059
-2025-06-06 11:21:00.105 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SHIB-USD
-2025-06-06 11:21:26.842 | INFO     | __main__:<module>:192 - criptos.csv | SHIB-USD | ARIMA(3, 0, 0) -> MSE: 0.000000, MAE: 0.000002
-2025-06-06 11:21:27.046 | INFO     | __main__:<module>:200 - criptos.csv | SHIB-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000001
-2025-06-06 11:21:27.284 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SOL-USD
-2025-06-06 11:21:55.893 | INFO     | __main__:<module>:192 - criptos.csv | SOL-USD | ARIMA(5, 1, 0) -> MSE: 398.887153, MAE: 17.788179
-2025-06-06 11:21:56.152 | INFO     | __main__:<module>:200 - criptos.csv | SOL-USD | Prophet(False, True) -> MSE: 161.913383, MAE: 9.425665
-2025-06-06 11:21:56.369 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SUI-USD
-2025-06-06 11:22:11.369 | INFO     | __main__:<module>:192 - criptos.csv | SUI-USD | ARIMA(1, 1, 0) -> MSE: 0.000000, MAE: 0.000080
-2025-06-06 11:22:11.642 | INFO     | __main__:<module>:200 - criptos.csv | SUI-USD | Prophet(False, True) -> MSE: 0.000001, MAE: 0.001212
-2025-06-06 11:22:11.861 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | TON-USD
-2025-06-06 11:22:40.898 | INFO     | __main__:<module>:192 - criptos.csv | TON-USD | ARIMA(5, 1, 2) -> MSE: 1.008788, MAE: 0.630480
-2025-06-06 11:22:41.183 | INFO     | __main__:<module>:200 - criptos.csv | TON-USD | Prophet(False, False) -> MSE: 3.881590, MAE: 1.813331
-2025-06-06 11:22:41.442 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | UNI-USD
-2025-06-06 11:23:19.159 | INFO     | __main__:<module>:192 - criptos.csv | UNI-USD | ARIMA(1, 0, 2) -> MSE: 0.000001, MAE: 0.001078
-2025-06-06 11:23:19.365 | INFO     | __main__:<module>:200 - criptos.csv | UNI-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000346
-2025-06-06 11:23:19.602 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | XRP-USD
-2025-06-06 11:24:01.926 | INFO     | __main__:<module>:192 - criptos.csv | XRP-USD | ARIMA(5, 0, 2) -> MSE: 0.093531, MAE: 0.291996
-2025-06-06 11:24:02.201 | INFO     | __main__:<module>:200 - criptos.csv | XRP-USD | Prophet(False, True) -> MSE: 0.020379, MAE: 0.121066
-2025-06-06 11:24:02.612 | INFO     | __main__:<module>:150 - Iniciando juros.csv | EDV
-2025-06-06 11:24:32.203 | INFO     | __main__:<module>:192 - juros.csv | EDV | ARIMA(2, 1, 2) -> MSE: 2.934349, MAE: 1.410625
-2025-06-06 11:24:32.433 | INFO     | __main__:<module>:200 - juros.csv | EDV | Prophet(False, False) -> MSE: 5.051629, MAE: 1.917176
-2025-06-06 11:24:32.637 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^FVX
-2025-06-06 11:25:01.349 | INFO     | __main__:<module>:192 - juros.csv | ^FVX | ARIMA(2, 1, 0) -> MSE: 0.014412, MAE: 0.100791
-2025-06-06 11:25:01.592 | INFO     | __main__:<module>:200 - juros.csv | ^FVX | Prophet(True, True) -> MSE: 0.018336, MAE: 0.104702
-2025-06-06 11:25:01.845 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^IRX
-2025-06-06 11:25:39.680 | INFO     | __main__:<module>:192 - juros.csv | ^IRX | ARIMA(5, 1, 1) -> MSE: 0.000817, MAE: 0.022564
-2025-06-06 11:25:39.915 | INFO     | __main__:<module>:200 - juros.csv | ^IRX | Prophet(True, False) -> MSE: 0.001102, MAE: 0.027957
-2025-06-06 11:25:40.113 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TNX
-2025-06-06 11:26:06.856 | INFO     | __main__:<module>:192 - juros.csv | ^TNX | ARIMA(2, 1, 0) -> MSE: 0.013088, MAE: 0.097557
-2025-06-06 11:26:07.122 | INFO     | __main__:<module>:200 - juros.csv | ^TNX | Prophet(False, True) -> MSE: 0.014205, MAE: 0.091991
-2025-06-06 11:26:07.340 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TYX
-2025-06-06 11:26:34.418 | INFO     | __main__:<module>:192 - juros.csv | ^TYX | ARIMA(2, 1, 0) -> MSE: 0.012699, MAE: 0.095168
-2025-06-06 11:26:34.637 | INFO     | __main__:<module>:200 - juros.csv | ^TYX | Prophet(False, False) -> MSE: 0.018656, MAE: 0.114916
-2025-06-06 11:26:34.940 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | EURBRL=X
-2025-06-06 11:27:05.856 | INFO     | __main__:<module>:192 - moedas.csv | EURBRL=X | ARIMA(1, 1, 1) -> MSE: 0.003651, MAE: 0.050470
-2025-06-06 11:27:06.076 | INFO     | __main__:<module>:200 - moedas.csv | EURBRL=X | Prophet(False, False) -> MSE: 0.003429, MAE: 0.049520
-2025-06-06 11:27:06.335 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | USDBRL=X
-2025-06-06 11:27:29.070 | INFO     | __main__:<module>:192 - moedas.csv | USDBRL=X | ARIMA(1, 1, 0) -> MSE: 0.006946, MAE: 0.075556
-2025-06-06 11:27:29.320 | INFO     | __main__:<module>:200 - moedas.csv | USDBRL=X | Prophet(True, True) -> MSE: 0.026910, MAE: 0.144520
-2025-06-06 11:27:29.574 | INFO     | __main__:<module>:220 - Pipeline de forecasting finalizado!
+2025-06-07 12:43:20.081 | INFO     | __main__:<module>:134 - Iniciando pipeline de forecasting para financas...
+2025-06-07 12:43:25.602 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ABEV3.SA
+2025-06-07 12:44:22.735 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ABEV3.SA | ARIMA(1, 0, 2) -> MSE: 0.036408, MAE: 0.161969
+2025-06-07 12:44:24.300 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ABEV3.SA | Prophet(False, False) -> MSE: 3.429892, MAE: 1.846787
+2025-06-07 12:44:24.746 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ALOS3.SA
+2025-06-07 12:45:22.978 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ALOS3.SA | ARIMA(5, 0, 2) -> MSE: 0.252815, MAE: 0.416927
+2025-06-07 12:45:23.575 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ALOS3.SA | Prophet(True, False) -> MSE: 1.717337, MAE: 1.174433
+2025-06-07 12:45:24.077 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AMOB3.SA
+2025-06-07 12:45:39.335 | INFO     | __main__:<module>:191 - acoes_ibov.csv | AMOB3.SA | ARIMA(3, 1, 0) -> MSE: 1.077152, MAE: 0.883209
+2025-06-07 12:45:39.765 | INFO     | __main__:<module>:199 - acoes_ibov.csv | AMOB3.SA | Prophet(False, False) -> MSE: 0.655914, MAE: 0.686205
+2025-06-07 12:45:40.191 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ASAI3.SA
+2025-06-07 12:46:15.535 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ASAI3.SA | ARIMA(1, 0, 0) -> MSE: 2.164087, MAE: 1.243881
+2025-06-07 12:46:16.039 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ASAI3.SA | Prophet(True, False) -> MSE: 9.147507, MAE: 2.790661
+2025-06-07 12:46:16.543 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AURE3.SA
+2025-06-07 12:46:48.301 | INFO     | __main__:<module>:191 - acoes_ibov.csv | AURE3.SA | ARIMA(2, 1, 0) -> MSE: 0.421604, MAE: 0.519627
+2025-06-07 12:46:48.896 | INFO     | __main__:<module>:199 - acoes_ibov.csv | AURE3.SA | Prophet(True, True) -> MSE: 2.177718, MAE: 1.332102
+2025-06-07 12:46:49.448 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZUL4.SA
+2025-06-07 12:47:56.934 | INFO     | __main__:<module>:191 - acoes_ibov.csv | AZUL4.SA | ARIMA(5, 1, 0) -> MSE: 0.153258, MAE: 0.276726
+2025-06-07 12:47:57.464 | INFO     | __main__:<module>:199 - acoes_ibov.csv | AZUL4.SA | Prophet(False, False) -> MSE: 0.023221, MAE: 0.100135
+2025-06-07 12:47:57.962 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | AZZA3.SA
+2025-06-07 12:49:11.539 | INFO     | __main__:<module>:191 - acoes_ibov.csv | AZZA3.SA | ARIMA(5, 1, 2) -> MSE: 36.447908, MAE: 4.258923
+2025-06-07 12:49:12.034 | INFO     | __main__:<module>:199 - acoes_ibov.csv | AZZA3.SA | Prophet(False, True) -> MSE: 146.491540, MAE: 10.784530
+2025-06-07 12:49:12.556 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | B3SA3.SA
+2025-06-07 12:50:21.628 | INFO     | __main__:<module>:191 - acoes_ibov.csv | B3SA3.SA | ARIMA(1, 1, 0) -> MSE: 0.566011, MAE: 0.632695
+2025-06-07 12:50:22.247 | INFO     | __main__:<module>:199 - acoes_ibov.csv | B3SA3.SA | Prophet(False, True) -> MSE: 6.625192, MAE: 2.502927
+2025-06-07 12:50:22.824 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBAS3.SA
+2025-06-07 12:51:42.158 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BBAS3.SA | ARIMA(1, 1, 0) -> MSE: 27.804313, MAE: 4.549943
+2025-06-07 12:51:42.685 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BBAS3.SA | Prophet(True, False) -> MSE: 10.876357, MAE: 2.758090
+2025-06-07 12:51:43.177 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC3.SA
+2025-06-07 12:53:00.949 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BBDC3.SA | ARIMA(5, 1, 2) -> MSE: 1.008953, MAE: 0.714575
+2025-06-07 12:53:01.573 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BBDC3.SA | Prophet(False, True) -> MSE: 3.035133, MAE: 1.560803
+2025-06-07 12:53:02.128 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBDC4.SA
+2025-06-07 12:54:09.089 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BBDC4.SA | ARIMA(2, 1, 2) -> MSE: 2.026347, MAE: 1.021703
+2025-06-07 12:54:09.646 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BBDC4.SA | Prophet(False, True) -> MSE: 5.806842, MAE: 2.158372
+2025-06-07 12:54:10.252 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BBSE3.SA
+2025-06-07 12:55:11.516 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BBSE3.SA | ARIMA(3, 1, 2) -> MSE: 8.660352, MAE: 2.305824
+2025-06-07 12:55:12.050 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BBSE3.SA | Prophet(True, False) -> MSE: 4.103673, MAE: 1.587237
+2025-06-07 12:55:12.544 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BEEF3.SA
+2025-06-07 12:56:16.813 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BEEF3.SA | ARIMA(4, 0, 0) -> MSE: 0.454950, MAE: 0.430390
+2025-06-07 12:56:17.164 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BEEF3.SA | Prophet(True, False) -> MSE: 1.183107, MAE: 0.982564
+2025-06-07 12:56:17.531 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BPAC11.SA
+2025-06-07 12:56:50.247 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BPAC11.SA | ARIMA(1, 1, 0) -> MSE: 1.989072, MAE: 0.987242
+2025-06-07 12:56:50.617 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BPAC11.SA | Prophet(True, True) -> MSE: 22.145410, MAE: 4.536571
+2025-06-07 12:56:50.906 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAP4.SA
+2025-06-07 12:57:18.803 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BRAP4.SA | ARIMA(1, 1, 0) -> MSE: 0.318077, MAE: 0.440038
+2025-06-07 12:57:19.128 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BRAP4.SA | Prophet(False, True) -> MSE: 0.544951, MAE: 0.604273
+2025-06-07 12:57:19.411 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRAV3.SA
+2025-06-07 12:57:39.834 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BRAV3.SA | ARIMA(1, 0, 1) -> MSE: 8.211088, MAE: 2.719202
+2025-06-07 12:57:40.141 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BRAV3.SA | Prophet(False, False) -> MSE: 3.860345, MAE: 1.775213
+2025-06-07 12:57:40.427 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRFS3.SA
+2025-06-07 12:58:10.102 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BRFS3.SA | ARIMA(1, 1, 0) -> MSE: 1.030924, MAE: 0.672005
+2025-06-07 12:58:10.385 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BRFS3.SA | Prophet(False, True) -> MSE: 22.963618, MAE: 4.541819
+2025-06-07 12:58:10.655 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | BRKM5.SA
+2025-06-07 12:58:50.417 | INFO     | __main__:<module>:191 - acoes_ibov.csv | BRKM5.SA | ARIMA(1, 1, 0) -> MSE: 0.338826, MAE: 0.419973
+2025-06-07 12:58:50.882 | INFO     | __main__:<module>:199 - acoes_ibov.csv | BRKM5.SA | Prophet(True, True) -> MSE: 1.787859, MAE: 1.228567
+2025-06-07 12:58:51.469 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CCRO3.SA
+2025-06-07 12:59:33.155 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CCRO3.SA | ARIMA(3, 0, 2) -> MSE: 0.117697, MAE: 0.277500
+2025-06-07 12:59:33.430 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CCRO3.SA | Prophet(True, True) -> MSE: 0.649209, MAE: 0.711925
+2025-06-07 12:59:33.745 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIG4.SA
+2025-06-07 13:00:50.341 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CMIG4.SA | ARIMA(4, 0, 2) -> MSE: 0.074474, MAE: 0.235309
+2025-06-07 13:00:50.698 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CMIG4.SA | Prophet(False, False) -> MSE: 0.233925, MAE: 0.435531
+2025-06-07 13:00:51.031 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CMIN3.SA
+2025-06-07 13:01:09.885 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CMIN3.SA | ARIMA(1, 0, 1) -> MSE: 0.510745, MAE: 0.632201
+2025-06-07 13:01:10.124 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CMIN3.SA | Prophet(False, False) -> MSE: 0.133148, MAE: 0.329142
+2025-06-07 13:01:10.371 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | COGN3.SA
+2025-06-07 13:01:40.760 | INFO     | __main__:<module>:191 - acoes_ibov.csv | COGN3.SA | ARIMA(3, 1, 0) -> MSE: 0.034408, MAE: 0.133165
+2025-06-07 13:01:41.011 | INFO     | __main__:<module>:199 - acoes_ibov.csv | COGN3.SA | Prophet(True, True) -> MSE: 0.818450, MAE: 0.796240
+2025-06-07 13:01:41.288 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPFE3.SA
+2025-06-07 13:02:09.397 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CPFE3.SA | ARIMA(1, 1, 0) -> MSE: 2.955634, MAE: 1.321002
+2025-06-07 13:02:09.640 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CPFE3.SA | Prophet(False, True) -> MSE: 16.444793, MAE: 3.810685
+2025-06-07 13:02:09.970 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CPLE6.SA
+2025-06-07 13:03:26.975 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CPLE6.SA | ARIMA(5, 1, 2) -> MSE: 0.281352, MAE: 0.363716
+2025-06-07 13:03:27.278 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CPLE6.SA | Prophet(False, True) -> MSE: 1.240959, MAE: 1.036509
+2025-06-07 13:03:27.552 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CRFB3.SA
+2025-06-07 13:03:54.606 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CRFB3.SA | ARIMA(1, 1, 0) -> MSE: 0.007828, MAE: 0.065332
+2025-06-07 13:03:54.856 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CRFB3.SA | Prophet(True, False) -> MSE: 2.286877, MAE: 1.499103
+2025-06-07 13:03:55.102 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSAN3.SA
+2025-06-07 13:04:24.523 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CSAN3.SA | ARIMA(2, 1, 0) -> MSE: 0.082882, MAE: 0.242399
+2025-06-07 13:04:24.816 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CSAN3.SA | Prophet(False, False) -> MSE: 0.141363, MAE: 0.338140
+2025-06-07 13:04:25.088 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CSNA3.SA
+2025-06-07 13:05:08.216 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CSNA3.SA | ARIMA(3, 0, 2) -> MSE: 0.622227, MAE: 0.676992
+2025-06-07 13:05:08.534 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CSNA3.SA | Prophet(True, False) -> MSE: 0.719006, MAE: 0.790040
+2025-06-07 13:05:08.806 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CVCB3.SA
+2025-06-07 13:05:53.472 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CVCB3.SA | ARIMA(3, 0, 2) -> MSE: 0.094001, MAE: 0.280899
+2025-06-07 13:05:53.800 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CVCB3.SA | Prophet(False, True) -> MSE: 0.406022, MAE: 0.584112
+2025-06-07 13:05:54.094 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CXSE3.SA
+2025-06-07 13:06:07.719 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CXSE3.SA | ARIMA(3, 1, 0) -> MSE: 0.489801, MAE: 0.570738
+2025-06-07 13:06:07.991 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CXSE3.SA | Prophet(True, False) -> MSE: 0.232605, MAE: 0.353543
+2025-06-07 13:06:08.228 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | CYRE3.SA
+2025-06-07 13:06:45.892 | INFO     | __main__:<module>:191 - acoes_ibov.csv | CYRE3.SA | ARIMA(3, 0, 2) -> MSE: 0.477183, MAE: 0.545878
+2025-06-07 13:06:46.223 | INFO     | __main__:<module>:199 - acoes_ibov.csv | CYRE3.SA | Prophet(False, True) -> MSE: 4.272399, MAE: 1.979769
+2025-06-07 13:06:46.614 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EGIE3.SA
+2025-06-07 13:07:29.436 | INFO     | __main__:<module>:191 - acoes_ibov.csv | EGIE3.SA | ARIMA(3, 0, 2) -> MSE: 0.575042, MAE: 0.636137
+2025-06-07 13:07:29.815 | INFO     | __main__:<module>:199 - acoes_ibov.csv | EGIE3.SA | Prophet(True, True) -> MSE: 0.649028, MAE: 0.651658
+2025-06-07 13:07:30.103 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET3.SA
+2025-06-07 13:07:59.358 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ELET3.SA | ARIMA(1, 1, 2) -> MSE: 1.856255, MAE: 1.064202
+2025-06-07 13:07:59.667 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ELET3.SA | Prophet(True, True) -> MSE: 11.172547, MAE: 2.928939
+2025-06-07 13:07:59.939 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ELET6.SA
+2025-06-07 13:08:29.576 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ELET6.SA | ARIMA(1, 1, 0) -> MSE: 1.066673, MAE: 0.844616
+2025-06-07 13:08:29.866 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ELET6.SA | Prophet(True, True) -> MSE: 7.526492, MAE: 2.444698
+2025-06-07 13:08:30.117 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EMBR3.SA
+2025-06-07 13:09:39.825 | INFO     | __main__:<module>:191 - acoes_ibov.csv | EMBR3.SA | ARIMA(2, 1, 0) -> MSE: 9.514826, MAE: 2.599984
+2025-06-07 13:09:40.084 | INFO     | __main__:<module>:199 - acoes_ibov.csv | EMBR3.SA | Prophet(True, True) -> MSE: 4.618378, MAE: 1.861240
+2025-06-07 13:09:40.349 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENEV3.SA
+2025-06-07 13:10:24.670 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ENEV3.SA | ARIMA(1, 1, 0) -> MSE: 0.188747, MAE: 0.367694
+2025-06-07 13:10:24.935 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ENEV3.SA | Prophet(True, False) -> MSE: 1.099711, MAE: 0.962339
+2025-06-07 13:10:25.196 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ENGI11.SA
+2025-06-07 13:10:58.904 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ENGI11.SA | ARIMA(1, 1, 0) -> MSE: 1.462325, MAE: 0.995523
+2025-06-07 13:10:59.189 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ENGI11.SA | Prophet(False, True) -> MSE: 15.008832, MAE: 3.675890
+2025-06-07 13:10:59.448 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | EQTL3.SA
+2025-06-07 13:11:35.156 | INFO     | __main__:<module>:191 - acoes_ibov.csv | EQTL3.SA | ARIMA(2, 1, 0) -> MSE: 0.340595, MAE: 0.490158
+2025-06-07 13:11:35.477 | INFO     | __main__:<module>:199 - acoes_ibov.csv | EQTL3.SA | Prophet(False, True) -> MSE: 11.244703, MAE: 3.298798
+2025-06-07 13:11:35.739 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | FLRY3.SA
+2025-06-07 13:12:11.601 | INFO     | __main__:<module>:191 - acoes_ibov.csv | FLRY3.SA | ARIMA(4, 0, 2) -> MSE: 0.100263, MAE: 0.262251
+2025-06-07 13:12:11.852 | INFO     | __main__:<module>:199 - acoes_ibov.csv | FLRY3.SA | Prophet(False, False) -> MSE: 0.035701, MAE: 0.150607
+2025-06-07 13:12:12.122 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GGBR4.SA
+2025-06-07 13:12:41.356 | INFO     | __main__:<module>:191 - acoes_ibov.csv | GGBR4.SA | ARIMA(1, 1, 0) -> MSE: 1.752169, MAE: 1.199149
+2025-06-07 13:12:41.645 | INFO     | __main__:<module>:199 - acoes_ibov.csv | GGBR4.SA | Prophet(True, False) -> MSE: 0.567066, MAE: 0.601741
+2025-06-07 13:12:41.898 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | GOAU4.SA
+2025-06-07 13:13:23.069 | INFO     | __main__:<module>:191 - acoes_ibov.csv | GOAU4.SA | ARIMA(1, 1, 0) -> MSE: 0.494295, MAE: 0.648342
+2025-06-07 13:13:23.367 | INFO     | __main__:<module>:199 - acoes_ibov.csv | GOAU4.SA | Prophet(True, False) -> MSE: 0.713281, MAE: 0.787779
+2025-06-07 13:13:23.624 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HAPV3.SA
+2025-06-07 13:13:46.914 | INFO     | __main__:<module>:191 - acoes_ibov.csv | HAPV3.SA | ARIMA(3, 1, 0) -> MSE: 12.558818, MAE: 3.078199
+2025-06-07 13:13:47.151 | INFO     | __main__:<module>:199 - acoes_ibov.csv | HAPV3.SA | Prophet(False, True) -> MSE: 28.692781, MAE: 4.563058
+2025-06-07 13:13:47.394 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | HYPE3.SA
+2025-06-07 13:14:21.531 | INFO     | __main__:<module>:191 - acoes_ibov.csv | HYPE3.SA | ARIMA(4, 1, 0) -> MSE: 3.793027, MAE: 1.645610
+2025-06-07 13:14:21.873 | INFO     | __main__:<module>:199 - acoes_ibov.csv | HYPE3.SA | Prophet(True, True) -> MSE: 30.205495, MAE: 5.230727
+2025-06-07 13:14:22.161 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IGTI11.SA
+2025-06-07 13:14:39.760 | INFO     | __main__:<module>:191 - acoes_ibov.csv | IGTI11.SA | ARIMA(3, 0, 2) -> MSE: 1.334520, MAE: 0.985396
+2025-06-07 13:14:40.047 | INFO     | __main__:<module>:199 - acoes_ibov.csv | IGTI11.SA | Prophet(False, True) -> MSE: 7.522720, MAE: 2.558871
+2025-06-07 13:14:40.290 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | IRBR3.SA
+2025-06-07 13:15:22.092 | INFO     | __main__:<module>:191 - acoes_ibov.csv | IRBR3.SA | ARIMA(5, 1, 2) -> MSE: 13.254495, MAE: 3.362004
+2025-06-07 13:15:22.450 | INFO     | __main__:<module>:199 - acoes_ibov.csv | IRBR3.SA | Prophet(False, False) -> MSE: 1.929301, MAE: 1.115077
+2025-06-07 13:15:22.727 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ISAE4.SA
+2025-06-07 13:15:54.667 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ISAE4.SA | ARIMA(2, 1, 0) -> MSE: 0.172266, MAE: 0.325310
+2025-06-07 13:15:54.904 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ISAE4.SA | Prophet(False, False) -> MSE: 0.237816, MAE: 0.416318
+2025-06-07 13:15:55.146 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITSA4.SA
+2025-06-07 13:16:30.051 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ITSA4.SA | ARIMA(5, 1, 2) -> MSE: 0.087700, MAE: 0.266173
+2025-06-07 13:16:30.259 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ITSA4.SA | Prophet(False, True) -> MSE: 0.575744, MAE: 0.694394
+2025-06-07 13:16:30.501 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | ITUB4.SA
+2025-06-07 13:17:13.531 | INFO     | __main__:<module>:191 - acoes_ibov.csv | ITUB4.SA | ARIMA(3, 0, 2) -> MSE: 1.390087, MAE: 1.044160
+2025-06-07 13:17:13.850 | INFO     | __main__:<module>:199 - acoes_ibov.csv | ITUB4.SA | Prophet(False, True) -> MSE: 4.866192, MAE: 1.940825
+2025-06-07 13:17:14.125 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | JBSS3.SA
+2025-06-07 13:18:22.083 | INFO     | __main__:<module>:191 - acoes_ibov.csv | JBSS3.SA | ARIMA(3, 0, 2) -> MSE: 5.440578, MAE: 1.855665
+2025-06-07 13:18:22.421 | INFO     | __main__:<module>:199 - acoes_ibov.csv | JBSS3.SA | Prophet(False, True) -> MSE: 5.352946, MAE: 1.817437
+2025-06-07 13:18:22.711 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | KLBN11.SA
+2025-06-07 13:18:53.221 | INFO     | __main__:<module>:191 - acoes_ibov.csv | KLBN11.SA | ARIMA(2, 1, 1) -> MSE: 0.490039, MAE: 0.554896
+2025-06-07 13:18:53.472 | INFO     | __main__:<module>:199 - acoes_ibov.csv | KLBN11.SA | Prophet(True, True) -> MSE: 3.018413, MAE: 1.592448
+2025-06-07 13:18:53.687 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LREN3.SA
+2025-06-07 13:19:32.589 | INFO     | __main__:<module>:191 - acoes_ibov.csv | LREN3.SA | ARIMA(5, 0, 2) -> MSE: 3.363981, MAE: 1.290806
+2025-06-07 13:19:32.882 | INFO     | __main__:<module>:199 - acoes_ibov.csv | LREN3.SA | Prophet(True, True) -> MSE: 10.930387, MAE: 2.916410
+2025-06-07 13:19:33.140 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | LWSA3.SA
+2025-06-07 13:19:56.371 | INFO     | __main__:<module>:191 - acoes_ibov.csv | LWSA3.SA | ARIMA(1, 1, 0) -> MSE: 0.072834, MAE: 0.225443
+2025-06-07 13:19:56.630 | INFO     | __main__:<module>:199 - acoes_ibov.csv | LWSA3.SA | Prophet(True, True) -> MSE: 0.355467, MAE: 0.581681
+2025-06-07 13:19:56.906 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MGLU3.SA
+2025-06-07 13:20:29.331 | INFO     | __main__:<module>:191 - acoes_ibov.csv | MGLU3.SA | ARIMA(1, 1, 0) -> MSE: 0.250176, MAE: 0.412970
+2025-06-07 13:20:29.602 | INFO     | __main__:<module>:199 - acoes_ibov.csv | MGLU3.SA | Prophet(False, True) -> MSE: 33.996353, MAE: 5.793683
+2025-06-07 13:20:29.842 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRFG3.SA
+2025-06-07 13:21:43.093 | INFO     | __main__:<module>:191 - acoes_ibov.csv | MRFG3.SA | ARIMA(4, 1, 2) -> MSE: 6.792838, MAE: 2.009853
+2025-06-07 13:21:43.326 | INFO     | __main__:<module>:199 - acoes_ibov.csv | MRFG3.SA | Prophet(False, False) -> MSE: 21.390381, MAE: 4.154877
+2025-06-07 13:21:43.699 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MRVE3.SA
+2025-06-07 13:22:20.855 | INFO     | __main__:<module>:191 - acoes_ibov.csv | MRVE3.SA | ARIMA(5, 0, 2) -> MSE: 0.353251, MAE: 0.504796
+2025-06-07 13:22:21.115 | INFO     | __main__:<module>:199 - acoes_ibov.csv | MRVE3.SA | Prophet(True, True) -> MSE: 0.107370, MAE: 0.282084
+2025-06-07 13:22:21.412 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | MULT3.SA
+2025-06-07 13:22:56.888 | INFO     | __main__:<module>:191 - acoes_ibov.csv | MULT3.SA | ARIMA(5, 0, 1) -> MSE: 0.332236, MAE: 0.498775
+2025-06-07 13:22:57.110 | INFO     | __main__:<module>:199 - acoes_ibov.csv | MULT3.SA | Prophet(True, True) -> MSE: 3.262562, MAE: 1.630373
+2025-06-07 13:22:57.348 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | NTCO3.SA
+2025-06-07 13:23:23.054 | INFO     | __main__:<module>:191 - acoes_ibov.csv | NTCO3.SA | ARIMA(3, 1, 2) -> MSE: 0.493484, MAE: 0.498538
+2025-06-07 13:23:23.364 | INFO     | __main__:<module>:199 - acoes_ibov.csv | NTCO3.SA | Prophet(False, False) -> MSE: 0.443804, MAE: 0.596113
+2025-06-07 13:23:23.697 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PCAR3.SA
+2025-06-07 13:24:00.529 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PCAR3.SA | ARIMA(2, 1, 0) -> MSE: 0.285644, MAE: 0.289206
+2025-06-07 13:24:00.841 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PCAR3.SA | Prophet(True, True) -> MSE: 15.208010, MAE: 3.887269
+2025-06-07 13:24:01.099 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR3.SA
+2025-06-07 13:24:37.075 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PETR3.SA | ARIMA(4, 1, 0) -> MSE: 1.072189, MAE: 0.845389
+2025-06-07 13:24:37.387 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PETR3.SA | Prophet(True, False) -> MSE: 69.237566, MAE: 8.295889
+2025-06-07 13:24:37.667 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETR4.SA
+2025-06-07 13:25:25.375 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PETR4.SA | ARIMA(4, 1, 0) -> MSE: 0.767424, MAE: 0.717529
+2025-06-07 13:25:25.656 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PETR4.SA | Prophet(True, False) -> MSE: 46.065290, MAE: 6.762261
+2025-06-07 13:25:25.909 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PETZ3.SA
+2025-06-07 13:25:48.011 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PETZ3.SA | ARIMA(1, 1, 2) -> MSE: 0.041190, MAE: 0.156288
+2025-06-07 13:25:48.261 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PETZ3.SA | Prophet(False, True) -> MSE: 0.045743, MAE: 0.184125
+2025-06-07 13:25:48.520 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | POMO4.SA
+2025-06-07 13:26:24.334 | INFO     | __main__:<module>:191 - acoes_ibov.csv | POMO4.SA | ARIMA(5, 1, 0) -> MSE: 0.141587, MAE: 0.314603
+2025-06-07 13:26:24.620 | INFO     | __main__:<module>:199 - acoes_ibov.csv | POMO4.SA | Prophet(True, False) -> MSE: 1.131776, MAE: 1.044332
+2025-06-07 13:26:24.882 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PRIO3.SA
+2025-06-07 13:27:06.977 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PRIO3.SA | ARIMA(5, 1, 1) -> MSE: 20.689831, MAE: 3.965919
+2025-06-07 13:27:07.211 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PRIO3.SA | Prophet(True, False) -> MSE: 9.534540, MAE: 2.343225
+2025-06-07 13:27:07.445 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | PSSA3.SA
+2025-06-07 13:28:14.595 | INFO     | __main__:<module>:191 - acoes_ibov.csv | PSSA3.SA | ARIMA(1, 1, 0) -> MSE: 33.759174, MAE: 4.690503
+2025-06-07 13:28:14.877 | INFO     | __main__:<module>:199 - acoes_ibov.csv | PSSA3.SA | Prophet(False, False) -> MSE: 34.983685, MAE: 4.973284
+2025-06-07 13:28:15.122 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RADL3.SA
+2025-06-07 13:28:55.000 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RADL3.SA | ARIMA(1, 1, 0) -> MSE: 5.549431, MAE: 1.502157
+2025-06-07 13:28:55.291 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RADL3.SA | Prophet(False, False) -> MSE: 24.175764, MAE: 4.475330
+2025-06-07 13:28:55.557 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIL3.SA
+2025-06-07 13:29:24.008 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RAIL3.SA | ARIMA(1, 1, 0) -> MSE: 0.543294, MAE: 0.566046
+2025-06-07 13:29:24.286 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RAIL3.SA | Prophet(False, True) -> MSE: 0.416682, MAE: 0.533791
+2025-06-07 13:29:24.533 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RAIZ4.SA
+2025-06-07 13:29:43.613 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RAIZ4.SA | ARIMA(1, 1, 0) -> MSE: 0.029990, MAE: 0.140869
+2025-06-07 13:29:43.812 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RAIZ4.SA | Prophet(True, True) -> MSE: 0.061513, MAE: 0.206527
+2025-06-07 13:29:44.066 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RDOR3.SA
+2025-06-07 13:30:02.409 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RDOR3.SA | ARIMA(1, 1, 0) -> MSE: 5.977230, MAE: 1.947310
+2025-06-07 13:30:02.748 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RDOR3.SA | Prophet(True, False) -> MSE: 8.912056, MAE: 2.662064
+2025-06-07 13:30:03.052 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RECV3.SA
+2025-06-07 13:30:22.244 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RECV3.SA | ARIMA(1, 0, 0) -> MSE: 1.769328, MAE: 1.048428
+2025-06-07 13:30:22.540 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RECV3.SA | Prophet(True, False) -> MSE: 0.899750, MAE: 0.902516
+2025-06-07 13:30:22.813 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | RENT3.SA
+2025-06-07 13:31:01.645 | INFO     | __main__:<module>:191 - acoes_ibov.csv | RENT3.SA | ARIMA(5, 1, 2) -> MSE: 3.442538, MAE: 1.466471
+2025-06-07 13:31:01.959 | INFO     | __main__:<module>:199 - acoes_ibov.csv | RENT3.SA | Prophet(False, True) -> MSE: 93.402098, MAE: 9.584668
+2025-06-07 13:31:02.252 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SANB11.SA
+2025-06-07 13:31:41.148 | INFO     | __main__:<module>:191 - acoes_ibov.csv | SANB11.SA | ARIMA(1, 1, 0) -> MSE: 1.169807, MAE: 0.933833
+2025-06-07 13:31:41.354 | INFO     | __main__:<module>:199 - acoes_ibov.csv | SANB11.SA | Prophet(False, True) -> MSE: 4.383484, MAE: 1.884571
+2025-06-07 13:31:41.622 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SBSP3.SA
+2025-06-07 13:32:53.577 | INFO     | __main__:<module>:191 - acoes_ibov.csv | SBSP3.SA | ARIMA(4, 0, 2) -> MSE: 7.174831, MAE: 2.258039
+2025-06-07 13:32:53.872 | INFO     | __main__:<module>:199 - acoes_ibov.csv | SBSP3.SA | Prophet(False, True) -> MSE: 43.679608, MAE: 6.270123
+2025-06-07 13:32:54.167 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SLCE3.SA
+2025-06-07 13:33:38.489 | INFO     | __main__:<module>:191 - acoes_ibov.csv | SLCE3.SA | ARIMA(3, 1, 2) -> MSE: 0.089573, MAE: 0.227257
+2025-06-07 13:33:38.765 | INFO     | __main__:<module>:199 - acoes_ibov.csv | SLCE3.SA | Prophet(True, False) -> MSE: 1.547343, MAE: 1.225581
+2025-06-07 13:33:39.024 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SMTO3.SA
+2025-06-07 13:34:11.125 | INFO     | __main__:<module>:191 - acoes_ibov.csv | SMTO3.SA | ARIMA(1, 0, 0) -> MSE: 0.588793, MAE: 0.643742
+2025-06-07 13:34:11.406 | INFO     | __main__:<module>:199 - acoes_ibov.csv | SMTO3.SA | Prophet(False, False) -> MSE: 2.179822, MAE: 1.219464
+2025-06-07 13:34:11.653 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | STBP3.SA
+2025-06-07 13:34:59.952 | INFO     | __main__:<module>:191 - acoes_ibov.csv | STBP3.SA | ARIMA(2, 1, 2) -> MSE: 0.013873, MAE: 0.099518
+2025-06-07 13:35:00.285 | INFO     | __main__:<module>:199 - acoes_ibov.csv | STBP3.SA | Prophet(False, False) -> MSE: 1.102775, MAE: 1.049764
+2025-06-07 13:35:00.543 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | SUZB3.SA
+2025-06-07 13:35:42.533 | INFO     | __main__:<module>:191 - acoes_ibov.csv | SUZB3.SA | ARIMA(5, 1, 0) -> MSE: 4.776541, MAE: 1.756726
+2025-06-07 13:35:42.767 | INFO     | __main__:<module>:199 - acoes_ibov.csv | SUZB3.SA | Prophet(True, True) -> MSE: 31.480813, MAE: 5.454808
+2025-06-07 13:35:43.032 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TAEE11.SA
+2025-06-07 13:36:25.863 | INFO     | __main__:<module>:191 - acoes_ibov.csv | TAEE11.SA | ARIMA(1, 1, 2) -> MSE: 0.829241, MAE: 0.763094
+2025-06-07 13:36:26.146 | INFO     | __main__:<module>:199 - acoes_ibov.csv | TAEE11.SA | Prophet(True, True) -> MSE: 2.134574, MAE: 1.337737
+2025-06-07 13:36:26.401 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TIMS3.SA
+2025-06-07 13:37:38.487 | INFO     | __main__:<module>:191 - acoes_ibov.csv | TIMS3.SA | ARIMA(3, 1, 0) -> MSE: 0.753783, MAE: 0.729193
+2025-06-07 13:37:38.851 | INFO     | __main__:<module>:199 - acoes_ibov.csv | TIMS3.SA | Prophet(False, True) -> MSE: 2.728468, MAE: 1.586332
+2025-06-07 13:37:39.100 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | TOTS3.SA
+2025-06-07 13:38:15.444 | INFO     | __main__:<module>:191 - acoes_ibov.csv | TOTS3.SA | ARIMA(4, 1, 2) -> MSE: 5.284180, MAE: 1.886906
+2025-06-07 13:38:15.681 | INFO     | __main__:<module>:199 - acoes_ibov.csv | TOTS3.SA | Prophet(False, True) -> MSE: 47.884216, MAE: 6.565305
+2025-06-07 13:38:15.932 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | UGPA3.SA
+2025-06-07 13:38:47.665 | INFO     | __main__:<module>:191 - acoes_ibov.csv | UGPA3.SA | ARIMA(1, 0, 1) -> MSE: 1.082264, MAE: 0.863594
+2025-06-07 13:38:48.117 | INFO     | __main__:<module>:199 - acoes_ibov.csv | UGPA3.SA | Prophet(True, False) -> MSE: 11.157907, MAE: 3.227227
+2025-06-07 13:38:48.524 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | USIM5.SA
+2025-06-07 13:39:17.657 | INFO     | __main__:<module>:191 - acoes_ibov.csv | USIM5.SA | ARIMA(1, 1, 0) -> MSE: 0.084984, MAE: 0.240779
+2025-06-07 13:39:17.944 | INFO     | __main__:<module>:199 - acoes_ibov.csv | USIM5.SA | Prophet(True, False) -> MSE: 0.031019, MAE: 0.147119
+2025-06-07 13:39:18.195 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VALE3.SA
+2025-06-07 13:40:03.140 | INFO     | __main__:<module>:191 - acoes_ibov.csv | VALE3.SA | ARIMA(1, 1, 0) -> MSE: 1.533300, MAE: 0.922262
+2025-06-07 13:40:03.364 | INFO     | __main__:<module>:199 - acoes_ibov.csv | VALE3.SA | Prophet(False, True) -> MSE: 2.379054, MAE: 1.205682
+2025-06-07 13:40:03.731 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VAMO3.SA
+2025-06-07 13:40:28.245 | INFO     | __main__:<module>:191 - acoes_ibov.csv | VAMO3.SA | ARIMA(4, 1, 1) -> MSE: 0.119679, MAE: 0.275554
+2025-06-07 13:40:28.541 | INFO     | __main__:<module>:199 - acoes_ibov.csv | VAMO3.SA | Prophet(True, True) -> MSE: 0.201800, MAE: 0.351324
+2025-06-07 13:40:28.800 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VBBR3.SA
+2025-06-07 13:41:00.912 | INFO     | __main__:<module>:191 - acoes_ibov.csv | VBBR3.SA | ARIMA(5, 0, 2) -> MSE: 1.194990, MAE: 0.965020
+2025-06-07 13:41:01.200 | INFO     | __main__:<module>:199 - acoes_ibov.csv | VBBR3.SA | Prophet(False, False) -> MSE: 0.734226, MAE: 0.704674
+2025-06-07 13:41:01.464 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVA3.SA
+2025-06-07 13:41:20.635 | INFO     | __main__:<module>:191 - acoes_ibov.csv | VIVA3.SA | ARIMA(3, 0, 2) -> MSE: 4.028174, MAE: 1.716804
+2025-06-07 13:41:20.881 | INFO     | __main__:<module>:199 - acoes_ibov.csv | VIVA3.SA | Prophet(True, False) -> MSE: 23.857162, MAE: 4.451210
+2025-06-07 13:41:21.136 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | VIVT3.SA
+2025-06-07 13:42:34.069 | INFO     | __main__:<module>:191 - acoes_ibov.csv | VIVT3.SA | ARIMA(4, 1, 0) -> MSE: 1.201814, MAE: 0.968233
+2025-06-07 13:42:34.368 | INFO     | __main__:<module>:199 - acoes_ibov.csv | VIVT3.SA | Prophet(False, True) -> MSE: 0.608833, MAE: 0.600622
+2025-06-07 13:42:34.706 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | WEGE3.SA
+2025-06-07 13:43:15.652 | INFO     | __main__:<module>:191 - acoes_ibov.csv | WEGE3.SA | ARIMA(1, 1, 1) -> MSE: 7.511101, MAE: 1.758737
+2025-06-07 13:43:15.929 | INFO     | __main__:<module>:199 - acoes_ibov.csv | WEGE3.SA | Prophet(True, False) -> MSE: 50.340751, MAE: 6.701754
+2025-06-07 13:43:16.184 | INFO     | __main__:<module>:150 - Iniciando acoes_ibov.csv | YDUQ3.SA
+2025-06-07 13:43:56.075 | INFO     | __main__:<module>:191 - acoes_ibov.csv | YDUQ3.SA | ARIMA(2, 0, 1) -> MSE: 3.523281, MAE: 1.696437
+2025-06-07 13:43:56.386 | INFO     | __main__:<module>:199 - acoes_ibov.csv | YDUQ3.SA | Prophet(False, True) -> MSE: 12.134289, MAE: 3.191926
+2025-06-07 13:43:57.753 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AAPL34.SA
+2025-06-07 13:44:24.667 | INFO     | __main__:<module>:191 - bdrs.csv | AAPL34.SA | ARIMA(3, 1, 0) -> MSE: 2.788686, MAE: 1.271685
+2025-06-07 13:44:24.923 | INFO     | __main__:<module>:199 - bdrs.csv | AAPL34.SA | Prophet(True, False) -> MSE: 129.795322, MAE: 11.184814
+2025-06-07 13:44:25.191 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AIRB34.SA
+2025-06-07 13:44:52.774 | INFO     | __main__:<module>:191 - bdrs.csv | AIRB34.SA | ARIMA(3, 1, 2) -> MSE: 5.658911, MAE: 1.968531
+2025-06-07 13:44:53.074 | INFO     | __main__:<module>:199 - bdrs.csv | AIRB34.SA | Prophet(False, True) -> MSE: 3.221112, MAE: 1.471715
+2025-06-07 13:44:53.329 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMGN34.SA
+2025-06-07 13:45:29.822 | INFO     | __main__:<module>:191 - bdrs.csv | AMGN34.SA | ARIMA(5, 1, 0) -> MSE: 10.862587, MAE: 2.692582
+2025-06-07 13:45:30.076 | INFO     | __main__:<module>:199 - bdrs.csv | AMGN34.SA | Prophet(True, True) -> MSE: 96.693979, MAE: 9.635255
+2025-06-07 13:45:30.345 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AMZO34.SA
+2025-06-07 13:46:01.421 | INFO     | __main__:<module>:191 - bdrs.csv | AMZO34.SA | ARIMA(1, 1, 0) -> MSE: 12.034317, MAE: 2.579046
+2025-06-07 13:46:01.761 | INFO     | __main__:<module>:199 - bdrs.csv | AMZO34.SA | Prophet(False, True) -> MSE: 91.511659, MAE: 9.343341
+2025-06-07 13:46:02.085 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | AURA33.SA
+2025-06-07 13:46:37.972 | INFO     | __main__:<module>:191 - bdrs.csv | AURA33.SA | ARIMA(2, 1, 0) -> MSE: 62.026096, MAE: 6.979561
+2025-06-07 13:46:38.262 | INFO     | __main__:<module>:199 - bdrs.csv | AURA33.SA | Prophet(False, True) -> MSE: 17.883055, MAE: 3.265114
+2025-06-07 13:46:38.516 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BABA34.SA
+2025-06-07 13:47:03.086 | INFO     | __main__:<module>:191 - bdrs.csv | BABA34.SA | ARIMA(2, 1, 0) -> MSE: 2.191985, MAE: 1.137983
+2025-06-07 13:47:03.361 | INFO     | __main__:<module>:199 - bdrs.csv | BABA34.SA | Prophet(True, True) -> MSE: 6.118904, MAE: 1.971947
+2025-06-07 13:47:03.627 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BERK34.SA
+2025-06-07 13:48:17.587 | INFO     | __main__:<module>:191 - bdrs.csv | BERK34.SA | ARIMA(2, 1, 0) -> MSE: 75.735452, MAE: 7.739326
+2025-06-07 13:48:17.869 | INFO     | __main__:<module>:199 - bdrs.csv | BERK34.SA | Prophet(True, True) -> MSE: 55.453454, MAE: 6.445892
+2025-06-07 13:48:18.119 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BKNG34.SA
+2025-06-07 13:49:02.428 | INFO     | __main__:<module>:191 - bdrs.csv | BKNG34.SA | ARIMA(2, 1, 0) -> MSE: 107.100177, MAE: 8.287563
+2025-06-07 13:49:02.740 | INFO     | __main__:<module>:199 - bdrs.csv | BKNG34.SA | Prophet(True, True) -> MSE: 62.226237, MAE: 5.950463
+2025-06-07 13:49:03.000 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | BOAC34.SA
+2025-06-07 13:49:39.705 | INFO     | __main__:<module>:191 - bdrs.csv | BOAC34.SA | ARIMA(1, 1, 0) -> MSE: 9.266922, MAE: 2.099034
+2025-06-07 13:49:40.014 | INFO     | __main__:<module>:199 - bdrs.csv | BOAC34.SA | Prophet(True, True) -> MSE: 42.335435, MAE: 6.087282
+2025-06-07 13:49:40.252 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CHVX34.SA
+2025-06-07 13:50:15.515 | INFO     | __main__:<module>:191 - bdrs.csv | CHVX34.SA | ARIMA(4, 1, 0) -> MSE: 1.091210, MAE: 0.866182
+2025-06-07 13:50:15.727 | INFO     | __main__:<module>:199 - bdrs.csv | CHVX34.SA | Prophet(True, True) -> MSE: 105.997456, MAE: 10.240000
+2025-06-07 13:50:15.948 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | CMCS34.SA
+2025-06-07 13:50:56.382 | INFO     | __main__:<module>:191 - bdrs.csv | CMCS34.SA | ARIMA(4, 1, 2) -> MSE: 0.537604, MAE: 0.571194
+2025-06-07 13:50:56.652 | INFO     | __main__:<module>:199 - bdrs.csv | CMCS34.SA | Prophet(True, True) -> MSE: 10.869584, MAE: 3.176757
+2025-06-07 13:50:56.899 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | COCA34.SA
+2025-06-07 13:51:37.233 | INFO     | __main__:<module>:191 - bdrs.csv | COCA34.SA | ARIMA(5, 1, 0) -> MSE: 1.287932, MAE: 0.935374
+2025-06-07 13:51:37.530 | INFO     | __main__:<module>:199 - bdrs.csv | COCA34.SA | Prophet(False, True) -> MSE: 4.004900, MAE: 1.669839
+2025-06-07 13:51:37.817 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | DISB34.SA
+2025-06-07 13:52:24.337 | INFO     | __main__:<module>:191 - bdrs.csv | DISB34.SA | ARIMA(1, 1, 0) -> MSE: 14.531457, MAE: 2.374200
+2025-06-07 13:52:24.639 | INFO     | __main__:<module>:199 - bdrs.csv | DISB34.SA | Prophet(False, False) -> MSE: 11.937046, MAE: 2.163857
+2025-06-07 13:52:24.903 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GMCO34.SA
+2025-06-07 13:52:54.608 | INFO     | __main__:<module>:191 - bdrs.csv | GMCO34.SA | ARIMA(4, 0, 2) -> MSE: 10.548381, MAE: 2.882357
+2025-06-07 13:52:54.910 | INFO     | __main__:<module>:199 - bdrs.csv | GMCO34.SA | Prophet(False, True) -> MSE: 133.458434, MAE: 11.350352
+2025-06-07 13:52:55.164 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | GOGL34.SA
+2025-06-07 13:53:23.250 | INFO     | __main__:<module>:191 - bdrs.csv | GOGL34.SA | ARIMA(4, 1, 0) -> MSE: 15.191325, MAE: 3.104272
+2025-06-07 13:53:23.560 | INFO     | __main__:<module>:199 - bdrs.csv | GOGL34.SA | Prophet(False, False) -> MSE: 215.064056, MAE: 14.480281
+2025-06-07 13:53:23.812 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | HOME34.SA
+2025-06-07 13:53:49.906 | INFO     | __main__:<module>:191 - bdrs.csv | HOME34.SA | ARIMA(3, 1, 0) -> MSE: 3.346636, MAE: 1.473818
+2025-06-07 13:53:50.181 | INFO     | __main__:<module>:199 - bdrs.csv | HOME34.SA | Prophet(True, True) -> MSE: 83.002578, MAE: 8.988131
+2025-06-07 13:53:50.432 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | INBR32.SA
+2025-06-07 13:54:07.556 | INFO     | __main__:<module>:191 - bdrs.csv | INBR32.SA | ARIMA(1, 1, 0) -> MSE: 1.632438, MAE: 1.061817
+2025-06-07 13:54:07.804 | INFO     | __main__:<module>:199 - bdrs.csv | INBR32.SA | Prophet(True, False) -> MSE: 1.432396, MAE: 1.005840
+2025-06-07 13:54:08.054 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | ITLC34.SA
+2025-06-07 13:54:32.346 | INFO     | __main__:<module>:191 - bdrs.csv | ITLC34.SA | ARIMA(1, 1, 0) -> MSE: 1.186621, MAE: 0.866811
+2025-06-07 13:54:32.554 | INFO     | __main__:<module>:199 - bdrs.csv | ITLC34.SA | Prophet(True, True) -> MSE: 1.444600, MAE: 1.014229
+2025-06-07 13:54:32.787 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | IVVB11.SA
+2025-06-07 13:55:44.987 | INFO     | __main__:<module>:191 - bdrs.csv | IVVB11.SA | ARIMA(4, 1, 0) -> MSE: 126.165535, MAE: 8.086921
+2025-06-07 13:55:45.219 | INFO     | __main__:<module>:199 - bdrs.csv | IVVB11.SA | Prophet(False, True) -> MSE: 1613.903450, MAE: 39.417612
+2025-06-07 13:55:45.480 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JNJB34.SA
+2025-06-07 13:56:13.007 | INFO     | __main__:<module>:191 - bdrs.csv | JNJB34.SA | ARIMA(3, 1, 0) -> MSE: 1.124520, MAE: 0.757875
+2025-06-07 13:56:13.235 | INFO     | __main__:<module>:199 - bdrs.csv | JNJB34.SA | Prophet(True, True) -> MSE: 6.740217, MAE: 2.319928
+2025-06-07 13:56:13.489 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | JPMC34.SA
+2025-06-07 13:57:26.280 | INFO     | __main__:<module>:191 - bdrs.csv | JPMC34.SA | ARIMA(5, 1, 2) -> MSE: 18.392126, MAE: 3.454114
+2025-06-07 13:57:26.542 | INFO     | __main__:<module>:199 - bdrs.csv | JPMC34.SA | Prophet(True, True) -> MSE: 90.086625, MAE: 8.746797
+2025-06-07 13:57:26.792 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | M1TA34.SA
+2025-06-07 13:58:39.143 | INFO     | __main__:<module>:191 - bdrs.csv | M1TA34.SA | ARIMA(4, 1, 2) -> MSE: 221.642484, MAE: 12.698136
+2025-06-07 13:58:39.421 | INFO     | __main__:<module>:199 - bdrs.csv | M1TA34.SA | Prophet(False, True) -> MSE: 304.137912, MAE: 16.098498
+2025-06-07 13:58:39.683 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MELI34.SA
+2025-06-07 13:59:04.951 | INFO     | __main__:<module>:191 - bdrs.csv | MELI34.SA | ARIMA(3, 1, 0) -> MSE: 40.864906, MAE: 5.835165
+2025-06-07 13:59:05.221 | INFO     | __main__:<module>:199 - bdrs.csv | MELI34.SA | Prophet(False, True) -> MSE: 39.234058, MAE: 5.851152
+2025-06-07 13:59:05.521 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSCD34.SA
+2025-06-07 14:00:18.090 | INFO     | __main__:<module>:191 - bdrs.csv | MSCD34.SA | ARIMA(1, 1, 2) -> MSE: 18.184506, MAE: 3.241020
+2025-06-07 14:00:18.378 | INFO     | __main__:<module>:199 - bdrs.csv | MSCD34.SA | Prophet(True, True) -> MSE: 9.598187, MAE: 2.265658
+2025-06-07 14:00:18.639 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | MSFT34.SA
+2025-06-07 14:01:39.145 | INFO     | __main__:<module>:191 - bdrs.csv | MSFT34.SA | ARIMA(1, 1, 0) -> MSE: 45.597603, MAE: 4.553390
+2025-06-07 14:01:39.436 | INFO     | __main__:<module>:199 - bdrs.csv | MSFT34.SA | Prophet(False, True) -> MSE: 65.035431, MAE: 6.682321
+2025-06-07 14:01:39.693 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NFLX34.SA
+2025-06-07 14:02:45.574 | INFO     | __main__:<module>:191 - bdrs.csv | NFLX34.SA | ARIMA(1, 1, 0) -> MSE: 55.027729, MAE: 6.136562
+2025-06-07 14:02:45.912 | INFO     | __main__:<module>:199 - bdrs.csv | NFLX34.SA | Prophet(False, False) -> MSE: 128.486837, MAE: 10.786572
+2025-06-07 14:02:46.256 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NIKE34.SA
+2025-06-07 14:03:29.486 | INFO     | __main__:<module>:191 - bdrs.csv | NIKE34.SA | ARIMA(1, 1, 0) -> MSE: 2.166336, MAE: 1.111137
+2025-06-07 14:03:29.712 | INFO     | __main__:<module>:199 - bdrs.csv | NIKE34.SA | Prophet(True, False) -> MSE: 3.670871, MAE: 1.477997
+2025-06-07 14:03:29.964 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | NVDC34.SA
+2025-06-07 14:04:10.748 | INFO     | __main__:<module>:191 - bdrs.csv | NVDC34.SA | ARIMA(3, 0, 2) -> MSE: 3.340476, MAE: 1.330495
+2025-06-07 14:04:11.031 | INFO     | __main__:<module>:199 - bdrs.csv | NVDC34.SA | Prophet(False, False) -> MSE: 8.307141, MAE: 2.638347
+2025-06-07 14:04:11.279 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | PFIZ34.SA
+2025-06-07 14:04:41.573 | INFO     | __main__:<module>:191 - bdrs.csv | PFIZ34.SA | ARIMA(2, 1, 0) -> MSE: 0.488548, MAE: 0.535914
+2025-06-07 14:04:41.858 | INFO     | __main__:<module>:199 - bdrs.csv | PFIZ34.SA | Prophet(True, True) -> MSE: 0.807307, MAE: 0.718018
+2025-06-07 14:04:42.115 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | RIGG34.SA
+2025-06-07 14:05:17.369 | INFO     | __main__:<module>:191 - bdrs.csv | RIGG34.SA | ARIMA(1, 0, 0) -> MSE: 3.572578, MAE: 1.727855
+2025-06-07 14:05:17.667 | INFO     | __main__:<module>:199 - bdrs.csv | RIGG34.SA | Prophet(True, True) -> MSE: 3.567123, MAE: 1.574881
+2025-06-07 14:05:17.931 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | SSFO34.SA
+2025-06-07 14:05:44.134 | INFO     | __main__:<module>:191 - bdrs.csv | SSFO34.SA | ARIMA(1, 1, 0) -> MSE: 10.787920, MAE: 2.463445
+2025-06-07 14:05:44.424 | INFO     | __main__:<module>:199 - bdrs.csv | SSFO34.SA | Prophet(True, False) -> MSE: 186.782113, MAE: 13.304955
+2025-06-07 14:05:44.680 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSLA34.SA
+2025-06-07 14:06:15.586 | INFO     | __main__:<module>:191 - bdrs.csv | TSLA34.SA | ARIMA(1, 1, 0) -> MSE: 56.030787, MAE: 6.127447
+2025-06-07 14:06:15.881 | INFO     | __main__:<module>:199 - bdrs.csv | TSLA34.SA | Prophet(True, True) -> MSE: 23.328952, MAE: 4.294282
+2025-06-07 14:06:16.141 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | TSMC34.SA
+2025-06-07 14:06:39.476 | INFO     | __main__:<module>:191 - bdrs.csv | TSMC34.SA | ARIMA(4, 1, 0) -> MSE: 175.765454, MAE: 10.273687
+2025-06-07 14:06:39.757 | INFO     | __main__:<module>:199 - bdrs.csv | TSMC34.SA | Prophet(True, False) -> MSE: 248.549728, MAE: 14.263090
+2025-06-07 14:06:40.009 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | UNHH34.SA
+2025-06-07 14:07:01.669 | INFO     | __main__:<module>:191 - bdrs.csv | UNHH34.SA | ARIMA(1, 1, 0) -> MSE: 26.006756, MAE: 3.414333
+2025-06-07 14:07:01.936 | INFO     | __main__:<module>:199 - bdrs.csv | UNHH34.SA | Prophet(True, False) -> MSE: 222.402678, MAE: 14.023351
+2025-06-07 14:07:02.218 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VERZ34.SA
+2025-06-07 14:07:36.244 | INFO     | __main__:<module>:191 - bdrs.csv | VERZ34.SA | ARIMA(1, 1, 2) -> MSE: 0.588832, MAE: 0.640366
+2025-06-07 14:07:36.540 | INFO     | __main__:<module>:199 - bdrs.csv | VERZ34.SA | Prophet(True, True) -> MSE: 6.538700, MAE: 2.411814
+2025-06-07 14:07:36.815 | INFO     | __main__:<module>:150 - Iniciando bdrs.csv | VISA34.SA
+2025-06-07 14:08:46.548 | INFO     | __main__:<module>:191 - bdrs.csv | VISA34.SA | ARIMA(2, 1, 2) -> MSE: 11.342532, MAE: 2.562564
+2025-06-07 14:08:46.951 | INFO     | __main__:<module>:199 - bdrs.csv | VISA34.SA | Prophet(False, False) -> MSE: 4.337566, MAE: 1.697692
+2025-06-07 14:08:47.901 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | BZ=F
+2025-06-07 14:09:31.829 | INFO     | __main__:<module>:191 - commodities.csv | BZ=F | ARIMA(5, 1, 0) -> MSE: 6.634578, MAE: 2.052823
+2025-06-07 14:09:32.124 | INFO     | __main__:<module>:199 - commodities.csv | BZ=F | Prophet(False, False) -> MSE: 59.824402, MAE: 7.548117
+2025-06-07 14:09:32.415 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | GC=F
+2025-06-07 14:10:39.082 | INFO     | __main__:<module>:191 - commodities.csv | GC=F | ARIMA(4, 1, 0) -> MSE: 4317.760427, MAE: 51.400345
+2025-06-07 14:10:39.355 | INFO     | __main__:<module>:199 - commodities.csv | GC=F | Prophet(True, True) -> MSE: 32093.881522, MAE: 169.312795
+2025-06-07 14:10:39.617 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | KC=F
+2025-06-07 14:11:33.426 | INFO     | __main__:<module>:191 - commodities.csv | KC=F | ARIMA(5, 0, 2) -> MSE: 993.086313, MAE: 25.844522
+2025-06-07 14:11:33.724 | INFO     | __main__:<module>:199 - commodities.csv | KC=F | Prophet(True, True) -> MSE: 637.184881, MAE: 21.708731
+2025-06-07 14:11:33.986 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | LE=F
+2025-06-07 14:12:40.984 | INFO     | __main__:<module>:191 - commodities.csv | LE=F | ARIMA(1, 1, 0) -> MSE: 137.423032, MAE: 11.286049
+2025-06-07 14:12:41.264 | INFO     | __main__:<module>:199 - commodities.csv | LE=F | Prophet(False, True) -> MSE: 109.171383, MAE: 9.929646
+2025-06-07 14:12:41.504 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | SI=F
+2025-06-07 14:13:19.522 | INFO     | __main__:<module>:191 - commodities.csv | SI=F | ARIMA(3, 0, 2) -> MSE: 9.455646, MAE: 2.909802
+2025-06-07 14:13:19.790 | INFO     | __main__:<module>:199 - commodities.csv | SI=F | Prophet(False, False) -> MSE: 1.254140, MAE: 1.023687
+2025-06-07 14:13:20.054 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZC=F
+2025-06-07 14:13:51.853 | INFO     | __main__:<module>:191 - commodities.csv | ZC=F | ARIMA(4, 1, 0) -> MSE: 199.978693, MAE: 10.237171
+2025-06-07 14:13:52.166 | INFO     | __main__:<module>:199 - commodities.csv | ZC=F | Prophet(True, False) -> MSE: 1902.013321, MAE: 42.384927
+2025-06-07 14:13:52.452 | INFO     | __main__:<module>:150 - Iniciando commodities.csv | ZS=F
+2025-06-07 14:14:30.760 | INFO     | __main__:<module>:191 - commodities.csv | ZS=F | ARIMA(5, 1, 0) -> MSE: 147.652806, MAE: 10.448862
+2025-06-07 14:14:31.044 | INFO     | __main__:<module>:199 - commodities.csv | ZS=F | Prophet(True, True) -> MSE: 12674.714195, MAE: 111.284524
+2025-06-07 14:14:31.917 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ADA-USD
+2025-06-07 14:15:15.298 | INFO     | __main__:<module>:191 - criptos.csv | ADA-USD | ARIMA(4, 0, 1) -> MSE: 0.009048, MAE: 0.082820
+2025-06-07 14:15:15.588 | INFO     | __main__:<module>:199 - criptos.csv | ADA-USD | Prophet(True, True) -> MSE: 0.003319, MAE: 0.049406
+2025-06-07 14:15:15.855 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | AVAX-USD
+2025-06-07 14:15:46.393 | INFO     | __main__:<module>:191 - criptos.csv | AVAX-USD | ARIMA(3, 0, 2) -> MSE: 6.483920, MAE: 2.119568
+2025-06-07 14:15:46.618 | INFO     | __main__:<module>:199 - criptos.csv | AVAX-USD | Prophet(False, True) -> MSE: 2.457558, MAE: 1.272704
+2025-06-07 14:15:46.844 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BNB-USD
+2025-06-07 14:16:28.980 | INFO     | __main__:<module>:191 - criptos.csv | BNB-USD | ARIMA(5, 1, 0) -> MSE: 264.358662, MAE: 12.557581
+2025-06-07 14:16:29.215 | INFO     | __main__:<module>:199 - criptos.csv | BNB-USD | Prophet(True, False) -> MSE: 5781.657655, MAE: 74.117084
+2025-06-07 14:16:29.481 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | BTC-USD
+2025-06-07 14:18:11.050 | INFO     | __main__:<module>:191 - criptos.csv | BTC-USD | ARIMA(1, 1, 0) -> MSE: 5539885.756049, MAE: 1861.996400
+2025-06-07 14:18:11.335 | INFO     | __main__:<module>:199 - criptos.csv | BTC-USD | Prophet(False, True) -> MSE: 9219044.219407, MAE: 2236.236167
+2025-06-07 14:18:11.584 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOGE-USD
+2025-06-07 14:18:58.819 | INFO     | __main__:<module>:191 - criptos.csv | DOGE-USD | ARIMA(5, 1, 2) -> MSE: 0.001038, MAE: 0.027565
+2025-06-07 14:18:59.107 | INFO     | __main__:<module>:199 - criptos.csv | DOGE-USD | Prophet(True, False) -> MSE: 0.001976, MAE: 0.041100
+2025-06-07 14:18:59.359 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | DOT-USD
+2025-06-07 14:19:28.868 | INFO     | __main__:<module>:191 - criptos.csv | DOT-USD | ARIMA(5, 1, 0) -> MSE: 0.398233, MAE: 0.517826
+2025-06-07 14:19:29.073 | INFO     | __main__:<module>:199 - criptos.csv | DOT-USD | Prophet(False, True) -> MSE: 0.225275, MAE: 0.385550
+2025-06-07 14:19:29.307 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | ETH-USD
+2025-06-07 14:20:06.751 | INFO     | __main__:<module>:191 - criptos.csv | ETH-USD | ARIMA(4, 1, 2) -> MSE: 7411.091021, MAE: 65.976299
+2025-06-07 14:20:06.993 | INFO     | __main__:<module>:199 - criptos.csv | ETH-USD | Prophet(True, True) -> MSE: 34262.070037, MAE: 152.044817
+2025-06-07 14:20:07.261 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LINK-USD
+2025-06-07 14:20:55.965 | INFO     | __main__:<module>:191 - criptos.csv | LINK-USD | ARIMA(5, 0, 2) -> MSE: 3.936665, MAE: 1.710897
+2025-06-07 14:20:56.240 | INFO     | __main__:<module>:199 - criptos.csv | LINK-USD | Prophet(True, True) -> MSE: 1.116634, MAE: 0.936397
+2025-06-07 14:20:56.490 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | LTC-USD
+2025-06-07 14:21:50.568 | INFO     | __main__:<module>:191 - criptos.csv | LTC-USD | ARIMA(5, 0, 2) -> MSE: 89.636058, MAE: 8.208039
+2025-06-07 14:21:50.846 | INFO     | __main__:<module>:199 - criptos.csv | LTC-USD | Prophet(False, False) -> MSE: 43.100947, MAE: 5.795125
+2025-06-07 14:21:51.096 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | MATIC-USD
+2025-06-07 14:22:24.816 | INFO     | __main__:<module>:191 - criptos.csv | MATIC-USD | ARIMA(5, 1, 0) -> MSE: 0.001366, MAE: 0.025836
+2025-06-07 14:22:25.092 | INFO     | __main__:<module>:199 - criptos.csv | MATIC-USD | Prophet(False, False) -> MSE: 0.001208, MAE: 0.030844
+2025-06-07 14:22:25.338 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | NEAR-USD
+2025-06-07 14:22:46.674 | INFO     | __main__:<module>:191 - criptos.csv | NEAR-USD | ARIMA(1, 0, 0) -> MSE: 0.153843, MAE: 0.326888
+2025-06-07 14:22:47.099 | INFO     | __main__:<module>:199 - criptos.csv | NEAR-USD | Prophet(False, False) -> MSE: 0.048660, MAE: 0.181592
+2025-06-07 14:22:47.480 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SHIB-USD
+2025-06-07 14:23:18.647 | INFO     | __main__:<module>:191 - criptos.csv | SHIB-USD | ARIMA(5, 0, 2) -> MSE: 0.000000, MAE: 0.000002
+2025-06-07 14:23:18.927 | INFO     | __main__:<module>:199 - criptos.csv | SHIB-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000001
+2025-06-07 14:23:19.171 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SOL-USD
+2025-06-07 14:23:48.818 | INFO     | __main__:<module>:191 - criptos.csv | SOL-USD | ARIMA(5, 1, 0) -> MSE: 329.303240, MAE: 15.855873
+2025-06-07 14:23:49.108 | INFO     | __main__:<module>:199 - criptos.csv | SOL-USD | Prophet(False, False) -> MSE: 178.449381, MAE: 9.566348
+2025-06-07 14:23:49.366 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | SUI-USD
+2025-06-07 14:24:05.517 | INFO     | __main__:<module>:191 - criptos.csv | SUI-USD | ARIMA(1, 1, 0) -> MSE: 0.000000, MAE: 0.000080
+2025-06-07 14:24:05.813 | INFO     | __main__:<module>:199 - criptos.csv | SUI-USD | Prophet(False, True) -> MSE: 0.000001, MAE: 0.001212
+2025-06-07 14:24:06.061 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | TON-USD
+2025-06-07 14:24:34.665 | INFO     | __main__:<module>:191 - criptos.csv | TON-USD | ARIMA(5, 1, 2) -> MSE: 0.735269, MAE: 0.404239
+2025-06-07 14:24:34.922 | INFO     | __main__:<module>:199 - criptos.csv | TON-USD | Prophet(False, False) -> MSE: 4.016270, MAE: 1.914931
+2025-06-07 14:24:35.163 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | UNI-USD
+2025-06-07 14:25:08.372 | INFO     | __main__:<module>:191 - criptos.csv | UNI-USD | ARIMA(1, 0, 2) -> MSE: 0.000001, MAE: 0.001078
+2025-06-07 14:25:08.590 | INFO     | __main__:<module>:199 - criptos.csv | UNI-USD | Prophet(False, False) -> MSE: 0.000000, MAE: 0.000346
+2025-06-07 14:25:08.777 | INFO     | __main__:<module>:150 - Iniciando criptos.csv | XRP-USD
+2025-06-07 14:25:39.812 | INFO     | __main__:<module>:191 - criptos.csv | XRP-USD | ARIMA(2, 0, 1) -> MSE: 0.060543, MAE: 0.232074
+2025-06-07 14:25:40.032 | INFO     | __main__:<module>:199 - criptos.csv | XRP-USD | Prophet(False, True) -> MSE: 0.022613, MAE: 0.125746
+2025-06-07 14:25:40.348 | INFO     | __main__:<module>:150 - Iniciando juros.csv | EDV
+2025-06-07 14:26:05.695 | INFO     | __main__:<module>:191 - juros.csv | EDV | ARIMA(5, 0, 2) -> MSE: 4.006339, MAE: 1.521885
+2025-06-07 14:26:05.948 | INFO     | __main__:<module>:199 - juros.csv | EDV | Prophet(False, True) -> MSE: 5.301095, MAE: 1.966116
+2025-06-07 14:26:06.174 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^FVX
+2025-06-07 14:26:31.225 | INFO     | __main__:<module>:191 - juros.csv | ^FVX | ARIMA(2, 1, 0) -> MSE: 0.027522, MAE: 0.129409
+2025-06-07 14:26:31.398 | INFO     | __main__:<module>:199 - juros.csv | ^FVX | Prophet(True, False) -> MSE: 0.021729, MAE: 0.108790
+2025-06-07 14:26:31.584 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^IRX
+2025-06-07 14:27:10.473 | INFO     | __main__:<module>:191 - juros.csv | ^IRX | ARIMA(5, 1, 1) -> MSE: 0.000723, MAE: 0.020095
+2025-06-07 14:27:10.695 | INFO     | __main__:<module>:199 - juros.csv | ^IRX | Prophet(True, True) -> MSE: 0.001290, MAE: 0.028861
+2025-06-07 14:27:10.892 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TNX
+2025-06-07 14:27:30.801 | INFO     | __main__:<module>:191 - juros.csv | ^TNX | ARIMA(2, 1, 0) -> MSE: 0.022778, MAE: 0.115031
+2025-06-07 14:27:30.975 | INFO     | __main__:<module>:199 - juros.csv | ^TNX | Prophet(False, False) -> MSE: 0.014219, MAE: 0.089188
+2025-06-07 14:27:31.160 | INFO     | __main__:<module>:150 - Iniciando juros.csv | ^TYX
+2025-06-07 14:27:55.591 | INFO     | __main__:<module>:191 - juros.csv | ^TYX | ARIMA(2, 1, 0) -> MSE: 0.017722, MAE: 0.100356
+2025-06-07 14:27:55.808 | INFO     | __main__:<module>:199 - juros.csv | ^TYX | Prophet(False, True) -> MSE: 0.017739, MAE: 0.113911
+2025-06-07 14:27:56.047 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | EURBRL=X
+2025-06-07 14:28:20.018 | INFO     | __main__:<module>:191 - moedas.csv | EURBRL=X | ARIMA(1, 1, 1) -> MSE: 0.005820, MAE: 0.064724
+2025-06-07 14:28:20.235 | INFO     | __main__:<module>:199 - moedas.csv | EURBRL=X | Prophet(False, False) -> MSE: 0.003522, MAE: 0.049182
+2025-06-07 14:28:20.415 | INFO     | __main__:<module>:150 - Iniciando moedas.csv | USDBRL=X
+2025-06-07 14:28:42.992 | INFO     | __main__:<module>:191 - moedas.csv | USDBRL=X | ARIMA(1, 1, 0) -> MSE: 0.010457, MAE: 0.095085
+2025-06-07 14:28:43.227 | INFO     | __main__:<module>:199 - moedas.csv | USDBRL=X | Prophet(True, True) -> MSE: 0.031054, MAE: 0.156278
+2025-06-07 14:28:43.439 | INFO     | __main__:<module>:219 - Pipeline de forecasting finalizado!

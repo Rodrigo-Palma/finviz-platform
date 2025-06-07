@@ -10,7 +10,6 @@ from loguru import logger
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, roc_auc_score
-from sklearn.feature_selection import SelectFromModel
 from xgboost import XGBClassifier
 from tqdm import tqdm
 
@@ -26,7 +25,7 @@ MIN_LINHAS = 100
 
 # ========== FUNÇÕES ==========
 def carregar_dados(caminho_arquivo, limiar_preenchimento=0.1):
-    df = pd.read_csv(caminho_arquivo)
+    df = pd.read_csv(caminho_arquivo, sep=';', decimal=',')  # 🚀 já ajustado
     if 'Date' in df.columns:
         df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
 
@@ -105,9 +104,15 @@ def selecionar_features_com_optuna(df, features, n_trials=25, nome_dataset=None)
     plt.close()
 
     logger.info(f"Acurácia: {acc:.4f} | AUC: {auc:.4f}")
-    # Salva métricas dos trials
+
+    # 🚀 ajuste aqui para salvar optuna_trials no padrão correto
     if nome_dataset:
-        pd.DataFrame(trial_metrics).to_csv(f'selecionadas/optuna_trials_{nome_dataset}.csv', index=False)
+        pd.DataFrame(trial_metrics).to_csv(
+            f'selecionadas/optuna_trials_{nome_dataset}.csv',
+            index=False,
+            sep=';',         # separador ;
+            decimal=','      # decimal ,
+        )
     return top_features
 
 # ========== EXECUÇÃO ==========

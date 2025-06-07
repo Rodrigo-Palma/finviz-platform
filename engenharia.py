@@ -131,17 +131,16 @@ if __name__ == "__main__":
     for arquivo in tqdm(arquivos, desc="Processando arquivos"):
         try:
             caminho_arquivo = os.path.join('dados', arquivo)
-            df_novo = pd.read_csv(caminho_arquivo)
+            df_novo = pd.read_csv(caminho_arquivo, sep=';', decimal=',')
             if 'Date' in df_novo.columns:
                 try:
                     df_novo['Date'] = pd.to_datetime(df_novo['Date'], format='mixed', errors='coerce')
                 except TypeError:
-                    # Para pandas <2.0, format='mixed' não existe
                     df_novo['Date'] = pd.to_datetime(df_novo['Date'], errors='coerce')
 
             caminho_saida = os.path.join('dados_transformados', arquivo)
             if os.path.exists(caminho_saida):
-                df_existente = pd.read_csv(caminho_saida)
+                df_existente = pd.read_csv(caminho_saida, sep=';', decimal=',')
                 if 'Date' in df_existente.columns:
                     try:
                         df_existente['Date'] = pd.to_datetime(df_existente['Date'], format='mixed', errors='coerce')
@@ -156,7 +155,10 @@ if __name__ == "__main__":
                 continue
 
             df_transformado = calcular_atributos_completos(df_merged)
-            df_transformado.to_csv(caminho_saida, index=False)
+
+            # 🚀 Salva CSV com delimitador ; e separador decimal ,
+            df_transformado.to_csv(caminho_saida, index=False, sep=';', decimal=',')
+
             logger.info(f"Arquivo incremental salvo: {caminho_saida}")
 
         except Exception as e:

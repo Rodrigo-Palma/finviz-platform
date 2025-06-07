@@ -20,6 +20,15 @@ from sklearn.feature_selection import VarianceThreshold
 
 warnings.filterwarnings('ignore')
 
+# ========================
+# PADRÃO DE SALVAMENTO CSV
+# ========================
+DEFAULT_TO_CSV_KWARGS = dict(
+    sep=';',
+    decimal=',',
+    index=False
+)
+
 # =======================
 # CONFIGURAÇÕES GLOBAIS
 # =======================
@@ -46,7 +55,7 @@ logger.add(os.path.join(LOGS_DIR, 'ml_pipeline_finance.log'), level='INFO', rota
 # =======================
 
 def preparar_dados(caminho_arquivo, features_desejadas, janela_anos=None):
-    df = pd.read_csv(caminho_arquivo)
+    df = pd.read_csv(caminho_arquivo, sep=';', decimal=',')
     if 'Date' in df.columns:
         df['Date'] = pd.to_datetime(df['Date'], format='mixed')
     df = df.dropna(subset=['Adj Close'])
@@ -101,60 +110,25 @@ def preparar_dados(caminho_arquivo, features_desejadas, janela_anos=None):
 def objetivo_optuna(trial, X, y, modelo):
     if modelo == 'xgb':
         params = {
-            'max_depth': trial.suggest_int('max_depth', 3, 5),  # Reduzido ainda mais
-            'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.03),  # Reduzido
+            'max_depth': trial.suggest_int('max_depth', 3, 5),
+            'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.03),
             'n_estimators': trial.suggest_int('n_estimators', 100, 300),
-            'subsample': trial.suggest_float('subsample', 0.5, 0.7),  # Reduzido
-            'colsample_bytree': trial.suggest_float('colsample_bytree', 0.5, 0.7),  # Reduzido
-            'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),  # Aumentado
-            'gamma': trial.suggest_float('gamma', 0.2, 1.0),  # Aumentado
-            'reg_alpha': trial.suggest_float('reg_alpha', 1.0, 3.0),  # Aumentado
-            'reg_lambda': trial.suggest_float('reg_lambda', 1.0, 3.0),  # Aumentado
+            'subsample': trial.suggest_float('subsample', 0.5, 0.7),
+            'colsample_bytree': trial.suggest_float('colsample_bytree', 0.5, 0.7),
+            'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),
+            'gamma': trial.suggest_float('gamma', 0.2, 1.0),
+            'reg_alpha': trial.suggest_float('reg_alpha', 1.0, 3.0),
+            'reg_lambda': trial.suggest_float('reg_lambda', 1.0, 3.0),
             'use_label_encoder': False,
             'eval_metric': 'logloss',
             'early_stopping_rounds': 30,
-            'max_dropout': 0.4,  # Aumentado
-            'dropout_rate': 0.3  # Aumentado
+            'max_dropout': 0.4,
+            'dropout_rate': 0.3
         }
         model = XGBClassifier(**params)
-    elif modelo == 'lgbm':
-        params = {
-            'max_depth': trial.suggest_int('max_depth', 3, 5),
-            'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.03),
-            'n_estimators': trial.suggest_int('n_estimators', 100, 300),
-            'subsample': trial.suggest_float('subsample', 0.5, 0.7),
-            'min_child_samples': trial.suggest_int('min_child_samples', 15, 50),
-            'reg_alpha': trial.suggest_float('reg_alpha', 1.0, 3.0),
-            'reg_lambda': trial.suggest_float('reg_lambda', 1.0, 3.0),
-            'early_stopping_rounds': 30,
-            'drop_rate': 0.3,  # Aumentado
-            'top_rate': 0.4  # Aumentado
-        }
-        model = LGBMClassifier(**params)
-    elif modelo == 'catboost':
-        params = {
-            'depth': trial.suggest_int('depth', 3, 5),
-            'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.03),
-            'iterations': trial.suggest_int('iterations', 100, 300),
-            'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 3, 10),
-            'bootstrap_type': 'Bernoulli',
-            'subsample': trial.suggest_float('subsample', 0.5, 0.7),
-            'verbose': 0,
-            'early_stopping_rounds': 30,
-            'rsm': 0.7,  # Reduzido
-            'dropout_rate': 0.3  # Aumentado
-        }
-        model = CatBoostClassifier(**params)
     else:
-        params = {
-            'n_estimators': trial.suggest_int('n_estimators', 100, 300),
-            'max_depth': trial.suggest_int('max_depth', 3, 5),
-            'min_samples_split': trial.suggest_int('min_samples_split', 10, 30),
-            'min_samples_leaf': trial.suggest_int('min_samples_leaf', 5, 15)
-        }
-        model = RandomForestClassifier(**params)
+        raise NotImplementedError("Somente XGBoost implementado neste pipeline.")
 
-    # Validação walk-forward
     n_splits = 5
     scores = []
     for i in range(n_splits):
@@ -162,19 +136,16 @@ def objetivo_optuna(trial, X, y, modelo):
         X_train, X_val = X.iloc[:split_point], X.iloc[split_point:split_point + int(len(X) * 0.2)]
         y_train, y_val = y.iloc[:split_point], y.iloc[split_point:split_point + int(len(X) * 0.2)]
         
-        if modelo in ['xgb', 'lgbm', 'catboost']:
-            model.fit(
-                X_train, y_train,
-                eval_set=[(X_val, y_val)],
-                verbose=False
-            )
-        else:
-            model.fit(X_train, y_train)
+        model.fit(
+            X_train, y_train,
+            eval_set=[(X_val, y_val)],
+            verbose=False
+        )
             
         preds = model.predict(X_val)
         score = roc_auc_score(y_val, preds)
-        scores.append(score)
         logger.debug(f"Walk-forward {i+1} AUC: {score:.4f}")
+        scores.append(score)
         
     return np.mean(scores)
 
@@ -182,46 +153,31 @@ def treinar_modelo(df, features, modelo='xgb'):
     X = df[features]
     y = df['Target']
     
-    # Ajusta número de trials baseado no tamanho do dataset
     n_trials = min(N_TRIALS, max(10, len(df) // 100))
     logger.info(f"Usando {n_trials} trials para otimização")
 
-    # Ensemble de modelos
     models = []
     weights = []
     
-    for i in range(5):  # Aumentado para 5 modelos
+    for i in range(5):
         study = optuna.create_study(direction='maximize')
         study.optimize(lambda trial: objetivo_optuna(trial, X, y, modelo), n_trials=n_trials)
 
         best_params = study.best_trial.params
         logger.info(f"Melhores parâmetros para {modelo} (modelo {i+1}): {best_params}")
-        study.trials_dataframe().to_csv(os.path.join(TRIALS_DIR, f'trials_{modelo}_{i+1}.csv'), index=False)
+        study.trials_dataframe().to_csv(
+            os.path.join(TRIALS_DIR, f'trials_{modelo}_{i+1}.csv'),
+            **DEFAULT_TO_CSV_KWARGS
+        )
 
-        if modelo == 'xgb':
-            best_params.update({
-                'use_label_encoder': False, 
-                'eval_metric': 'logloss',
-                'max_dropout': 0.4,
-                'dropout_rate': 0.3
-            })
-            best_model = XGBClassifier(**best_params)
-        elif modelo == 'lgbm':
-            best_params.update({
-                'drop_rate': 0.3,
-                'top_rate': 0.4
-            })
-            best_model = LGBMClassifier(**best_params)
-        elif modelo == 'catboost':
-            best_params.update({
-                'rsm': 0.7,
-                'dropout_rate': 0.3
-            })
-            best_model = CatBoostClassifier(verbose=0, **best_params)
-        else:
-            best_model = RandomForestClassifier(**best_params)
+        best_params.update({
+            'use_label_encoder': False, 
+            'eval_metric': 'logloss',
+            'max_dropout': 0.4,
+            'dropout_rate': 0.3
+        })
+        best_model = XGBClassifier(**best_params)
 
-        # Treina e avalia o modelo
         best_model.fit(X, y)
         preds = best_model.predict_proba(X)[:, 1]
         weight = roc_auc_score(y, preds)
@@ -229,7 +185,6 @@ def treinar_modelo(df, features, modelo='xgb'):
         models.append(best_model)
         weights.append(weight)
     
-    # Normaliza os pesos
     weights = np.array(weights) / sum(weights)
     logger.info(f"Pesos dos modelos: {weights}")
     
@@ -239,7 +194,6 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
     X = df[features]
     y = df['Target']
     
-    # Validação walk-forward
     n_splits = 5
     cv_scores = []
     
@@ -248,11 +202,9 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
         X_train, X_val = X.iloc[:split_point], X.iloc[split_point:split_point + int(len(X) * 0.2)]
         y_train, y_val = y.iloc[:split_point], y.iloc[split_point:split_point + int(len(X) * 0.2)]
         
-        # Treina cada modelo
         for model in models:
             model.fit(X_train, y_train)
         
-        # Faz predições com ensemble
         preds_proba = np.zeros(len(X_val))
         for model, weight in zip(models, weights):
             preds_proba += weight * model.predict_proba(X_val)[:, 1]
@@ -264,14 +216,12 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
         cv_scores.append((acc, roc))
         logger.info(f"Walk-forward {i+1} - Acurácia: {acc:.4f} | AUC: {roc:.4f}")
     
-    # Média das métricas
     mean_acc = np.mean([s[0] for s in cv_scores])
     mean_roc = np.mean([s[1] for s in cv_scores])
     std_acc = np.std([s[0] for s in cv_scores])
     std_roc = np.std([s[1] for s in cv_scores])
     logger.info(f"Média Walk-forward - Acurácia: {mean_acc:.4f} (±{std_acc:.4f}) | AUC: {mean_roc:.4f} (±{std_roc:.4f})")
 
-    # Avaliação final
     preds_proba = np.zeros(len(X))
     for model, weight in zip(models, weights):
         preds_proba += weight * model.predict_proba(X)[:, 1]
@@ -282,7 +232,6 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
     report = classification_report(y, preds, output_dict=True)
     logger.info(f"Avaliação Final - Acurácia: {acc:.4f} | AUC: {roc:.4f}")
 
-    # Análise de overfitting
     overfit_acc = acc - mean_acc
     overfit_roc = roc - mean_roc
     logger.info(f"Indicador de Overfitting - Acurácia: {overfit_acc:.4f} | AUC: {overfit_roc:.4f}")
@@ -292,7 +241,10 @@ def avaliar_modelo(models, weights, df, features, nome_modelo):
     df_result.loc['cv_mean'] = [mean_acc, mean_roc, None, None]
     df_result.loc['cv_std'] = [std_acc, std_roc, None, None]
     df_result.loc['overfit'] = [overfit_acc, overfit_roc, None, None]
-    df_result.to_csv(os.path.join(AVALIACAO_DIR, f'avaliacao_{nome_modelo}.csv'))
+    df_result.to_csv(
+        os.path.join(AVALIACAO_DIR, f'avaliacao_{nome_modelo}.csv'),
+        **DEFAULT_TO_CSV_KWARGS
+    )
     
     return models, weights
 
@@ -310,7 +262,7 @@ if __name__ == "__main__":
         exit()
 
     try:
-        janelas_df = pd.read_csv('otimizacao_janela/melhores_janelas.csv')
+        janelas_df = pd.read_csv('otimizacao_janela/melhores_janelas.csv', sep=';', decimal=',')
         janelas_dict = dict(zip(janelas_df['Dataset'], janelas_df['Melhor_Janela']))
     except Exception as e:
         logger.error(f"Erro ao carregar melhores janelas: {e}")
@@ -337,7 +289,6 @@ if __name__ == "__main__":
             models, weights = avaliar_modelo(models, weights, df, features, nome_modelo=arquivo.replace('.csv', ''))
             fim = time.time()
 
-            # Salva os modelos e pesos
             nome_modelo = os.path.join(MODELOS_DIR, arquivo.replace('.csv', '_modelo.pkl'))
             joblib.dump((models, weights), nome_modelo)
             logger.info(f"Modelo salvo: {nome_modelo} | Tempo total: {fim - inicio:.2f}s")

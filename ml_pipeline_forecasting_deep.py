@@ -18,6 +18,15 @@ import tensorflow as tf
 warnings.filterwarnings("ignore")
 np.random.seed(42)
 
+# ========================
+# PADRÃO DE SALVAMENTO CSV
+# ========================
+DEFAULT_TO_CSV_KWARGS = dict(
+    sep=';',
+    decimal=',',
+    index=False
+)
+
 # =====================
 # CONFIGURACAO DE DIRETORIOS
 # =====================
@@ -39,7 +48,7 @@ logger.add(os.path.join(LOGS_DIR, 'forecast_pipeline_deep.log'), level='INFO', r
 # =====================
 
 def preparar_dados_forecast(caminho_arquivo):
-    df = pd.read_csv(caminho_arquivo)
+    df = pd.read_csv(caminho_arquivo, sep=';', decimal=',')
     if 'Date' in df.columns:
         df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
     df = df.replace([np.inf, -np.inf], np.nan)
@@ -99,7 +108,7 @@ def salvar_residuos(real, previsto, arquivo, ticker, modelo):
     residuos = np.array(real) - np.array(previsto)
     df_res = pd.DataFrame({'real': real, 'previsto': previsto, 'residuo': residuos})
     nome = os.path.join(RESIDUOS_DIR, f'residuos_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.csv')
-    df_res.to_csv(nome, index=False)
+    df_res.to_csv(nome, **DEFAULT_TO_CSV_KWARGS)
 
 # =====================
 # EXECUCAO PRINCIPAL
@@ -132,7 +141,6 @@ if __name__ == "__main__":
                         logger.warning(f"Ticker {ticker} com poucos dados. Ignorando...")
                         continue
 
-                    # Normalização
                     norm_series, scaler = normalizar_serie(series)
 
                     # Random Forest
@@ -222,6 +230,6 @@ if __name__ == "__main__":
             logger.exception(f"Erro ao processar {arquivo}: {e}")
 
     # Salvar métricas e previsões
-    pd.DataFrame(metricas).to_csv(os.path.join(METRICAS_DIR, 'metricas_forecasting_deep.csv'), index=False)
-    pd.DataFrame(previsoes).to_csv(os.path.join(PREVISOES_DIR, 'previsoes_forecasting_deep.csv'), index=False)
-    logger.info("Pipeline de forecasting DEEP (ML models) finalizado!") 
+    pd.DataFrame(metricas).to_csv(os.path.join(METRICAS_DIR, 'metricas_forecasting_deep.csv'), **DEFAULT_TO_CSV_KWARGS)
+    pd.DataFrame(previsoes).to_csv(os.path.join(PREVISOES_DIR, 'previsoes_forecasting_deep.csv'), **DEFAULT_TO_CSV_KWARGS)
+    logger.info("Pipeline de forecasting DEEP (ML models) finalizado!")

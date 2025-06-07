@@ -48,7 +48,7 @@ if __name__ == '__main__':
         arquivo = f"dados/juros_brasil_{nome}.csv"
         # carrega existente para incremental
         if os.path.exists(arquivo):
-            df_exist = pd.read_csv(arquivo, parse_dates=['Date'])
+            df_exist = pd.read_csv(arquivo, parse_dates=['Date'], sep=';', decimal=',')
         else:
             df_exist = pd.DataFrame()
 
@@ -65,7 +65,8 @@ if __name__ == '__main__':
                 df_final = pd.concat([df_exist, df], ignore_index=True)
                 df_final.drop_duplicates(['Date'], inplace=True)
                 df_final.sort_values('Date', inplace=True)
-                df_final.to_csv(arquivo, index=False)
+                # 🚀 Salva CSV com delimitador ; e separador decimal ,
+                df_final.to_csv(arquivo, index=False, sep=';', decimal=',')
                 logger.info(f"Salvo {len(df)} novos registros em {arquivo}")
             else:
                 logger.info(f"Nenhuma atualização para {nome}")

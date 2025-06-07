@@ -302,7 +302,7 @@ if __name__ == "__main__":
         for arquivo in tqdm(arquivos, desc="Processando arquivos"):
             try:
                 caminho = os.path.join('dados_transformados', arquivo)
-                df = pd.read_csv(caminho)
+                df = pd.read_csv(caminho, sep=';', decimal=',')
                 df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
                 df.dropna(subset=['Date', 'Adj Close'], inplace=True)
 
@@ -320,5 +320,5 @@ if __name__ == "__main__":
                 logger.exception(f"Erro ao processar {arquivo}: {e}")
 
     resultados_df = pd.DataFrame(resultados)
-    resultados_df.to_csv(os.path.join(RESULTS_DIR, 'resultados_forecasting.csv'), index=False)
+    resultados_df.to_csv(os.path.join(RESULTS_DIR, 'resultados_forecasting.csv'), index=False, sep=';', decimal=',')
     logger.info("Pipeline finalizado com sucesso!")

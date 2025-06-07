@@ -18,6 +18,15 @@ from itertools import product
 warnings.filterwarnings("ignore")
 np.random.seed(42)
 
+# ========================
+# PADRÃO DE SALVAMENTO CSV
+# ========================
+DEFAULT_TO_CSV_KWARGS = dict(
+    sep=';',
+    decimal=',',
+    index=False
+)
+
 # ==========================================
 # CONFIGURACAO DE DIRETORIOS
 # ==========================================
@@ -39,20 +48,17 @@ logger.add(os.path.join(LOGS_DIR, 'forecast_pipeline.log'), level='INFO', rotati
 # ==========================================
 
 def treinar_arima(series):
-    """Treina um modelo ARIMA(5,1,0) na série fornecida."""
     modelo = ARIMA(series, order=(5, 1, 0))
     modelo_fit = modelo.fit()
     return modelo_fit
 
 def treinar_prophet(df):
-    """Treina um modelo Prophet na série fornecida."""
     modelo = Prophet(daily_seasonality=False, weekly_seasonality=True, yearly_seasonality=True)
     modelo.fit(df)
     return modelo
 
 def preparar_dados_forecast(caminho_arquivo):
-    """Lê e prepara o DataFrame para forecasting."""
-    df = pd.read_csv(caminho_arquivo)
+    df = pd.read_csv(caminho_arquivo, sep=';', decimal=',')
     if 'Date' in df.columns:
         df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
     df = df.replace([np.inf, -np.inf], np.nan)
@@ -60,22 +66,18 @@ def preparar_dados_forecast(caminho_arquivo):
     return df
 
 def normalizar_serie(serie):
-    """Normaliza a série para o intervalo [0, 1]."""
     min_val = serie.min()
     max_val = serie.max()
     norm = (serie - min_val) / (max_val - min_val)
     return norm, min_val, max_val
 
 def desnormalizar_serie(norm, min_val, max_val):
-    """Desfaz a normalização da série."""
     return norm * (max_val - min_val) + min_val
 
 def ajustar_arima(series):
-    """Busca automática de ordem ARIMA (p,d,q) com grid simples."""
     best_aic = np.inf
     best_order = (5, 1, 0)
     best_model = None
-    # Pequeno grid para tuning
     for p, d, q in product([1,2,3,4,5], [0,1], [0,1,2]):
         try:
             model = ARIMA(series, order=(p, d, q)).fit()
@@ -88,7 +90,6 @@ def ajustar_arima(series):
     return best_model, best_order
 
 def ajustar_prophet(df):
-    """Tuning simples de sazonalidade anual/semanal para Prophet."""
     best_mae = np.inf
     best_params = None
     best_model = None
@@ -123,7 +124,7 @@ def salvar_residuos(real, previsto, arquivo, ticker, modelo):
     residuos = np.array(real) - np.array(previsto)
     df_res = pd.DataFrame({'real': real, 'previsto': previsto, 'residuo': residuos})
     nome = os.path.join(RESIDUOS_DIR, f'residuos_{arquivo.replace(",","_").replace(".csv","")}_{ticker}_{modelo}.csv')
-    df_res.to_csv(nome, index=False)
+    df_res.to_csv(nome, **DEFAULT_TO_CSV_KWARGS)
 
 # ==========================================
 # EXECUCAO PRINCIPAL (TREINAMENTO E SALVAMENTO)
@@ -140,7 +141,6 @@ if __name__ == "__main__":
             caminho = os.path.join('dados_transformados', arquivo)
             df = preparar_dados_forecast(caminho)
 
-            # Checagem de colunas obrigatórias
             if not all(col in df.columns for col in ['Date', 'Ticker', 'Adj Close']):
                 logger.warning(f"{arquivo} não possui colunas obrigatórias. Pulando...")
                 continue
@@ -157,7 +157,6 @@ if __name__ == "__main__":
                         logger.warning(f"Ticker {ticker} com poucos dados. Ignorando...")
                         continue
 
-                    # Normalização opcional
                     norm_series, min_valor, max_valor = normalizar_serie(series)
 
                     # Tuning ARIMA
@@ -215,6 +214,6 @@ if __name__ == "__main__":
             logger.exception(f"Erro ao processar {arquivo}: {e}")
 
     # Salvar métricas e previsões
-    pd.DataFrame(metricas).to_csv(os.path.join(METRICAS_DIR, 'metricas_forecasting.csv'), index=False)
-    pd.DataFrame(previsoes).to_csv(os.path.join(PREVISOES_DIR, 'previsoes_forecasting.csv'), index=False)
+    pd.DataFrame(metricas).to_csv(os.path.join(METRICAS_DIR, 'metricas_forecasting.csv'), **DEFAULT_TO_CSV_KWARGS)
+    pd.DataFrame(previsoes).to_csv(os.path.join(PREVISOES_DIR, 'previsoes_forecasting.csv'), **DEFAULT_TO_CSV_KWARGS)
     logger.info("Pipeline de forecasting finalizado!")

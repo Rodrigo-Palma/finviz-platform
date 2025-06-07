@@ -34,7 +34,7 @@ SEED = 42
 # ==========================
 
 def preparar_dados(caminho_arquivo, features):
-    df = pd.read_csv(caminho_arquivo)
+    df = pd.read_csv(caminho_arquivo, sep=';', decimal=',')  # <<< ajuste aqui
     # Conversão robusta de datas
     df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
     # Validação de features
@@ -53,6 +53,7 @@ def preparar_dados(caminho_arquivo, features):
         df[features_validas] = StandardScaler().fit_transform(df[features_validas])
     df['Target'] = (df.groupby('Ticker')['Adj Close'].shift(-1) > df['Adj Close']).astype(int)
     return df, features_validas
+
 
 def treinar_avaliar(df, features, meses_retroativos, min_amostras=100):
     data_limite = df['Date'].max() - timedelta(days=30*meses_retroativos)
@@ -144,8 +145,20 @@ if __name__ == "__main__":
         except Exception as e:
             logger.exception(f"Erro processando {arquivo}: {e}")
 
-    df_resultados = pd.DataFrame(resultados)
-    df_resultados.to_csv('otimizacao_janela/melhores_janelas.csv', index=False)
-    df_metricas = pd.DataFrame(todas_metricas)
-    df_metricas.to_csv('otimizacao_janela/todas_metricas_janelas.csv', index=False)
-    logger.info("Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv e todas_metricas_janelas.csv")
+df_resultados = pd.DataFrame(resultados)
+df_resultados.to_csv(
+    'otimizacao_janela/melhores_janelas.csv',
+    index=False,
+    sep=';',
+    decimal=','
+)
+
+df_metricas = pd.DataFrame(todas_metricas)
+df_metricas.to_csv(
+    'otimizacao_janela/todas_metricas_janelas.csv',
+    index=False,
+    sep=';',
+    decimal=','
+)
+
+logger.info("Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv e todas_metricas_janelas.csv")
