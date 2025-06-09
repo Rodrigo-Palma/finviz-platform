@@ -127,15 +127,21 @@ if __name__ == "__main__":
             scaler = StandardScaler()
             df[features_modelo] = scaler.fit_transform(df[features_modelo])
 
-            df_ultimos = df[-15:]
+            # ===== CORREÇÃO PRINCIPAL: últimos 15 registros por Ticker
+            if 'Ticker' in df.columns:
+                df_ultimos = df.groupby('Ticker', group_keys=False).apply(lambda x: x.tail(15)).reset_index(drop=True)
+                logger.info(f"[OK] Últimos 15 registros por Ticker carregados: {df_ultimos['Ticker'].nunique()} tickers, {len(df_ultimos)} registros.")
+            else:
+                df_ultimos = df[-15:]
+                logger.warning(f"[WARN] Coluna 'Ticker' não encontrada, usando últimos 15 registros do DataFrame inteiro.")
 
-            # ===>>> CORRECAO AQUI: garantir que X_ultimos tenha as features que o booster espera
+            # Booster feature check
             booster_feature_names = models[0].get_booster().feature_names
             logger.info(f"[CHECK] Booster features: {len(booster_feature_names)} features.")
 
-            # Filtrar e ordenar corretamente
             X_ultimos = df_ultimos[booster_feature_names]
 
+            # ======================== PREDICTIONS
             logger.info(f"Iniciando previsões para os últimos {len(df_ultimos)} registros...")
             preds_proba = np.zeros(len(X_ultimos))
             for i, (model, weight) in enumerate(zip(models, weights)):

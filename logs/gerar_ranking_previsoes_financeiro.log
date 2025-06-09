@@ -753,3 +753,128 @@ training data did not have the following fields: Return_1d_lag3, SMA_50, SMA_5, 
 2025-06-08 21:31:49.325 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
 2025-06-08 21:31:49.334 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
 2025-06-08 21:31:49.334 | INFO     | __main__:<module>:163 - Processo finalizado com sucesso.
+2025-06-08 22:08:15.210 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 22:08:15.214 | INFO     | __main__:<module>:38 - [OK] Features_selecionadas carregado com sucesso.
+2025-06-08 22:08:15.218 | INFO     | __main__:<module>:45 - Total de arquivos de avaliação encontrados: 6
+2025-06-08 22:08:15.219 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-08 22:08:15.241 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-08 22:08:15.244 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-08 22:08:15.255 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-08 22:08:15.256 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_commodities.csv
+2025-06-08 22:08:15.270 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-08 22:08:15.273 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_criptos.csv
+2025-06-08 22:08:15.280 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-08 22:08:15.281 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_juros.csv
+2025-06-08 22:08:15.302 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-08 22:08:15.307 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_moedas.csv
+2025-06-08 22:08:15.313 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-08 22:08:15.321 | INFO     | __main__:<module>:78 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 22:08:15.322 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 22:08:15.327 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 22:08:15.327 | INFO     | __main__:<module>:98 - Carregando dados transformados para criptos.csv...
+2025-06-08 22:08:24.275 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 39458 registros.
+2025-06-08 22:08:24.276 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-08 22:08:26.125 | WARNING  | __main__:<module>:114 - [WARN] Modelo criptos.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:08:26.126 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 26 features.
+2025-06-08 22:08:26.126 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:08:26.320 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 17 tickers, 255 registros.
+2025-06-08 22:08:26.324 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 24 features.
+2025-06-08 22:08:26.333 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 255 registros...
+2025-06-08 22:08:26.333 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.2037
+2025-06-08 22:08:26.345 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.2036
+2025-06-08 22:08:26.355 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.2059
+2025-06-08 22:08:26.418 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.2048
+2025-06-08 22:08:26.457 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.1820
+2025-06-08 22:08:26.481 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:08:26.631 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_criptos.csv
+2025-06-08 22:08:26.658 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 22:08:26.699 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 22:08:26.703 | INFO     | __main__:<module>:98 - Carregando dados transformados para juros.csv...
+2025-06-08 22:08:29.324 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-08 22:08:29.325 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-08 22:08:29.382 | WARNING  | __main__:<module>:114 - [WARN] Modelo juros.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:08:29.383 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 30 features.
+2025-06-08 22:08:29.383 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:08:29.463 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 5 tickers, 75 registros.
+2025-06-08 22:08:29.471 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 10 features.
+2025-06-08 22:08:29.474 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 75 registros...
+2025-06-08 22:08:29.476 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.2118
+2025-06-08 22:08:29.482 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.1932
+2025-06-08 22:08:29.532 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.1962
+2025-06-08 22:08:29.591 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.2042
+2025-06-08 22:08:29.658 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.1947
+2025-06-08 22:08:29.676 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:08:29.697 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_juros.csv
+2025-06-08 22:08:29.698 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 22:08:29.703 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 22:08:29.703 | INFO     | __main__:<module>:98 - Carregando dados transformados para bdrs.csv...
+2025-06-08 22:08:48.611 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 77389 registros.
+2025-06-08 22:08:48.614 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\bdrs_modelo.pkl...
+2025-06-08 22:08:48.710 | WARNING  | __main__:<module>:114 - [WARN] Modelo bdrs.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:08:48.711 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 27 features.
+2025-06-08 22:08:48.711 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:08:48.971 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 36 tickers, 540 registros.
+2025-06-08 22:08:48.972 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 16 features.
+2025-06-08 22:08:48.973 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 540 registros...
+2025-06-08 22:08:48.974 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.1935
+2025-06-08 22:08:48.978 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.2024
+2025-06-08 22:08:48.988 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.2024
+2025-06-08 22:08:48.998 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.1945
+2025-06-08 22:08:49.008 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.2072
+2025-06-08 22:08:49.018 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:08:49.120 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_bdrs.csv
+2025-06-08 22:08:49.122 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-08 22:08:49.129 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-08 22:08:49.129 | INFO     | __main__:<module>:98 - Carregando dados transformados para commodities.csv...
+2025-06-08 22:08:52.592 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 17589 registros.
+2025-06-08 22:08:52.593 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\commodities_modelo.pkl...
+2025-06-08 22:08:52.745 | WARNING  | __main__:<module>:114 - [WARN] Modelo commodities.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:08:52.757 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 18 features.
+2025-06-08 22:08:52.765 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:08:52.858 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 7 tickers, 105 registros.
+2025-06-08 22:08:52.858 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 10 features.
+2025-06-08 22:08:52.860 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 105 registros...
+2025-06-08 22:08:52.861 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.2013
+2025-06-08 22:08:52.866 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.1968
+2025-06-08 22:08:52.928 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.1883
+2025-06-08 22:08:52.961 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.2123
+2025-06-08 22:08:52.968 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.2012
+2025-06-08 22:08:52.977 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:08:53.008 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
+2025-06-08 22:08:53.010 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-08 22:08:53.020 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-08 22:08:53.028 | INFO     | __main__:<module>:98 - Carregando dados transformados para moedas.csv...
+2025-06-08 22:08:54.021 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 5206 registros.
+2025-06-08 22:08:54.022 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\moedas_modelo.pkl...
+2025-06-08 22:08:54.101 | WARNING  | __main__:<module>:114 - [WARN] Modelo moedas.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:08:54.102 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 20 features.
+2025-06-08 22:08:54.103 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:08:54.137 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 2 tickers, 30 registros.
+2025-06-08 22:08:54.138 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 7 features.
+2025-06-08 22:08:54.141 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 30 registros...
+2025-06-08 22:08:54.145 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.1966
+2025-06-08 22:08:54.151 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.1997
+2025-06-08 22:08:54.158 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.2003
+2025-06-08 22:08:54.165 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.2024
+2025-06-08 22:08:54.169 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.2009
+2025-06-08 22:08:54.177 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:08:54.193 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
+2025-06-08 22:08:54.194 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-08 22:08:54.210 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-08 22:08:54.213 | INFO     | __main__:<module>:98 - Carregando dados transformados para acoes_ibov.csv...
+2025-06-08 22:09:33.852 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 190191 registros.
+2025-06-08 22:09:33.853 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\acoes_ibov_modelo.pkl...
+2025-06-08 22:09:33.933 | WARNING  | __main__:<module>:114 - [WARN] Modelo acoes_ibov.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 22:09:33.933 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 21 features.
+2025-06-08 22:09:33.934 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 22:09:34.364 | INFO     | __main__:<module>:133 - [OK] Últimos 15 registros por Ticker carregados: 87 tickers, 1305 registros.
+2025-06-08 22:09:34.365 | INFO     | __main__:<module>:140 - [CHECK] Booster features: 10 features.
+2025-06-08 22:09:34.366 | INFO     | __main__:<module>:145 - Iniciando previsões para os últimos 1305 registros...
+2025-06-08 22:09:34.367 | INFO     | __main__:<module>:148 - → Modelo 1, peso 0.1964
+2025-06-08 22:09:34.372 | INFO     | __main__:<module>:148 - → Modelo 2, peso 0.2084
+2025-06-08 22:09:34.380 | INFO     | __main__:<module>:148 - → Modelo 3, peso 0.1986
+2025-06-08 22:09:34.387 | INFO     | __main__:<module>:148 - → Modelo 4, peso 0.1842
+2025-06-08 22:09:34.397 | INFO     | __main__:<module>:148 - → Modelo 5, peso 0.2124
+2025-06-08 22:09:34.409 | INFO     | __main__:<module>:151 - Montando DataFrame de previsões...
+2025-06-08 22:09:34.775 | INFO     | __main__:<module>:164 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
+2025-06-08 22:09:34.784 | INFO     | __main__:<module>:169 - Processo finalizado com sucesso.
