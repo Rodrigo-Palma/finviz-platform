@@ -1,0 +1,110 @@
+2025-06-08 20:21:01.434 | INFO     | __main__:<module>:227 - Iniciando pipeline para finanças...
+2025-06-08 20:21:06.168 | INFO     | __main__:preparar_dados:55 - Janela usada: 6m (180 dias)
+2025-06-08 20:21:06.205 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 10 de 21
+2025-06-08 20:21:06.218 | INFO     | __main__:treinar_modelo:130 - Usando 50 trials para otimização
+2025-06-08 20:25:57.735 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 4, 'learning_rate': 0.02914789628329541, 'n_estimators': 246, 'subsample': 0.6507416473342377, 'colsample_bytree': 0.6992616506923796, 'min_child_weight': 14, 'gamma': 0.5961618212445347, 'reg_alpha': 2.7623029862890345, 'reg_lambda': 1.6647693719576444}
+2025-06-08 20:31:14.712 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 5, 'learning_rate': 0.018399767411219597, 'n_estimators': 300, 'subsample': 0.5455211367683164, 'colsample_bytree': 0.6589816317638735, 'min_child_weight': 5, 'gamma': 0.5114019607002422, 'reg_alpha': 2.9469942640400415, 'reg_lambda': 1.6381472667560013}
+2025-06-08 20:35:26.633 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 5, 'learning_rate': 0.02444547802168658, 'n_estimators': 199, 'subsample': 0.5261636718574468, 'colsample_bytree': 0.5951976508250124, 'min_child_weight': 14, 'gamma': 0.9387100600937835, 'reg_alpha': 2.5459506862908, 'reg_lambda': 1.8923254279391104}
+2025-06-08 20:41:53.239 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 3, 'learning_rate': 0.026722505597659377, 'n_estimators': 271, 'subsample': 0.6798530003494087, 'colsample_bytree': 0.6910580916029763, 'min_child_weight': 9, 'gamma': 0.46573580577997065, 'reg_alpha': 2.3671350983979864, 'reg_lambda': 1.8708224483680456}
+2025-06-08 20:48:55.571 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 5, 'learning_rate': 0.028008723610278195, 'n_estimators': 298, 'subsample': 0.6858528289009086, 'colsample_bytree': 0.603755770066751, 'min_child_weight': 15, 'gamma': 0.4280421758140008, 'reg_alpha': 2.309613646554469, 'reg_lambda': 2.0345345297561956}
+2025-06-08 20:48:56.564 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.19638136 0.20840514 0.19858888 0.18423026 0.21239436]
+2025-06-08 20:48:59.930 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.4897 | AUC: 0.4772
+2025-06-08 20:49:07.159 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.5332 | AUC: 0.5328
+2025-06-08 20:49:14.720 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.5232 | AUC: 0.5376
+2025-06-08 20:49:18.517 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.5079 | AUC: 0.5059
+2025-06-08 20:49:27.795 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.5209 | AUC: 0.5293
+2025-06-08 20:49:27.802 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.5150 (±0.0150) | AUC: 0.5166 (±0.0225)
+2025-06-08 20:49:28.058 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.6498 | AUC: 0.7070
+2025-06-08 20:49:28.068 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.1348 | AUC: 0.1904
+2025-06-08 20:49:28.202 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\acoes_ibov_modelo.pkl | Tempo total: 1701.87s
+2025-06-08 20:49:30.493 | INFO     | __main__:preparar_dados:55 - Janela usada: 3m (90 dias)
+2025-06-08 20:49:30.515 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 16 de 27
+2025-06-08 20:49:30.531 | INFO     | __main__:treinar_modelo:130 - Usando 22 trials para otimização
+2025-06-08 20:51:46.767 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 3, 'learning_rate': 0.02131146379303436, 'n_estimators': 243, 'subsample': 0.5605588336501072, 'colsample_bytree': 0.5438723592383687, 'min_child_weight': 10, 'gamma': 0.41300431009551347, 'reg_alpha': 1.3160509231939401, 'reg_lambda': 1.6228302786916236}
+2025-06-08 20:53:59.267 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 4, 'learning_rate': 0.024288582701380998, 'n_estimators': 212, 'subsample': 0.6509310326744647, 'colsample_bytree': 0.6960915049188969, 'min_child_weight': 14, 'gamma': 0.9340795205858126, 'reg_alpha': 2.6046567816035164, 'reg_lambda': 1.1538021460339603}
+2025-06-08 20:55:44.961 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 4, 'learning_rate': 0.027580514030089397, 'n_estimators': 173, 'subsample': 0.6190671463809442, 'colsample_bytree': 0.5199403029273431, 'min_child_weight': 12, 'gamma': 0.8579118143705512, 'reg_alpha': 1.0012385496594547, 'reg_lambda': 2.715783175956784}
+2025-06-08 20:57:29.550 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 3, 'learning_rate': 0.021553179008501146, 'n_estimators': 270, 'subsample': 0.6262700663515414, 'colsample_bytree': 0.6693619710821587, 'min_child_weight': 12, 'gamma': 0.8886880009120355, 'reg_alpha': 1.3515793382172074, 'reg_lambda': 2.1248028198958737}
+2025-06-08 20:59:00.299 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 4, 'learning_rate': 0.027298602027760126, 'n_estimators': 207, 'subsample': 0.6944209296305034, 'colsample_bytree': 0.5042395934844528, 'min_child_weight': 10, 'gamma': 0.4971202090928898, 'reg_alpha': 1.9570591297433664, 'reg_lambda': 2.7629593312974055}
+2025-06-08 20:59:00.637 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.19345527 0.20237352 0.202413   0.19452269 0.20723552]
+2025-06-08 20:59:02.796 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.5583 | AUC: 0.5823
+2025-06-08 20:59:06.158 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.4978 | AUC: 0.4893
+2025-06-08 20:59:10.082 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.5000 | AUC: 0.5417
+2025-06-08 20:59:12.699 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.5740 | AUC: 0.5856
+2025-06-08 20:59:15.934 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.5672 | AUC: 0.5530
+2025-06-08 20:59:15.936 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.5394 (±0.0335) | AUC: 0.5504 (±0.0348)
+2025-06-08 20:59:16.010 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.6952 | AUC: 0.7605
+2025-06-08 20:59:16.011 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.1558 | AUC: 0.2101
+2025-06-08 20:59:16.075 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\bdrs_modelo.pkl | Tempo total: 585.50s
+2025-06-08 20:59:16.688 | INFO     | __main__:preparar_dados:55 - Janela usada: 3m (90 dias)
+2025-06-08 20:59:16.707 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 10 de 18
+2025-06-08 20:59:16.718 | INFO     | __main__:treinar_modelo:130 - Usando 10 trials para otimização
+2025-06-08 20:59:34.787 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 3, 'learning_rate': 0.027700487081153954, 'n_estimators': 245, 'subsample': 0.5727149817798469, 'colsample_bytree': 0.6253562171754399, 'min_child_weight': 13, 'gamma': 0.5432884459463458, 'reg_alpha': 1.793322247762513, 'reg_lambda': 2.120933352944154}
+2025-06-08 20:59:58.470 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 3, 'learning_rate': 0.02752498369586534, 'n_estimators': 127, 'subsample': 0.6146748240477615, 'colsample_bytree': 0.5676836155487633, 'min_child_weight': 12, 'gamma': 0.30799071552730084, 'reg_alpha': 2.3192332821146686, 'reg_lambda': 2.6915216562387525}
+2025-06-08 21:00:15.897 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 5, 'learning_rate': 0.0257315929994864, 'n_estimators': 182, 'subsample': 0.5455146002957544, 'colsample_bytree': 0.5500742452742585, 'min_child_weight': 14, 'gamma': 0.7413947949289907, 'reg_alpha': 2.6577299611329623, 'reg_lambda': 1.4718335123991462}
+2025-06-08 21:00:43.728 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 4, 'learning_rate': 0.022889718734193383, 'n_estimators': 118, 'subsample': 0.6145907708920723, 'colsample_bytree': 0.5728802488927858, 'min_child_weight': 7, 'gamma': 0.6366853302117601, 'reg_alpha': 1.8168103449129698, 'reg_lambda': 1.6777392737956545}
+2025-06-08 21:01:04.757 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 4, 'learning_rate': 0.026111157916587774, 'n_estimators': 132, 'subsample': 0.6610162151614569, 'colsample_bytree': 0.662059495005674, 'min_child_weight': 11, 'gamma': 0.3883319200338877, 'reg_alpha': 2.716603064354577, 'reg_lambda': 1.228096143088604}
+2025-06-08 21:01:05.280 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.20133674 0.19678854 0.18830149 0.21232433 0.2012489 ]
+2025-06-08 21:01:06.016 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.5000 | AUC: 0.5000
+2025-06-08 21:01:07.171 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.6023 | AUC: 0.5235
+2025-06-08 21:01:09.178 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.6023 | AUC: 0.6593
+2025-06-08 21:01:10.384 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.5568 | AUC: 0.5465
+2025-06-08 21:01:12.210 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.5811 | AUC: 0.5500
+2025-06-08 21:01:12.216 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.5685 (±0.0381) | AUC: 0.5559 (±0.0548)
+2025-06-08 21:01:12.268 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.6485 | AUC: 0.7253
+2025-06-08 21:01:12.268 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.0800 | AUC: 0.1695
+2025-06-08 21:01:12.316 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\commodities_modelo.pkl | Tempo total: 115.57s
+2025-06-08 21:01:13.574 | INFO     | __main__:preparar_dados:55 - Janela usada: 3m (90 dias)
+2025-06-08 21:01:13.596 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 24 de 26
+2025-06-08 21:01:13.611 | INFO     | __main__:treinar_modelo:130 - Usando 13 trials para otimização
+2025-06-08 21:02:14.465 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 5, 'learning_rate': 0.024172330571001974, 'n_estimators': 259, 'subsample': 0.5426319053434682, 'colsample_bytree': 0.6534787834120264, 'min_child_weight': 5, 'gamma': 0.480631850275467, 'reg_alpha': 1.7246474344905753, 'reg_lambda': 2.2944727700594907}
+2025-06-08 21:03:46.043 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 5, 'learning_rate': 0.029552123668495585, 'n_estimators': 287, 'subsample': 0.6970329626304776, 'colsample_bytree': 0.6723916711960559, 'min_child_weight': 11, 'gamma': 0.24669829830273537, 'reg_alpha': 2.2991351758815792, 'reg_lambda': 1.6566134130069872}
+2025-06-08 21:04:53.836 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 5, 'learning_rate': 0.029685050276860848, 'n_estimators': 226, 'subsample': 0.5536003621568866, 'colsample_bytree': 0.6330312605426633, 'min_child_weight': 5, 'gamma': 0.708486427528676, 'reg_alpha': 1.5357134416330362, 'reg_lambda': 1.5881741069832995}
+2025-06-08 21:06:09.539 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 5, 'learning_rate': 0.028739963395624367, 'n_estimators': 289, 'subsample': 0.5047523995444201, 'colsample_bytree': 0.6280790362399261, 'min_child_weight': 5, 'gamma': 0.7919520611000521, 'reg_alpha': 2.4273873599056954, 'reg_lambda': 1.6232832852260557}
+2025-06-08 21:06:57.217 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 3, 'learning_rate': 0.029424419149365236, 'n_estimators': 142, 'subsample': 0.5207097765293379, 'colsample_bytree': 0.6794091219628373, 'min_child_weight': 5, 'gamma': 0.6034655954579382, 'reg_alpha': 2.7754754897532, 'reg_lambda': 1.5104919033655118}
+2025-06-08 21:06:57.733 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.20371748 0.20364022 0.20587618 0.20477281 0.18199331]
+2025-06-08 21:07:00.274 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.5649 | AUC: 0.5891
+2025-06-08 21:07:04.734 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.6794 | AUC: 0.7195
+2025-06-08 21:07:09.370 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.7061 | AUC: 0.7431
+2025-06-08 21:07:13.118 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.6183 | AUC: 0.7474
+2025-06-08 21:07:17.893 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.6347 | AUC: 0.6968
+2025-06-08 21:07:17.894 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.6407 (±0.0491) | AUC: 0.6992 (±0.0580)
+2025-06-08 21:07:17.972 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.8470 | AUC: 0.9167
+2025-06-08 21:07:17.973 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.2064 | AUC: 0.2175
+2025-06-08 21:07:18.026 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\criptos_modelo.pkl | Tempo total: 364.38s
+2025-06-08 21:07:18.442 | INFO     | __main__:preparar_dados:55 - Janela usada: 6m (180 dias)
+2025-06-08 21:07:18.465 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 10 de 30
+2025-06-08 21:07:18.477 | INFO     | __main__:treinar_modelo:130 - Usando 10 trials para otimização
+2025-06-08 21:07:38.599 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 4, 'learning_rate': 0.024882337676365947, 'n_estimators': 215, 'subsample': 0.5172726474506001, 'colsample_bytree': 0.6750026574426229, 'min_child_weight': 5, 'gamma': 0.5237093901042782, 'reg_alpha': 1.97865472401042, 'reg_lambda': 2.7499088622064214}
+2025-06-08 21:08:05.265 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 5, 'learning_rate': 0.024869956901183425, 'n_estimators': 251, 'subsample': 0.5698554271383887, 'colsample_bytree': 0.6647011902909558, 'min_child_weight': 13, 'gamma': 0.4151772326695037, 'reg_alpha': 2.805765118905134, 'reg_lambda': 2.316714724065182}
+2025-06-08 21:08:22.264 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 3, 'learning_rate': 0.023571182597469556, 'n_estimators': 140, 'subsample': 0.5509519680599118, 'colsample_bytree': 0.6976624279864241, 'min_child_weight': 7, 'gamma': 0.22290457629354635, 'reg_alpha': 2.6158192010282413, 'reg_lambda': 2.132583502058526}
+2025-06-08 21:09:02.911 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 4, 'learning_rate': 0.025074133406029108, 'n_estimators': 293, 'subsample': 0.6436254606340683, 'colsample_bytree': 0.5568475690942978, 'min_child_weight': 11, 'gamma': 0.36136714630078304, 'reg_alpha': 2.8324867201997153, 'reg_lambda': 2.7630444833523127}
+2025-06-08 21:09:25.606 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 3, 'learning_rate': 0.020421670211927374, 'n_estimators': 177, 'subsample': 0.6039779433361078, 'colsample_bytree': 0.5413618412873289, 'min_child_weight': 11, 'gamma': 0.5573955455642492, 'reg_alpha': 1.2669326682612816, 'reg_lambda': 1.2130892438005811}
+2025-06-08 21:09:25.834 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.21175147 0.1932146  0.19616029 0.20421737 0.19465627]
+2025-06-08 21:09:26.701 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.4959 | AUC: 0.5003
+2025-06-08 21:09:27.754 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.4797 | AUC: 0.4710
+2025-06-08 21:09:29.178 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.6423 | AUC: 0.6235
+2025-06-08 21:09:31.383 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.6585 | AUC: 0.6703
+2025-06-08 21:09:32.828 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.6311 | AUC: 0.6894
+2025-06-08 21:09:32.829 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.5815 (±0.0772) | AUC: 0.5909 (±0.0891)
+2025-06-08 21:09:32.873 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.7317 | AUC: 0.8079
+2025-06-08 21:09:32.874 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.1502 | AUC: 0.2170
+2025-06-08 21:09:32.921 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\juros_modelo.pkl | Tempo total: 134.42s
+2025-06-08 21:09:33.069 | INFO     | __main__:preparar_dados:55 - Janela usada: 3m (90 dias)
+2025-06-08 21:09:33.087 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 7 de 20
+2025-06-08 21:09:33.099 | INFO     | __main__:treinar_modelo:130 - Usando 10 trials para otimização
+2025-06-08 21:09:45.518 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 3, 'learning_rate': 0.012775793094718522, 'n_estimators': 246, 'subsample': 0.5669718691707792, 'colsample_bytree': 0.519320703151963, 'min_child_weight': 5, 'gamma': 0.7074482220440985, 'reg_alpha': 1.258420604376801, 'reg_lambda': 2.268057040481467}
+2025-06-08 21:10:00.706 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 3, 'learning_rate': 0.021688142669117453, 'n_estimators': 222, 'subsample': 0.6770180646806812, 'colsample_bytree': 0.6509158624577589, 'min_child_weight': 7, 'gamma': 0.5995631966272834, 'reg_alpha': 1.3168877849988427, 'reg_lambda': 1.964758097668485}
+2025-06-08 21:10:14.870 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 4, 'learning_rate': 0.012412818477090217, 'n_estimators': 277, 'subsample': 0.6854826564056379, 'colsample_bytree': 0.641673400784224, 'min_child_weight': 6, 'gamma': 0.7950062765882804, 'reg_alpha': 1.5475818881164776, 'reg_lambda': 1.2697065118062771}
+2025-06-08 21:10:28.053 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 3, 'learning_rate': 0.02672038206396661, 'n_estimators': 165, 'subsample': 0.6081433675719436, 'colsample_bytree': 0.5373106524648297, 'min_child_weight': 6, 'gamma': 0.5656441380803199, 'reg_alpha': 1.1534442845188562, 'reg_lambda': 1.58481630319526}
+2025-06-08 21:10:51.359 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 5): {'max_depth': 4, 'learning_rate': 0.011724124757877081, 'n_estimators': 193, 'subsample': 0.6623807420994432, 'colsample_bytree': 0.5070292064470854, 'min_child_weight': 5, 'gamma': 0.34797125747085716, 'reg_alpha': 2.010931580011048, 'reg_lambda': 2.2004868736027072}
+2025-06-08 21:10:51.905 | INFO     | __main__:treinar_modelo:160 - Pesos dos modelos: [0.19663866 0.19973637 0.20032954 0.20243862 0.20085681]
+2025-06-08 21:10:53.490 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 1 - Acurácia: 0.5600 | AUC: 0.5000
+2025-06-08 21:10:54.693 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 2 - Acurácia: 0.6000 | AUC: 0.5000
+2025-06-08 21:10:56.095 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 3 - Acurácia: 0.5200 | AUC: 0.5897
+2025-06-08 21:10:57.194 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 4 - Acurácia: 0.6800 | AUC: 0.6916
+2025-06-08 21:10:57.801 | INFO     | __main__:avaliar_modelo:188 - Walk-forward 5 - Acurácia: 0.6364 | AUC: 0.6295
+2025-06-08 21:10:57.803 | INFO     | __main__:avaliar_modelo:194 - Média Walk-forward - Acurácia: 0.5993 (±0.0561) | AUC: 0.5822 (±0.0745)
+2025-06-08 21:10:57.843 | INFO     | __main__:avaliar_modelo:204 - Avaliação Final - Acurácia: 0.6953 | AUC: 0.7153
+2025-06-08 21:10:57.844 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.0960 | AUC: 0.1332
+2025-06-08 21:10:57.916 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\moedas_modelo.pkl | Tempo total: 84.77s
+2025-06-08 21:10:57.918 | INFO     | __main__:<module>:263 - Pipeline concluído com sucesso.

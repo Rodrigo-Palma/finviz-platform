@@ -1,0 +1,755 @@
+2025-06-08 21:16:25.217 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 21:16:25.316 | INFO     | __main__:<module>:66 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 21:16:25.317 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 21:16:25.322 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 21:16:28.594 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para criptos.csv: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'EMA_5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14', 'SMA_50']
+training data did not have the following fields: EMA_5, SMA_50
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 126, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └        Return_1d  Volume_lag5   EMA_200  Return_1d_lag1    Volume  ...  RSI_14_lag3  Bollinger_Width  Volume_lag1    RSI_14  ...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x00000243E546EDE0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.20371747837834625
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x00000243E546DD00>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_l...
+    │    └ <function Booster._validate_features at 0x00000243E5415300>
+    └ <xgboost.core.Booster object at 0x00000243E54D4890>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_l...
+                     │   │      │    └ <property object at 0x00000243E5400BD0>
+                     │   │      └ <xgboost.core.Booster object at 0x00000243E54D4890>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: EMA_5, SMA_50'
+
+ValueError: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'EMA_5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14', 'SMA_50']
+training data did not have the following fields: EMA_5, SMA_50
+2025-06-08 21:16:28.840 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 21:16:28.846 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 21:16:29.432 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para juros.csv: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_5d', 'RSI_14_lag3', 'Sharpe_20d', 'Return_1d_lag5', 'Bollinger_Width', 'RSI_14_lag5', 'Volatility_20d', 'MACD_Histogram', 'MACD_lag3', 'SMA_200', 'MACD_Signal', 'RSI_14_lag2', 'Return_20d', 'SMA_50', 'MACD_lag5', 'Open', 'MACD', 'EMA_200', 'EMA_100', 'EMA_5', 'SMA_5', 'Adj Close_lag2']
+training data did not have the following fields: Bollinger_Width, SMA_200, Return_1d, EMA_100, Adj Close_lag2, Return_1d_lag3, Return_1d_lag2, EMA_5, Return_1d_lag1, SMA_50, SMA_5, MACD_lag5, Return_5d, EMA_200, Volatility_5d, Return_20d, Open, Return_1d_lag5, MACD_Signal, Volatility_20d
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 126, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └        Return_1d_lag1  Return_1d  Return_1d_lag2  Volatility_5d       ATR    RSI_14  ...      MACD   EMA_200   EMA_100     EM...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x00000243E546EDE0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.211751472528703
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x00000243E546DD00>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_...
+    │    └ <function Booster._validate_features at 0x00000243E5415300>
+    └ <xgboost.core.Booster object at 0x00000243E41D48D0>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_...
+                     │   │      │    └ <property object at 0x00000243E5400BD0>
+                     │   │      └ <xgboost.core.Booster object at 0x00000243E41D48D0>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Bollinger_Width, SMA_200, Return_1d, EMA_1...
+
+ValueError: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_5d', 'RSI_14_lag3', 'Sharpe_20d', 'Return_1d_lag5', 'Bollinger_Width', 'RSI_14_lag5', 'Volatility_20d', 'MACD_Histogram', 'MACD_lag3', 'SMA_200', 'MACD_Signal', 'RSI_14_lag2', 'Return_20d', 'SMA_50', 'MACD_lag5', 'Open', 'MACD', 'EMA_200', 'EMA_100', 'EMA_5', 'SMA_5', 'Adj Close_lag2']
+training data did not have the following fields: Bollinger_Width, SMA_200, Return_1d, EMA_100, Adj Close_lag2, Return_1d_lag3, Return_1d_lag2, EMA_5, Return_1d_lag1, SMA_50, SMA_5, MACD_lag5, Return_5d, EMA_200, Volatility_5d, Return_20d, Open, Return_1d_lag5, MACD_Signal, Volatility_20d
+2025-06-08 21:16:29.581 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 21:16:29.586 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 21:16:31.987 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para bdrs.csv: feature_names mismatch: ['ATR', 'Volume_lag2', 'Volume_lag1', 'SMA_200', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_14_lag3', 'MACD_lag5', 'Sharpe_20d', 'Bollinger_Width', 'RSI_14_lag5', 'MACD_Histogram', 'RSI_14_lag1', 'RSI_14'] ['ATR', 'Volume_lag2', 'Return_1d', 'Volume_lag1', 'SMA_200', 'SMA_100', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_14_lag3', 'Return_1d_lag1', 'MACD_lag5', 'Return_5d', 'Volatility_5d', 'MACD_Signal', 'Return_1d_lag5', 'MACD', 'Volatility_20d', 'Sharpe_20d', 'Bollinger_Width', 'RSI_14_lag5', 'MACD_lag3', 'MACD_Histogram', 'RSI_14_lag1', 'Return_1d_lag2', 'RSI_14']
+training data did not have the following fields: Return_1d_lag2, Volatility_5d, Return_1d_lag5, MACD_Signal, Return_1d_lag1, MACD_lag3, Volatility_20d, Return_5d, Return_1d, SMA_100, MACD
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 126, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └             ATR  Volume_lag2  Return_1d  Volume_lag1   SMA_200  ...  MACD_lag3  MACD_Histogram  RSI_14_lag1  Return_1d_lag2  ...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x00000243E546EDE0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.19345527016714997
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x00000243E546DD00>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['ATR', 'Volume_lag2', 'Return_1d', 'Volume_lag1', 'SMA_200', 'SMA_100', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_...
+    │    └ <function Booster._validate_features at 0x00000243E5415300>
+    └ <xgboost.core.Booster object at 0x00000243E54C9710>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['ATR', 'Volume_lag2', 'Return_1d', 'Volume_lag1', 'SMA_200', 'SMA_100', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_...
+                     │   │      │    └ <property object at 0x00000243E5400BD0>
+                     │   │      └ <xgboost.core.Booster object at 0x00000243E54C9710>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Return_1d_lag2, Volatility_5d, Return_1d_l...
+
+ValueError: feature_names mismatch: ['ATR', 'Volume_lag2', 'Volume_lag1', 'SMA_200', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_14_lag3', 'MACD_lag5', 'Sharpe_20d', 'Bollinger_Width', 'RSI_14_lag5', 'MACD_Histogram', 'RSI_14_lag1', 'RSI_14'] ['ATR', 'Volume_lag2', 'Return_1d', 'Volume_lag1', 'SMA_200', 'SMA_100', 'Volume_lag5', 'Volume_lag3', 'OBV', 'Volume', 'RSI_14_lag3', 'Return_1d_lag1', 'MACD_lag5', 'Return_5d', 'Volatility_5d', 'MACD_Signal', 'Return_1d_lag5', 'MACD', 'Volatility_20d', 'Sharpe_20d', 'Bollinger_Width', 'RSI_14_lag5', 'MACD_lag3', 'MACD_Histogram', 'RSI_14_lag1', 'Return_1d_lag2', 'RSI_14']
+training data did not have the following fields: Return_1d_lag2, Volatility_5d, Return_1d_lag5, MACD_Signal, Return_1d_lag1, MACD_lag3, Volatility_20d, Return_5d, Return_1d, SMA_100, MACD
+2025-06-08 21:16:32.195 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-08 21:16:32.200 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-08 21:16:32.909 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para commodities.csv: feature_names mismatch: ['RSI_14_lag2', 'SMA_200', 'OBV', 'Volume', 'Volume_lag3', 'RSI_14_lag5', 'MACD_Histogram', 'MACD', 'RSI_14_lag1', 'RSI_14_lag3'] ['Return_1d', 'Return_1d_lag1', 'Return_1d_lag3', 'Return_1d_lag2', 'RSI_14_lag2', 'Return_5d', 'SMA_200', 'Return_1d_lag5', 'OBV', 'Volume', 'Return_20d', 'Volume_lag3', 'RSI_14_lag5', 'MACD_Histogram', 'Volatility_20d', 'MACD', 'RSI_14_lag1', 'RSI_14_lag3']
+training data did not have the following fields: Return_1d_lag2, Return_20d, Return_1d_lag5, Return_1d_lag1, Volatility_20d, Return_5d, Return_1d, Return_1d_lag3
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 126, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └        Return_1d  Return_1d_lag1  Return_1d_lag3  Return_1d_lag2  RSI_14_lag2  ...  MACD_Histogram  Volatility_20d      MACD ...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x00000243E546EDE0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.20133673693456303
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x00000243E546DD00>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Return_1d', 'Return_1d_lag1', 'Return_1d_lag3', 'Return_1d_lag2', 'RSI_14_lag2', 'Return_5d', 'SMA_200', 'Return_1d_lag5', ...
+    │    └ <function Booster._validate_features at 0x00000243E5415300>
+    └ <xgboost.core.Booster object at 0x00000243E54D4510>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Return_1d', 'Return_1d_lag1', 'Return_1d_lag3', 'Return_1d_lag2', 'RSI_14_lag2', 'Return_5d', 'SMA_200', 'Return_1d_lag5', ...
+                     │   │      │    └ <property object at 0x00000243E5400BD0>
+                     │   │      └ <xgboost.core.Booster object at 0x00000243E54D4510>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Return_1d_lag2, Return_20d, Return_1d_lag5...
+
+ValueError: feature_names mismatch: ['RSI_14_lag2', 'SMA_200', 'OBV', 'Volume', 'Volume_lag3', 'RSI_14_lag5', 'MACD_Histogram', 'MACD', 'RSI_14_lag1', 'RSI_14_lag3'] ['Return_1d', 'Return_1d_lag1', 'Return_1d_lag3', 'Return_1d_lag2', 'RSI_14_lag2', 'Return_5d', 'SMA_200', 'Return_1d_lag5', 'OBV', 'Volume', 'Return_20d', 'Volume_lag3', 'RSI_14_lag5', 'MACD_Histogram', 'Volatility_20d', 'MACD', 'RSI_14_lag1', 'RSI_14_lag3']
+training data did not have the following fields: Return_1d_lag2, Return_20d, Return_1d_lag5, Return_1d_lag1, Volatility_20d, Return_5d, Return_1d, Return_1d_lag3
+2025-06-08 21:16:33.029 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-08 21:16:33.035 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-08 21:16:33.381 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para moedas.csv: feature_names mismatch: ['High', 'RSI_14_lag1', 'RSI_14_lag5', 'RSI_14_lag2', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14'] ['High', 'Return_1d', 'Adj Close', 'SMA_100', 'Return_1d_lag1', 'Low', 'Return_1d_lag3', 'RSI_14_lag1', 'Volatility_20d', 'MACD_Histogram', 'Return_1d_lag5', 'RSI_14_lag5', 'RSI_14_lag2', 'RSI_14_lag3', 'Return_20d', 'Return_5d', 'Volatility_5d', 'Sharpe_20d', 'Open', 'RSI_14']
+training data did not have the following fields: Return_20d, Volatility_5d, Open, Return_1d_lag5, Low, Return_1d_lag1, Adj Close, Volatility_20d, Return_5d, Return_1d, SMA_100, MACD_Histogram, Return_1d_lag3
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 126, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └           High  Return_1d  Adj Close   SMA_100  Return_1d_lag1       Low  ...  Return_20d  Return_5d  Volatility_5d  Sharpe_2...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x00000243E546EDE0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.19663865546218484
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x00000243E546DD00>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['High', 'Return_1d', 'Adj Close', 'SMA_100', 'Return_1d_lag1', 'Low', 'Return_1d_lag3', 'RSI_14_lag1', 'Volatility_20d', 'MA...
+    │    └ <function Booster._validate_features at 0x00000243E5415300>
+    └ <xgboost.core.Booster object at 0x00000243E53F1810>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['High', 'Return_1d', 'Adj Close', 'SMA_100', 'Return_1d_lag1', 'Low', 'Return_1d_lag3', 'RSI_14_lag1', 'Volatility_20d', 'MA...
+                     │   │      │    └ <property object at 0x00000243E5400BD0>
+                     │   │      └ <xgboost.core.Booster object at 0x00000243E53F1810>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Return_20d, Volatility_5d, Open, Return_1d...
+
+ValueError: feature_names mismatch: ['High', 'RSI_14_lag1', 'RSI_14_lag5', 'RSI_14_lag2', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14'] ['High', 'Return_1d', 'Adj Close', 'SMA_100', 'Return_1d_lag1', 'Low', 'Return_1d_lag3', 'RSI_14_lag1', 'Volatility_20d', 'MACD_Histogram', 'Return_1d_lag5', 'RSI_14_lag5', 'RSI_14_lag2', 'RSI_14_lag3', 'Return_20d', 'Return_5d', 'Volatility_5d', 'Sharpe_20d', 'Open', 'RSI_14']
+training data did not have the following fields: Return_20d, Volatility_5d, Open, Return_1d_lag5, Low, Return_1d_lag1, Adj Close, Volatility_20d, Return_5d, Return_1d, SMA_100, MACD_Histogram, Return_1d_lag3
+2025-06-08 21:16:33.524 | INFO     | __main__:<module>:72 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-08 21:16:33.528 | INFO     | __main__:<module>:82 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-08 21:16:37.002 | ERROR    | __main__:<module>:142 - [ERROR] Erro ao gerar previsoes para acoes_ibov.csv: Error tokenizing data. C error: Calling read(nbytes) on source failed. Try engine='python'.
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 89, in <module>
+    df = pd.read_csv(os.path.join(DADOS_DIR, arquivo), sep=';', decimal=',')
+         │  │        │  │    │    │          └ 'acoes_ibov.csv'
+         │  │        │  │    │    └ 'dados_transformados'
+         │  │        │  │    └ <function join at 0x00000243CABACA40>
+         │  │        │  └ <module 'ntpath' (frozen)>
+         │  │        └ <module 'os' (frozen)>
+         │  └ <function read_csv at 0x00000243E3B5E8E0>
+         └ <module 'pandas' from 'D:\\Python\\Lib\\site-packages\\pandas\\__init__.py'>
+
+  File "D:\Python\Lib\site-packages\pandas\io\parsers\readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           │     │                   └ {'delimiter': ';', 'header': 'infer', 'names': None, 'index_col': None, 'usecols': None, 'dtype': None, 'engine': 'c', 'conve...
+           │     └ 'dados_transformados\\acoes_ibov.csv'
+           └ <function _read at 0x00000243E3B5E520>
+  File "D:\Python\Lib\site-packages\pandas\io\parsers\readers.py", line 617, in _read
+    return parser.read(nrows)
+           │      │    └ None
+           │      └ <function TextFileReader.read at 0x00000243E3B5F380>
+           └ <pandas.io.parsers.readers.TextFileReader object at 0x00000243E4186610>
+  File "D:\Python\Lib\site-packages\pandas\io\parsers\readers.py", line 1748, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        │    │       └ <function CParserWrapper.read at 0x00000243E3B07EC0>
+        │    └ <pandas.io.parsers.c_parser_wrapper.CParserWrapper object at 0x00000243E5554910>
+        └ <pandas.io.parsers.readers.TextFileReader object at 0x00000243E4186610>
+  File "D:\Python\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             │    │       │               └ None
+             │    │       └ <method 'read_low_memory' of 'pandas._libs.parsers.TextReader' objects>
+             │    └ <pandas._libs.parsers.TextReader object at 0x00000243E54245E0>
+             └ <pandas.io.parsers.c_parser_wrapper.CParserWrapper object at 0x00000243E5554910>
+  File "parsers.pyx", line 843, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 904, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 879, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 890, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2058, in pandas._libs.parsers.raise_parser_error
+
+pandas.errors.ParserError: Error tokenizing data. C error: Calling read(nbytes) on source failed. Try engine='python'.
+2025-06-08 21:16:37.541 | INFO     | __main__:<module>:144 - Processo finalizado.
+2025-06-08 21:20:10.271 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 21:20:10.271 | INFO     | __main__:<module>:36 - Total de arquivos de avaliação encontrados: 6
+2025-06-08 21:20:10.272 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-08 21:20:10.287 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-08 21:20:10.287 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-08 21:20:10.292 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-08 21:20:10.293 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_commodities.csv
+2025-06-08 21:20:10.298 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-08 21:20:10.299 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_criptos.csv
+2025-06-08 21:20:10.305 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-08 21:20:10.305 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_juros.csv
+2025-06-08 21:20:10.311 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-08 21:20:10.312 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_moedas.csv
+2025-06-08 21:20:10.317 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-08 21:20:10.323 | INFO     | __main__:<module>:69 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 21:20:10.325 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 21:20:10.328 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 21:20:10.328 | INFO     | __main__:<module>:89 - Carregando dados transformados para criptos.csv...
+2025-06-08 21:20:18.074 | INFO     | __main__:<module>:93 - [OK] Dados carregados e pré-processados: 39458 registros.
+2025-06-08 21:20:18.075 | INFO     | __main__:<module>:97 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-08 21:20:19.758 | WARNING  | __main__:<module>:105 - [WARN] Modelo criptos.csv não possui features salvas, usando todas do CSV.
+2025-06-08 21:20:19.759 | INFO     | __main__:<module>:109 - Verificando e aplicando as features do modelo...
+2025-06-08 21:20:20.125 | ERROR    | __main__:<module>:141 - [ERROR] Erro ao gerar previsoes para criptos.csv: float() argument must be a string or a real number, not 'Timestamp'
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 114, in <module>
+    df[features_modelo] = scaler.fit_transform(df[features_modelo])
+    │  │                  │      │             │  └ ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Ticker', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EM...
+    │  │                  │      │             └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+    │  │                  │      └ <function TransformerMixin.fit_transform at 0x00000208EA520220>
+    │  │                  └ StandardScaler()
+    │  └ ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Ticker', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EM...
+    └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+
+  File "D:\Python\Lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   │ │     │   │       └ {}
+                   │ │     │   └ ()
+                   │ │     └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+                   │ └ StandardScaler()
+                   └ <function TransformerMixin.fit_transform at 0x00000208EA5200E0>
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 916, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           │    │   │    │                     └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+           │    │   │    └ {}
+           │    │   └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+           │    └ <function StandardScaler.fit at 0x00000208EACEA840>
+           └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\preprocessing\_data.py", line 839, in fit
+    return self.partial_fit(X, y, sample_weight)
+           │    │           │  │  └ None
+           │    │           │  └ None
+           │    │           └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+           │    └ <function StandardScaler.partial_fit at 0x00000208EACEAA20>
+           └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           │          │           │       └ {}
+           │          │           └ (            Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI...
+           │          └ StandardScaler()
+           └ <function StandardScaler.partial_fit at 0x00000208EACEA980>
+  File "D:\Python\Lib\site-packages\sklearn\preprocessing\_data.py", line 875, in partial_fit
+    X = self._validate_data(
+        │    └ <function BaseEstimator._validate_data at 0x00000208EA51B6A0>
+        └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 605, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          │           │                    └ {'estimator': StandardScaler(), 'accept_sparse': ('csr', 'csc'), 'dtype': (<class 'numpy.float64'>, <class 'numpy.float32'>, ...
+          │           └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+          └ <function check_array at 0x00000208EA509E40>
+  File "D:\Python\Lib\site-packages\sklearn\utils\validation.py", line 915, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            │                   │            │            │         └ <sklearn.utils._array_api._NumPyAPIWrapper object at 0x00000208E45362D0>
+            │                   │            │            └ dtype('float64')
+            │                   │            └ None
+            │                   └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+            └ <function _asarray_with_order at 0x00000208EA5091C0>
+  File "D:\Python\Lib\site-packages\sklearn\utils\_array_api.py", line 380, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            │     │       │            │            └ dtype('float64')
+            │     │       │            └ None
+            │     │       └             Date      Open      High       Low     Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+            │     └ <built-in function asarray>
+            └ <module 'numpy' from 'D:\\Python\\Lib\\site-packages\\numpy\\__init__.py'>
+  File "D:\Python\Lib\site-packages\pandas\core\generic.py", line 2084, in __array__
+    arr = np.asarray(values, dtype=dtype)
+          │  │       │             └ dtype('float64')
+          │  │       └ array([[Timestamp('2018-05-26 00:00:00'), 0.1963540017604828,
+          │  │                 0.1964360028505325, ..., 30.52907214036439, 25.70968425...
+          │  └ <built-in function asarray>
+          └ <module 'numpy' from 'D:\\Python\\Lib\\site-packages\\numpy\\__init__.py'>
+
+TypeError: float() argument must be a string or a real number, not 'Timestamp'
+2025-06-08 21:20:22.630 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 21:20:22.648 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 21:20:22.653 | INFO     | __main__:<module>:89 - Carregando dados transformados para juros.csv...
+2025-06-08 21:20:25.130 | INFO     | __main__:<module>:93 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-08 21:20:25.131 | INFO     | __main__:<module>:97 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-08 21:20:25.179 | WARNING  | __main__:<module>:105 - [WARN] Modelo juros.csv não possui features salvas, usando todas do CSV.
+2025-06-08 21:20:25.179 | INFO     | __main__:<module>:109 - Verificando e aplicando as features do modelo...
+2025-06-08 21:20:25.298 | ERROR    | __main__:<module>:141 - [ERROR] Erro ao gerar previsoes para juros.csv: float() argument must be a string or a real number, not 'Timestamp'
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 114, in <module>
+    df[features_modelo] = scaler.fit_transform(df[features_modelo])
+    │  │                  │      │             │  └ ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Ticker', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EM...
+    │  │                  │      │             └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+    │  │                  │      └ <function TransformerMixin.fit_transform at 0x00000208EA520220>
+    │  │                  └ StandardScaler()
+    │  └ ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Ticker', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EM...
+    └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+
+  File "D:\Python\Lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   │ │     │   │       └ {}
+                   │ │     │   └ ()
+                   │ │     └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+                   │ └ StandardScaler()
+                   └ <function TransformerMixin.fit_transform at 0x00000208EA5200E0>
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 916, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           │    │   │    │                     └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+           │    │   │    └ {}
+           │    │   └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+           │    └ <function StandardScaler.fit at 0x00000208EACEA840>
+           └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\preprocessing\_data.py", line 839, in fit
+    return self.partial_fit(X, y, sample_weight)
+           │    │           │  │  └ None
+           │    │           │  └ None
+           │    │           └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+           │    └ <function StandardScaler.partial_fit at 0x00000208EACEAA20>
+           └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           │          │           │       └ {}
+           │          │           └ (            Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_l...
+           │          └ StandardScaler()
+           └ <function StandardScaler.partial_fit at 0x00000208EACEA980>
+  File "D:\Python\Lib\site-packages\sklearn\preprocessing\_data.py", line 875, in partial_fit
+    X = self._validate_data(
+        │    └ <function BaseEstimator._validate_data at 0x00000208EA51B6A0>
+        └ StandardScaler()
+  File "D:\Python\Lib\site-packages\sklearn\base.py", line 605, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          │           │                    └ {'estimator': StandardScaler(), 'accept_sparse': ('csr', 'csc'), 'dtype': (<class 'numpy.float64'>, <class 'numpy.float32'>, ...
+          │           └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+          └ <function check_array at 0x00000208EA509E40>
+  File "D:\Python\Lib\site-packages\sklearn\utils\validation.py", line 915, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            │                   │            │            │         └ <sklearn.utils._array_api._NumPyAPIWrapper object at 0x00000208E45362D0>
+            │                   │            │            └ dtype('float64')
+            │                   │            └ None
+            │                   └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+            └ <function _asarray_with_order at 0x00000208EA5091C0>
+  File "D:\Python\Lib\site-packages\sklearn\utils\_array_api.py", line 380, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            │     │       │            │            └ dtype('float64')
+            │     │       │            └ None
+            │     │       └             Date        Open        High         Low       Close  Adj Close  ...  MACD_lag3 MACD_lag5  RSI_14_lag1  RSI_14_la...
+            │     └ <built-in function asarray>
+            └ <module 'numpy' from 'D:\\Python\\Lib\\site-packages\\numpy\\__init__.py'>
+  File "D:\Python\Lib\site-packages\pandas\core\generic.py", line 2084, in __array__
+    arr = np.asarray(values, dtype=dtype)
+          │  │       │             └ dtype('float64')
+          │  │       └ array([[Timestamp('2016-03-24 00:00:00'), 127.37999725341795,
+          │  │                 127.61000061035156, ..., 45.19237928456785, 48.26090297...
+          │  └ <built-in function asarray>
+          └ <module 'numpy' from 'D:\\Python\\Lib\\site-packages\\numpy\\__init__.py'>
+
+TypeError: float() argument must be a string or a real number, not 'Timestamp'
+2025-06-08 21:20:27.792 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 21:20:27.796 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 21:20:27.796 | INFO     | __main__:<module>:89 - Carregando dados transformados para bdrs.csv...
+2025-06-08 21:22:43.217 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 21:22:43.218 | INFO     | __main__:<module>:36 - Total de arquivos de avaliação encontrados: 6
+2025-06-08 21:22:43.218 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-08 21:22:43.234 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-08 21:22:43.235 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-08 21:22:43.241 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-08 21:22:43.241 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_commodities.csv
+2025-06-08 21:22:43.247 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-08 21:22:43.247 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_criptos.csv
+2025-06-08 21:22:43.251 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-08 21:22:43.251 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_juros.csv
+2025-06-08 21:22:43.256 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-08 21:22:43.257 | INFO     | __main__:<module>:42 - Processando avaliação: avaliacao_moedas.csv
+2025-06-08 21:22:43.261 | INFO     | __main__:<module>:58 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-08 21:22:43.267 | INFO     | __main__:<module>:69 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 21:22:43.268 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 21:22:43.272 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 21:22:43.272 | INFO     | __main__:<module>:89 - Carregando dados transformados para criptos.csv...
+2025-06-08 21:22:50.990 | INFO     | __main__:<module>:93 - [OK] Dados carregados e pré-processados: 39458 registros.
+2025-06-08 21:22:50.991 | INFO     | __main__:<module>:97 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-08 21:22:53.114 | WARNING  | __main__:<module>:105 - [WARN] Modelo criptos.csv não possui features salvas, usando apenas colunas numéricas.
+2025-06-08 21:22:53.123 | INFO     | __main__:<module>:109 - Verificando e aplicando as features do modelo...
+2025-06-08 21:22:53.271 | INFO     | __main__:<module>:119 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:22:53.272 | INFO     | __main__:<module>:122 - → Modelo 1, peso 0.2037
+2025-06-08 21:22:53.293 | ERROR    | __main__:<module>:141 - [ERROR] Erro ao gerar previsoes para criptos.csv: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', 'EMA_100', 'SMA_200', 'EMA_200', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Histogram', 'Bollinger_Upper', 'Bollinger_Lower', 'Bollinger_Width', 'ATR', 'OBV', 'Return_1d', 'Return_5d', 'Return_20d', 'Volatility_5d', 'Volatility_20d', 'Excess_Return', 'Sharpe_20d', 'Adj Close_lag1', 'Adj Close_lag2', 'Adj Close_lag3', 'Adj Close_lag5', 'Volume_lag1', 'Volume_lag2', 'Volume_lag3', 'Volume_lag5', 'Return_1d_lag1', 'Return_1d_lag2', 'Return_1d_lag3', 'Return_1d_lag5', 'MACD_lag1', 'MACD_lag2', 'MACD_lag3', 'MACD_lag5', 'RSI_14_lag1', 'RSI_14_lag2', 'RSI_14_lag3', 'RSI_14_lag5']
+training data did not have the following fields: Adj Close_lag2, SMA_20, EMA_5, Bollinger_Lower, EMA_20, SMA_50, ATR, SMA_5, Open, Bollinger_Upper, MACD, Excess_Return, MACD_lag2, Adj Close, SMA_200, High, Adj Close_lag1, Adj Close_lag3, EMA_100, Adj Close_lag5, MACD_lag3, Sharpe_20d, SMA_100, Close, MACD_Signal, Low, MACD_lag1, EMA_50
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 123, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └            Open      High       Low     Close  Adj Close    Volume  ...  MACD_lag3  MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x000001B750B73060>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.20371747837834625
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x000001B750B71F80>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', ...
+    │    └ <function Booster._validate_features at 0x000001B750B09580>
+    └ <xgboost.core.Booster object at 0x000001B750EED8D0>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', ...
+                     │   │      │    └ <property object at 0x000001B750AE6F20>
+                     │   │      └ <xgboost.core.Booster object at 0x000001B750EED8D0>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Adj Close_lag2, SMA_20, EMA_5, Bollinger_L...
+
+ValueError: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', 'EMA_100', 'SMA_200', 'EMA_200', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Histogram', 'Bollinger_Upper', 'Bollinger_Lower', 'Bollinger_Width', 'ATR', 'OBV', 'Return_1d', 'Return_5d', 'Return_20d', 'Volatility_5d', 'Volatility_20d', 'Excess_Return', 'Sharpe_20d', 'Adj Close_lag1', 'Adj Close_lag2', 'Adj Close_lag3', 'Adj Close_lag5', 'Volume_lag1', 'Volume_lag2', 'Volume_lag3', 'Volume_lag5', 'Return_1d_lag1', 'Return_1d_lag2', 'Return_1d_lag3', 'Return_1d_lag5', 'MACD_lag1', 'MACD_lag2', 'MACD_lag3', 'MACD_lag5', 'RSI_14_lag1', 'RSI_14_lag2', 'RSI_14_lag3', 'RSI_14_lag5']
+training data did not have the following fields: Adj Close_lag2, SMA_20, EMA_5, Bollinger_Lower, EMA_20, SMA_50, ATR, SMA_5, Open, Bollinger_Upper, MACD, Excess_Return, MACD_lag2, Adj Close, SMA_200, High, Adj Close_lag1, Adj Close_lag3, EMA_100, Adj Close_lag5, MACD_lag3, Sharpe_20d, SMA_100, Close, MACD_Signal, Low, MACD_lag1, EMA_50
+2025-06-08 21:22:53.617 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 21:22:53.630 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 21:22:53.631 | INFO     | __main__:<module>:89 - Carregando dados transformados para juros.csv...
+2025-06-08 21:22:56.066 | INFO     | __main__:<module>:93 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-08 21:22:56.066 | INFO     | __main__:<module>:97 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-08 21:22:56.127 | WARNING  | __main__:<module>:105 - [WARN] Modelo juros.csv não possui features salvas, usando apenas colunas numéricas.
+2025-06-08 21:22:56.146 | INFO     | __main__:<module>:109 - Verificando e aplicando as features do modelo...
+2025-06-08 21:22:56.224 | INFO     | __main__:<module>:119 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:22:56.225 | INFO     | __main__:<module>:122 - → Modelo 1, peso 0.2118
+2025-06-08 21:22:56.239 | ERROR    | __main__:<module>:141 - [ERROR] Erro ao gerar previsoes para juros.csv: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', 'EMA_100', 'SMA_200', 'EMA_200', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Histogram', 'Bollinger_Upper', 'Bollinger_Lower', 'Bollinger_Width', 'ATR', 'OBV', 'Return_1d', 'Return_5d', 'Return_20d', 'Volatility_5d', 'Volatility_20d', 'Excess_Return', 'Sharpe_20d', 'Adj Close_lag1', 'Adj Close_lag2', 'Adj Close_lag3', 'Adj Close_lag5', 'Volume_lag1', 'Volume_lag2', 'Volume_lag3', 'Volume_lag5', 'Return_1d_lag1', 'Return_1d_lag2', 'Return_1d_lag3', 'Return_1d_lag5', 'MACD_lag1', 'MACD_lag2', 'MACD_lag3', 'MACD_lag5', 'RSI_14_lag1', 'RSI_14_lag2', 'RSI_14_lag3', 'RSI_14_lag5']
+training data did not have the following fields: Return_1d_lag2, Adj Close_lag2, SMA_20, EMA_5, Return_20d, EMA_20, Bollinger_Lower, Return_1d_lag3, SMA_50, Volume, Return_1d, Return_5d, Volume_lag3, SMA_5, Open, Bollinger_Upper, Volume_lag2, Excess_Return, Volume_lag1, MACD_lag2, MACD_lag5, Adj Close, SMA_200, OBV, High, Adj Close_lag1, EMA_50, Adj Close_lag3, Return_1d_lag5, Adj Close_lag5, Return_1d_lag1, Volatility_5d, Volatility_20d, SMA_100, Bollinger_Width, Volume_lag5, Close, EMA_200, MACD_Signal, Low, MACD_lag1, EMA_100
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 123, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └            Open      High       Low     Close  Adj Close    Volume  ...  MACD_lag3  MACD_lag5  RSI_14_lag1  RSI_14_lag2  RSI_...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x000001B750B73060>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.211751472528703
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x000001B750B71F80>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', ...
+    │    └ <function Booster._validate_features at 0x000001B750B09580>
+    └ <xgboost.core.Booster object at 0x000001B74C1C27D0>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', ...
+                     │   │      │    └ <property object at 0x000001B750AE6F20>
+                     │   │      └ <xgboost.core.Booster object at 0x000001B74C1C27D0>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Return_1d_lag2, Adj Close_lag2, SMA_20, EM...
+
+ValueError: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'SMA_5', 'EMA_5', 'SMA_20', 'EMA_20', 'SMA_50', 'EMA_50', 'SMA_100', 'EMA_100', 'SMA_200', 'EMA_200', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Histogram', 'Bollinger_Upper', 'Bollinger_Lower', 'Bollinger_Width', 'ATR', 'OBV', 'Return_1d', 'Return_5d', 'Return_20d', 'Volatility_5d', 'Volatility_20d', 'Excess_Return', 'Sharpe_20d', 'Adj Close_lag1', 'Adj Close_lag2', 'Adj Close_lag3', 'Adj Close_lag5', 'Volume_lag1', 'Volume_lag2', 'Volume_lag3', 'Volume_lag5', 'Return_1d_lag1', 'Return_1d_lag2', 'Return_1d_lag3', 'Return_1d_lag5', 'MACD_lag1', 'MACD_lag2', 'MACD_lag3', 'MACD_lag5', 'RSI_14_lag1', 'RSI_14_lag2', 'RSI_14_lag3', 'RSI_14_lag5']
+training data did not have the following fields: Return_1d_lag2, Adj Close_lag2, SMA_20, EMA_5, Return_20d, EMA_20, Bollinger_Lower, Return_1d_lag3, SMA_50, Volume, Return_1d, Return_5d, Volume_lag3, SMA_5, Open, Bollinger_Upper, Volume_lag2, Excess_Return, Volume_lag1, MACD_lag2, MACD_lag5, Adj Close, SMA_200, OBV, High, Adj Close_lag1, EMA_50, Adj Close_lag3, Return_1d_lag5, Adj Close_lag5, Return_1d_lag1, Volatility_5d, Volatility_20d, SMA_100, Bollinger_Width, Volume_lag5, Close, EMA_200, MACD_Signal, Low, MACD_lag1, EMA_100
+2025-06-08 21:22:56.418 | INFO     | __main__:<module>:75 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 21:22:56.422 | INFO     | __main__:<module>:84 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 21:22:56.422 | INFO     | __main__:<module>:89 - Carregando dados transformados para bdrs.csv...
+2025-06-08 21:26:19.119 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 21:26:19.120 | INFO     | __main__:<module>:39 - [OK] Features_selecionadas carregado com sucesso.
+2025-06-08 21:26:19.121 | INFO     | __main__:<module>:46 - Total de arquivos de avaliação encontrados: 6
+2025-06-08 21:26:19.121 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-08 21:26:19.133 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-08 21:26:19.133 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-08 21:26:19.138 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-08 21:26:19.138 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_commodities.csv
+2025-06-08 21:26:19.143 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-08 21:26:19.143 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_criptos.csv
+2025-06-08 21:26:19.149 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-08 21:26:19.150 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_juros.csv
+2025-06-08 21:26:19.154 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-08 21:26:19.154 | INFO     | __main__:<module>:52 - Processando avaliação: avaliacao_moedas.csv
+2025-06-08 21:26:19.159 | INFO     | __main__:<module>:68 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-08 21:26:19.165 | INFO     | __main__:<module>:79 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 21:26:19.166 | INFO     | __main__:<module>:85 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 21:26:19.169 | INFO     | __main__:<module>:94 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 21:26:19.169 | INFO     | __main__:<module>:99 - Carregando dados transformados para criptos.csv...
+2025-06-08 21:26:27.537 | INFO     | __main__:<module>:103 - [OK] Dados carregados e pré-processados: 39458 registros.
+2025-06-08 21:26:27.537 | INFO     | __main__:<module>:107 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-08 21:26:29.478 | INFO     | __main__:<module>:118 - [OK] Features carregadas de features_selecionadas.json: 26 features.
+2025-06-08 21:26:29.479 | INFO     | __main__:<module>:124 - Verificando e aplicando as features do modelo...
+2025-06-08 21:26:29.567 | INFO     | __main__:<module>:134 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:26:29.568 | INFO     | __main__:<module>:137 - → Modelo 1, peso 0.2037
+2025-06-08 21:26:29.576 | ERROR    | __main__:<module>:156 - [ERROR] Erro ao gerar previsoes para criptos.csv: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'EMA_5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14', 'SMA_50']
+training data did not have the following fields: EMA_5, SMA_50
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 138, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └        Return_1d  Volume_lag5   EMA_200  Return_1d_lag1    Volume  ...  RSI_14_lag3  Bollinger_Width  Volume_lag1    RSI_14  ...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x000001C043EAAFC0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.20371747837834625
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x000001C043EA9EE0>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_l...
+    │    └ <function Booster._validate_features at 0x000001C043E454E0>
+    └ <xgboost.core.Booster object at 0x000001C044284350>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_l...
+                     │   │      │    └ <property object at 0x000001C043E1ED90>
+                     │   │      └ <xgboost.core.Booster object at 0x000001C044284350>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: EMA_5, SMA_50'
+
+ValueError: feature_names mismatch: ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14'] ['Return_1d', 'Volume_lag5', 'EMA_200', 'Return_1d_lag1', 'Volume', 'Return_5d', 'Volume_lag2', 'Volatility_5d', 'Return_1d_lag5', 'EMA_5', 'RSI_14_lag2', 'Return_1d_lag3', 'Return_20d', 'OBV', 'RSI_14_lag1', 'RSI_14_lag5', 'Volume_lag3', 'MACD_Histogram', 'Return_1d_lag2', 'MACD_lag5', 'Volatility_20d', 'RSI_14_lag3', 'Bollinger_Width', 'Volume_lag1', 'RSI_14', 'SMA_50']
+training data did not have the following fields: EMA_5, SMA_50
+2025-06-08 21:26:29.784 | INFO     | __main__:<module>:85 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 21:26:29.791 | INFO     | __main__:<module>:94 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 21:26:29.793 | INFO     | __main__:<module>:99 - Carregando dados transformados para juros.csv...
+2025-06-08 21:26:32.393 | INFO     | __main__:<module>:103 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-08 21:26:32.393 | INFO     | __main__:<module>:107 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-08 21:26:32.447 | INFO     | __main__:<module>:118 - [OK] Features carregadas de features_selecionadas.json: 30 features.
+2025-06-08 21:26:32.448 | INFO     | __main__:<module>:124 - Verificando e aplicando as features do modelo...
+2025-06-08 21:26:32.489 | INFO     | __main__:<module>:134 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:26:32.490 | INFO     | __main__:<module>:137 - → Modelo 1, peso 0.2118
+2025-06-08 21:26:32.499 | ERROR    | __main__:<module>:156 - [ERROR] Erro ao gerar previsoes para juros.csv: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_5d', 'RSI_14_lag3', 'Sharpe_20d', 'Return_1d_lag5', 'Bollinger_Width', 'RSI_14_lag5', 'Volatility_20d', 'MACD_Histogram', 'MACD_lag3', 'SMA_200', 'MACD_Signal', 'RSI_14_lag2', 'Return_20d', 'SMA_50', 'MACD_lag5', 'Open', 'MACD', 'EMA_200', 'EMA_100', 'EMA_5', 'SMA_5', 'Adj Close_lag2']
+training data did not have the following fields: Return_1d_lag3, SMA_50, SMA_5, Return_1d_lag5, Open, MACD_Signal, Bollinger_Width, Return_5d, Adj Close_lag2, EMA_100, EMA_200, Return_1d_lag2, EMA_5, Return_20d, Return_1d_lag1, Volatility_20d, SMA_200, Return_1d, MACD_lag5, Volatility_5d
+Traceback (most recent call last):
+
+> File "E:\finviz-platform\ranking_previsoes_financeiro.py", line 138, in <module>
+    preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+    │              │        │     │             └        Return_1d_lag1  Return_1d  Return_1d_lag2  Volatility_5d       ATR    RSI_14  ...      MACD   EMA_200   EMA_100     EM...
+    │              │        │     └ <function XGBClassifier.predict_proba at 0x000001C043EAAFC0>
+    │              │        └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+    │              │                        colsample_bylevel=None, colsample_bynode=None,
+    │              │             ...
+    │              └ 0.211751472528703
+    └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1628, in predict_proba
+    class_probs = super().predict(
+  File "D:\Python\Lib\site-packages\xgboost\sklearn.py", line 1164, in predict
+    predts = self.get_booster().inplace_predict(
+             │    └ <function XGBModel.get_booster at 0x000001C043EA9EE0>
+             └ XGBClassifier(base_score=None, booster=None, callbacks=None,
+                             colsample_bylevel=None, colsample_bynode=None,
+                  ...
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2417, in inplace_predict
+    self._validate_features(fns)
+    │    │                  └ ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_...
+    │    └ <function Booster._validate_features at 0x000001C043E454E0>
+    └ <xgboost.core.Booster object at 0x000001C03F4D2810>
+  File "D:\Python\Lib\site-packages\xgboost\core.py", line 2969, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+                     │   │      │    │              └ ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_...
+                     │   │      │    └ <property object at 0x000001C043E1ED90>
+                     │   │      └ <xgboost.core.Booster object at 0x000001C03F4D2810>
+                     │   └ <method 'format' of 'str' objects>
+                     └ 'feature_names mismatch: {0} {1}\ntraining data did not have the following fields: Return_1d_lag3, SMA_50, SMA_5, Return_1d_l...
+
+ValueError: feature_names mismatch: ['ATR', 'RSI_14', 'RSI_14_lag1', 'RSI_14_lag3', 'Sharpe_20d', 'RSI_14_lag5', 'MACD_Histogram', 'MACD_lag3', 'RSI_14_lag2', 'MACD'] ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'Volatility_5d', 'ATR', 'RSI_14', 'RSI_14_lag1', 'Return_1d_lag3', 'Return_5d', 'RSI_14_lag3', 'Sharpe_20d', 'Return_1d_lag5', 'Bollinger_Width', 'RSI_14_lag5', 'Volatility_20d', 'MACD_Histogram', 'MACD_lag3', 'SMA_200', 'MACD_Signal', 'RSI_14_lag2', 'Return_20d', 'SMA_50', 'MACD_lag5', 'Open', 'MACD', 'EMA_200', 'EMA_100', 'EMA_5', 'SMA_5', 'Adj Close_lag2']
+training data did not have the following fields: Return_1d_lag3, SMA_50, SMA_5, Return_1d_lag5, Open, MACD_Signal, Bollinger_Width, Return_5d, Adj Close_lag2, EMA_100, EMA_200, Return_1d_lag2, EMA_5, Return_20d, Return_1d_lag1, Volatility_20d, SMA_200, Return_1d, MACD_lag5, Volatility_5d
+2025-06-08 21:26:32.619 | INFO     | __main__:<module>:85 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 21:26:32.623 | INFO     | __main__:<module>:94 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 21:26:32.623 | INFO     | __main__:<module>:99 - Carregando dados transformados para bdrs.csv...
+2025-06-08 21:30:40.891 | INFO     | __main__:<module>:32 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-08 21:30:40.892 | INFO     | __main__:<module>:38 - [OK] Features_selecionadas carregado com sucesso.
+2025-06-08 21:30:40.893 | INFO     | __main__:<module>:45 - Total de arquivos de avaliação encontrados: 6
+2025-06-08 21:30:40.894 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-08 21:30:40.910 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-08 21:30:40.911 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-08 21:30:40.919 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-08 21:30:40.920 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_commodities.csv
+2025-06-08 21:30:40.926 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-08 21:30:40.927 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_criptos.csv
+2025-06-08 21:30:40.935 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-08 21:30:40.936 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_juros.csv
+2025-06-08 21:30:40.941 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-08 21:30:40.943 | INFO     | __main__:<module>:51 - Processando avaliação: avaliacao_moedas.csv
+2025-06-08 21:30:40.949 | INFO     | __main__:<module>:67 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-08 21:30:40.957 | INFO     | __main__:<module>:78 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-08 21:30:40.959 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-08 21:30:40.969 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-08 21:30:40.975 | INFO     | __main__:<module>:98 - Carregando dados transformados para criptos.csv...
+2025-06-08 21:30:48.729 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 39458 registros.
+2025-06-08 21:30:48.732 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-08 21:30:49.993 | WARNING  | __main__:<module>:114 - [WARN] Modelo criptos.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:30:49.993 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 26 features.
+2025-06-08 21:30:49.994 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:30:50.065 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 24 features.
+2025-06-08 21:30:50.105 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:30:50.106 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.2037
+2025-06-08 21:30:50.112 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.2036
+2025-06-08 21:30:50.119 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.2059
+2025-06-08 21:30:50.126 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.2048
+2025-06-08 21:30:50.132 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.1820
+2025-06-08 21:30:50.141 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:30:50.148 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_criptos.csv
+2025-06-08 21:30:50.148 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-08 21:30:50.153 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-08 21:30:50.153 | INFO     | __main__:<module>:98 - Carregando dados transformados para juros.csv...
+2025-06-08 21:30:52.471 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-08 21:30:52.472 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-08 21:30:52.524 | WARNING  | __main__:<module>:114 - [WARN] Modelo juros.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:30:52.524 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 30 features.
+2025-06-08 21:30:52.524 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:30:52.582 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 10 features.
+2025-06-08 21:30:52.584 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:30:52.586 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.2118
+2025-06-08 21:30:52.592 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.1932
+2025-06-08 21:30:52.605 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.1962
+2025-06-08 21:30:52.610 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.2042
+2025-06-08 21:30:52.620 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.1947
+2025-06-08 21:30:52.626 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:30:52.633 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_juros.csv
+2025-06-08 21:30:52.634 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-08 21:30:52.639 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-08 21:30:52.640 | INFO     | __main__:<module>:98 - Carregando dados transformados para bdrs.csv...
+2025-06-08 21:31:07.350 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 77389 registros.
+2025-06-08 21:31:07.350 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\bdrs_modelo.pkl...
+2025-06-08 21:31:07.397 | WARNING  | __main__:<module>:114 - [WARN] Modelo bdrs.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:31:07.398 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 27 features.
+2025-06-08 21:31:07.398 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:31:07.528 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 16 features.
+2025-06-08 21:31:07.530 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:31:07.531 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.1935
+2025-06-08 21:31:07.537 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.2024
+2025-06-08 21:31:07.545 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.2024
+2025-06-08 21:31:07.551 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.1945
+2025-06-08 21:31:07.558 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.2072
+2025-06-08 21:31:07.569 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:31:07.580 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_bdrs.csv
+2025-06-08 21:31:07.581 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-08 21:31:07.587 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-08 21:31:07.588 | INFO     | __main__:<module>:98 - Carregando dados transformados para commodities.csv...
+2025-06-08 21:31:10.762 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 17589 registros.
+2025-06-08 21:31:10.762 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\commodities_modelo.pkl...
+2025-06-08 21:31:10.798 | WARNING  | __main__:<module>:114 - [WARN] Modelo commodities.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:31:10.800 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 18 features.
+2025-06-08 21:31:10.801 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:31:10.908 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 10 features.
+2025-06-08 21:31:10.920 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:31:10.928 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.2013
+2025-06-08 21:31:10.989 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.1968
+2025-06-08 21:31:10.995 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.1883
+2025-06-08 21:31:11.005 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.2123
+2025-06-08 21:31:11.013 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.2012
+2025-06-08 21:31:11.020 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:31:11.047 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
+2025-06-08 21:31:11.074 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-08 21:31:11.085 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-08 21:31:11.087 | INFO     | __main__:<module>:98 - Carregando dados transformados para moedas.csv...
+2025-06-08 21:31:11.795 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 5206 registros.
+2025-06-08 21:31:11.795 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\moedas_modelo.pkl...
+2025-06-08 21:31:11.955 | WARNING  | __main__:<module>:114 - [WARN] Modelo moedas.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:31:11.955 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 20 features.
+2025-06-08 21:31:11.980 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:31:12.007 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 7 features.
+2025-06-08 21:31:12.008 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:31:12.009 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.1966
+2025-06-08 21:31:12.014 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.1997
+2025-06-08 21:31:12.018 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.2003
+2025-06-08 21:31:12.022 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.2024
+2025-06-08 21:31:12.027 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.2009
+2025-06-08 21:31:12.030 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:31:12.038 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
+2025-06-08 21:31:12.038 | INFO     | __main__:<module>:84 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-08 21:31:12.043 | INFO     | __main__:<module>:93 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-08 21:31:12.073 | INFO     | __main__:<module>:98 - Carregando dados transformados para acoes_ibov.csv...
+2025-06-08 21:31:48.849 | INFO     | __main__:<module>:102 - [OK] Dados carregados e pré-processados: 190191 registros.
+2025-06-08 21:31:48.850 | INFO     | __main__:<module>:106 - Carregando modelo de resultados\financeiro\modelos\acoes_ibov_modelo.pkl...
+2025-06-08 21:31:49.088 | WARNING  | __main__:<module>:114 - [WARN] Modelo acoes_ibov.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-08 21:31:49.089 | INFO     | __main__:<module>:120 - [OK] Features carregadas de features_selecionadas.json: 21 features.
+2025-06-08 21:31:49.090 | INFO     | __main__:<module>:123 - Verificando e aplicando as features do modelo...
+2025-06-08 21:31:49.295 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 10 features.
+2025-06-08 21:31:49.297 | INFO     | __main__:<module>:139 - Iniciando previsões para os últimos 15 registros...
+2025-06-08 21:31:49.298 | INFO     | __main__:<module>:142 - → Modelo 1, peso 0.1964
+2025-06-08 21:31:49.303 | INFO     | __main__:<module>:142 - → Modelo 2, peso 0.2084
+2025-06-08 21:31:49.309 | INFO     | __main__:<module>:142 - → Modelo 3, peso 0.1986
+2025-06-08 21:31:49.315 | INFO     | __main__:<module>:142 - → Modelo 4, peso 0.1842
+2025-06-08 21:31:49.320 | INFO     | __main__:<module>:142 - → Modelo 5, peso 0.2124
+2025-06-08 21:31:49.325 | INFO     | __main__:<module>:145 - Montando DataFrame de previsões...
+2025-06-08 21:31:49.334 | INFO     | __main__:<module>:158 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
+2025-06-08 21:31:49.334 | INFO     | __main__:<module>:163 - Processo finalizado com sucesso.
