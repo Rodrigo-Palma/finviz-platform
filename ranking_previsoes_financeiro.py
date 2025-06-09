@@ -21,6 +21,9 @@ DEFAULT_TO_CSV_KWARGS = dict(
     index=False
 )
 
+# Parametrização do número de dias futuros
+N_DIAS_FUTURO = 15
+
 os.makedirs(LOGS_DIR, exist_ok=True)
 logger.add(os.path.join(LOGS_DIR, 'gerar_ranking_previsoes_financeiro.log'), level='INFO', rotation='10 MB', encoding='utf-8')
 
@@ -120,48 +123,53 @@ if __name__ == "__main__":
             logger.info(f"[OK] Features carregadas de features_selecionadas.json: {len(features_modelo)} features.")
 
             # Garantir consistência de features
-            logger.info(f"Verificando e aplicando as features do modelo...")
             df = df.dropna(subset=features_modelo)
 
             from sklearn.preprocessing import StandardScaler
             scaler = StandardScaler()
             df[features_modelo] = scaler.fit_transform(df[features_modelo])
 
-            # ===== CORREÇÃO PRINCIPAL: últimos 15 registros por Ticker
-            if 'Ticker' in df.columns:
-                df_ultimos = df.groupby('Ticker', group_keys=False).apply(lambda x: x.tail(15)).reset_index(drop=True)
-                logger.info(f"[OK] Últimos 15 registros por Ticker carregados: {df_ultimos['Ticker'].nunique()} tickers, {len(df_ultimos)} registros.")
-            else:
-                df_ultimos = df[-15:]
-                logger.warning(f"[WARN] Coluna 'Ticker' não encontrada, usando últimos 15 registros do DataFrame inteiro.")
-
-            # Booster feature check
+            # Get booster feature names for safety
             booster_feature_names = models[0].get_booster().feature_names
             logger.info(f"[CHECK] Booster features: {len(booster_feature_names)} features.")
 
-            X_ultimos = df_ultimos[booster_feature_names]
+            # Loop por ticker
+            for ticker, df_ticker in df.groupby('Ticker'):
+                logger.info(f"Gerando previsões futuras para Ticker: {ticker}")
 
-            # ======================== PREDICTIONS
-            logger.info(f"Iniciando previsões para os últimos {len(df_ultimos)} registros...")
-            preds_proba = np.zeros(len(X_ultimos))
-            for i, (model, weight) in enumerate(zip(models, weights)):
-                logger.info(f"→ Modelo {i+1}, peso {weight:.4f}")
-                preds_proba += weight * model.predict_proba(X_ultimos)[:, 1]
+                # Pegar última linha do ticker
+                last_row = df_ticker.sort_values('Date').iloc[-1]
 
-            logger.info("Montando DataFrame de previsões...")
+                # Gerar 15 linhas futuras
+                df_future = pd.DataFrame([last_row] * N_DIAS_FUTURO)
+                df_future['Date'] = pd.date_range(start=last_row['Date'] + pd.Timedelta(days=1), periods=N_DIAS_FUTURO)
 
-            for i, (idx, row) in enumerate(df_ultimos.iterrows()):
-                previsoes_top_linhas.append({
-                    'arquivo': arquivo,
-                    'ticker': row['Ticker'] if 'Ticker' in df_ultimos.columns else 'N/A',
-                    'data': row['Date'].strftime('%Y-%m-%d'),
-                    'dia_previsto': i + 1,
-                    'probabilidade_subir': preds_proba[i]
-                })
+                # Se necessário: recomputar features que dependem da data (placeholder)
+                # Exemplo: df_future['feature_X'] = recomputar(df_future['Date'])
 
+                # Garantir as features corretas e ordenadas
+                X_future = df_future[booster_feature_names]
+
+                # Prever
+                preds_proba = np.zeros(len(X_future))
+                for i, (model, weight) in enumerate(zip(models, weights)):
+                    logger.info(f"→ Modelo {i+1}, peso {weight:.4f}")
+                    preds_proba += weight * model.predict_proba(X_future)[:, 1]
+
+                # Montar resultados
+                for i, (idx, row) in enumerate(df_future.iterrows()):
+                    previsoes_top_linhas.append({
+                        'arquivo': arquivo,
+                        'ticker': ticker,
+                        'data': row['Date'].strftime('%Y-%m-%d'),
+                        'dia_previsto': i + 1,
+                        'probabilidade_subir': preds_proba[i]
+                    })
+
+            # Salvar previsões
             df_previsoes_top = pd.DataFrame(previsoes_top_linhas)
-            df_previsoes_top.to_csv(os.path.join(RESULTS_DIR, f'previsoes_top_modelos_15dias_{nome_base}.csv'), **DEFAULT_TO_CSV_KWARGS)
-            logger.info(f"[OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_{nome_base}.csv")
+            df_previsoes_top.to_csv(os.path.join(RESULTS_DIR, f'previsoes_top_modelos_{N_DIAS_FUTURO}dias_{nome_base}.csv'), **DEFAULT_TO_CSV_KWARGS)
+            logger.info(f"[OK] Previsões {N_DIAS_FUTURO} dias salvas em previsoes_top_modelos_{N_DIAS_FUTURO}dias_{nome_base}.csv")
 
         except Exception as e_previsao:
             logger.exception(f"[ERROR] Erro ao gerar previsoes para {arquivo}: {e_previsao}")
