@@ -21,9 +21,21 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 logger.add(os.path.join(LOGS_DIR, 'gerar_ranking_previsoes_markov.log'), level='INFO', rotation='10 MB', encoding='utf-8')
 
 # ========================
+# FUNÇÃO AUXILIAR SEGURA
+# ========================
+def parse_previsto_safe(valor_str):
+    try:
+        lista = ast.literal_eval(valor_str)
+        if isinstance(lista, list) and len(lista) > 0:
+            return lista
+        else:
+            return None
+    except:
+        return None
+
+# ========================
 # EXECUCAO PRINCIPAL
 # ========================
-
 if __name__ == "__main__":
     logger.info("Iniciando geração de ranking e previsões dos melhores modelos (Markov)...")
 
@@ -72,11 +84,14 @@ if __name__ == "__main__":
                 regime = row['regime']
                 volatilidade = row['volatilidade']
 
-                # Extrair previsoes (já salvas no campo 'previsto' como lista)
-                previsoes = ast.literal_eval(row['previsto'])
-                previsoes = np.array(previsoes)
+                # Parse seguro da lista de previsões
+                previsoes = parse_previsto_safe(row['previsto'])
 
-                # Se o modelo previu menos de 15, pegar o que tem disponível
+                if previsoes is None:
+                    logger.warning(f"[SKIP] Ignorando {ticker} em {arquivo} pois não possui previsões válidas.")
+                    continue
+
+                previsoes = np.array(previsoes)
                 n_previsoes = min(len(previsoes), 15)
                 previsoes_15 = previsoes[-n_previsoes:]
 

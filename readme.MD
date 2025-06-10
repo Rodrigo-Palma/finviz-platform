@@ -90,4 +90,5 @@ A licença também oferece proteção contra disputas de patente e exige que mod
 
 ---
 
-> Desenvolvido por Rodrigo Palma
+> Desenvolvido por Rodrigo Palma, Giovani Cancherini, Luis Marquetti
+

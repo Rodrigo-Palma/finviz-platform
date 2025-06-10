@@ -46,12 +46,22 @@ def identificar_regime(df_ticker: pd.DataFrame) -> Tuple[str, str]:
 
         serie = df_ticker['Adj Close'].values
         serie = serie[serie > 0]
+
         retornos = np.diff(np.log(serie)).reshape(-1, 1)
         volatilidade_5d = df_ticker['Volatility_5d'].iloc[1:].values.reshape(-1, 1)
         volatilidade_20d = df_ticker['Volatility_20d'].iloc[1:].values.reshape(-1, 1)
 
+        # Calcula o tamanho mínimo
+        min_len = min(len(retornos), len(volatilidade_5d), len(volatilidade_20d))
+
+        # Faz o slice para todos os arrays
+        retornos = retornos[-min_len:]
+        volatilidade_5d = volatilidade_5d[-min_len:]
+        volatilidade_20d = volatilidade_20d[-min_len:]
+
         observacoes = np.hstack([retornos, volatilidade_5d, volatilidade_20d])
         observacoes = observacoes[~np.isnan(observacoes).any(axis=1)]
+        observacoes = observacoes[~np.isinf(observacoes).any(axis=1)]
 
         hmm = GaussianHMM(n_components=3, covariance_type="diag", n_iter=100, random_state=42)
         hmm.fit(observacoes)
@@ -60,11 +70,11 @@ def identificar_regime(df_ticker: pd.DataFrame) -> Tuple[str, str]:
         regime = np.bincount(estados).argmax()
 
         if regime == 0:
-            regime_desc = "TENDENCIA_BAIXA"
+            regime_desc = "BAIXA"
         elif regime == 1:
             regime_desc = "LATERAL"
         elif regime == 2:
-            regime_desc = "TENDENCIA_ALTA"
+            regime_desc = "ALTA"
         else:
             regime_desc = "DESCONHECIDO"
 
@@ -140,40 +150,79 @@ def plotar_e_salvar(real: np.ndarray, previsto: np.ndarray, arquivo: str, ticker
 def preprocess_data(df_ticker: pd.DataFrame) -> Tuple[np.ndarray, bool]:
     try:
         df_clean = df_ticker.copy()
-        df_clean = df_clean[df_clean['Volume'] > 0]
+
+        # Filtro inicial para Adj Close > 0 (indispensável sempre)
         df_clean = df_clean[df_clean['Adj Close'] > 0]
 
+        # Decide se usaremos Volume
+        use_volume = 'Volume' in df_clean.columns and df_clean['Volume'].max() > 0
+
+        # Se volume é utilizável, tratamos com mais uma verificação
+        if use_volume:
+            df_volume = df_clean[df_clean['Volume'] > 0]
+            if len(df_volume) < 20:
+                logger.warning(f"Volume insuficiente para cálculo — fallback sem volume")
+                use_volume = False
+            else:
+                df_clean = df_volume
+
+        # Calcula retornos log de preço
         log_adj_close = np.log(df_clean['Adj Close'].values)
-        log_volume = np.log(df_clean['Volume'].values + 1)
-
         log_returns = np.diff(log_adj_close)
-        log_volume_diff = np.diff(log_volume)
 
+        # Se tivermos volume válido
+        if use_volume:
+            log_volume = np.log(df_clean['Volume'].values + 1)
+            log_volume_diff = np.diff(log_volume)
+        else:
+            log_volume_diff = None
+
+        # Prepara as features com lag
         log_returns_lag = log_returns[:-1]
         log_returns_main = log_returns[1:]
-        log_volume_diff = log_volume_diff[1:]
 
+        if use_volume:
+            log_volume_diff = log_volume_diff[1:]  # Alinha com returns_main
+        # Rolling volatility
         if len(log_returns) > 20:
             rolling_vol = pd.Series(log_returns).rolling(window=20).std().values[19:]
-            min_len = min(len(log_returns_main), len(log_returns_lag), len(log_volume_diff), len(rolling_vol))
-            features = np.column_stack([
-                log_returns_main[-min_len:],
-                log_returns_lag[-min_len:],
-                log_volume_diff[-min_len:],
-                rolling_vol[-min_len:]
-            ])
+            min_len = min(len(log_returns_main), len(log_returns_lag), 
+                          len(rolling_vol), len(log_volume_diff) if use_volume else len(log_returns_main))
+            # Monta matriz de features
+            if use_volume:
+                features = np.column_stack([
+                    log_returns_main[-min_len:],
+                    log_returns_lag[-min_len:],
+                    log_volume_diff[-min_len:],
+                    rolling_vol[-min_len:]
+                ])
+            else:
+                features = np.column_stack([
+                    log_returns_main[-min_len:],
+                    log_returns_lag[-min_len:],
+                    rolling_vol[-min_len:]
+                ])
         else:
-            min_len = min(len(log_returns_main), len(log_returns_lag), len(log_volume_diff))
-            features = np.column_stack([
-                log_returns_main[-min_len:],
-                log_returns_lag[-min_len:],
-                log_volume_diff[-min_len:]
-            ])
+            min_len = min(len(log_returns_main), len(log_returns_lag), 
+                          len(log_volume_diff) if use_volume else len(log_returns_main))
+            if use_volume:
+                features = np.column_stack([
+                    log_returns_main[-min_len:],
+                    log_returns_lag[-min_len:],
+                    log_volume_diff[-min_len:]
+                ])
+            else:
+                features = np.column_stack([
+                    log_returns_main[-min_len:],
+                    log_returns_lag[-min_len:]
+                ])
 
+        # Limpa NaN / Inf
         features = features[~np.isnan(features).any(axis=1)]
         features = features[~np.isinf(features).any(axis=1)]
 
         return features, len(features) > 0
+
     except Exception as e:
         logger.error(f"Erro no pré-processamento dos dados: {e}")
         return np.array([]), False
