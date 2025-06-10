@@ -4,7 +4,7 @@ Uma plataforma robusta de análise e previsão financeira utilizando dados do Ya
 
 ## 🔮 Link do Projeto Live
 
-[https://l1nq.com/HOQiU](https://l1nq.com/HOQiU)
+[https://app.powerbi.com/view?r=eyJrIjoiYThlMmUzOWYtNzg3ZS00Y2E2LWI3N2MtMzJjZjY4Y2M0YWEzIiwidCI6IjY2ZDJkMzljLTFkNTAtNDM5OS05MmNkLWY3MTIzODllNTcxZSJ9&pageName=53fd4b64ab6dea2c86ea](https://app.powerbi.com/view?r=eyJrIjoiYThlMmUzOWYtNzg3ZS00Y2E2LWI3N2MtMzJjZjY4Y2M0YWEzIiwidCI6IjY2ZDJkMzljLTFkNTAtNDM5OS05MmNkLWY3MTIzODllNTcxZSJ9&pageName=53fd4b64ab6dea2c86ea)
 
 ## 🚀 Visão Geral
 
