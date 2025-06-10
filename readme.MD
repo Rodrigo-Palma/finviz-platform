@@ -1,6 +1,10 @@
-# 📊 Finviz Platform
+# 📊 TradeViz Platform
 
 Uma plataforma robusta de análise e previsão financeira utilizando dados do Yahoo Finance, machine learning e pipelines otimizados.
+
+## 🔮 Link do Projeto Live
+
+[https://l1nq.com/HOQiU](https://l1nq.com/HOQiU)
 
 ## 🚀 Visão Geral
 
@@ -8,7 +12,7 @@ Este projeto automatiza a coleta, limpeza e modelagem de dados financeiros com f
 
 - 📈 Ações do IBOVESPA e BDRs
 - 💱 Moedas e commodities
-- 🔐 Criptoativos e juros
+- 🔐 Criptoativos e Tesouro Americano
 
 Inclui modelos preditivos com:
 
