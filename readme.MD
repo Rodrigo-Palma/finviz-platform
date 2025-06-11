@@ -25,24 +25,28 @@ Inclui modelos preditivos com:
 
 ```bash
 finviz-platform/
-├── coletor.py                        # Coleta automática de dados do Yahoo Finance
-├── fazer_previsao.py                 # Geração de previsões com modelos treinados
-├── ml_pipeline_forecasting.py        # Pipeline ARIMA/Prophet (forecasting tradicional)
-├── ml_pipeline_forecasting_deep.py   # Pipeline Deep/ML (Random Forest, XGBoost, LSTM)
-├── ml_pipeline_forecasting_markov.py # Pipeline Markov/Hidden Markov
-├── ml_pipeline_financeiro.py         # Pipeline de classificação financeira (ensemble)
-├── dados/                            # Dados brutos coletados
-├── dados_transformados/              # Dados prontos para modelagem
+├── coletor.py                              # Coleta automática de dados do Yahoo Finance
+├── fazer_previsao.py                       # Geração de previsões com modelos treinados
+├── ml_pipeline_forecasting.py              # Pipeline ARIMA/Prophet (forecasting tradicional)
+├── ml_pipeline_forecasting_deep.py         # Pipeline Deep/ML (Random Forest, XGBoost, LSTM)
+├── ml_pipeline_forecasting_markov.py       # Pipeline Markov/Hidden Markov
+├── ml_pipeline_financeiro.py               # Pipeline de classificação financeira (ensemble)
+├── ranking_previsoes_financeiro.py         # Ranking das previsões do pipeline financeiro
+├── ranking_previsoes_forecasting.py        # Ranking das previsões do pipeline ARIMA/Prophet
+├── ranking_previsoes_forecasting_deep.py   # Ranking das previsões do pipeline Deep/ML
+├── ranking_previsoes_forecasting_markov.py # Ranking das previsões do pipeline Markov/HMM
+├── dados/                                  # Dados brutos coletados
+├── dados_transformados/                    # Dados prontos para modelagem
 ├── resultados/
-│   ├── forecasting_arima_prophet/    # Resultados do pipeline ARIMA/Prophet
-│   ├── forecasting_deep/             # Resultados do pipeline Deep/ML
-│   ├── forecasting_markov/           # Resultados do pipeline Markov/HMM
-│   └── financeiro/                   # Resultados do pipeline de classificação
-├── modelos_forecasting/              # Modelos de forecasting salvos
-├── logs/                             # Logs de execução
-├── requisitos.txt                    # Dependências do projeto
-├── .gitignore                        # Arquivos ignorados pelo git
-├── LICENSE                           # Licença Apache 2.0
+│   ├── forecasting_arima_prophet/          # Resultados do pipeline ARIMA/Prophet
+│   ├── forecasting_deep/                   # Resultados do pipeline Deep/ML
+│   ├── forecasting_markov/                 # Resultados do pipeline Markov/HMM
+│   └── financeiro/                         # Resultados do pipeline de classificação
+├── modelos_forecasting/                    # Modelos de forecasting salvos
+├── logs/                                   # Logs de execução
+├── requisitos.txt                          # Dependências do projeto
+├── .gitignore                              # Arquivos ignorados pelo git
+├── LICENSE                                 # Licença Apache 2.0
 └── README.md
 ```
 
@@ -66,17 +70,26 @@ Cada subdiretório em `resultados/` contém:
 ## 🧪 Executando localmente
 
 ```bash
+# Requistos
 pip install -r requisitos.txt
+# Scripts de coleta de dados
 python coletor.py
 python cdi-selic.py
 python tesouro.py
+# Scripts de engenharia de atributos
 python engenharia.py
 python feature_selection.py
 python ml_otimizador_janela
+# Scripts de Pipelines de Apredizado de Máquina e Aprendizado Profundo
 python ml_pipeline_forecasting.py
 python ml_pipeline_forecasting_deep.py
 python ml_pipeline_forecasting_markov.py
 python ml_pipeline_financeiro.py
+# Scripts de ranking e previsões
+python ranking_previsoes_financeiro.py
+python ranking_previsoes_forecasting.py
+python ranking_previsoes_forecasting_deep.py
+python ranking_previsoes_forecasting_markov.py
 ```
 
 ## 📂 Organização dos Resultados

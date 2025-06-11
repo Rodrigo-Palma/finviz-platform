@@ -30,11 +30,11 @@ logger.add(os.path.join(LOGS_DIR, 'forecast_pipeline_markov.log'), level='INFO',
 
 def mapear_volatilidade(volatilidade: float) -> str:
     if volatilidade < 0.02:
-        return "BAIXA"
+        return "Baixa"
     elif 0.02 <= volatilidade < 0.05:
-        return "MÉDIA"
+        return "Média"
     else:
-        return "ALTA"
+        return "Alta"
 
 def identificar_regime(df_ticker: pd.DataFrame) -> Tuple[str, str]:
     try:
@@ -70,13 +70,13 @@ def identificar_regime(df_ticker: pd.DataFrame) -> Tuple[str, str]:
         regime = np.bincount(estados).argmax()
 
         if regime == 0:
-            regime_desc = "BAIXA"
+            regime_desc = "Baixa"
         elif regime == 1:
-            regime_desc = "LATERAL"
+            regime_desc = "Lateral"
         elif regime == 2:
-            regime_desc = "ALTA"
+            regime_desc = "Alta"
         else:
-            regime_desc = "DESCONHECIDO"
+            regime_desc = "Desconhecida"
 
         media_volatilidade = np.mean(volatilidade_20d)
         categoria_volatilidade = mapear_volatilidade(media_volatilidade)

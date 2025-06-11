@@ -42,3 +42,47 @@
 2025-06-07 12:28:56.194 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 3a | ROC-AUC=0.5641371746741468 | Acc=0.551948051948052 | F1=0.5241379310344828
 2025-06-07 12:28:56.195 | INFO     | __main__:<module>:143 - moedas.csv - Melhor janela: 3m | ROC-AUC=0.6000 | Acc=0.6538 | F1=0.6087
 2025-06-07 12:28:56.205 | INFO     | __main__:<module>:164 - Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv e todas_metricas_janelas.csv
+2025-06-10 20:14:30.298 | INFO     | __main__:<module>:91 - Iniciando otimizacao de janela temporal...
+2025-06-10 20:14:33.605 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 3m | ROC-AUC=0.5555865941054345 | Acc=0.5301764159702879 | F1=0.532347504621072
+2025-06-10 20:14:34.094 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 6m | ROC-AUC=0.5335309521841032 | Acc=0.5211946050096339 | F1=0.5
+2025-06-10 20:14:34.701 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 9m | ROC-AUC=0.5274403937643706 | Acc=0.5160674514794782 | F1=0.44468784227820374
+2025-06-10 20:14:35.408 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 1a | ROC-AUC=0.5303364093810565 | Acc=0.5187367428706104 | F1=0.5
+2025-06-10 20:14:36.151 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 2a | ROC-AUC=0.5134035611457227 | Acc=0.511092754307293 | F1=0.45234633179114336
+2025-06-10 20:14:37.106 | INFO     | __main__:<module>:128 - acoes_ibov.csv | Janela: 3a | ROC-AUC=0.5163110590264085 | Acc=0.5127902400629674 | F1=0.48330550918196996
+2025-06-10 20:14:37.109 | INFO     | __main__:<module>:143 - acoes_ibov.csv - Melhor janela: 3m | ROC-AUC=0.5556 | Acc=0.5302 | F1=0.5323
+2025-06-10 20:14:38.893 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 3m | ROC-AUC=0.5768937264037273 | Acc=0.5682326621923938 | F1=0.5583524027459954
+2025-06-10 20:14:39.355 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 6m | ROC-AUC=0.5466573064045792 | Acc=0.5439814814814815 | F1=0.5264423076923076
+2025-06-10 20:14:39.905 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 9m | ROC-AUC=0.4905660816752366 | Acc=0.5072463768115942 | F1=0.5113464447806354
+2025-06-10 20:14:40.465 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 1a | ROC-AUC=0.5048817774154096 | Acc=0.5073363431151241 | F1=0.5436487192890748
+2025-06-10 20:14:41.124 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 2a | ROC-AUC=0.5140808938348089 | Acc=0.5086085238498448 | F1=0.5293322519599892
+2025-06-10 20:14:41.857 | INFO     | __main__:<module>:128 - bdrs.csv | Janela: 3a | ROC-AUC=0.511091428673675 | Acc=0.5037037037037037 | F1=0.49291674752571313
+2025-06-10 20:14:41.858 | INFO     | __main__:<module>:143 - bdrs.csv - Melhor janela: 3m | ROC-AUC=0.5769 | Acc=0.5682 | F1=0.5584
+2025-06-10 20:14:42.523 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 3m | ROC-AUC=0.5430597771023303 | Acc=0.5056179775280899 | F1=0.5769230769230769
+2025-06-10 20:14:42.801 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 6m | ROC-AUC=0.5474837662337662 | Acc=0.5433526011560693 | F1=0.4551724137931034
+2025-06-10 20:14:43.093 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 9m | ROC-AUC=0.508130081300813 | Acc=0.4904214559386973 | F1=0.49429657794676807
+2025-06-10 20:14:43.426 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 1a | ROC-AUC=0.5161646586345381 | Acc=0.5202312138728323 | F1=0.5257142857142857
+2025-06-10 20:14:43.840 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 2a | ROC-AUC=0.5513753106876553 | Acc=0.5453237410071943 | F1=0.46801346801346805
+2025-06-10 20:14:44.271 | INFO     | __main__:<module>:128 - commodities.csv | Janela: 3a | ROC-AUC=0.5407751937984496 | Acc=0.5321805955811719 | F1=0.5536205316223649
+2025-06-10 20:14:44.272 | INFO     | __main__:<module>:143 - commodities.csv - Melhor janela: 2a | ROC-AUC=0.5514 | Acc=0.5453 | F1=0.4680
+2025-06-10 20:14:45.396 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 3m | ROC-AUC=0.6684152241067783 | Acc=0.6106870229007634 | F1=0.5853658536585366
+2025-06-10 20:14:45.891 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 6m | ROC-AUC=0.643422027084215 | Acc=0.6181818181818182 | F1=0.5569620253164558
+2025-06-10 20:14:46.571 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 9m | ROC-AUC=0.6351980223398136 | Acc=0.5918854415274463 | F1=0.59478672985782
+2025-06-10 20:14:47.113 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 1a | ROC-AUC=0.5884924202987712 | Acc=0.5515097690941385 | F1=0.5589519650655023
+2025-06-10 20:14:47.756 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 2a | ROC-AUC=0.5792119848559169 | Acc=0.5575524176294394 | F1=0.44705882352941173
+2025-06-10 20:14:48.466 | INFO     | __main__:<module>:128 - criptos.csv | Janela: 3a | ROC-AUC=0.5711768093238844 | Acc=0.5481859410430839 | F1=0.40962962962962957
+2025-06-10 20:14:48.467 | INFO     | __main__:<module>:143 - criptos.csv - Melhor janela: 3m | ROC-AUC=0.6684 | Acc=0.6107 | F1=0.5854
+2025-06-10 20:14:48.921 | INFO     | __main__:<module>:128 - juros.csv | Janela: 3m | ROC-AUC=0.710204081632653 | Acc=0.6507936507936508 | F1=0.5416666666666667
+2025-06-10 20:14:49.170 | INFO     | __main__:<module>:128 - juros.csv | Janela: 6m | ROC-AUC=0.7721280602636534 | Acc=0.6967213114754098 | F1=0.6782608695652174
+2025-06-10 20:14:49.481 | INFO     | __main__:<module>:128 - juros.csv | Janela: 9m | ROC-AUC=0.8202431042543245 | Acc=0.7297297297297297 | F1=0.7023809523809524
+2025-06-10 20:14:49.790 | INFO     | __main__:<module>:128 - juros.csv | Janela: 1a | ROC-AUC=0.7932153978665607 | Acc=0.7073170731707317 | F1=0.660377358490566
+2025-06-10 20:14:50.195 | INFO     | __main__:<module>:128 - juros.csv | Janela: 2a | ROC-AUC=0.7673901673640167 | Acc=0.701010101010101 | F1=0.6916666666666668
+2025-06-10 20:14:50.675 | INFO     | __main__:<module>:128 - juros.csv | Janela: 3a | ROC-AUC=0.6998408858083218 | Acc=0.6442048517520216 | F1=0.641304347826087
+2025-06-10 20:14:50.677 | INFO     | __main__:<module>:143 - juros.csv - Melhor janela: 9m | ROC-AUC=0.8202 | Acc=0.7297 | F1=0.7024
+2025-06-10 20:14:50.936 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 3m | ROC-AUC=0.5272727272727273 | Acc=0.5384615384615384 | F1=0.5384615384615385
+2025-06-10 20:14:51.085 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 6m | ROC-AUC=0.4518633540372671 | Acc=0.4117647058823529 | F1=0.34782608695652173
+2025-06-10 20:14:51.293 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 9m | ROC-AUC=0.47560975609756095 | Acc=0.44155844155844154 | F1=0.4109589041095891
+2025-06-10 20:14:51.553 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 1a | ROC-AUC=0.520976353928299 | Acc=0.5048543689320388 | F1=0.5641025641025642
+2025-06-10 20:14:51.840 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 2a | ROC-AUC=0.5731580440745294 | Acc=0.558252427184466 | F1=0.5727699530516431
+2025-06-10 20:14:52.141 | INFO     | __main__:<module>:128 - moedas.csv | Janela: 3a | ROC-AUC=0.5791568890378813 | Acc=0.5533980582524272 | F1=0.5071428571428572
+2025-06-10 20:14:52.143 | INFO     | __main__:<module>:143 - moedas.csv - Melhor janela: 3a | ROC-AUC=0.5792 | Acc=0.5534 | F1=0.5071
+2025-06-10 20:14:52.155 | INFO     | __main__:<module>:164 - Otimizacao concluida! Resultados salvos em otimizacao_janela/melhores_janelas.csv e todas_metricas_janelas.csv

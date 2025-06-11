@@ -126,7 +126,7 @@ def treinar_modelo(df, features, modelo='xgb'):
     X = df[features]
     y = df['Target']
 
-    N_TRIALS = min(50, max(10, len(df) // 100))
+    N_TRIALS = min(15, max(10, len(df) // 100))
     logger.info(f"Usando {N_TRIALS} trials para otimização")
 
     models = []

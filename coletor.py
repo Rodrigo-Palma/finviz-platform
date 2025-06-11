@@ -7,6 +7,7 @@ from urllib.parse import quote
 from datetime import datetime, timedelta
 from tqdm import tqdm
 from loguru import logger
+import pandas.errors
 
 # ============================================
 # CONFIGURAÇÃO DO LOGGER
@@ -20,6 +21,20 @@ logger.add('logs/erros.log', level='ERROR', rotation='10 MB', encoding='utf-8', 
 # ============================================
 def garantir_pastas():
     os.makedirs('dados', exist_ok=True)
+
+# ============================================
+# FUNÇÃO SEGURA PARA LER CSV
+# ============================================
+def safe_read_csv(caminho):
+    if os.path.exists(caminho):
+        try:
+            df = pd.read_csv(caminho, parse_dates=['Date'])
+            return df
+        except (pd.errors.EmptyDataError, ValueError) as e:
+            logger.warning(f"Arquivo {caminho} vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: {e}")
+            return pd.DataFrame()
+    else:
+        return pd.DataFrame()
 
 # ============================================
 # FUNÇÃO PARA COLETAR DADOS DO YAHOO
@@ -100,7 +115,6 @@ def obter_dados_historicos_yahoo(ticker: str, inicio: datetime, fim: datetime, i
     logger.error(f"Tentativas esgotadas para {ticker}")
     return None
 
-
 # ============================================
 # LISTAS DE TICKERS (MANTIDAS)
 # ============================================
@@ -172,10 +186,7 @@ if __name__ == '__main__':
 
     for arquivo, tickers in categorias.items():
         caminho = os.path.join('dados', arquivo)
-        if os.path.exists(caminho):
-            df_exist = pd.read_csv(caminho, parse_dates=['Date'])
-        else:
-            df_exist = pd.DataFrame()
+        df_exist = safe_read_csv(caminho)
 
         novos = []
         logger.info(f"Iniciando coleta para {arquivo} ({len(tickers)} tickers)")
@@ -196,22 +207,21 @@ if __name__ == '__main__':
                 logger.exception(f"Erro coletando {ticker}: {e}")
             time.sleep(1)
 
-            if novos:
-                df_final = pd.concat([df_exist] + novos, ignore_index=True)
-                df_final.drop_duplicates(['Date', 'Ticker'], inplace=True)
-                df_final.sort_values(['Ticker', 'Date'], inplace=True)
+        if novos:
+            df_final = pd.concat([df_exist] + novos, ignore_index=True)
+            df_final.drop_duplicates(['Date', 'Ticker'], inplace=True)
+            df_final.sort_values(['Ticker', 'Date'], inplace=True)
 
-                # REMOVE 'Volume' se for todo 0
-                if 'Volume' in df_final.columns and (df_final['Volume'] == 0).all():
-                    df_final = df_final.drop(columns=['Volume'])
-                    logger.info(f"Coluna Volume removida de {arquivo} (todos zeros)")
+            # REMOVE 'Volume' se for todo 0
+            if 'Volume' in df_final.columns and (df_final['Volume'] == 0).all():
+                df_final = df_final.drop(columns=['Volume'])
+                logger.info(f"Coluna Volume removida de {arquivo} (todos zeros)")
 
-                # 🚀 Salva CSV com delimitador ; e separador decimal ,
-                df_final.to_csv(caminho, index=False, sep=';', decimal=',')
+            # 🚀 Salva CSV com delimitador ; e separador decimal ,
+            df_final.to_csv(caminho, index=False, sep=';', decimal=',')
 
-                logger.info(f"Arquivo salvo: {caminho} ({len(df_final)} registros)")
-            else:
-                logger.info(f"Nenhuma atualização para {arquivo}")
-
+            logger.info(f"Arquivo salvo: {caminho} ({len(df_final)} registros)")
+        else:
+            logger.info(f"Nenhuma atualização para {arquivo}")
 
     logger.info("Coleta completa!")
