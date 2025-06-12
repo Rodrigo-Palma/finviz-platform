@@ -1234,3 +1234,621 @@
 2025-06-11 01:14:47.161 | INFO     | __main__:<module>:203 - moedas.csv | USDBRL=X | XGBoost -> MSE: 0.002245, MAE: 0.038810
 2025-06-11 01:14:47.544 | INFO     | __main__:<module>:212 - moedas.csv | USDBRL=X | LSTM -> MSE: 0.001276, MAE: 0.029948
 2025-06-11 01:14:48.063 | INFO     | __main__:<module>:235 - Pipeline de forecasting DEEP (ML models) finalizado!
+2025-06-11 23:09:57.513 | INFO     | __main__:<module>:118 - Iniciando pipeline de forecasting DEEP (ML models)...
+2025-06-11 23:10:01.493 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ABEV3.SA
+2025-06-11 23:10:48.615 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ABEV3.SA | RandomForest -> MSE: 0.023428, MAE: 0.121720
+2025-06-11 23:10:48.996 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ABEV3.SA | XGBoost -> MSE: 0.024118, MAE: 0.127992
+2025-06-11 23:10:49.249 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ABEV3.SA | LSTM -> MSE: 0.017860, MAE: 0.105304
+2025-06-11 23:10:49.558 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ALOS3.SA
+2025-06-11 23:11:14.032 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ALOS3.SA | RandomForest -> MSE: 0.069044, MAE: 0.222938
+2025-06-11 23:11:14.292 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ALOS3.SA | XGBoost -> MSE: 0.072408, MAE: 0.220344
+2025-06-11 23:11:14.540 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ALOS3.SA | LSTM -> MSE: 0.062274, MAE: 0.214369
+2025-06-11 23:11:14.833 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | AMOB3.SA
+2025-06-11 23:11:18.036 | INFO     | __main__:<module>:194 - acoes_ibov.csv | AMOB3.SA | RandomForest -> MSE: 0.488238, MAE: 0.561000
+2025-06-11 23:11:18.321 | INFO     | __main__:<module>:203 - acoes_ibov.csv | AMOB3.SA | XGBoost -> MSE: 0.874146, MAE: 0.673527
+2025-06-11 23:11:18.580 | INFO     | __main__:<module>:212 - acoes_ibov.csv | AMOB3.SA | LSTM -> MSE: 0.328057, MAE: 0.483002
+2025-06-11 23:11:18.864 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ASAI3.SA
+2025-06-11 23:11:32.394 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ASAI3.SA | RandomForest -> MSE: 0.224100, MAE: 0.371790
+2025-06-11 23:11:32.738 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ASAI3.SA | XGBoost -> MSE: 0.355318, MAE: 0.482676
+2025-06-11 23:11:32.996 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ASAI3.SA | LSTM -> MSE: 0.119208, MAE: 0.257934
+2025-06-11 23:11:33.290 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | AURE3.SA
+2025-06-11 23:11:46.265 | INFO     | __main__:<module>:194 - acoes_ibov.csv | AURE3.SA | RandomForest -> MSE: 0.227456, MAE: 0.427205
+2025-06-11 23:11:46.649 | INFO     | __main__:<module>:203 - acoes_ibov.csv | AURE3.SA | XGBoost -> MSE: 0.413361, MAE: 0.586150
+2025-06-11 23:11:46.863 | INFO     | __main__:<module>:212 - acoes_ibov.csv | AURE3.SA | LSTM -> MSE: 0.043827, MAE: 0.174682
+2025-06-11 23:11:47.181 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | AZUL4.SA
+2025-06-11 23:12:21.317 | INFO     | __main__:<module>:194 - acoes_ibov.csv | AZUL4.SA | RandomForest -> MSE: 7.304985, MAE: 2.696067
+2025-06-11 23:12:21.560 | INFO     | __main__:<module>:203 - acoes_ibov.csv | AZUL4.SA | XGBoost -> MSE: 8.382846, MAE: 2.889055
+2025-06-11 23:12:21.793 | INFO     | __main__:<module>:212 - acoes_ibov.csv | AZUL4.SA | LSTM -> MSE: 0.053594, MAE: 0.216427
+2025-06-11 23:12:22.138 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | AZZA3.SA
+2025-06-11 23:12:59.822 | INFO     | __main__:<module>:194 - acoes_ibov.csv | AZZA3.SA | RandomForest -> MSE: 3.395884, MAE: 1.374003
+2025-06-11 23:13:00.149 | INFO     | __main__:<module>:203 - acoes_ibov.csv | AZZA3.SA | XGBoost -> MSE: 2.922784, MAE: 1.180831
+2025-06-11 23:13:00.436 | INFO     | __main__:<module>:212 - acoes_ibov.csv | AZZA3.SA | LSTM -> MSE: 3.398367, MAE: 1.417520
+2025-06-11 23:13:00.804 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | B3SA3.SA
+2025-06-11 23:13:29.354 | INFO     | __main__:<module>:194 - acoes_ibov.csv | B3SA3.SA | RandomForest -> MSE: 0.108776, MAE: 0.234248
+2025-06-11 23:13:29.619 | INFO     | __main__:<module>:203 - acoes_ibov.csv | B3SA3.SA | XGBoost -> MSE: 0.136120, MAE: 0.254887
+2025-06-11 23:13:29.855 | INFO     | __main__:<module>:212 - acoes_ibov.csv | B3SA3.SA | LSTM -> MSE: 0.121570, MAE: 0.240809
+2025-06-11 23:13:30.155 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BBAS3.SA
+2025-06-11 23:14:10.167 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BBAS3.SA | RandomForest -> MSE: 0.618745, MAE: 0.582531
+2025-06-11 23:14:10.369 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BBAS3.SA | XGBoost -> MSE: 0.725400, MAE: 0.688880
+2025-06-11 23:14:10.560 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BBAS3.SA | LSTM -> MSE: 0.540776, MAE: 0.384736
+2025-06-11 23:14:10.859 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BBDC3.SA
+2025-06-11 23:14:43.673 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BBDC3.SA | RandomForest -> MSE: 0.143325, MAE: 0.231661
+2025-06-11 23:14:43.952 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BBDC3.SA | XGBoost -> MSE: 0.172410, MAE: 0.273898
+2025-06-11 23:14:44.194 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BBDC3.SA | LSTM -> MSE: 0.117315, MAE: 0.221313
+2025-06-11 23:14:44.557 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BBDC4.SA
+2025-06-11 23:15:23.885 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BBDC4.SA | RandomForest -> MSE: 0.219157, MAE: 0.257674
+2025-06-11 23:15:24.122 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BBDC4.SA | XGBoost -> MSE: 0.279559, MAE: 0.306864
+2025-06-11 23:15:24.342 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BBDC4.SA | LSTM -> MSE: 0.188377, MAE: 0.280983
+2025-06-11 23:15:24.681 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BBSE3.SA
+2025-06-11 23:16:04.512 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BBSE3.SA | RandomForest -> MSE: 1.784187, MAE: 0.895227
+2025-06-11 23:16:04.725 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BBSE3.SA | XGBoost -> MSE: 2.419051, MAE: 1.065223
+2025-06-11 23:16:04.937 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BBSE3.SA | LSTM -> MSE: 0.542122, MAE: 0.487842
+2025-06-11 23:16:05.252 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BEEF3.SA
+2025-06-11 23:16:33.206 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BEEF3.SA | RandomForest -> MSE: 0.040042, MAE: 0.158217
+2025-06-11 23:16:33.444 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BEEF3.SA | XGBoost -> MSE: 0.131502, MAE: 0.244694
+2025-06-11 23:16:33.682 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BEEF3.SA | LSTM -> MSE: 0.050164, MAE: 0.146414
+2025-06-11 23:16:33.963 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BPAC11.SA
+2025-06-11 23:17:03.935 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BPAC11.SA | RandomForest -> MSE: 10.870238, MAE: 3.148988
+2025-06-11 23:17:04.154 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BPAC11.SA | XGBoost -> MSE: 12.259081, MAE: 3.363075
+2025-06-11 23:17:04.364 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BPAC11.SA | LSTM -> MSE: 1.155722, MAE: 0.839048
+2025-06-11 23:17:04.673 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BRAP4.SA
+2025-06-11 23:17:42.529 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BRAP4.SA | RandomForest -> MSE: 0.036122, MAE: 0.138248
+2025-06-11 23:17:42.752 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BRAP4.SA | XGBoost -> MSE: 0.065500, MAE: 0.188221
+2025-06-11 23:17:43.192 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BRAP4.SA | LSTM -> MSE: 0.037913, MAE: 0.132101
+2025-06-11 23:17:43.485 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BRAV3.SA
+2025-06-11 23:18:01.191 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BRAV3.SA | RandomForest -> MSE: 0.477624, MAE: 0.543787
+2025-06-11 23:18:01.406 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BRAV3.SA | XGBoost -> MSE: 0.746977, MAE: 0.660423
+2025-06-11 23:18:01.627 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BRAV3.SA | LSTM -> MSE: 0.449539, MAE: 0.562441
+2025-06-11 23:18:01.907 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BRFS3.SA
+2025-06-11 23:18:29.131 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BRFS3.SA | RandomForest -> MSE: 0.321132, MAE: 0.408072
+2025-06-11 23:18:29.348 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BRFS3.SA | XGBoost -> MSE: 0.248640, MAE: 0.357588
+2025-06-11 23:18:29.558 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BRFS3.SA | LSTM -> MSE: 0.668346, MAE: 0.605272
+2025-06-11 23:18:29.874 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | BRKM5.SA
+2025-06-11 23:19:02.655 | INFO     | __main__:<module>:194 - acoes_ibov.csv | BRKM5.SA | RandomForest -> MSE: 0.172991, MAE: 0.354514
+2025-06-11 23:19:02.891 | INFO     | __main__:<module>:203 - acoes_ibov.csv | BRKM5.SA | XGBoost -> MSE: 0.140471, MAE: 0.292563
+2025-06-11 23:19:03.105 | INFO     | __main__:<module>:212 - acoes_ibov.csv | BRKM5.SA | LSTM -> MSE: 0.344737, MAE: 0.509019
+2025-06-11 23:19:03.421 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CCRO3.SA
+2025-06-11 23:19:35.266 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CCRO3.SA | RandomForest -> MSE: 0.049480, MAE: 0.163822
+2025-06-11 23:19:35.487 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CCRO3.SA | XGBoost -> MSE: 0.047300, MAE: 0.160677
+2025-06-11 23:19:35.693 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CCRO3.SA | LSTM -> MSE: 0.077548, MAE: 0.224941
+2025-06-11 23:19:35.996 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CMIG4.SA
+2025-06-11 23:20:17.589 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CMIG4.SA | RandomForest -> MSE: 0.030002, MAE: 0.132913
+2025-06-11 23:20:17.808 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CMIG4.SA | XGBoost -> MSE: 0.029374, MAE: 0.137547
+2025-06-11 23:20:18.013 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CMIG4.SA | LSTM -> MSE: 0.019520, MAE: 0.113545
+2025-06-11 23:20:18.315 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CMIN3.SA
+2025-06-11 23:20:35.837 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CMIN3.SA | RandomForest -> MSE: 0.008941, MAE: 0.067803
+2025-06-11 23:20:36.051 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CMIN3.SA | XGBoost -> MSE: 0.015060, MAE: 0.088010
+2025-06-11 23:20:36.264 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CMIN3.SA | LSTM -> MSE: 0.036707, MAE: 0.167991
+2025-06-11 23:20:36.529 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | COGN3.SA
+2025-06-11 23:21:07.960 | INFO     | __main__:<module>:194 - acoes_ibov.csv | COGN3.SA | RandomForest -> MSE: 0.010649, MAE: 0.081850
+2025-06-11 23:21:08.174 | INFO     | __main__:<module>:203 - acoes_ibov.csv | COGN3.SA | XGBoost -> MSE: 0.010978, MAE: 0.082226
+2025-06-11 23:21:08.393 | INFO     | __main__:<module>:212 - acoes_ibov.csv | COGN3.SA | LSTM -> MSE: 0.019788, MAE: 0.114141
+2025-06-11 23:21:08.740 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CPFE3.SA
+2025-06-11 23:21:47.562 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CPFE3.SA | RandomForest -> MSE: 11.003245, MAE: 3.075220
+2025-06-11 23:21:47.781 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CPFE3.SA | XGBoost -> MSE: 10.568570, MAE: 3.020294
+2025-06-11 23:21:48.067 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CPFE3.SA | LSTM -> MSE: 0.249297, MAE: 0.399679
+2025-06-11 23:21:48.568 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CPLE6.SA
+2025-06-11 23:22:28.666 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CPLE6.SA | RandomForest -> MSE: 3.957309, MAE: 1.960794
+2025-06-11 23:22:28.871 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CPLE6.SA | XGBoost -> MSE: 4.173994, MAE: 2.015290
+2025-06-11 23:22:29.066 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CPLE6.SA | LSTM -> MSE: 0.029935, MAE: 0.133803
+2025-06-11 23:22:29.374 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CRFB3.SA
+2025-06-11 23:22:58.355 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CRFB3.SA | RandomForest -> MSE: 0.104422, MAE: 0.292015
+2025-06-11 23:22:58.578 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CRFB3.SA | XGBoost -> MSE: 0.266515, MAE: 0.400614
+2025-06-11 23:22:58.796 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CRFB3.SA | LSTM -> MSE: 0.006852, MAE: 0.066911
+2025-06-11 23:22:59.069 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CSAN3.SA
+2025-06-11 23:23:30.236 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CSAN3.SA | RandomForest -> MSE: 0.039197, MAE: 0.159644
+2025-06-11 23:23:30.448 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CSAN3.SA | XGBoost -> MSE: 0.046621, MAE: 0.170099
+2025-06-11 23:23:30.648 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CSAN3.SA | LSTM -> MSE: 0.034729, MAE: 0.159352
+2025-06-11 23:23:30.946 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CSNA3.SA
+2025-06-11 23:24:09.269 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CSNA3.SA | RandomForest -> MSE: 0.056339, MAE: 0.154180
+2025-06-11 23:24:09.493 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CSNA3.SA | XGBoost -> MSE: 0.081063, MAE: 0.192038
+2025-06-11 23:24:09.738 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CSNA3.SA | LSTM -> MSE: 0.050506, MAE: 0.157758
+2025-06-11 23:24:10.069 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CVCB3.SA
+2025-06-11 23:24:49.941 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CVCB3.SA | RandomForest -> MSE: 0.009930, MAE: 0.076641
+2025-06-11 23:24:50.154 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CVCB3.SA | XGBoost -> MSE: 0.009970, MAE: 0.075417
+2025-06-11 23:24:50.361 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CVCB3.SA | LSTM -> MSE: 0.027728, MAE: 0.144825
+2025-06-11 23:24:50.671 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CXSE3.SA
+2025-06-11 23:25:07.557 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CXSE3.SA | RandomForest -> MSE: 0.152964, MAE: 0.312849
+2025-06-11 23:25:07.773 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CXSE3.SA | XGBoost -> MSE: 0.376728, MAE: 0.511869
+2025-06-11 23:25:07.972 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CXSE3.SA | LSTM -> MSE: 0.042931, MAE: 0.162986
+2025-06-11 23:25:08.229 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | CYRE3.SA
+2025-06-11 23:25:44.966 | INFO     | __main__:<module>:194 - acoes_ibov.csv | CYRE3.SA | RandomForest -> MSE: 0.271358, MAE: 0.398332
+2025-06-11 23:25:45.571 | INFO     | __main__:<module>:203 - acoes_ibov.csv | CYRE3.SA | XGBoost -> MSE: 0.482729, MAE: 0.547577
+2025-06-11 23:25:45.760 | INFO     | __main__:<module>:212 - acoes_ibov.csv | CYRE3.SA | LSTM -> MSE: 0.303746, MAE: 0.450406
+2025-06-11 23:25:46.074 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | EGIE3.SA
+2025-06-11 23:26:24.752 | INFO     | __main__:<module>:194 - acoes_ibov.csv | EGIE3.SA | RandomForest -> MSE: 0.276793, MAE: 0.416998
+2025-06-11 23:26:25.262 | INFO     | __main__:<module>:203 - acoes_ibov.csv | EGIE3.SA | XGBoost -> MSE: 0.304411, MAE: 0.422219
+2025-06-11 23:26:25.471 | INFO     | __main__:<module>:212 - acoes_ibov.csv | EGIE3.SA | LSTM -> MSE: 0.331009, MAE: 0.442758
+2025-06-11 23:26:25.767 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ELET3.SA
+2025-06-11 23:26:59.531 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ELET3.SA | RandomForest -> MSE: 0.225621, MAE: 0.363193
+2025-06-11 23:26:59.751 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ELET3.SA | XGBoost -> MSE: 0.477880, MAE: 0.578443
+2025-06-11 23:26:59.955 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ELET3.SA | LSTM -> MSE: 0.284402, MAE: 0.424672
+2025-06-11 23:27:00.277 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ELET6.SA
+2025-06-11 23:27:36.696 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ELET6.SA | RandomForest -> MSE: 0.764468, MAE: 0.685186
+2025-06-11 23:27:36.939 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ELET6.SA | XGBoost -> MSE: 0.787072, MAE: 0.662010
+2025-06-11 23:27:37.152 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ELET6.SA | LSTM -> MSE: 0.483676, MAE: 0.560421
+2025-06-11 23:27:37.472 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | EMBR3.SA
+2025-06-11 23:28:07.347 | INFO     | __main__:<module>:194 - acoes_ibov.csv | EMBR3.SA | RandomForest -> MSE: 9.018489, MAE: 2.389011
+2025-06-11 23:28:07.573 | INFO     | __main__:<module>:203 - acoes_ibov.csv | EMBR3.SA | XGBoost -> MSE: 55.224501, MAE: 7.166875
+2025-06-11 23:28:07.783 | INFO     | __main__:<module>:212 - acoes_ibov.csv | EMBR3.SA | LSTM -> MSE: 1.518446, MAE: 0.992279
+2025-06-11 23:28:08.085 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ENEV3.SA
+2025-06-11 23:28:31.913 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ENEV3.SA | RandomForest -> MSE: 0.050337, MAE: 0.181548
+2025-06-11 23:28:32.138 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ENEV3.SA | XGBoost -> MSE: 0.064553, MAE: 0.199017
+2025-06-11 23:28:32.341 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ENEV3.SA | LSTM -> MSE: 0.063330, MAE: 0.202526
+2025-06-11 23:28:32.644 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ENGI11.SA
+2025-06-11 23:29:09.768 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ENGI11.SA | RandomForest -> MSE: 0.552522, MAE: 0.582882
+2025-06-11 23:29:09.971 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ENGI11.SA | XGBoost -> MSE: 0.725059, MAE: 0.596622
+2025-06-11 23:29:10.160 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ENGI11.SA | LSTM -> MSE: 0.512729, MAE: 0.558541
+2025-06-11 23:29:10.448 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | EQTL3.SA
+2025-06-11 23:29:42.422 | INFO     | __main__:<module>:194 - acoes_ibov.csv | EQTL3.SA | RandomForest -> MSE: 6.526717, MAE: 2.515167
+2025-06-11 23:29:42.614 | INFO     | __main__:<module>:203 - acoes_ibov.csv | EQTL3.SA | XGBoost -> MSE: 8.638007, MAE: 2.893152
+2025-06-11 23:29:42.814 | INFO     | __main__:<module>:212 - acoes_ibov.csv | EQTL3.SA | LSTM -> MSE: 0.382236, MAE: 0.483888
+2025-06-11 23:29:43.141 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | FLRY3.SA
+2025-06-11 23:30:15.149 | INFO     | __main__:<module>:194 - acoes_ibov.csv | FLRY3.SA | RandomForest -> MSE: 0.067752, MAE: 0.209762
+2025-06-11 23:30:15.346 | INFO     | __main__:<module>:203 - acoes_ibov.csv | FLRY3.SA | XGBoost -> MSE: 0.066901, MAE: 0.192753
+2025-06-11 23:30:15.542 | INFO     | __main__:<module>:212 - acoes_ibov.csv | FLRY3.SA | LSTM -> MSE: 0.043828, MAE: 0.166393
+2025-06-11 23:30:15.835 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | GGBR4.SA
+2025-06-11 23:30:51.024 | INFO     | __main__:<module>:194 - acoes_ibov.csv | GGBR4.SA | RandomForest -> MSE: 0.160784, MAE: 0.298380
+2025-06-11 23:30:51.241 | INFO     | __main__:<module>:203 - acoes_ibov.csv | GGBR4.SA | XGBoost -> MSE: 0.195078, MAE: 0.327683
+2025-06-11 23:30:51.472 | INFO     | __main__:<module>:212 - acoes_ibov.csv | GGBR4.SA | LSTM -> MSE: 0.124931, MAE: 0.271660
+2025-06-11 23:30:51.796 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | GOAU4.SA
+2025-06-11 23:31:32.630 | INFO     | __main__:<module>:194 - acoes_ibov.csv | GOAU4.SA | RandomForest -> MSE: 0.039865, MAE: 0.150165
+2025-06-11 23:31:32.839 | INFO     | __main__:<module>:203 - acoes_ibov.csv | GOAU4.SA | XGBoost -> MSE: 0.035103, MAE: 0.147425
+2025-06-11 23:31:33.058 | INFO     | __main__:<module>:212 - acoes_ibov.csv | GOAU4.SA | LSTM -> MSE: 0.051618, MAE: 0.176210
+2025-06-11 23:31:33.313 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | HAPV3.SA
+2025-06-11 23:31:55.244 | INFO     | __main__:<module>:194 - acoes_ibov.csv | HAPV3.SA | RandomForest -> MSE: 2.112253, MAE: 1.061217
+2025-06-11 23:31:55.457 | INFO     | __main__:<module>:203 - acoes_ibov.csv | HAPV3.SA | XGBoost -> MSE: 2.806714, MAE: 1.264462
+2025-06-11 23:31:55.654 | INFO     | __main__:<module>:212 - acoes_ibov.csv | HAPV3.SA | LSTM -> MSE: 2.923180, MAE: 1.454457
+2025-06-11 23:31:55.908 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | HYPE3.SA
+2025-06-11 23:32:34.697 | INFO     | __main__:<module>:194 - acoes_ibov.csv | HYPE3.SA | RandomForest -> MSE: 0.343364, MAE: 0.473851
+2025-06-11 23:32:34.931 | INFO     | __main__:<module>:203 - acoes_ibov.csv | HYPE3.SA | XGBoost -> MSE: 0.398346, MAE: 0.483264
+2025-06-11 23:32:35.141 | INFO     | __main__:<module>:212 - acoes_ibov.csv | HYPE3.SA | LSTM -> MSE: 0.305920, MAE: 0.454302
+2025-06-11 23:32:35.457 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | IGTI11.SA
+2025-06-11 23:32:49.887 | INFO     | __main__:<module>:194 - acoes_ibov.csv | IGTI11.SA | RandomForest -> MSE: 0.148469, MAE: 0.288965
+2025-06-11 23:32:50.098 | INFO     | __main__:<module>:203 - acoes_ibov.csv | IGTI11.SA | XGBoost -> MSE: 0.165644, MAE: 0.299771
+2025-06-11 23:32:50.299 | INFO     | __main__:<module>:212 - acoes_ibov.csv | IGTI11.SA | LSTM -> MSE: 0.155775, MAE: 0.295648
+2025-06-11 23:32:50.535 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | IRBR3.SA
+2025-06-11 23:33:10.627 | INFO     | __main__:<module>:194 - acoes_ibov.csv | IRBR3.SA | RandomForest -> MSE: 1.326993, MAE: 0.824675
+2025-06-11 23:33:10.864 | INFO     | __main__:<module>:203 - acoes_ibov.csv | IRBR3.SA | XGBoost -> MSE: 2.266764, MAE: 1.104551
+2025-06-11 23:33:11.056 | INFO     | __main__:<module>:212 - acoes_ibov.csv | IRBR3.SA | LSTM -> MSE: 22.485582, MAE: 4.640563
+2025-06-11 23:33:11.294 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ISAE4.SA
+2025-06-11 23:33:41.227 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ISAE4.SA | RandomForest -> MSE: 0.096583, MAE: 0.217486
+2025-06-11 23:33:41.432 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ISAE4.SA | XGBoost -> MSE: 0.135767, MAE: 0.264670
+2025-06-11 23:33:41.628 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ISAE4.SA | LSTM -> MSE: 0.119508, MAE: 0.245285
+2025-06-11 23:33:41.892 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ITSA4.SA
+2025-06-11 23:34:21.408 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ITSA4.SA | RandomForest -> MSE: 1.219671, MAE: 1.072967
+2025-06-11 23:34:21.726 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ITSA4.SA | XGBoost -> MSE: 1.294942, MAE: 1.108213
+2025-06-11 23:34:21.972 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ITSA4.SA | LSTM -> MSE: 0.018206, MAE: 0.097199
+2025-06-11 23:34:22.304 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | ITUB4.SA
+2025-06-11 23:34:55.981 | INFO     | __main__:<module>:194 - acoes_ibov.csv | ITUB4.SA | RandomForest -> MSE: 14.345308, MAE: 3.636389
+2025-06-11 23:34:56.183 | INFO     | __main__:<module>:203 - acoes_ibov.csv | ITUB4.SA | XGBoost -> MSE: 14.340737, MAE: 3.641344
+2025-06-11 23:34:56.378 | INFO     | __main__:<module>:212 - acoes_ibov.csv | ITUB4.SA | LSTM -> MSE: 0.317955, MAE: 0.408240
+2025-06-11 23:34:56.682 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | JBSS3.SA
+2025-06-11 23:35:39.963 | INFO     | __main__:<module>:194 - acoes_ibov.csv | JBSS3.SA | RandomForest -> MSE: 18.186994, MAE: 3.901167
+2025-06-11 23:35:40.171 | INFO     | __main__:<module>:203 - acoes_ibov.csv | JBSS3.SA | XGBoost -> MSE: 21.349412, MAE: 4.287368
+2025-06-11 23:35:40.363 | INFO     | __main__:<module>:212 - acoes_ibov.csv | JBSS3.SA | LSTM -> MSE: 1.122889, MAE: 0.878532
+2025-06-11 23:35:40.673 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | KLBN11.SA
+2025-06-11 23:36:18.696 | INFO     | __main__:<module>:194 - acoes_ibov.csv | KLBN11.SA | RandomForest -> MSE: 0.066751, MAE: 0.209712
+2025-06-11 23:36:18.917 | INFO     | __main__:<module>:203 - acoes_ibov.csv | KLBN11.SA | XGBoost -> MSE: 0.078591, MAE: 0.198159
+2025-06-11 23:36:19.137 | INFO     | __main__:<module>:212 - acoes_ibov.csv | KLBN11.SA | LSTM -> MSE: 0.077811, MAE: 0.208402
+2025-06-11 23:36:19.450 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | LREN3.SA
+2025-06-11 23:36:52.200 | INFO     | __main__:<module>:194 - acoes_ibov.csv | LREN3.SA | RandomForest -> MSE: 0.213544, MAE: 0.340004
+2025-06-11 23:36:52.423 | INFO     | __main__:<module>:203 - acoes_ibov.csv | LREN3.SA | XGBoost -> MSE: 0.195890, MAE: 0.368216
+2025-06-11 23:36:52.634 | INFO     | __main__:<module>:212 - acoes_ibov.csv | LREN3.SA | LSTM -> MSE: 0.322109, MAE: 0.451799
+2025-06-11 23:36:52.933 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | LWSA3.SA
+2025-06-11 23:37:15.223 | INFO     | __main__:<module>:194 - acoes_ibov.csv | LWSA3.SA | RandomForest -> MSE: 0.027549, MAE: 0.141725
+2025-06-11 23:37:15.421 | INFO     | __main__:<module>:203 - acoes_ibov.csv | LWSA3.SA | XGBoost -> MSE: 0.022843, MAE: 0.127889
+2025-06-11 23:37:15.621 | INFO     | __main__:<module>:212 - acoes_ibov.csv | LWSA3.SA | LSTM -> MSE: 0.043366, MAE: 0.173615
+2025-06-11 23:37:15.910 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | MGLU3.SA
+2025-06-11 23:37:46.560 | INFO     | __main__:<module>:194 - acoes_ibov.csv | MGLU3.SA | RandomForest -> MSE: 0.136002, MAE: 0.307905
+2025-06-11 23:37:46.770 | INFO     | __main__:<module>:203 - acoes_ibov.csv | MGLU3.SA | XGBoost -> MSE: 0.162015, MAE: 0.337750
+2025-06-11 23:37:46.981 | INFO     | __main__:<module>:212 - acoes_ibov.csv | MGLU3.SA | LSTM -> MSE: 1.096693, MAE: 0.946376
+2025-06-11 23:37:47.288 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | MRFG3.SA
+2025-06-11 23:38:28.362 | INFO     | __main__:<module>:194 - acoes_ibov.csv | MRFG3.SA | RandomForest -> MSE: 47.510483, MAE: 6.517413
+2025-06-11 23:38:28.563 | INFO     | __main__:<module>:203 - acoes_ibov.csv | MRFG3.SA | XGBoost -> MSE: 57.782151, MAE: 7.262806
+2025-06-11 23:38:28.758 | INFO     | __main__:<module>:212 - acoes_ibov.csv | MRFG3.SA | LSTM -> MSE: 0.830883, MAE: 0.505723
+2025-06-11 23:38:29.055 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | MRVE3.SA
+2025-06-11 23:39:01.374 | INFO     | __main__:<module>:194 - acoes_ibov.csv | MRVE3.SA | RandomForest -> MSE: 0.050566, MAE: 0.155493
+2025-06-11 23:39:01.619 | INFO     | __main__:<module>:203 - acoes_ibov.csv | MRVE3.SA | XGBoost -> MSE: 0.059012, MAE: 0.183559
+2025-06-11 23:39:01.859 | INFO     | __main__:<module>:212 - acoes_ibov.csv | MRVE3.SA | LSTM -> MSE: 0.050467, MAE: 0.178606
+2025-06-11 23:39:02.224 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | MULT3.SA
+2025-06-11 23:39:46.571 | INFO     | __main__:<module>:194 - acoes_ibov.csv | MULT3.SA | RandomForest -> MSE: 0.114477, MAE: 0.273930
+2025-06-11 23:39:46.767 | INFO     | __main__:<module>:203 - acoes_ibov.csv | MULT3.SA | XGBoost -> MSE: 0.167030, MAE: 0.319939
+2025-06-11 23:39:46.974 | INFO     | __main__:<module>:212 - acoes_ibov.csv | MULT3.SA | LSTM -> MSE: 0.171353, MAE: 0.338293
+2025-06-11 23:39:47.276 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | NTCO3.SA
+2025-06-11 23:40:11.990 | INFO     | __main__:<module>:194 - acoes_ibov.csv | NTCO3.SA | RandomForest -> MSE: 0.530592, MAE: 0.515370
+2025-06-11 23:40:12.214 | INFO     | __main__:<module>:203 - acoes_ibov.csv | NTCO3.SA | XGBoost -> MSE: 0.773380, MAE: 0.669643
+2025-06-11 23:40:12.413 | INFO     | __main__:<module>:212 - acoes_ibov.csv | NTCO3.SA | LSTM -> MSE: 0.107898, MAE: 0.270512
+2025-06-11 23:40:12.669 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PCAR3.SA
+2025-06-11 23:40:46.193 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PCAR3.SA | RandomForest -> MSE: 0.028319, MAE: 0.093787
+2025-06-11 23:40:46.407 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PCAR3.SA | XGBoost -> MSE: 0.033339, MAE: 0.116997
+2025-06-11 23:40:46.618 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PCAR3.SA | LSTM -> MSE: 0.050230, MAE: 0.127412
+2025-06-11 23:40:46.924 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PETR3.SA
+2025-06-11 23:41:22.340 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PETR3.SA | RandomForest -> MSE: 0.337469, MAE: 0.449679
+2025-06-11 23:41:22.566 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PETR3.SA | XGBoost -> MSE: 0.394376, MAE: 0.444104
+2025-06-11 23:41:22.773 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PETR3.SA | LSTM -> MSE: 1.524691, MAE: 1.135006
+2025-06-11 23:41:23.032 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PETR4.SA
+2025-06-11 23:41:57.087 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PETR4.SA | RandomForest -> MSE: 0.215980, MAE: 0.371339
+2025-06-11 23:41:57.298 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PETR4.SA | XGBoost -> MSE: 0.274809, MAE: 0.405612
+2025-06-11 23:41:57.501 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PETR4.SA | LSTM -> MSE: 0.280301, MAE: 0.398424
+2025-06-11 23:41:57.790 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PETZ3.SA
+2025-06-11 23:42:17.801 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PETZ3.SA | RandomForest -> MSE: 0.022124, MAE: 0.111890
+2025-06-11 23:42:18.039 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PETZ3.SA | XGBoost -> MSE: 0.018113, MAE: 0.099231
+2025-06-11 23:42:18.249 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PETZ3.SA | LSTM -> MSE: 0.018365, MAE: 0.101915
+2025-06-11 23:42:18.501 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | POMO4.SA
+2025-06-11 23:42:57.042 | INFO     | __main__:<module>:194 - acoes_ibov.csv | POMO4.SA | RandomForest -> MSE: 0.039102, MAE: 0.154156
+2025-06-11 23:42:57.245 | INFO     | __main__:<module>:203 - acoes_ibov.csv | POMO4.SA | XGBoost -> MSE: 0.050593, MAE: 0.173011
+2025-06-11 23:42:57.454 | INFO     | __main__:<module>:212 - acoes_ibov.csv | POMO4.SA | LSTM -> MSE: 0.034557, MAE: 0.145617
+2025-06-11 23:42:57.761 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PRIO3.SA
+2025-06-11 23:43:28.982 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PRIO3.SA | RandomForest -> MSE: 0.939219, MAE: 0.761413
+2025-06-11 23:43:29.183 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PRIO3.SA | XGBoost -> MSE: 0.742378, MAE: 0.694044
+2025-06-11 23:43:29.374 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PRIO3.SA | LSTM -> MSE: 1.335944, MAE: 0.958608
+2025-06-11 23:43:29.663 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | PSSA3.SA
+2025-06-11 23:44:05.825 | INFO     | __main__:<module>:194 - acoes_ibov.csv | PSSA3.SA | RandomForest -> MSE: 77.548018, MAE: 8.196193
+2025-06-11 23:44:06.026 | INFO     | __main__:<module>:203 - acoes_ibov.csv | PSSA3.SA | XGBoost -> MSE: 84.492668, MAE: 8.609318
+2025-06-11 23:44:06.230 | INFO     | __main__:<module>:212 - acoes_ibov.csv | PSSA3.SA | LSTM -> MSE: 1.159797, MAE: 0.799785
+2025-06-11 23:44:06.551 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RADL3.SA
+2025-06-11 23:44:49.218 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RADL3.SA | RandomForest -> MSE: 0.472432, MAE: 0.430822
+2025-06-11 23:44:49.423 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RADL3.SA | XGBoost -> MSE: 0.487602, MAE: 0.453451
+2025-06-11 23:44:49.623 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RADL3.SA | LSTM -> MSE: 0.553303, MAE: 0.469639
+2025-06-11 23:44:49.935 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RAIL3.SA
+2025-06-11 23:45:28.959 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RAIL3.SA | RandomForest -> MSE: 0.261666, MAE: 0.390281
+2025-06-11 23:45:29.167 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RAIL3.SA | XGBoost -> MSE: 0.229376, MAE: 0.383216
+2025-06-11 23:45:29.375 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RAIL3.SA | LSTM -> MSE: 0.216627, MAE: 0.349291
+2025-06-11 23:45:29.703 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RAIZ4.SA
+2025-06-11 23:45:46.362 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RAIZ4.SA | RandomForest -> MSE: 0.008549, MAE: 0.068643
+2025-06-11 23:45:46.570 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RAIZ4.SA | XGBoost -> MSE: 0.010665, MAE: 0.079514
+2025-06-11 23:45:46.766 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RAIZ4.SA | LSTM -> MSE: 0.007532, MAE: 0.056103
+2025-06-11 23:45:47.050 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RDOR3.SA
+2025-06-11 23:46:08.838 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RDOR3.SA | RandomForest -> MSE: 1.629515, MAE: 1.114511
+2025-06-11 23:46:09.058 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RDOR3.SA | XGBoost -> MSE: 1.901089, MAE: 1.181396
+2025-06-11 23:46:09.268 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RDOR3.SA | LSTM -> MSE: 0.944221, MAE: 0.777612
+2025-06-11 23:46:09.526 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RECV3.SA
+2025-06-11 23:46:27.459 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RECV3.SA | RandomForest -> MSE: 0.165257, MAE: 0.356784
+2025-06-11 23:46:27.676 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RECV3.SA | XGBoost -> MSE: 0.178713, MAE: 0.376201
+2025-06-11 23:46:27.880 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RECV3.SA | LSTM -> MSE: 0.147900, MAE: 0.290594
+2025-06-11 23:46:28.169 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | RENT3.SA
+2025-06-11 23:47:04.167 | INFO     | __main__:<module>:194 - acoes_ibov.csv | RENT3.SA | RandomForest -> MSE: 0.820624, MAE: 0.646967
+2025-06-11 23:47:04.400 | INFO     | __main__:<module>:203 - acoes_ibov.csv | RENT3.SA | XGBoost -> MSE: 0.878749, MAE: 0.758868
+2025-06-11 23:47:04.623 | INFO     | __main__:<module>:212 - acoes_ibov.csv | RENT3.SA | LSTM -> MSE: 0.857149, MAE: 0.651468
+2025-06-11 23:47:04.940 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | SANB11.SA
+2025-06-11 23:47:42.612 | INFO     | __main__:<module>:194 - acoes_ibov.csv | SANB11.SA | RandomForest -> MSE: 0.287486, MAE: 0.374521
+2025-06-11 23:47:42.812 | INFO     | __main__:<module>:203 - acoes_ibov.csv | SANB11.SA | XGBoost -> MSE: 0.315818, MAE: 0.414516
+2025-06-11 23:47:43.022 | INFO     | __main__:<module>:212 - acoes_ibov.csv | SANB11.SA | LSTM -> MSE: 0.248795, MAE: 0.386496
+2025-06-11 23:47:43.320 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | SBSP3.SA
+2025-06-11 23:48:28.585 | INFO     | __main__:<module>:194 - acoes_ibov.csv | SBSP3.SA | RandomForest -> MSE: 396.722624, MAE: 19.843053
+2025-06-11 23:48:28.795 | INFO     | __main__:<module>:203 - acoes_ibov.csv | SBSP3.SA | XGBoost -> MSE: 483.016314, MAE: 21.909825
+2025-06-11 23:48:28.994 | INFO     | __main__:<module>:212 - acoes_ibov.csv | SBSP3.SA | LSTM -> MSE: 4.401560, MAE: 1.656523
+2025-06-11 23:48:29.253 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | SLCE3.SA
+2025-06-11 23:49:13.141 | INFO     | __main__:<module>:194 - acoes_ibov.csv | SLCE3.SA | RandomForest -> MSE: 0.082297, MAE: 0.243618
+2025-06-11 23:49:13.370 | INFO     | __main__:<module>:203 - acoes_ibov.csv | SLCE3.SA | XGBoost -> MSE: 0.070955, MAE: 0.230340
+2025-06-11 23:49:13.580 | INFO     | __main__:<module>:212 - acoes_ibov.csv | SLCE3.SA | LSTM -> MSE: 0.185258, MAE: 0.372119
+2025-06-11 23:49:13.924 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | SMTO3.SA
+2025-06-11 23:49:57.303 | INFO     | __main__:<module>:194 - acoes_ibov.csv | SMTO3.SA | RandomForest -> MSE: 0.255684, MAE: 0.394269
+2025-06-11 23:49:57.511 | INFO     | __main__:<module>:203 - acoes_ibov.csv | SMTO3.SA | XGBoost -> MSE: 0.298077, MAE: 0.420327
+2025-06-11 23:49:57.717 | INFO     | __main__:<module>:212 - acoes_ibov.csv | SMTO3.SA | LSTM -> MSE: 0.216766, MAE: 0.326968
+2025-06-11 23:49:58.010 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | STBP3.SA
+2025-06-11 23:50:42.427 | INFO     | __main__:<module>:194 - acoes_ibov.csv | STBP3.SA | RandomForest -> MSE: 0.020517, MAE: 0.110676
+2025-06-11 23:50:42.644 | INFO     | __main__:<module>:203 - acoes_ibov.csv | STBP3.SA | XGBoost -> MSE: 0.085862, MAE: 0.250777
+2025-06-11 23:50:42.845 | INFO     | __main__:<module>:212 - acoes_ibov.csv | STBP3.SA | LSTM -> MSE: 0.007720, MAE: 0.085222
+2025-06-11 23:50:43.146 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | SUZB3.SA
+2025-06-11 23:51:23.617 | INFO     | __main__:<module>:194 - acoes_ibov.csv | SUZB3.SA | RandomForest -> MSE: 0.830389, MAE: 0.619119
+2025-06-11 23:51:23.822 | INFO     | __main__:<module>:203 - acoes_ibov.csv | SUZB3.SA | XGBoost -> MSE: 0.828764, MAE: 0.627536
+2025-06-11 23:51:24.015 | INFO     | __main__:<module>:212 - acoes_ibov.csv | SUZB3.SA | LSTM -> MSE: 0.807040, MAE: 0.586320
+2025-06-11 23:51:24.260 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | TAEE11.SA
+2025-06-11 23:52:05.005 | INFO     | __main__:<module>:194 - acoes_ibov.csv | TAEE11.SA | RandomForest -> MSE: 2.042701, MAE: 1.308538
+2025-06-11 23:52:05.212 | INFO     | __main__:<module>:203 - acoes_ibov.csv | TAEE11.SA | XGBoost -> MSE: 2.221281, MAE: 1.372754
+2025-06-11 23:52:05.416 | INFO     | __main__:<module>:212 - acoes_ibov.csv | TAEE11.SA | LSTM -> MSE: 0.370171, MAE: 0.486431
+2025-06-11 23:52:05.717 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | TIMS3.SA
+2025-06-11 23:52:50.680 | INFO     | __main__:<module>:194 - acoes_ibov.csv | TIMS3.SA | RandomForest -> MSE: 7.328279, MAE: 2.661621
+2025-06-11 23:52:50.892 | INFO     | __main__:<module>:203 - acoes_ibov.csv | TIMS3.SA | XGBoost -> MSE: 8.071002, MAE: 2.797668
+2025-06-11 23:52:51.080 | INFO     | __main__:<module>:212 - acoes_ibov.csv | TIMS3.SA | LSTM -> MSE: 0.150634, MAE: 0.302030
+2025-06-11 23:52:51.397 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | TOTS3.SA
+2025-06-11 23:53:36.346 | INFO     | __main__:<module>:194 - acoes_ibov.csv | TOTS3.SA | RandomForest -> MSE: 20.273479, MAE: 4.022101
+2025-06-11 23:53:36.621 | INFO     | __main__:<module>:203 - acoes_ibov.csv | TOTS3.SA | XGBoost -> MSE: 21.262400, MAE: 4.179230
+2025-06-11 23:53:36.855 | INFO     | __main__:<module>:212 - acoes_ibov.csv | TOTS3.SA | LSTM -> MSE: 0.332501, MAE: 0.450672
+2025-06-11 23:53:37.156 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | UGPA3.SA
+2025-06-11 23:54:24.235 | INFO     | __main__:<module>:194 - acoes_ibov.csv | UGPA3.SA | RandomForest -> MSE: 0.213139, MAE: 0.358193
+2025-06-11 23:54:24.476 | INFO     | __main__:<module>:203 - acoes_ibov.csv | UGPA3.SA | XGBoost -> MSE: 0.237526, MAE: 0.372073
+2025-06-11 23:54:24.696 | INFO     | __main__:<module>:212 - acoes_ibov.csv | UGPA3.SA | LSTM -> MSE: 0.180401, MAE: 0.335912
+2025-06-11 23:54:25.043 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | USIM5.SA
+2025-06-11 23:55:07.284 | INFO     | __main__:<module>:194 - acoes_ibov.csv | USIM5.SA | RandomForest -> MSE: 0.017905, MAE: 0.105488
+2025-06-11 23:55:07.501 | INFO     | __main__:<module>:203 - acoes_ibov.csv | USIM5.SA | XGBoost -> MSE: 0.019911, MAE: 0.109431
+2025-06-11 23:55:07.715 | INFO     | __main__:<module>:212 - acoes_ibov.csv | USIM5.SA | LSTM -> MSE: 0.019549, MAE: 0.118491
+2025-06-11 23:55:08.021 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | VALE3.SA
+2025-06-11 23:55:53.841 | INFO     | __main__:<module>:194 - acoes_ibov.csv | VALE3.SA | RandomForest -> MSE: 0.421378, MAE: 0.489034
+2025-06-11 23:55:54.059 | INFO     | __main__:<module>:203 - acoes_ibov.csv | VALE3.SA | XGBoost -> MSE: 0.658661, MAE: 0.659788
+2025-06-11 23:55:54.275 | INFO     | __main__:<module>:212 - acoes_ibov.csv | VALE3.SA | LSTM -> MSE: 0.544629, MAE: 0.611565
+2025-06-11 23:55:54.584 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | VAMO3.SA
+2025-06-11 23:56:13.933 | INFO     | __main__:<module>:194 - acoes_ibov.csv | VAMO3.SA | RandomForest -> MSE: 0.050522, MAE: 0.185882
+2025-06-11 23:56:14.143 | INFO     | __main__:<module>:203 - acoes_ibov.csv | VAMO3.SA | XGBoost -> MSE: 0.072423, MAE: 0.203612
+2025-06-11 23:56:14.335 | INFO     | __main__:<module>:212 - acoes_ibov.csv | VAMO3.SA | LSTM -> MSE: 0.043015, MAE: 0.182669
+2025-06-11 23:56:14.573 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | VBBR3.SA
+2025-06-11 23:56:41.383 | INFO     | __main__:<module>:194 - acoes_ibov.csv | VBBR3.SA | RandomForest -> MSE: 0.116721, MAE: 0.260409
+2025-06-11 23:56:41.605 | INFO     | __main__:<module>:203 - acoes_ibov.csv | VBBR3.SA | XGBoost -> MSE: 0.142055, MAE: 0.299944
+2025-06-11 23:56:41.813 | INFO     | __main__:<module>:212 - acoes_ibov.csv | VBBR3.SA | LSTM -> MSE: 0.108993, MAE: 0.261742
+2025-06-11 23:56:42.111 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | VIVA3.SA
+2025-06-11 23:57:04.357 | INFO     | __main__:<module>:194 - acoes_ibov.csv | VIVA3.SA | RandomForest -> MSE: 0.252126, MAE: 0.403853
+2025-06-11 23:57:05.282 | INFO     | __main__:<module>:203 - acoes_ibov.csv | VIVA3.SA | XGBoost -> MSE: 0.348613, MAE: 0.501519
+2025-06-11 23:57:05.484 | INFO     | __main__:<module>:212 - acoes_ibov.csv | VIVA3.SA | LSTM -> MSE: 0.404437, MAE: 0.531490
+2025-06-11 23:57:05.775 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | VIVT3.SA
+2025-06-11 23:57:53.713 | INFO     | __main__:<module>:194 - acoes_ibov.csv | VIVT3.SA | RandomForest -> MSE: 4.122735, MAE: 1.915864
+2025-06-11 23:57:53.949 | INFO     | __main__:<module>:203 - acoes_ibov.csv | VIVT3.SA | XGBoost -> MSE: 4.223341, MAE: 1.942772
+2025-06-11 23:57:54.161 | INFO     | __main__:<module>:212 - acoes_ibov.csv | VIVT3.SA | LSTM -> MSE: 0.154903, MAE: 0.307026
+2025-06-11 23:57:54.472 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | WEGE3.SA
+2025-06-11 23:58:28.941 | INFO     | __main__:<module>:194 - acoes_ibov.csv | WEGE3.SA | RandomForest -> MSE: 4.508630, MAE: 1.593516
+2025-06-11 23:58:29.136 | INFO     | __main__:<module>:203 - acoes_ibov.csv | WEGE3.SA | XGBoost -> MSE: 5.740387, MAE: 1.913711
+2025-06-11 23:58:29.340 | INFO     | __main__:<module>:212 - acoes_ibov.csv | WEGE3.SA | LSTM -> MSE: 2.548962, MAE: 1.216437
+2025-06-11 23:58:29.646 | INFO     | __main__:<module>:135 - Iniciando acoes_ibov.csv | YDUQ3.SA
+2025-06-11 23:59:07.826 | INFO     | __main__:<module>:194 - acoes_ibov.csv | YDUQ3.SA | RandomForest -> MSE: 0.354932, MAE: 0.504934
+2025-06-11 23:59:08.045 | INFO     | __main__:<module>:203 - acoes_ibov.csv | YDUQ3.SA | XGBoost -> MSE: 0.362483, MAE: 0.506832
+2025-06-11 23:59:08.261 | INFO     | __main__:<module>:212 - acoes_ibov.csv | YDUQ3.SA | LSTM -> MSE: 0.458910, MAE: 0.562671
+2025-06-11 23:59:09.433 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | AAPL34.SA
+2025-06-11 23:59:37.041 | INFO     | __main__:<module>:194 - bdrs.csv | AAPL34.SA | RandomForest -> MSE: 2.358424, MAE: 1.284008
+2025-06-11 23:59:37.310 | INFO     | __main__:<module>:203 - bdrs.csv | AAPL34.SA | XGBoost -> MSE: 5.121551, MAE: 2.095519
+2025-06-11 23:59:37.573 | INFO     | __main__:<module>:212 - bdrs.csv | AAPL34.SA | LSTM -> MSE: 1.784694, MAE: 0.999572
+2025-06-11 23:59:37.922 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | AIRB34.SA
+2025-06-12 00:00:02.738 | INFO     | __main__:<module>:194 - bdrs.csv | AIRB34.SA | RandomForest -> MSE: 1.234306, MAE: 0.828523
+2025-06-12 00:00:03.051 | INFO     | __main__:<module>:203 - bdrs.csv | AIRB34.SA | XGBoost -> MSE: 1.576224, MAE: 0.934017
+2025-06-12 00:00:03.324 | INFO     | __main__:<module>:212 - bdrs.csv | AIRB34.SA | LSTM -> MSE: 0.966528, MAE: 0.698616
+2025-06-12 00:00:03.688 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | AMGN34.SA
+2025-06-12 00:00:46.406 | INFO     | __main__:<module>:194 - bdrs.csv | AMGN34.SA | RandomForest -> MSE: 1.400090, MAE: 0.966950
+2025-06-12 00:00:46.673 | INFO     | __main__:<module>:203 - bdrs.csv | AMGN34.SA | XGBoost -> MSE: 2.395067, MAE: 1.285033
+2025-06-12 00:00:46.923 | INFO     | __main__:<module>:212 - bdrs.csv | AMGN34.SA | LSTM -> MSE: 1.171392, MAE: 0.800418
+2025-06-12 00:00:47.276 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | AMZO34.SA
+2025-06-12 00:01:24.562 | INFO     | __main__:<module>:194 - bdrs.csv | AMZO34.SA | RandomForest -> MSE: 1.967138, MAE: 1.038531
+2025-06-12 00:01:24.773 | INFO     | __main__:<module>:203 - bdrs.csv | AMZO34.SA | XGBoost -> MSE: 3.085885, MAE: 1.380798
+2025-06-12 00:01:24.973 | INFO     | __main__:<module>:212 - bdrs.csv | AMZO34.SA | LSTM -> MSE: 1.698044, MAE: 0.856987
+2025-06-12 00:01:25.272 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | AURA33.SA
+2025-06-12 00:01:47.560 | INFO     | __main__:<module>:194 - bdrs.csv | AURA33.SA | RandomForest -> MSE: 105.027508, MAE: 8.963079
+2025-06-12 00:01:47.769 | INFO     | __main__:<module>:203 - bdrs.csv | AURA33.SA | XGBoost -> MSE: 125.721635, MAE: 10.051413
+2025-06-12 00:01:47.983 | INFO     | __main__:<module>:212 - bdrs.csv | AURA33.SA | LSTM -> MSE: 2.365848, MAE: 1.324469
+2025-06-12 00:01:48.315 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | BABA34.SA
+2025-06-12 00:02:15.226 | INFO     | __main__:<module>:194 - bdrs.csv | BABA34.SA | RandomForest -> MSE: 0.475571, MAE: 0.472759
+2025-06-12 00:02:15.454 | INFO     | __main__:<module>:203 - bdrs.csv | BABA34.SA | XGBoost -> MSE: 0.725050, MAE: 0.631673
+2025-06-12 00:02:15.657 | INFO     | __main__:<module>:212 - bdrs.csv | BABA34.SA | LSTM -> MSE: 0.441872, MAE: 0.552015
+2025-06-12 00:02:15.965 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | BERK34.SA
+2025-06-12 00:02:51.306 | INFO     | __main__:<module>:194 - bdrs.csv | BERK34.SA | RandomForest -> MSE: 5.317681, MAE: 1.816000
+2025-06-12 00:02:51.551 | INFO     | __main__:<module>:203 - bdrs.csv | BERK34.SA | XGBoost -> MSE: 10.072603, MAE: 2.510544
+2025-06-12 00:02:51.799 | INFO     | __main__:<module>:212 - bdrs.csv | BERK34.SA | LSTM -> MSE: 4.369814, MAE: 1.667658
+2025-06-12 00:02:52.158 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | BKNG34.SA
+2025-06-12 00:03:15.825 | INFO     | __main__:<module>:194 - bdrs.csv | BKNG34.SA | RandomForest -> MSE: 13.306646, MAE: 2.733491
+2025-06-12 00:03:16.058 | INFO     | __main__:<module>:203 - bdrs.csv | BKNG34.SA | XGBoost -> MSE: 15.715749, MAE: 3.314726
+2025-06-12 00:03:16.262 | INFO     | __main__:<module>:212 - bdrs.csv | BKNG34.SA | LSTM -> MSE: 15.971378, MAE: 3.049554
+2025-06-12 00:03:16.509 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | BOAC34.SA
+2025-06-12 00:03:57.625 | INFO     | __main__:<module>:194 - bdrs.csv | BOAC34.SA | RandomForest -> MSE: 0.949155, MAE: 0.726569
+2025-06-12 00:03:57.830 | INFO     | __main__:<module>:203 - bdrs.csv | BOAC34.SA | XGBoost -> MSE: 1.096980, MAE: 0.727088
+2025-06-12 00:03:58.031 | INFO     | __main__:<module>:212 - bdrs.csv | BOAC34.SA | LSTM -> MSE: 2.354654, MAE: 1.324470
+2025-06-12 00:03:58.334 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | CHVX34.SA
+2025-06-12 00:04:43.567 | INFO     | __main__:<module>:194 - bdrs.csv | CHVX34.SA | RandomForest -> MSE: 1.152190, MAE: 0.821420
+2025-06-12 00:04:43.774 | INFO     | __main__:<module>:203 - bdrs.csv | CHVX34.SA | XGBoost -> MSE: 1.428331, MAE: 0.993661
+2025-06-12 00:04:43.971 | INFO     | __main__:<module>:212 - bdrs.csv | CHVX34.SA | LSTM -> MSE: 1.153857, MAE: 0.845258
+2025-06-12 00:04:44.270 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | CMCS34.SA
+2025-06-12 00:05:30.447 | INFO     | __main__:<module>:194 - bdrs.csv | CMCS34.SA | RandomForest -> MSE: 0.238908, MAE: 0.421196
+2025-06-12 00:05:30.651 | INFO     | __main__:<module>:203 - bdrs.csv | CMCS34.SA | XGBoost -> MSE: 0.468768, MAE: 0.598513
+2025-06-12 00:05:30.842 | INFO     | __main__:<module>:212 - bdrs.csv | CMCS34.SA | LSTM -> MSE: 0.263073, MAE: 0.420419
+2025-06-12 00:05:31.154 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | COCA34.SA
+2025-06-12 00:06:01.998 | INFO     | __main__:<module>:194 - bdrs.csv | COCA34.SA | RandomForest -> MSE: 0.797985, MAE: 0.700036
+2025-06-12 00:06:02.269 | INFO     | __main__:<module>:203 - bdrs.csv | COCA34.SA | XGBoost -> MSE: 2.083611, MAE: 1.110111
+2025-06-12 00:06:02.536 | INFO     | __main__:<module>:212 - bdrs.csv | COCA34.SA | LSTM -> MSE: 1.316185, MAE: 0.899546
+2025-06-12 00:06:02.906 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | DISB34.SA
+2025-06-12 00:06:55.243 | INFO     | __main__:<module>:194 - bdrs.csv | DISB34.SA | RandomForest -> MSE: 1.170778, MAE: 0.806562
+2025-06-12 00:06:56.375 | INFO     | __main__:<module>:203 - bdrs.csv | DISB34.SA | XGBoost -> MSE: 1.238095, MAE: 0.814598
+2025-06-12 00:06:56.592 | INFO     | __main__:<module>:212 - bdrs.csv | DISB34.SA | LSTM -> MSE: 0.933928, MAE: 0.744897
+2025-06-12 00:06:56.944 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | GMCO34.SA
+2025-06-12 00:07:30.436 | INFO     | __main__:<module>:194 - bdrs.csv | GMCO34.SA | RandomForest -> MSE: 2.981317, MAE: 1.485960
+2025-06-12 00:07:30.635 | INFO     | __main__:<module>:203 - bdrs.csv | GMCO34.SA | XGBoost -> MSE: 3.266341, MAE: 1.394683
+2025-06-12 00:07:30.823 | INFO     | __main__:<module>:212 - bdrs.csv | GMCO34.SA | LSTM -> MSE: 2.666505, MAE: 1.333479
+2025-06-12 00:07:31.140 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | GOGL34.SA
+2025-06-12 00:08:16.728 | INFO     | __main__:<module>:194 - bdrs.csv | GOGL34.SA | RandomForest -> MSE: 2.781165, MAE: 1.258733
+2025-06-12 00:08:16.936 | INFO     | __main__:<module>:203 - bdrs.csv | GOGL34.SA | XGBoost -> MSE: 3.282081, MAE: 1.436748
+2025-06-12 00:08:17.150 | INFO     | __main__:<module>:212 - bdrs.csv | GOGL34.SA | LSTM -> MSE: 3.109363, MAE: 1.457406
+2025-06-12 00:08:17.454 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | HOME34.SA
+2025-06-12 00:09:02.276 | INFO     | __main__:<module>:194 - bdrs.csv | HOME34.SA | RandomForest -> MSE: 1.746548, MAE: 0.964564
+2025-06-12 00:09:02.532 | INFO     | __main__:<module>:203 - bdrs.csv | HOME34.SA | XGBoost -> MSE: 2.527094, MAE: 1.193031
+2025-06-12 00:09:02.760 | INFO     | __main__:<module>:212 - bdrs.csv | HOME34.SA | LSTM -> MSE: 2.334615, MAE: 1.131977
+2025-06-12 00:09:03.077 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | INBR32.SA
+2025-06-12 00:09:15.848 | INFO     | __main__:<module>:194 - bdrs.csv | INBR32.SA | RandomForest -> MSE: 1.370361, MAE: 0.908670
+2025-06-12 00:09:16.051 | INFO     | __main__:<module>:203 - bdrs.csv | INBR32.SA | XGBoost -> MSE: 1.428008, MAE: 0.906280
+2025-06-12 00:09:16.257 | INFO     | __main__:<module>:212 - bdrs.csv | INBR32.SA | LSTM -> MSE: 0.813746, MAE: 0.712943
+2025-06-12 00:09:16.492 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | ITLC34.SA
+2025-06-12 00:09:56.848 | INFO     | __main__:<module>:194 - bdrs.csv | ITLC34.SA | RandomForest -> MSE: 0.300683, MAE: 0.393353
+2025-06-12 00:09:57.058 | INFO     | __main__:<module>:203 - bdrs.csv | ITLC34.SA | XGBoost -> MSE: 0.425826, MAE: 0.498636
+2025-06-12 00:09:57.255 | INFO     | __main__:<module>:212 - bdrs.csv | ITLC34.SA | LSTM -> MSE: 0.259645, MAE: 0.386296
+2025-06-12 00:09:57.504 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | IVVB11.SA
+2025-06-12 00:10:35.706 | INFO     | __main__:<module>:194 - bdrs.csv | IVVB11.SA | RandomForest -> MSE: 19.322885, MAE: 3.713733
+2025-06-12 00:10:35.951 | INFO     | __main__:<module>:203 - bdrs.csv | IVVB11.SA | XGBoost -> MSE: 56.054170, MAE: 5.967320
+2025-06-12 00:10:36.178 | INFO     | __main__:<module>:212 - bdrs.csv | IVVB11.SA | LSTM -> MSE: 16.551666, MAE: 3.141711
+2025-06-12 00:10:36.487 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | JNJB34.SA
+2025-06-12 00:11:22.774 | INFO     | __main__:<module>:194 - bdrs.csv | JNJB34.SA | RandomForest -> MSE: 0.691036, MAE: 0.651579
+2025-06-12 00:11:22.984 | INFO     | __main__:<module>:203 - bdrs.csv | JNJB34.SA | XGBoost -> MSE: 0.896427, MAE: 0.717238
+2025-06-12 00:11:23.195 | INFO     | __main__:<module>:212 - bdrs.csv | JNJB34.SA | LSTM -> MSE: 0.825131, MAE: 0.715893
+2025-06-12 00:11:23.495 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | JPMC34.SA
+2025-06-12 00:12:11.021 | INFO     | __main__:<module>:194 - bdrs.csv | JPMC34.SA | RandomForest -> MSE: 4.505639, MAE: 1.826842
+2025-06-12 00:12:11.241 | INFO     | __main__:<module>:203 - bdrs.csv | JPMC34.SA | XGBoost -> MSE: 8.169310, MAE: 2.370611
+2025-06-12 00:12:11.447 | INFO     | __main__:<module>:212 - bdrs.csv | JPMC34.SA | LSTM -> MSE: 5.370082, MAE: 1.813481
+2025-06-12 00:12:11.755 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | M1TA34.SA
+2025-06-12 00:12:39.351 | INFO     | __main__:<module>:194 - bdrs.csv | M1TA34.SA | RandomForest -> MSE: 12.586730, MAE: 2.785617
+2025-06-12 00:12:39.554 | INFO     | __main__:<module>:203 - bdrs.csv | M1TA34.SA | XGBoost -> MSE: 17.848804, MAE: 2.597255
+2025-06-12 00:12:39.760 | INFO     | __main__:<module>:212 - bdrs.csv | M1TA34.SA | LSTM -> MSE: 14.983337, MAE: 2.837846
+2025-06-12 00:12:40.017 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | MELI34.SA
+2025-06-12 00:13:11.567 | INFO     | __main__:<module>:194 - bdrs.csv | MELI34.SA | RandomForest -> MSE: 191.296590, MAE: 12.916681
+2025-06-12 00:13:11.810 | INFO     | __main__:<module>:203 - bdrs.csv | MELI34.SA | XGBoost -> MSE: 307.127433, MAE: 16.649734
+2025-06-12 00:13:12.047 | INFO     | __main__:<module>:212 - bdrs.csv | MELI34.SA | LSTM -> MSE: 11.398308, MAE: 2.216456
+2025-06-12 00:13:12.381 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | MSCD34.SA
+2025-06-12 00:13:48.634 | INFO     | __main__:<module>:194 - bdrs.csv | MSCD34.SA | RandomForest -> MSE: 3.716551, MAE: 1.538810
+2025-06-12 00:13:48.951 | INFO     | __main__:<module>:203 - bdrs.csv | MSCD34.SA | XGBoost -> MSE: 4.832893, MAE: 1.813428
+2025-06-12 00:13:49.271 | INFO     | __main__:<module>:212 - bdrs.csv | MSCD34.SA | LSTM -> MSE: 3.193595, MAE: 1.414034
+2025-06-12 00:13:49.745 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | MSFT34.SA
+2025-06-12 00:14:23.504 | INFO     | __main__:<module>:194 - bdrs.csv | MSFT34.SA | RandomForest -> MSE: 2.945825, MAE: 1.277508
+2025-06-12 00:14:23.718 | INFO     | __main__:<module>:203 - bdrs.csv | MSFT34.SA | XGBoost -> MSE: 5.452028, MAE: 1.800041
+2025-06-12 00:14:23.927 | INFO     | __main__:<module>:212 - bdrs.csv | MSFT34.SA | LSTM -> MSE: 16.580486, MAE: 3.724491
+2025-06-12 00:14:24.238 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | NFLX34.SA
+2025-06-12 00:15:09.965 | INFO     | __main__:<module>:194 - bdrs.csv | NFLX34.SA | RandomForest -> MSE: 264.634137, MAE: 15.794046
+2025-06-12 00:15:10.173 | INFO     | __main__:<module>:203 - bdrs.csv | NFLX34.SA | XGBoost -> MSE: 329.474098, MAE: 17.747326
+2025-06-12 00:15:10.368 | INFO     | __main__:<module>:212 - bdrs.csv | NFLX34.SA | LSTM -> MSE: 6.647847, MAE: 2.135853
+2025-06-12 00:15:10.672 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | NIKE34.SA
+2025-06-12 00:15:57.038 | INFO     | __main__:<module>:194 - bdrs.csv | NIKE34.SA | RandomForest -> MSE: 0.773508, MAE: 0.644935
+2025-06-12 00:15:57.264 | INFO     | __main__:<module>:203 - bdrs.csv | NIKE34.SA | XGBoost -> MSE: 0.879631, MAE: 0.700399
+2025-06-12 00:15:57.471 | INFO     | __main__:<module>:212 - bdrs.csv | NIKE34.SA | LSTM -> MSE: 0.621622, MAE: 0.605779
+2025-06-12 00:15:57.725 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | NVDC34.SA
+2025-06-12 00:16:16.359 | INFO     | __main__:<module>:194 - bdrs.csv | NVDC34.SA | RandomForest -> MSE: 0.115635, MAE: 0.268399
+2025-06-12 00:16:16.568 | INFO     | __main__:<module>:203 - bdrs.csv | NVDC34.SA | XGBoost -> MSE: 0.167958, MAE: 0.292015
+2025-06-12 00:16:16.783 | INFO     | __main__:<module>:212 - bdrs.csv | NVDC34.SA | LSTM -> MSE: 0.141173, MAE: 0.281227
+2025-06-12 00:16:17.038 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | PFIZ34.SA
+2025-06-12 00:17:01.617 | INFO     | __main__:<module>:194 - bdrs.csv | PFIZ34.SA | RandomForest -> MSE: 0.418577, MAE: 0.497165
+2025-06-12 00:17:01.851 | INFO     | __main__:<module>:203 - bdrs.csv | PFIZ34.SA | XGBoost -> MSE: 0.419338, MAE: 0.523689
+2025-06-12 00:17:02.089 | INFO     | __main__:<module>:212 - bdrs.csv | PFIZ34.SA | LSTM -> MSE: 0.418167, MAE: 0.500486
+2025-06-12 00:17:02.437 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | RIGG34.SA
+2025-06-12 00:17:37.093 | INFO     | __main__:<module>:194 - bdrs.csv | RIGG34.SA | RandomForest -> MSE: 0.570339, MAE: 0.602560
+2025-06-12 00:17:37.347 | INFO     | __main__:<module>:203 - bdrs.csv | RIGG34.SA | XGBoost -> MSE: 0.723921, MAE: 0.690897
+2025-06-12 00:17:37.570 | INFO     | __main__:<module>:212 - bdrs.csv | RIGG34.SA | LSTM -> MSE: 0.549309, MAE: 0.602436
+2025-06-12 00:17:37.874 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | SSFO34.SA
+2025-06-12 00:18:07.362 | INFO     | __main__:<module>:194 - bdrs.csv | SSFO34.SA | RandomForest -> MSE: 4.171669, MAE: 1.377382
+2025-06-12 00:18:07.607 | INFO     | __main__:<module>:203 - bdrs.csv | SSFO34.SA | XGBoost -> MSE: 3.590338, MAE: 1.408191
+2025-06-12 00:18:07.823 | INFO     | __main__:<module>:212 - bdrs.csv | SSFO34.SA | LSTM -> MSE: 3.705544, MAE: 1.489249
+2025-06-12 00:18:08.123 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | TSLA34.SA
+2025-06-12 00:18:43.070 | INFO     | __main__:<module>:194 - bdrs.csv | TSLA34.SA | RandomForest -> MSE: 8.882973, MAE: 2.209681
+2025-06-12 00:18:43.275 | INFO     | __main__:<module>:203 - bdrs.csv | TSLA34.SA | XGBoost -> MSE: 9.939834, MAE: 2.558880
+2025-06-12 00:18:43.484 | INFO     | __main__:<module>:212 - bdrs.csv | TSLA34.SA | LSTM -> MSE: 9.079164, MAE: 2.162593
+2025-06-12 00:18:43.787 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | TSMC34.SA
+2025-06-12 00:19:05.305 | INFO     | __main__:<module>:194 - bdrs.csv | TSMC34.SA | RandomForest -> MSE: 12.013122, MAE: 2.542402
+2025-06-12 00:19:05.518 | INFO     | __main__:<module>:203 - bdrs.csv | TSMC34.SA | XGBoost -> MSE: 17.629711, MAE: 3.209361
+2025-06-12 00:19:05.727 | INFO     | __main__:<module>:212 - bdrs.csv | TSMC34.SA | LSTM -> MSE: 8.467554, MAE: 2.240905
+2025-06-12 00:19:05.972 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | UNHH34.SA
+2025-06-12 00:19:34.171 | INFO     | __main__:<module>:194 - bdrs.csv | UNHH34.SA | RandomForest -> MSE: 1.975836, MAE: 0.815005
+2025-06-12 00:19:34.368 | INFO     | __main__:<module>:203 - bdrs.csv | UNHH34.SA | XGBoost -> MSE: 2.486850, MAE: 0.953923
+2025-06-12 00:19:34.560 | INFO     | __main__:<module>:212 - bdrs.csv | UNHH34.SA | LSTM -> MSE: 2.279630, MAE: 0.910988
+2025-06-12 00:19:34.850 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | VERZ34.SA
+2025-06-12 00:20:25.121 | INFO     | __main__:<module>:194 - bdrs.csv | VERZ34.SA | RandomForest -> MSE: 0.339972, MAE: 0.454876
+2025-06-12 00:20:25.331 | INFO     | __main__:<module>:203 - bdrs.csv | VERZ34.SA | XGBoost -> MSE: 0.501802, MAE: 0.557940
+2025-06-12 00:20:25.548 | INFO     | __main__:<module>:212 - bdrs.csv | VERZ34.SA | LSTM -> MSE: 0.410076, MAE: 0.481333
+2025-06-12 00:20:25.849 | INFO     | __main__:<module>:135 - Iniciando bdrs.csv | VISA34.SA
+2025-06-12 00:20:52.965 | INFO     | __main__:<module>:194 - bdrs.csv | VISA34.SA | RandomForest -> MSE: 2.833948, MAE: 1.334242
+2025-06-12 00:20:53.190 | INFO     | __main__:<module>:203 - bdrs.csv | VISA34.SA | XGBoost -> MSE: 7.166323, MAE: 2.223428
+2025-06-12 00:20:53.410 | INFO     | __main__:<module>:212 - bdrs.csv | VISA34.SA | LSTM -> MSE: 9.610592, MAE: 2.807784
+2025-06-12 00:20:53.930 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | BZ=F
+2025-06-12 00:21:44.166 | INFO     | __main__:<module>:194 - commodities.csv | BZ=F | RandomForest -> MSE: 1.524176, MAE: 0.997887
+2025-06-12 00:21:44.374 | INFO     | __main__:<module>:203 - commodities.csv | BZ=F | XGBoost -> MSE: 1.739948, MAE: 0.999476
+2025-06-12 00:21:44.570 | INFO     | __main__:<module>:212 - commodities.csv | BZ=F | LSTM -> MSE: 1.370163, MAE: 0.968080
+2025-06-12 00:21:44.885 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | GC=F
+2025-06-12 00:22:34.231 | INFO     | __main__:<module>:194 - commodities.csv | GC=F | RandomForest -> MSE: 109854.365823, MAE: 325.672332
+2025-06-12 00:22:34.432 | INFO     | __main__:<module>:203 - commodities.csv | GC=F | XGBoost -> MSE: 167572.136842, MAE: 404.697713
+2025-06-12 00:22:34.637 | INFO     | __main__:<module>:212 - commodities.csv | GC=F | LSTM -> MSE: 3125.329567, MAE: 43.140983
+2025-06-12 00:22:34.943 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | KC=F
+2025-06-12 00:23:24.148 | INFO     | __main__:<module>:194 - commodities.csv | KC=F | RandomForest -> MSE: 305.118810, MAE: 14.483332
+2025-06-12 00:23:24.375 | INFO     | __main__:<module>:203 - commodities.csv | KC=F | XGBoost -> MSE: 1091.062547, MAE: 28.887259
+2025-06-12 00:23:24.606 | INFO     | __main__:<module>:212 - commodities.csv | KC=F | LSTM -> MSE: 49.539322, MAE: 5.500930
+2025-06-12 00:23:24.948 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | LE=F
+2025-06-12 00:24:13.844 | INFO     | __main__:<module>:194 - commodities.csv | LE=F | RandomForest -> MSE: 157.979985, MAE: 11.960381
+2025-06-12 00:24:14.057 | INFO     | __main__:<module>:203 - commodities.csv | LE=F | XGBoost -> MSE: 235.714069, MAE: 14.859258
+2025-06-12 00:24:14.287 | INFO     | __main__:<module>:212 - commodities.csv | LE=F | LSTM -> MSE: 7.512970, MAE: 1.822777
+2025-06-12 00:24:14.610 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | SI=F
+2025-06-12 00:25:00.293 | INFO     | __main__:<module>:194 - commodities.csv | SI=F | RandomForest -> MSE: 1.896201, MAE: 0.868352
+2025-06-12 00:25:00.534 | INFO     | __main__:<module>:203 - commodities.csv | SI=F | XGBoost -> MSE: 2.522424, MAE: 1.082175
+2025-06-12 00:25:00.765 | INFO     | __main__:<module>:212 - commodities.csv | SI=F | LSTM -> MSE: 0.346524, MAE: 0.433936
+2025-06-12 00:25:01.036 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | ZC=F
+2025-06-12 00:25:29.777 | INFO     | __main__:<module>:194 - commodities.csv | ZC=F | RandomForest -> MSE: 46.469160, MAE: 5.931750
+2025-06-12 00:25:29.998 | INFO     | __main__:<module>:203 - commodities.csv | ZC=F | XGBoost -> MSE: 40.629730, MAE: 5.178610
+2025-06-12 00:25:30.206 | INFO     | __main__:<module>:212 - commodities.csv | ZC=F | LSTM -> MSE: 71.483713, MAE: 6.928722
+2025-06-12 00:25:30.520 | INFO     | __main__:<module>:135 - Iniciando commodities.csv | ZS=F
+2025-06-12 00:26:17.459 | INFO     | __main__:<module>:194 - commodities.csv | ZS=F | RandomForest -> MSE: 97.992909, MAE: 7.737167
+2025-06-12 00:26:17.696 | INFO     | __main__:<module>:203 - commodities.csv | ZS=F | XGBoost -> MSE: 117.792092, MAE: 8.439848
+2025-06-12 00:26:17.909 | INFO     | __main__:<module>:212 - commodities.csv | ZS=F | LSTM -> MSE: 95.517677, MAE: 7.912980
+2025-06-12 00:26:18.724 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | ADA-USD
+2025-06-12 00:26:59.470 | INFO     | __main__:<module>:194 - criptos.csv | ADA-USD | RandomForest -> MSE: 0.001083, MAE: 0.027403
+2025-06-12 00:26:59.669 | INFO     | __main__:<module>:203 - criptos.csv | ADA-USD | XGBoost -> MSE: 0.001270, MAE: 0.030664
+2025-06-12 00:26:59.886 | INFO     | __main__:<module>:212 - criptos.csv | ADA-USD | LSTM -> MSE: 0.000652, MAE: 0.020569
+2025-06-12 00:27:00.221 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | AVAX-USD
+2025-06-12 00:27:29.509 | INFO     | __main__:<module>:194 - criptos.csv | AVAX-USD | RandomForest -> MSE: 1.172219, MAE: 0.847665
+2025-06-12 00:27:29.743 | INFO     | __main__:<module>:203 - criptos.csv | AVAX-USD | XGBoost -> MSE: 1.137781, MAE: 0.854947
+2025-06-12 00:27:29.973 | INFO     | __main__:<module>:212 - criptos.csv | AVAX-USD | LSTM -> MSE: 1.026180, MAE: 0.830635
+2025-06-12 00:27:30.268 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | BNB-USD
+2025-06-12 00:28:20.771 | INFO     | __main__:<module>:194 - criptos.csv | BNB-USD | RandomForest -> MSE: 347.601042, MAE: 15.016661
+2025-06-12 00:28:20.981 | INFO     | __main__:<module>:203 - criptos.csv | BNB-USD | XGBoost -> MSE: 333.948900, MAE: 14.132387
+2025-06-12 00:28:21.190 | INFO     | __main__:<module>:212 - criptos.csv | BNB-USD | LSTM -> MSE: 157.061383, MAE: 9.771653
+2025-06-12 00:28:21.531 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | BTC-USD
+2025-06-12 00:29:17.586 | INFO     | __main__:<module>:194 - criptos.csv | BTC-USD | RandomForest -> MSE: 28247773.652310, MAE: 4543.626359
+2025-06-12 00:29:17.788 | INFO     | __main__:<module>:203 - criptos.csv | BTC-USD | XGBoost -> MSE: 35274640.738774, MAE: 5297.968750
+2025-06-12 00:29:18.002 | INFO     | __main__:<module>:212 - criptos.csv | BTC-USD | LSTM -> MSE: 3519382.122921, MAE: 1432.319271
+2025-06-12 00:29:18.319 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | DOGE-USD
+2025-06-12 00:30:15.421 | INFO     | __main__:<module>:194 - criptos.csv | DOGE-USD | RandomForest -> MSE: 0.000098, MAE: 0.007617
+2025-06-12 00:30:15.629 | INFO     | __main__:<module>:203 - criptos.csv | DOGE-USD | XGBoost -> MSE: 0.000104, MAE: 0.007833
+2025-06-12 00:30:15.822 | INFO     | __main__:<module>:212 - criptos.csv | DOGE-USD | LSTM -> MSE: 0.000086, MAE: 0.007081
+2025-06-12 00:30:16.129 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | DOT-USD
+2025-06-12 00:30:49.811 | INFO     | __main__:<module>:194 - criptos.csv | DOT-USD | RandomForest -> MSE: 0.021328, MAE: 0.118145
+2025-06-12 00:30:50.018 | INFO     | __main__:<module>:203 - criptos.csv | DOT-USD | XGBoost -> MSE: 0.028284, MAE: 0.124894
+2025-06-12 00:30:50.221 | INFO     | __main__:<module>:212 - criptos.csv | DOT-USD | LSTM -> MSE: 0.028157, MAE: 0.142005
+2025-06-12 00:30:50.529 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | ETH-USD
+2025-06-12 00:31:31.173 | INFO     | __main__:<module>:194 - criptos.csv | ETH-USD | RandomForest -> MSE: 5062.447791, MAE: 51.631864
+2025-06-12 00:31:31.376 | INFO     | __main__:<module>:203 - criptos.csv | ETH-USD | XGBoost -> MSE: 7907.205785, MAE: 65.915015
+2025-06-12 00:31:31.568 | INFO     | __main__:<module>:212 - criptos.csv | ETH-USD | LSTM -> MSE: 6544.561533, MAE: 59.558301
+2025-06-12 00:31:31.877 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | LINK-USD
+2025-06-12 00:32:28.138 | INFO     | __main__:<module>:194 - criptos.csv | LINK-USD | RandomForest -> MSE: 0.369405, MAE: 0.456924
+2025-06-12 00:32:28.337 | INFO     | __main__:<module>:203 - criptos.csv | LINK-USD | XGBoost -> MSE: 0.424375, MAE: 0.549204
+2025-06-12 00:32:28.540 | INFO     | __main__:<module>:212 - criptos.csv | LINK-USD | LSTM -> MSE: 0.515298, MAE: 0.548353
+2025-06-12 00:32:28.819 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | LTC-USD
+2025-06-12 00:33:19.541 | INFO     | __main__:<module>:194 - criptos.csv | LTC-USD | RandomForest -> MSE: 9.924412, MAE: 2.536107
+2025-06-12 00:33:19.804 | INFO     | __main__:<module>:203 - criptos.csv | LTC-USD | XGBoost -> MSE: 12.713490, MAE: 2.892941
+2025-06-12 00:33:20.058 | INFO     | __main__:<module>:212 - criptos.csv | LTC-USD | LSTM -> MSE: 39.178640, MAE: 5.622798
+2025-06-12 00:33:20.424 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | MATIC-USD
+2025-06-12 00:34:01.837 | INFO     | __main__:<module>:194 - criptos.csv | MATIC-USD | RandomForest -> MSE: 0.005649, MAE: 0.064588
+2025-06-12 00:34:03.341 | INFO     | __main__:<module>:203 - criptos.csv | MATIC-USD | XGBoost -> MSE: 0.003425, MAE: 0.053469
+2025-06-12 00:34:03.533 | INFO     | __main__:<module>:212 - criptos.csv | MATIC-USD | LSTM -> MSE: 0.000280, MAE: 0.015177
+2025-06-12 00:34:03.828 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | NEAR-USD
+2025-06-12 00:34:39.051 | INFO     | __main__:<module>:194 - criptos.csv | NEAR-USD | RandomForest -> MSE: 0.017030, MAE: 0.092553
+2025-06-12 00:34:39.254 | INFO     | __main__:<module>:203 - criptos.csv | NEAR-USD | XGBoost -> MSE: 0.027334, MAE: 0.127772
+2025-06-12 00:34:39.463 | INFO     | __main__:<module>:212 - criptos.csv | NEAR-USD | LSTM -> MSE: 0.034777, MAE: 0.148767
+2025-06-12 00:34:39.761 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | SHIB-USD
+2025-06-12 00:35:12.420 | INFO     | __main__:<module>:194 - criptos.csv | SHIB-USD | RandomForest -> MSE: 0.000000, MAE: 0.000001
+2025-06-12 00:35:12.629 | INFO     | __main__:<module>:203 - criptos.csv | SHIB-USD | XGBoost -> MSE: 0.000000, MAE: 0.000001
+2025-06-12 00:35:12.829 | INFO     | __main__:<module>:212 - criptos.csv | SHIB-USD | LSTM -> MSE: 0.000000, MAE: 0.000001
+2025-06-12 00:35:13.127 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | SOL-USD
+2025-06-12 00:35:43.981 | INFO     | __main__:<module>:194 - criptos.csv | SOL-USD | RandomForest -> MSE: 29.935569, MAE: 4.308926
+2025-06-12 00:35:44.208 | INFO     | __main__:<module>:203 - criptos.csv | SOL-USD | XGBoost -> MSE: 34.248901, MAE: 4.970507
+2025-06-12 00:35:44.414 | INFO     | __main__:<module>:212 - criptos.csv | SOL-USD | LSTM -> MSE: 39.284800, MAE: 5.048809
+2025-06-12 00:35:44.731 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | SUI-USD
+2025-06-12 00:36:01.255 | INFO     | __main__:<module>:194 - criptos.csv | SUI-USD | RandomForest -> MSE: 0.000000, MAE: 0.000074
+2025-06-12 00:36:01.496 | INFO     | __main__:<module>:203 - criptos.csv | SUI-USD | XGBoost -> MSE: 0.000000, MAE: 0.000079
+2025-06-12 00:36:01.748 | INFO     | __main__:<module>:212 - criptos.csv | SUI-USD | LSTM -> MSE: 0.000000, MAE: 0.000067
+2025-06-12 00:36:02.107 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | TON-USD
+2025-06-12 00:36:25.575 | INFO     | __main__:<module>:194 - criptos.csv | TON-USD | RandomForest -> MSE: 0.664581, MAE: 0.498920
+2025-06-12 00:36:25.813 | INFO     | __main__:<module>:203 - criptos.csv | TON-USD | XGBoost -> MSE: 0.637517, MAE: 0.496468
+2025-06-12 00:36:26.051 | INFO     | __main__:<module>:212 - criptos.csv | TON-USD | LSTM -> MSE: 0.569122, MAE: 0.448903
+2025-06-12 00:36:26.365 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | UNI-USD
+2025-06-12 00:37:06.882 | INFO     | __main__:<module>:194 - criptos.csv | UNI-USD | RandomForest -> MSE: 0.000000, MAE: 0.000004
+2025-06-12 00:37:07.124 | INFO     | __main__:<module>:203 - criptos.csv | UNI-USD | XGBoost -> MSE: 0.000000, MAE: 0.000006
+2025-06-12 00:37:07.351 | INFO     | __main__:<module>:212 - criptos.csv | UNI-USD | LSTM -> MSE: 0.000007, MAE: 0.002681
+2025-06-12 00:37:07.659 | INFO     | __main__:<module>:135 - Iniciando criptos.csv | XRP-USD
+2025-06-12 00:37:46.646 | INFO     | __main__:<module>:194 - criptos.csv | XRP-USD | RandomForest -> MSE: 0.005594, MAE: 0.058604
+2025-06-12 00:37:46.850 | INFO     | __main__:<module>:203 - criptos.csv | XRP-USD | XGBoost -> MSE: 0.012066, MAE: 0.079820
+2025-06-12 00:37:47.051 | INFO     | __main__:<module>:212 - criptos.csv | XRP-USD | LSTM -> MSE: 0.006654, MAE: 0.070524
+2025-06-12 00:37:47.558 | INFO     | __main__:<module>:135 - Iniciando juros.csv | EDV
+2025-06-12 00:38:47.377 | INFO     | __main__:<module>:194 - juros.csv | EDV | RandomForest -> MSE: 0.733887, MAE: 0.669857
+2025-06-12 00:38:47.620 | INFO     | __main__:<module>:203 - juros.csv | EDV | XGBoost -> MSE: 1.760046, MAE: 1.066356
+2025-06-12 00:38:47.860 | INFO     | __main__:<module>:212 - juros.csv | EDV | LSTM -> MSE: 0.603062, MAE: 0.643256
+2025-06-12 00:38:48.153 | INFO     | __main__:<module>:135 - Iniciando juros.csv | ^FVX
+2025-06-12 00:39:42.528 | INFO     | __main__:<module>:194 - juros.csv | ^FVX | RandomForest -> MSE: 0.004242, MAE: 0.051476
+2025-06-12 00:39:42.749 | INFO     | __main__:<module>:203 - juros.csv | ^FVX | XGBoost -> MSE: 0.005135, MAE: 0.063835
+2025-06-12 00:39:42.977 | INFO     | __main__:<module>:212 - juros.csv | ^FVX | LSTM -> MSE: 0.004319, MAE: 0.055144
+2025-06-12 00:39:43.318 | INFO     | __main__:<module>:135 - Iniciando juros.csv | ^IRX
+2025-06-12 00:40:26.994 | INFO     | __main__:<module>:194 - juros.csv | ^IRX | RandomForest -> MSE: 0.000519, MAE: 0.018621
+2025-06-12 00:40:27.198 | INFO     | __main__:<module>:203 - juros.csv | ^IRX | XGBoost -> MSE: 0.000527, MAE: 0.015655
+2025-06-12 00:40:27.402 | INFO     | __main__:<module>:212 - juros.csv | ^IRX | LSTM -> MSE: 0.003175, MAE: 0.053432
+2025-06-12 00:40:27.709 | INFO     | __main__:<module>:135 - Iniciando juros.csv | ^TNX
+2025-06-12 00:41:16.657 | INFO     | __main__:<module>:194 - juros.csv | ^TNX | RandomForest -> MSE: 0.002861, MAE: 0.043257
+2025-06-12 00:41:16.861 | INFO     | __main__:<module>:203 - juros.csv | ^TNX | XGBoost -> MSE: 0.004411, MAE: 0.053391
+2025-06-12 00:41:17.054 | INFO     | __main__:<module>:212 - juros.csv | ^TNX | LSTM -> MSE: 0.007149, MAE: 0.068972
+2025-06-12 00:41:17.363 | INFO     | __main__:<module>:135 - Iniciando juros.csv | ^TYX
+2025-06-12 00:42:08.453 | INFO     | __main__:<module>:194 - juros.csv | ^TYX | RandomForest -> MSE: 0.002921, MAE: 0.043059
+2025-06-12 00:42:08.658 | INFO     | __main__:<module>:203 - juros.csv | ^TYX | XGBoost -> MSE: 0.006060, MAE: 0.069737
+2025-06-12 00:42:08.863 | INFO     | __main__:<module>:212 - juros.csv | ^TYX | LSTM -> MSE: 0.002610, MAE: 0.041403
+2025-06-12 00:42:09.261 | INFO     | __main__:<module>:135 - Iniciando moedas.csv | EURBRL=X
+2025-06-12 00:43:03.581 | INFO     | __main__:<module>:194 - moedas.csv | EURBRL=X | RandomForest -> MSE: 0.002630, MAE: 0.040191
+2025-06-12 00:43:03.805 | INFO     | __main__:<module>:203 - moedas.csv | EURBRL=X | XGBoost -> MSE: 0.002717, MAE: 0.040868
+2025-06-12 00:43:04.046 | INFO     | __main__:<module>:212 - moedas.csv | EURBRL=X | LSTM -> MSE: 0.002049, MAE: 0.033781
+2025-06-12 00:43:04.338 | INFO     | __main__:<module>:135 - Iniciando moedas.csv | USDBRL=X
+2025-06-12 00:43:51.934 | INFO     | __main__:<module>:194 - moedas.csv | USDBRL=X | RandomForest -> MSE: 0.001669, MAE: 0.034117
+2025-06-12 00:43:52.300 | INFO     | __main__:<module>:203 - moedas.csv | USDBRL=X | XGBoost -> MSE: 0.001914, MAE: 0.035859
+2025-06-12 00:43:52.632 | INFO     | __main__:<module>:212 - moedas.csv | USDBRL=X | LSTM -> MSE: 0.001307, MAE: 0.030161
+2025-06-12 00:43:53.072 | INFO     | __main__:<module>:235 - Pipeline de forecasting DEEP (ML models) finalizado!

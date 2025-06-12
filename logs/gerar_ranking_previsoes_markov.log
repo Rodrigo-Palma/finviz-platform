@@ -40,3 +40,24 @@
 2025-06-09 23:35:59.663 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
 2025-06-09 23:35:59.744 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
 2025-06-09 23:35:59.744 | INFO     | __main__:<module>:117 - Processo finalizado.
+2025-06-12 02:04:10.802 | INFO     | __main__:<module>:40 - Iniciando geração de ranking e previsões dos melhores modelos (Markov)...
+2025-06-12 02:04:11.203 | INFO     | __main__:<module>:60 - [OK] Ranking global salvo em resultados\forecasting_markov\ranking_modelos.csv
+2025-06-12 02:04:11.203 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-12 02:04:11.231 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-12 02:04:11.368 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_criptos.csv
+2025-06-12 02:04:11.368 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-12 02:04:11.379 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-12 02:04:11.413 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_juros.csv
+2025-06-12 02:04:11.414 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-12 02:04:11.538 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-12 02:04:11.979 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
+2025-06-12 02:04:11.980 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-12 02:04:11.986 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-12 02:04:12.001 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
+2025-06-12 02:04:12.001 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-12 02:04:12.045 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-12 02:04:12.200 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_bdrs.csv
+2025-06-12 02:04:12.200 | INFO     | __main__:<module>:66 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-12 02:04:12.212 | INFO     | __main__:<module>:76 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-12 02:04:12.271 | INFO     | __main__:<module>:115 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
+2025-06-12 02:04:12.271 | INFO     | __main__:<module>:117 - Processo finalizado.

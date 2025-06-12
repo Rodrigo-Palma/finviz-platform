@@ -1,0 +1,175 @@
+2025-06-12 01:07:59.003 | INFO     | __main__:<module>:55 - Iniciando geração de ranking e previsões dos melhores modelos...
+2025-06-12 01:07:59.025 | INFO     | __main__:<module>:68 - [OK] Ranking global salvo em resultados\forecasting_deep\metricas\ranking_modelos.csv
+2025-06-12 01:07:59.027 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-12 01:07:59.028 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-12 01:07:59.031 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | SHIB-USD | XGBoost
+2025-06-12 01:08:00.109 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | UNI-USD | RandomForest
+2025-06-12 01:08:01.176 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | SUI-USD | RandomForest
+2025-06-12 01:08:01.982 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | DOGE-USD | LSTM
+2025-06-12 01:08:03.786 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | MATIC-USD | LSTM
+2025-06-12 01:08:05.134 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | ADA-USD | LSTM
+2025-06-12 01:08:06.444 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | XRP-USD | RandomForest
+2025-06-12 01:08:07.056 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | NEAR-USD | RandomForest
+2025-06-12 01:08:07.637 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | DOT-USD | RandomForest
+2025-06-12 01:08:08.157 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | LINK-USD | RandomForest
+2025-06-12 01:08:08.689 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | TON-USD | LSTM
+2025-06-12 01:08:09.975 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | AVAX-USD | LSTM
+2025-06-12 01:08:11.297 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | LTC-USD | RandomForest
+2025-06-12 01:08:11.894 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | SOL-USD | RandomForest
+2025-06-12 01:08:12.453 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | BNB-USD | LSTM
+2025-06-12 01:08:13.731 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | ETH-USD | RandomForest
+2025-06-12 01:08:14.260 | INFO     | __main__:<module>:96 - Prevendo 15 dias: criptos.csv | BTC-USD | LSTM
+2025-06-12 01:08:15.545 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_criptos.csv
+2025-06-12 01:08:15.545 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-12 01:08:15.547 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-12 01:08:15.548 | INFO     | __main__:<module>:96 - Prevendo 15 dias: juros.csv | ^IRX | RandomForest
+2025-06-12 01:08:15.788 | INFO     | __main__:<module>:96 - Prevendo 15 dias: juros.csv | ^TYX | LSTM
+2025-06-12 01:08:16.826 | INFO     | __main__:<module>:96 - Prevendo 15 dias: juros.csv | ^TNX | RandomForest
+2025-06-12 01:08:17.177 | INFO     | __main__:<module>:96 - Prevendo 15 dias: juros.csv | ^FVX | RandomForest
+2025-06-12 01:08:17.496 | INFO     | __main__:<module>:96 - Prevendo 15 dias: juros.csv | EDV | LSTM
+2025-06-12 01:08:18.760 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_juros.csv
+2025-06-12 01:08:18.760 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-12 01:08:18.762 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-12 01:08:18.763 | INFO     | __main__:<module>:96 - Prevendo 15 dias: moedas.csv | USDBRL=X | LSTM
+2025-06-12 01:08:19.771 | INFO     | __main__:<module>:96 - Prevendo 15 dias: moedas.csv | EURBRL=X | LSTM
+2025-06-12 01:08:20.735 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
+2025-06-12 01:08:20.737 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-12 01:08:20.739 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-12 01:08:20.740 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CRFB3.SA | LSTM
+2025-06-12 01:08:24.341 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RAIZ4.SA | LSTM
+2025-06-12 01:08:28.187 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | STBP3.SA | LSTM
+2025-06-12 01:08:31.005 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CMIN3.SA | RandomForest
+2025-06-12 01:08:33.145 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CVCB3.SA | RandomForest
+2025-06-12 01:08:35.432 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | COGN3.SA | RandomForest
+2025-06-12 01:08:37.652 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ABEV3.SA | LSTM
+2025-06-12 01:08:40.601 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | USIM5.SA | RandomForest
+2025-06-12 01:08:42.773 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PETZ3.SA | XGBoost
+2025-06-12 01:08:44.750 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ITSA4.SA | LSTM
+2025-06-12 01:08:47.648 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CMIG4.SA | LSTM
+2025-06-12 01:08:50.423 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | LWSA3.SA | XGBoost
+2025-06-12 01:08:52.650 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PCAR3.SA | RandomForest
+2025-06-12 01:08:54.749 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CPLE6.SA | LSTM
+2025-06-12 01:08:57.623 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | POMO4.SA | LSTM
+2025-06-12 01:09:00.430 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CSAN3.SA | LSTM
+2025-06-12 01:09:03.481 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | GOAU4.SA | XGBoost
+2025-06-12 01:09:05.424 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BRAP4.SA | RandomForest
+2025-06-12 01:09:07.746 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BEEF3.SA | RandomForest
+2025-06-12 01:09:09.768 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CXSE3.SA | LSTM
+2025-06-12 01:09:12.592 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | VAMO3.SA | LSTM
+2025-06-12 01:09:15.439 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | AURE3.SA | LSTM
+2025-06-12 01:09:18.305 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | FLRY3.SA | LSTM
+2025-06-12 01:09:21.146 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CCRO3.SA | XGBoost
+2025-06-12 01:09:23.386 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ENEV3.SA | RandomForest
+2025-06-12 01:09:25.478 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | MRVE3.SA | LSTM
+2025-06-12 01:09:28.452 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CSNA3.SA | LSTM
+2025-06-12 01:09:31.701 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | AZUL4.SA | LSTM
+2025-06-12 01:09:34.741 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ALOS3.SA | LSTM
+2025-06-12 01:09:37.719 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | KLBN11.SA | RandomForest
+2025-06-12 01:09:39.721 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | SLCE3.SA | XGBoost
+2025-06-12 01:09:41.662 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ISAE4.SA | RandomForest
+2025-06-12 01:09:43.851 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | NTCO3.SA | LSTM
+2025-06-12 01:09:46.648 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | B3SA3.SA | RandomForest
+2025-06-12 01:09:48.932 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | VBBR3.SA | LSTM
+2025-06-12 01:09:53.821 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | MULT3.SA | RandomForest
+2025-06-12 01:09:55.850 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BBDC3.SA | LSTM
+2025-06-12 01:09:58.618 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ASAI3.SA | LSTM
+2025-06-12 01:10:01.506 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | GGBR4.SA | LSTM
+2025-06-12 01:10:04.703 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | MGLU3.SA | RandomForest
+2025-06-12 01:10:06.847 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BRKM5.SA | XGBoost
+2025-06-12 01:10:08.905 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RECV3.SA | LSTM
+2025-06-12 01:10:11.814 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | IGTI11.SA | RandomForest
+2025-06-12 01:10:13.963 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | TIMS3.SA | LSTM
+2025-06-12 01:10:17.026 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | VIVT3.SA | LSTM
+2025-06-12 01:10:19.941 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | UGPA3.SA | LSTM
+2025-06-12 01:10:23.225 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BBDC4.SA | LSTM
+2025-06-12 01:10:26.210 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | LREN3.SA | XGBoost
+2025-06-12 01:10:28.424 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PETR4.SA | RandomForest
+2025-06-12 01:10:30.517 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RAIL3.SA | LSTM
+2025-06-12 01:10:34.386 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | SMTO3.SA | LSTM
+2025-06-12 01:10:37.443 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ELET3.SA | RandomForest
+2025-06-12 01:10:39.473 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BRFS3.SA | XGBoost
+2025-06-12 01:10:41.462 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | SANB11.SA | LSTM
+2025-06-12 01:10:44.464 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CPFE3.SA | LSTM
+2025-06-12 01:10:47.258 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | VIVA3.SA | RandomForest
+2025-06-12 01:10:49.298 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | CYRE3.SA | RandomForest
+2025-06-12 01:10:51.404 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | EGIE3.SA | RandomForest
+2025-06-12 01:10:53.614 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | HYPE3.SA | LSTM
+2025-06-12 01:10:56.542 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ITUB4.SA | LSTM
+2025-06-12 01:10:59.396 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | AMOB3.SA | LSTM
+2025-06-12 01:11:02.429 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | TOTS3.SA | LSTM
+2025-06-12 01:11:05.360 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PETR3.SA | RandomForest
+2025-06-12 01:11:07.606 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | YDUQ3.SA | RandomForest
+2025-06-12 01:11:09.647 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | TAEE11.SA | LSTM
+2025-06-12 01:11:12.427 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | EQTL3.SA | LSTM
+2025-06-12 01:11:16.145 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | VALE3.SA | RandomForest
+2025-06-12 01:11:18.209 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BRAV3.SA | LSTM
+2025-06-12 01:11:21.035 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RADL3.SA | RandomForest
+2025-06-12 01:11:23.319 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ELET6.SA | LSTM
+2025-06-12 01:11:26.288 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | ENGI11.SA | LSTM
+2025-06-12 01:11:29.123 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BBAS3.SA | LSTM
+2025-06-12 01:11:32.091 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BBSE3.SA | LSTM
+2025-06-12 01:11:35.389 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PRIO3.SA | XGBoost
+2025-06-12 01:11:37.986 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | SUZB3.SA | LSTM
+2025-06-12 01:11:40.885 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RENT3.SA | RandomForest
+2025-06-12 01:11:42.907 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | MRFG3.SA | LSTM
+2025-06-12 01:11:45.879 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | RDOR3.SA | LSTM
+2025-06-12 01:11:48.883 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | JBSS3.SA | LSTM
+2025-06-12 01:11:53.531 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | BPAC11.SA | LSTM
+2025-06-12 01:11:56.422 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | PSSA3.SA | LSTM
+2025-06-12 01:11:59.202 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | IRBR3.SA | RandomForest
+2025-06-12 01:12:01.352 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | EMBR3.SA | LSTM
+2025-06-12 01:12:04.371 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | HAPV3.SA | RandomForest
+2025-06-12 01:12:06.524 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | WEGE3.SA | LSTM
+2025-06-12 01:12:09.525 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | AZZA3.SA | XGBoost
+2025-06-12 01:12:11.492 | INFO     | __main__:<module>:96 - Prevendo 15 dias: acoes_ibov.csv | SBSP3.SA | LSTM
+2025-06-12 01:12:14.678 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
+2025-06-12 01:12:14.678 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-12 01:12:14.681 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-12 01:12:14.682 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | NVDC34.SA | RandomForest
+2025-06-12 01:12:15.577 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | CMCS34.SA | RandomForest
+2025-06-12 01:12:16.724 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | ITLC34.SA | LSTM
+2025-06-12 01:12:18.842 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | VERZ34.SA | RandomForest
+2025-06-12 01:12:19.766 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | PFIZ34.SA | LSTM
+2025-06-12 01:12:21.508 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | BABA34.SA | LSTM
+2025-06-12 01:12:23.372 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | RIGG34.SA | LSTM
+2025-06-12 01:12:25.112 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | NIKE34.SA | LSTM
+2025-06-12 01:12:26.859 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | JNJB34.SA | RandomForest
+2025-06-12 01:12:27.728 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | COCA34.SA | RandomForest
+2025-06-12 01:12:28.640 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | INBR32.SA | LSTM
+2025-06-12 01:12:30.313 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | DISB34.SA | LSTM
+2025-06-12 01:12:32.009 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | BOAC34.SA | RandomForest
+2025-06-12 01:12:32.972 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | AIRB34.SA | LSTM
+2025-06-12 01:12:34.809 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | CHVX34.SA | RandomForest
+2025-06-12 01:12:35.733 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | AMGN34.SA | LSTM
+2025-06-12 01:12:37.656 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | AMZO34.SA | LSTM
+2025-06-12 01:12:39.663 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | HOME34.SA | RandomForest
+2025-06-12 01:12:40.711 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | AAPL34.SA | LSTM
+2025-06-12 01:12:42.416 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | UNHH34.SA | RandomForest
+2025-06-12 01:12:43.306 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | AURA33.SA | LSTM
+2025-06-12 01:12:45.089 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | GMCO34.SA | LSTM
+2025-06-12 01:12:46.819 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | GOGL34.SA | RandomForest
+2025-06-12 01:12:47.720 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | VISA34.SA | RandomForest
+2025-06-12 01:12:48.636 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | MSFT34.SA | RandomForest
+2025-06-12 01:12:49.505 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | MSCD34.SA | LSTM
+2025-06-12 01:12:51.235 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | SSFO34.SA | XGBoost
+2025-06-12 01:12:52.301 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | BERK34.SA | LSTM
+2025-06-12 01:12:54.075 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | JPMC34.SA | RandomForest
+2025-06-12 01:12:54.971 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | NFLX34.SA | LSTM
+2025-06-12 01:12:56.682 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | TSMC34.SA | LSTM
+2025-06-12 01:12:58.363 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | TSLA34.SA | RandomForest
+2025-06-12 01:12:59.232 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | MELI34.SA | LSTM
+2025-06-12 01:13:00.956 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | M1TA34.SA | RandomForest
+2025-06-12 01:13:01.942 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | BKNG34.SA | RandomForest
+2025-06-12 01:13:02.957 | INFO     | __main__:<module>:96 - Prevendo 15 dias: bdrs.csv | IVVB11.SA | LSTM
+2025-06-12 01:13:04.629 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_bdrs.csv
+2025-06-12 01:13:04.629 | INFO     | __main__:<module>:74 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-12 01:13:04.632 | INFO     | __main__:<module>:86 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-12 01:13:04.633 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | SI=F | LSTM
+2025-06-12 01:13:05.769 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | BZ=F | LSTM
+2025-06-12 01:13:07.318 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | LE=F | LSTM
+2025-06-12 01:13:08.577 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | ZC=F | XGBoost
+2025-06-12 01:13:08.868 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | KC=F | LSTM
+2025-06-12 01:13:10.024 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | ZS=F | LSTM
+2025-06-12 01:13:11.270 | INFO     | __main__:<module>:96 - Prevendo 15 dias: commodities.csv | GC=F | LSTM
+2025-06-12 01:13:12.348 | INFO     | __main__:<module>:171 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
+2025-06-12 01:13:12.348 | INFO     | __main__:<module>:173 - Processo finalizado.
