@@ -2829,3 +2829,974 @@ ValueError: Input X contains infinity or a value too large for dtype('float64').
 2025-06-12 01:03:48.122 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2131
 2025-06-12 01:03:48.130 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
 2025-06-12 01:03:48.130 | INFO     | __main__:<module>:177 - Processo finalizado com sucesso.
+2025-06-15 01:28:16.924 | INFO     | __main__:<module>:35 - Iniciando geração de ranking e previsões dos melhores modelos (Financeiro)...
+2025-06-15 01:28:16.928 | INFO     | __main__:<module>:41 - [OK] Features_selecionadas carregado com sucesso.
+2025-06-15 01:28:16.929 | INFO     | __main__:<module>:48 - Total de arquivos de avaliação encontrados: 6
+2025-06-15 01:28:16.929 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_acoes_ibov.csv
+2025-06-15 01:28:16.956 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_acoes_ibov.csv
+2025-06-15 01:28:16.957 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_bdrs.csv
+2025-06-15 01:28:16.971 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_bdrs.csv
+2025-06-15 01:28:16.972 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_commodities.csv
+2025-06-15 01:28:16.985 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_commodities.csv
+2025-06-15 01:28:16.986 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_criptos.csv
+2025-06-15 01:28:17.000 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_criptos.csv
+2025-06-15 01:28:17.000 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_juros.csv
+2025-06-15 01:28:17.014 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_juros.csv
+2025-06-15 01:28:17.014 | INFO     | __main__:<module>:54 - Processando avaliação: avaliacao_moedas.csv
+2025-06-15 01:28:17.028 | INFO     | __main__:<module>:70 - [OK] Avaliação processada com sucesso: avaliacao_moedas.csv
+2025-06-15 01:28:17.033 | INFO     | __main__:<module>:81 - [OK] Ranking global salvo em resultados\financeiro\ranking_modelos.csv
+2025-06-15 01:28:17.034 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: criptos.csv
+2025-06-15 01:28:17.038 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_criptos.csv
+2025-06-15 01:28:17.038 | INFO     | __main__:<module>:101 - Carregando dados transformados para criptos.csv...
+2025-06-15 01:28:22.834 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 34947 registros.
+2025-06-15 01:28:22.834 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\criptos_modelo.pkl...
+2025-06-15 01:28:24.558 | WARNING  | __main__:<module>:117 - [WARN] Modelo criptos.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:28:24.559 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 27 features.
+2025-06-15 01:28:24.619 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 25 features.
+2025-06-15 01:28:24.643 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ADA-USD
+2025-06-15 01:28:24.652 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.658 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.665 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.672 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.679 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.690 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AVAX-USD
+2025-06-15 01:28:24.697 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.704 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.712 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.719 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.726 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.736 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BNB-USD
+2025-06-15 01:28:24.751 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.761 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.768 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.775 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.782 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.792 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BTC-USD
+2025-06-15 01:28:24.801 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.808 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.815 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.822 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.828 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.839 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: DOGE-USD
+2025-06-15 01:28:24.847 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.854 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.861 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.868 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.876 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.888 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: DOT-USD
+2025-06-15 01:28:24.896 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.903 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.911 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.918 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.929 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:24.947 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ETH-USD
+2025-06-15 01:28:24.963 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:24.974 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:24.982 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:24.990 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:24.998 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.010 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: LINK-USD
+2025-06-15 01:28:25.020 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.027 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.035 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.043 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.049 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.058 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: LTC-USD
+2025-06-15 01:28:25.067 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.074 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.081 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.088 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.094 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.105 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MATIC-USD
+2025-06-15 01:28:25.113 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.121 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.129 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.137 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.144 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.154 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: NEAR-USD
+2025-06-15 01:28:25.165 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.173 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.180 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.187 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.196 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.206 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SOL-USD
+2025-06-15 01:28:25.214 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.223 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.233 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.260 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.283 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.301 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TON-USD
+2025-06-15 01:28:25.312 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.323 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.333 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.341 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.353 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.366 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: XRP-USD
+2025-06-15 01:28:25.378 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1987
+2025-06-15 01:28:25.386 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1853
+2025-06-15 01:28:25.396 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2070
+2025-06-15 01:28:25.405 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2014
+2025-06-15 01:28:25.413 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2077
+2025-06-15 01:28:25.434 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_criptos.csv
+2025-06-15 01:28:25.435 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: bdrs.csv
+2025-06-15 01:28:25.440 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_bdrs.csv
+2025-06-15 01:28:25.441 | INFO     | __main__:<module>:101 - Carregando dados transformados para bdrs.csv...
+2025-06-15 01:28:38.293 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 77460 registros.
+2025-06-15 01:28:38.294 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\bdrs_modelo.pkl...
+2025-06-15 01:28:38.487 | WARNING  | __main__:<module>:117 - [WARN] Modelo bdrs.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:28:38.487 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 24 features.
+2025-06-15 01:28:38.588 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 17 features.
+2025-06-15 01:28:38.626 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AAPL34.SA
+2025-06-15 01:28:38.633 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.639 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.645 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.650 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.657 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.665 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AIRB34.SA
+2025-06-15 01:28:38.672 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.678 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.683 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.688 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.693 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.701 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AMGN34.SA
+2025-06-15 01:28:38.710 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.716 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.721 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.726 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.732 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.741 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AMZO34.SA
+2025-06-15 01:28:38.749 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.755 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.760 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.766 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.771 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.778 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AURA33.SA
+2025-06-15 01:28:38.786 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.791 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.797 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.802 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.807 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.815 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BABA34.SA
+2025-06-15 01:28:38.822 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.828 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.834 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.839 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.845 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.859 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BERK34.SA
+2025-06-15 01:28:38.876 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.884 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.891 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.896 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.902 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.913 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BKNG34.SA
+2025-06-15 01:28:38.923 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.933 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.940 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.946 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.951 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:38.960 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BOAC34.SA
+2025-06-15 01:28:38.969 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:38.974 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:38.980 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:38.985 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:38.991 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.000 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CHVX34.SA
+2025-06-15 01:28:39.010 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.015 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.021 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.026 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.031 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.039 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CMCS34.SA
+2025-06-15 01:28:39.048 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.053 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.058 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.063 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.068 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.076 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: COCA34.SA
+2025-06-15 01:28:39.085 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.090 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.096 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.100 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.105 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.114 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: DISB34.SA
+2025-06-15 01:28:39.123 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.129 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.134 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.140 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.145 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.154 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: GMCO34.SA
+2025-06-15 01:28:39.163 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.168 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.174 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.179 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.184 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.193 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: GOGL34.SA
+2025-06-15 01:28:39.201 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.206 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.212 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.218 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.224 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.234 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: HOME34.SA
+2025-06-15 01:28:39.244 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.255 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.262 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.269 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.275 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.285 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: INBR32.SA
+2025-06-15 01:28:39.293 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.300 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.307 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.313 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.320 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.329 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ITLC34.SA
+2025-06-15 01:28:39.340 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.347 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.353 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.359 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.366 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.376 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: IVVB11.SA
+2025-06-15 01:28:39.385 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.391 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.401 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.414 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.421 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.439 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: JNJB34.SA
+2025-06-15 01:28:39.448 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.456 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.464 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.471 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.477 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.486 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: JPMC34.SA
+2025-06-15 01:28:39.495 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.501 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.508 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.514 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.521 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.529 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: M1TA34.SA
+2025-06-15 01:28:39.536 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.543 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.548 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.554 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.559 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.567 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MELI34.SA
+2025-06-15 01:28:39.575 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.580 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.586 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.592 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.597 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.606 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MSCD34.SA
+2025-06-15 01:28:39.614 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.620 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.626 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.631 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.637 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.646 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MSFT34.SA
+2025-06-15 01:28:39.654 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.660 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.667 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.673 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.679 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.687 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: NFLX34.SA
+2025-06-15 01:28:39.695 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.701 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.707 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.712 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.718 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.726 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: NIKE34.SA
+2025-06-15 01:28:39.734 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.740 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.745 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.751 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.757 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.766 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: NVDC34.SA
+2025-06-15 01:28:39.774 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.779 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.785 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.790 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.796 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.804 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PFIZ34.SA
+2025-06-15 01:28:39.812 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.818 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.823 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.828 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.834 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.842 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RIGG34.SA
+2025-06-15 01:28:39.849 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.855 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.861 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.866 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.872 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.880 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SSFO34.SA
+2025-06-15 01:28:39.887 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.893 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.898 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.904 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.909 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.919 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TSLA34.SA
+2025-06-15 01:28:39.929 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.934 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.939 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.945 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.951 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.960 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TSMC34.SA
+2025-06-15 01:28:39.967 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:39.973 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:39.978 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:39.984 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:39.989 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:39.998 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: UNHH34.SA
+2025-06-15 01:28:40.005 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:40.011 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:40.017 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:40.023 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:40.030 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:40.039 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VERZ34.SA
+2025-06-15 01:28:40.046 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:40.052 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:40.058 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:40.064 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:40.070 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:40.078 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VISA34.SA
+2025-06-15 01:28:40.086 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2026
+2025-06-15 01:28:40.092 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1967
+2025-06-15 01:28:40.097 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1864
+2025-06-15 01:28:40.103 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.2101
+2025-06-15 01:28:40.108 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2042
+2025-06-15 01:28:40.126 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_bdrs.csv
+2025-06-15 01:28:40.127 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: juros.csv
+2025-06-15 01:28:40.131 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_juros.csv
+2025-06-15 01:28:40.132 | INFO     | __main__:<module>:101 - Carregando dados transformados para juros.csv...
+2025-06-15 01:28:42.003 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 12566 registros.
+2025-06-15 01:28:42.004 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\juros_modelo.pkl...
+2025-06-15 01:28:42.402 | WARNING  | __main__:<module>:117 - [WARN] Modelo juros.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:28:42.402 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 26 features.
+2025-06-15 01:28:42.442 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 20 features.
+2025-06-15 01:28:42.469 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: EDV
+2025-06-15 01:28:42.490 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2048
+2025-06-15 01:28:42.497 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2049
+2025-06-15 01:28:42.507 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2003
+2025-06-15 01:28:42.513 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1849
+2025-06-15 01:28:42.523 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2052
+2025-06-15 01:28:42.535 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ^FVX
+2025-06-15 01:28:42.543 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2048
+2025-06-15 01:28:42.550 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2049
+2025-06-15 01:28:42.556 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2003
+2025-06-15 01:28:42.562 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1849
+2025-06-15 01:28:42.568 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2052
+2025-06-15 01:28:42.576 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ^IRX
+2025-06-15 01:28:42.584 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2048
+2025-06-15 01:28:42.590 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2049
+2025-06-15 01:28:42.597 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2003
+2025-06-15 01:28:42.602 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1849
+2025-06-15 01:28:42.609 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2052
+2025-06-15 01:28:42.618 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ^TNX
+2025-06-15 01:28:42.626 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2048
+2025-06-15 01:28:42.632 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2049
+2025-06-15 01:28:42.638 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2003
+2025-06-15 01:28:42.644 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1849
+2025-06-15 01:28:42.650 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2052
+2025-06-15 01:28:42.660 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ^TYX
+2025-06-15 01:28:42.670 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2048
+2025-06-15 01:28:42.676 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2049
+2025-06-15 01:28:42.684 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2003
+2025-06-15 01:28:42.690 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1849
+2025-06-15 01:28:42.697 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2052
+2025-06-15 01:28:42.717 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_juros.csv
+2025-06-15 01:28:42.717 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: acoes_ibov.csv
+2025-06-15 01:28:42.722 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_acoes_ibov.csv
+2025-06-15 01:28:42.722 | INFO     | __main__:<module>:101 - Carregando dados transformados para acoes_ibov.csv...
+2025-06-15 01:29:13.375 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 190297 registros.
+2025-06-15 01:29:13.375 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\acoes_ibov_modelo.pkl...
+2025-06-15 01:29:13.639 | WARNING  | __main__:<module>:117 - [WARN] Modelo acoes_ibov.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:29:13.640 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 24 features.
+2025-06-15 01:29:13.854 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 14 features.
+2025-06-15 01:29:13.938 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ABEV3.SA
+2025-06-15 01:29:13.951 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:13.957 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:13.963 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:13.969 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:13.975 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:13.984 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ALOS3.SA
+2025-06-15 01:29:13.993 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:13.998 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.003 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.008 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.013 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.021 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ASAI3.SA
+2025-06-15 01:29:14.030 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.035 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.040 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.046 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.051 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.060 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AURE3.SA
+2025-06-15 01:29:14.068 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.073 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.078 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.083 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.088 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.096 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AZUL4.SA
+2025-06-15 01:29:14.106 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.111 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.116 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.121 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.126 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.135 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: AZZA3.SA
+2025-06-15 01:29:14.144 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.149 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.154 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.159 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.164 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.173 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: B3SA3.SA
+2025-06-15 01:29:14.181 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.187 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.193 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.198 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.204 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.212 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BBAS3.SA
+2025-06-15 01:29:14.220 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.226 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.232 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.237 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.243 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.254 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BBDC3.SA
+2025-06-15 01:29:14.262 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.269 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.278 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.284 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.290 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.302 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BBDC4.SA
+2025-06-15 01:29:14.314 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.322 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.332 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.338 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.346 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.359 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BBSE3.SA
+2025-06-15 01:29:14.372 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.379 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.388 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.396 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.402 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.416 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BEEF3.SA
+2025-06-15 01:29:14.435 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.440 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.446 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.451 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.457 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.466 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BPAC11.SA
+2025-06-15 01:29:14.474 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.480 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.488 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.493 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.505 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.526 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BRAP4.SA
+2025-06-15 01:29:14.539 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.544 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.550 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.597 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.602 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.609 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BRAV3.SA
+2025-06-15 01:29:14.617 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.621 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.625 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.630 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.634 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.642 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BRFS3.SA
+2025-06-15 01:29:14.650 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.654 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.659 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.664 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.669 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.677 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BRKM5.SA
+2025-06-15 01:29:14.685 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.690 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.695 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.699 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.704 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.712 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CCRO3.SA
+2025-06-15 01:29:14.720 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.725 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.729 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.736 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.741 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.749 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CMIG4.SA
+2025-06-15 01:29:14.757 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.762 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.769 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.775 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.780 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.788 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CMIN3.SA
+2025-06-15 01:29:14.796 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.801 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.806 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.811 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.816 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.825 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: COGN3.SA
+2025-06-15 01:29:14.833 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.839 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.844 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.849 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.854 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.862 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CPFE3.SA
+2025-06-15 01:29:14.870 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.875 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.880 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.885 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.890 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.899 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CPLE6.SA
+2025-06-15 01:29:14.907 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.914 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.919 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.925 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.930 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.939 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CRFB3.SA
+2025-06-15 01:29:14.947 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.953 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:14.958 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:14.963 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:14.969 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:14.979 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CSAN3.SA
+2025-06-15 01:29:14.988 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:14.994 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.000 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.005 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.011 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.019 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CSNA3.SA
+2025-06-15 01:29:15.028 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.033 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.038 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.044 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.050 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.059 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CVCB3.SA
+2025-06-15 01:29:15.067 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.073 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.078 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.083 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.088 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.097 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CXSE3.SA
+2025-06-15 01:29:15.104 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.110 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.115 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.120 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.125 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.133 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: CYRE3.SA
+2025-06-15 01:29:15.141 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.146 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.152 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.157 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.162 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.171 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: EGIE3.SA
+2025-06-15 01:29:15.179 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.185 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.189 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.194 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.199 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.206 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ELET3.SA
+2025-06-15 01:29:15.214 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.220 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.225 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.231 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.236 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.245 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ELET6.SA
+2025-06-15 01:29:15.253 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.258 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.264 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.268 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.273 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.282 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: EMBR3.SA
+2025-06-15 01:29:15.291 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.296 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.301 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.306 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.311 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.318 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ENEV3.SA
+2025-06-15 01:29:15.326 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.332 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.337 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.342 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.347 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.355 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ENGI11.SA
+2025-06-15 01:29:15.363 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.368 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.373 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.378 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.383 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.393 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: EQTL3.SA
+2025-06-15 01:29:15.404 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.411 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.421 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.428 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.442 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.451 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: FLRY3.SA
+2025-06-15 01:29:15.459 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.464 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.469 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.474 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.480 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.487 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: GGBR4.SA
+2025-06-15 01:29:15.496 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.501 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.506 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.512 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.517 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.525 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: GOAU4.SA
+2025-06-15 01:29:15.533 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.537 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.542 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.547 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.552 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.560 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: HAPV3.SA
+2025-06-15 01:29:15.568 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.573 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.578 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.583 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.588 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.597 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: HYPE3.SA
+2025-06-15 01:29:15.605 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.610 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.614 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.619 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.624 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.633 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: IGTI11.SA
+2025-06-15 01:29:15.640 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.646 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.650 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.655 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.660 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.669 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: IRBR3.SA
+2025-06-15 01:29:15.677 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.682 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.687 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.692 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.697 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.705 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ISAE4.SA
+2025-06-15 01:29:15.713 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.718 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.723 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.728 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.732 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.741 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ITSA4.SA
+2025-06-15 01:29:15.751 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.757 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.762 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.768 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.774 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.783 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ITUB4.SA
+2025-06-15 01:29:15.792 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.800 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.806 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.812 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.817 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.826 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: JBSS3.SA
+2025-06-15 01:29:15.839 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.847 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.862 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.873 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.878 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.886 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: KLBN11.SA
+2025-06-15 01:29:15.897 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.903 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.910 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.915 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.921 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.931 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: LREN3.SA
+2025-06-15 01:29:15.938 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.943 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.948 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.953 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.958 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:15.966 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: LWSA3.SA
+2025-06-15 01:29:15.974 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:15.979 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:15.984 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:15.989 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:15.993 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.001 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MGLU3.SA
+2025-06-15 01:29:16.009 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.013 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.018 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.022 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.027 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.035 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MRFG3.SA
+2025-06-15 01:29:16.042 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.048 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.052 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.057 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.062 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.069 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MRVE3.SA
+2025-06-15 01:29:16.076 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.081 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.085 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.091 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.096 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.104 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: MULT3.SA
+2025-06-15 01:29:16.110 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.116 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.121 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.126 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.130 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.138 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: NTCO3.SA
+2025-06-15 01:29:16.146 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.151 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.155 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.160 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.165 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.172 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PCAR3.SA
+2025-06-15 01:29:16.180 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.184 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.189 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.195 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.199 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.209 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PETR3.SA
+2025-06-15 01:29:16.217 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.221 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.227 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.232 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.243 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.252 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PETR4.SA
+2025-06-15 01:29:16.263 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.271 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.275 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.280 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.285 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.293 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PETZ3.SA
+2025-06-15 01:29:16.300 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.305 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.310 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.315 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.319 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.328 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: POMO4.SA
+2025-06-15 01:29:16.336 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.341 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.346 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.352 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.356 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.365 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PRIO3.SA
+2025-06-15 01:29:16.373 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.378 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.384 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.390 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.395 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.404 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: PSSA3.SA
+2025-06-15 01:29:16.412 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.419 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.424 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.430 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.438 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.449 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RADL3.SA
+2025-06-15 01:29:16.458 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.463 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.470 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.475 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.484 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.496 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RAIL3.SA
+2025-06-15 01:29:16.514 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.519 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.525 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.531 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.536 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.544 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RAIZ4.SA
+2025-06-15 01:29:16.552 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.557 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.562 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.567 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.572 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.580 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RDOR3.SA
+2025-06-15 01:29:16.588 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.593 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.597 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.602 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.608 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.616 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RECV3.SA
+2025-06-15 01:29:16.624 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.629 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.634 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.639 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.645 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.655 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: RENT3.SA
+2025-06-15 01:29:16.665 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.671 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.676 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.684 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.691 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.704 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SANB11.SA
+2025-06-15 01:29:16.717 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.724 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.732 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.740 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.761 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.769 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SBSP3.SA
+2025-06-15 01:29:16.778 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.783 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.789 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.795 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.800 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.809 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SLCE3.SA
+2025-06-15 01:29:16.817 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.822 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.827 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.832 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.836 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.845 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SMTO3.SA
+2025-06-15 01:29:16.853 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.858 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.863 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.868 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.873 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.881 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: STBP3.SA
+2025-06-15 01:29:16.889 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.894 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.899 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.905 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.909 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.919 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SUZB3.SA
+2025-06-15 01:29:16.928 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.933 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.938 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.943 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.949 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:16.959 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TAEE11.SA
+2025-06-15 01:29:16.969 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:16.975 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:16.981 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:16.988 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:16.994 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.004 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TIMS3.SA
+2025-06-15 01:29:17.013 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.019 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.024 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.030 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.035 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.043 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: TOTS3.SA
+2025-06-15 01:29:17.051 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.056 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.060 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.064 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.069 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.077 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: UGPA3.SA
+2025-06-15 01:29:17.084 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.088 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.093 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.098 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.103 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.111 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: USIM5.SA
+2025-06-15 01:29:17.119 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.124 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.129 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.134 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.139 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.147 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VALE3.SA
+2025-06-15 01:29:17.155 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.160 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.165 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.170 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.175 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.184 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VAMO3.SA
+2025-06-15 01:29:17.191 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.196 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.201 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.205 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.210 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.217 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VBBR3.SA
+2025-06-15 01:29:17.225 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.230 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.234 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.239 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.245 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.256 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VIVA3.SA
+2025-06-15 01:29:17.263 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.271 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.276 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.281 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.285 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.293 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: VIVT3.SA
+2025-06-15 01:29:17.301 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.306 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.312 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.317 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.322 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.331 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: WEGE3.SA
+2025-06-15 01:29:17.339 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.345 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.350 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.354 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.360 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.368 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: YDUQ3.SA
+2025-06-15 01:29:17.376 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2033
+2025-06-15 01:29:17.382 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2004
+2025-06-15 01:29:17.387 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1946
+2025-06-15 01:29:17.393 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1957
+2025-06-15 01:29:17.398 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2059
+2025-06-15 01:29:17.426 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_acoes_ibov.csv
+2025-06-15 01:29:17.426 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: commodities.csv
+2025-06-15 01:29:17.431 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_commodities.csv
+2025-06-15 01:29:17.432 | INFO     | __main__:<module>:101 - Carregando dados transformados para commodities.csv...
+2025-06-15 01:29:20.493 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 17589 registros.
+2025-06-15 01:29:20.493 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\commodities_modelo.pkl...
+2025-06-15 01:29:20.647 | WARNING  | __main__:<module>:117 - [WARN] Modelo commodities.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:29:20.648 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 23 features.
+2025-06-15 01:29:20.682 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 13 features.
+2025-06-15 01:29:20.703 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: BZ=F
+2025-06-15 01:29:20.717 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:20.727 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:20.735 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:20.746 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:20.763 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:20.792 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: GC=F
+2025-06-15 01:29:20.807 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:20.811 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:20.816 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:20.823 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:20.827 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:20.835 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: KC=F
+2025-06-15 01:29:20.844 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:20.849 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:20.853 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:20.859 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:20.864 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:20.873 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: LE=F
+2025-06-15 01:29:20.882 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:20.887 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:20.891 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:20.898 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:20.905 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:20.935 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: SI=F
+2025-06-15 01:29:20.964 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:21.011 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:21.046 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:21.058 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:21.079 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:21.102 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ZC=F
+2025-06-15 01:29:21.118 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:21.123 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:21.128 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:21.134 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:21.158 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:21.170 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: ZS=F
+2025-06-15 01:29:21.180 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.2077
+2025-06-15 01:29:21.185 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.2077
+2025-06-15 01:29:21.190 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.1811
+2025-06-15 01:29:21.197 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1814
+2025-06-15 01:29:21.202 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.2220
+2025-06-15 01:29:21.266 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_commodities.csv
+2025-06-15 01:29:21.267 | INFO     | __main__:<module>:87 - Processando ranking e previsões para arquivo: moedas.csv
+2025-06-15 01:29:21.277 | INFO     | __main__:<module>:96 - [OK] Ranking local salvo em ranking_modelos_moedas.csv
+2025-06-15 01:29:21.304 | INFO     | __main__:<module>:101 - Carregando dados transformados para moedas.csv...
+2025-06-15 01:29:23.108 | INFO     | __main__:<module>:105 - [OK] Dados carregados e pré-processados: 5206 registros.
+2025-06-15 01:29:23.109 | INFO     | __main__:<module>:109 - Carregando modelo de resultados\financeiro\modelos\moedas_modelo.pkl...
+2025-06-15 01:29:23.315 | WARNING  | __main__:<module>:117 - [WARN] Modelo moedas.csv não possui features salvas, usando features_selecionadas.json se disponível.
+2025-06-15 01:29:23.316 | INFO     | __main__:<module>:123 - [OK] Features carregadas de features_selecionadas.json: 10 features.
+2025-06-15 01:29:23.398 | INFO     | __main__:<module>:134 - [CHECK] Booster features: 3 features.
+2025-06-15 01:29:23.408 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: EURBRL=X
+2025-06-15 01:29:23.431 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1977
+2025-06-15 01:29:23.436 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1958
+2025-06-15 01:29:23.441 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2136
+2025-06-15 01:29:23.446 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1931
+2025-06-15 01:29:23.450 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.1999
+2025-06-15 01:29:23.466 | INFO     | __main__:<module>:138 - Gerando previsões futuras para Ticker: USDBRL=X
+2025-06-15 01:29:23.498 | INFO     | __main__:<module>:156 - → Modelo 1, peso 0.1977
+2025-06-15 01:29:23.502 | INFO     | __main__:<module>:156 - → Modelo 2, peso 0.1958
+2025-06-15 01:29:23.517 | INFO     | __main__:<module>:156 - → Modelo 3, peso 0.2136
+2025-06-15 01:29:23.526 | INFO     | __main__:<module>:156 - → Modelo 4, peso 0.1931
+2025-06-15 01:29:23.531 | INFO     | __main__:<module>:156 - → Modelo 5, peso 0.1999
+2025-06-15 01:29:23.545 | INFO     | __main__:<module>:172 - [OK] Previsões 15 dias salvas em previsoes_top_modelos_15dias_moedas.csv
+2025-06-15 01:29:23.545 | INFO     | __main__:<module>:177 - Processo finalizado com sucesso.

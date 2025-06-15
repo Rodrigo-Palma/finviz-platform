@@ -100,7 +100,25 @@ def obter_dados_historicos_yahoo(ticker: str, inicio: datetime, fim: datetime, i
                 'Ticker': ticker
             })
 
+            logger.info(f"{ticker} - Registros brutos recebidos: {len(df)}")
+
+            # Conversão e verificação de datas
+            df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+            num_nulos_date = df['Date'].isna().sum()
+            if num_nulos_date > 0:
+                logger.warning(f"{ticker} - {num_nulos_date} registros sem data válida removidos")
+                df = df.dropna(subset=['Date'])
+
+            # Remoção de valores essenciais ausentes
+            antes = len(df)
             df = df.dropna(subset=['Open', 'High', 'Low', 'Close', 'Adj Close'])
+            depois = len(df)
+            if antes != depois:
+                logger.warning(f"{ticker} - {antes - depois} linhas removidas por dados essenciais ausentes (OHLC/Adj Close)")
+
+            # Filtro de datas até o fim
+            df = df[df['Date'] <= pd.to_datetime(fim)]
+            logger.info(f"{ticker} - Registros válidos após limpeza e corte até ontem: {len(df)}")
 
             return df
 
@@ -155,7 +173,7 @@ currency_tickers = ["USDBRL=X", "EURBRL=X"]
 crypto_tickers = [
     "BTC-USD", "ETH-USD", "BNB-USD", "SOL-USD", "XRP-USD",
     "ADA-USD", "DOGE-USD", "AVAX-USD", "DOT-USD", "MATIC-USD", "LTC-USD",
-    "LINK-USD", "SHIB-USD", "TON-USD", "NEAR-USD", "SUI-USD", "UNI-USD"
+    "LINK-USD", "TON-USD", "NEAR-USD"
 ]
 
 interest_tickers = [

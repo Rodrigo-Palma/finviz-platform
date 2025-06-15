@@ -1,49 +1,11 @@
-2025-06-07 10:52:13.190 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
-2025-06-07 10:52:52.721 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
-2025-06-07 10:53:06.123 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
-2025-06-07 10:53:08.992 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
-2025-06-07 10:53:15.373 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
-2025-06-07 10:53:17.407 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
-2025-06-07 10:53:17.464 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
-2025-06-07 10:53:17.476 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
-2025-06-07 10:53:18.036 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
-2025-06-07 10:53:18.037 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
-2025-06-10 19:39:15.903 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
-2025-06-10 19:39:54.636 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
-2025-06-10 19:40:14.340 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
-2025-06-10 19:40:17.681 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
-2025-06-10 19:40:25.808 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
-2025-06-10 19:40:25.811 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
-2025-06-10 19:40:28.208 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
-2025-06-10 19:40:28.212 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
-2025-06-10 19:40:28.215 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
-2025-06-10 19:40:28.401 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
-2025-06-10 19:40:28.422 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
-2025-06-10 19:40:29.107 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
-2025-06-10 19:40:29.108 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
-2025-06-11 20:35:24.348 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
-2025-06-11 20:35:54.664 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
-2025-06-11 20:36:07.117 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
-2025-06-11 20:36:09.748 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
-2025-06-11 20:36:15.966 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
-2025-06-11 20:36:15.978 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
-2025-06-11 20:36:17.982 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
-2025-06-11 20:36:17.984 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
-2025-06-11 20:36:17.986 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
-2025-06-11 20:36:18.117 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
-2025-06-11 20:36:18.130 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
-2025-06-11 20:36:18.618 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
-2025-06-11 20:36:18.619 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
-2025-06-11 21:13:22.536 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
-2025-06-11 21:13:54.153 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
-2025-06-11 21:14:06.817 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
-2025-06-11 21:14:09.628 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
-2025-06-11 21:14:18.836 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
-2025-06-11 21:14:18.840 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
-2025-06-11 21:14:22.439 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
-2025-06-11 21:14:22.443 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
-2025-06-11 21:14:22.447 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
-2025-06-11 21:14:22.643 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
-2025-06-11 21:14:22.662 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
-2025-06-11 21:14:23.355 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
-2025-06-11 21:14:23.357 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-14 18:40:44.816 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-14 18:41:15.297 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
+2025-06-14 18:41:27.850 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
+2025-06-14 18:41:30.310 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
+2025-06-14 18:41:35.654 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
+2025-06-14 18:41:35.656 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-14 18:41:39.690 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
+2025-06-14 18:41:39.828 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
+2025-06-14 18:41:39.860 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
+2025-06-14 18:41:41.248 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
+2025-06-14 18:41:41.249 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
