@@ -128,3 +128,29 @@
 2025-06-14 19:19:12.519 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5749 | AUC: 0.6109
 2025-06-14 19:19:12.522 | INFO     | __main__:<module>:135 - Features selecionadas para moedas.csv: ['High', 'Return_1d', 'Adj Close', 'Open', 'SMA_100', 'Return_1d_lag1', 'Low', 'MACD_Histogram', 'Return_1d_lag3', 'RSI_14_lag1']
 2025-06-14 19:19:12.524 | INFO     | __main__:<module>:144 - Seleção de features concluída com Optuna + SHAP.
+2025-06-16 21:47:03.294 | INFO     | __main__:<module>:120 - Iniciando seleção de features com Optuna + SHAP...
+2025-06-16 21:47:05.324 | INFO     | __main__:carregar_dados:46 - acoes_ibov.csv: 50 features válidas após limpeza.
+2025-06-16 21:55:27.727 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 22
+2025-06-16 21:56:18.744 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5278 | AUC: 0.5437
+2025-06-16 21:56:18.751 | INFO     | __main__:<module>:135 - Features selecionadas para acoes_ibov.csv: ['Volume_lag5', 'Return_1d_lag1', 'Volume_lag2', 'Return_1d', 'Low', 'RSI_14_lag3', 'MACD_lag3', 'SMA_50', 'Adj Close_lag3', 'Return_1d_lag5', 'Volatility_20d', 'Volume', 'RSI_14_lag1', 'EMA_200', 'RSI_14_lag2', 'Return_1d_lag3', 'Adj Close_lag1', 'Return_5d', 'Return_1d_lag2', 'MACD_Histogram', 'MACD_Signal', 'RSI_14_lag5']
+2025-06-16 21:56:20.220 | INFO     | __main__:carregar_dados:46 - bdrs.csv: 50 features válidas após limpeza.
+2025-06-16 21:59:32.256 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 14
+2025-06-16 21:59:52.391 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5870 | AUC: 0.6241
+2025-06-16 21:59:52.394 | INFO     | __main__:<module>:135 - Features selecionadas para bdrs.csv: ['Return_1d', 'Volume_lag2', 'ATR', 'Volume_lag1', 'SMA_200', 'Volume_lag5', 'Volume', 'Volume_lag3', 'SMA_100', 'Return_1d_lag1', 'RSI_14_lag3', 'OBV', 'MACD_lag5', 'Sharpe_20d']
+2025-06-16 21:59:52.734 | INFO     | __main__:carregar_dados:46 - commodities.csv: 50 features válidas após limpeza.
+2025-06-16 22:00:49.294 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 19
+2025-06-16 22:00:55.318 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5199 | AUC: 0.5236
+2025-06-16 22:00:55.320 | INFO     | __main__:<module>:135 - Features selecionadas para commodities.csv: ['Return_1d', 'Return_1d_lag1', 'MACD_Histogram', 'Return_1d_lag3', 'Volatility_20d', 'Return_1d_lag5', 'RSI_14_lag3', 'Return_1d_lag2', 'RSI_14_lag1', 'RSI_14_lag2', 'OBV', 'Return_20d', 'MACD_Signal', 'MACD_lag5', 'Volume', 'MACD_lag3', 'Bollinger_Width', 'Return_5d', 'Volatility_5d']
+2025-06-16 22:00:55.830 | INFO     | __main__:carregar_dados:46 - criptos.csv: 50 features válidas após limpeza.
+2025-06-16 22:02:34.793 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 15
+2025-06-16 22:02:44.678 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5428 | AUC: 0.5627
+2025-06-16 22:02:44.681 | INFO     | __main__:<module>:135 - Features selecionadas para criptos.csv: ['Return_1d', 'Return_5d', 'Return_1d_lag1', 'Volume_lag5', 'RSI_14_lag2', 'Return_20d', 'Volatility_5d', 'Return_1d_lag3', 'Return_1d_lag5', 'RSI_14_lag5', 'Return_1d_lag2', 'RSI_14_lag3', 'Volume_lag3', 'Volatility_20d', 'Bollinger_Width']
+2025-06-16 22:02:44.913 | INFO     | __main__:carregar_dados:46 - juros.csv: 50 features válidas após limpeza.
+2025-06-16 22:03:27.560 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 24
+2025-06-16 22:03:31.884 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5865 | AUC: 0.6236
+2025-06-16 22:03:31.887 | INFO     | __main__:<module>:135 - Features selecionadas para juros.csv: ['Return_1d_lag1', 'Return_1d', 'Return_1d_lag2', 'MACD_Signal', 'ATR', 'RSI_14', 'Return_1d_lag3', 'Return_5d', 'RSI_14_lag1', 'Sharpe_20d', 'RSI_14_lag5', 'Return_1d_lag5', 'Volatility_5d', 'SMA_200', 'Bollinger_Width', 'RSI_14_lag3', 'MACD', 'SMA_100', 'MACD_Histogram', 'RSI_14_lag2', 'Return_20d', 'Volatility_20d', 'MACD_lag1', 'MACD_lag3']
+2025-06-16 22:03:31.993 | INFO     | __main__:carregar_dados:46 - moedas.csv: 45 features válidas após limpeza.
+2025-06-16 22:03:51.193 | INFO     | __main__:selecionar_features_com_optuna:97 - Melhor número de features: 21
+2025-06-16 22:03:53.957 | INFO     | __main__:selecionar_features_com_optuna:106 - Acurácia: 0.5672 | AUC: 0.6076
+2025-06-16 22:03:53.960 | INFO     | __main__:<module>:135 - Features selecionadas para moedas.csv: ['High', 'Return_1d', 'Adj Close', 'Return_1d_lag3', 'RSI_14_lag1', 'Return_1d_lag1', 'Low', 'MACD_Histogram', 'SMA_100', 'RSI_14', 'RSI_14_lag2', 'Adj Close_lag1', 'Return_1d_lag5', 'Volatility_20d', 'Return_1d_lag2', 'Sharpe_20d', 'Return_5d', 'RSI_14_lag3', 'RSI_14_lag5', 'Volatility_5d', 'ATR']
+2025-06-16 22:03:53.962 | INFO     | __main__:<module>:144 - Seleção de features concluída com Optuna + SHAP.
