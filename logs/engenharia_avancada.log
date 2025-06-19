@@ -51,3 +51,17 @@
 2025-06-18 12:58:31.885 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
 2025-06-18 12:58:31.887 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
 2025-06-18 12:58:31.888 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-19 16:23:18.732 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-19 16:23:43.302 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
+2025-06-19 16:23:56.343 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
+2025-06-19 16:23:58.747 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
+2025-06-19 16:24:03.782 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
+2025-06-19 16:24:03.793 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-19 16:24:05.497 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
+2025-06-19 16:24:05.507 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-19 16:24:05.511 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-19 16:24:05.584 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
+2025-06-19 16:24:05.597 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
+2025-06-19 16:24:06.138 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
+2025-06-19 16:24:06.152 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-19 16:24:06.153 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
