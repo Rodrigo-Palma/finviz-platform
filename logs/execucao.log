@@ -3476,3 +3476,1002 @@
 2025-06-20 19:43:42.496 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
 2025-06-20 19:43:43.150 | INFO     | __main__:salvar_historico_incremental:73 - Nenhum novo registro para adicionar.
 2025-06-20 19:43:43.150 | INFO     | __main__:<module>:99 - Coleta e salvamento concluídos com sucesso!
+2025-06-23 19:48:35.313 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\acoes_ibov.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:48:35.315 | INFO     | __main__:<module>:210 - Iniciando coleta para acoes_ibov.csv (87 tickers)
+2025-06-23 19:48:37.381 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ALOS3.SA - Registros brutos recebidos: 1463
+2025-06-23 19:48:37.386 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ALOS3.SA - 2 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:48:37.388 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ALOS3.SA - Registros válidos após limpeza e corte até ontem: 1461
+2025-06-23 19:48:37.390 | INFO     | __main__:<module>:221 - Atualizados 1461 registros para ALOS3.SA
+2025-06-23 19:48:40.038 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ABEV3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:48:40.048 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ABEV3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:48:40.055 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ABEV3.SA
+2025-06-23 19:48:42.569 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ASAI3.SA - Registros brutos recebidos: 1076
+2025-06-23 19:48:42.577 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ASAI3.SA - Registros válidos após limpeza e corte até ontem: 1076
+2025-06-23 19:48:42.584 | INFO     | __main__:<module>:221 - Atualizados 1076 registros para ASAI3.SA
+2025-06-23 19:48:45.113 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AURE3.SA - Registros brutos recebidos: 808
+2025-06-23 19:48:45.120 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AURE3.SA - Registros válidos após limpeza e corte até ontem: 808
+2025-06-23 19:48:45.125 | INFO     | __main__:<module>:221 - Atualizados 808 registros para AURE3.SA
+2025-06-23 19:48:47.445 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMOB3.SA - Registros brutos recebidos: 126
+2025-06-23 19:48:47.448 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMOB3.SA - Registros válidos após limpeza e corte até ontem: 126
+2025-06-23 19:48:47.450 | INFO     | __main__:<module>:221 - Atualizados 126 registros para AMOB3.SA
+2025-06-23 19:48:49.997 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AZUL4.SA - Registros brutos recebidos: 2041
+2025-06-23 19:48:50.001 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AZUL4.SA - Registros válidos após limpeza e corte até ontem: 2041
+2025-06-23 19:48:50.003 | INFO     | __main__:<module>:221 - Atualizados 2041 registros para AZUL4.SA
+2025-06-23 19:48:52.834 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AZZA3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:48:52.841 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AZZA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:48:52.844 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AZZA3.SA
+2025-06-23 19:48:55.838 | INFO     | __main__:obter_dados_historicos_yahoo:103 - B3SA3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:48:55.843 | INFO     | __main__:obter_dados_historicos_yahoo:121 - B3SA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:48:55.845 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para B3SA3.SA
+2025-06-23 19:48:58.745 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBSE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:48:58.749 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBSE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:48:58.752 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBSE3.SA
+2025-06-23 19:49:01.815 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBDC3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:01.821 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBDC3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:01.826 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBDC3.SA
+2025-06-23 19:49:04.466 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBDC4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:04.473 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBDC4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:04.477 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBDC4.SA
+2025-06-23 19:49:07.187 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRAP4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:07.196 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRAP4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:07.201 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRAP4.SA
+2025-06-23 19:49:09.889 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBAS3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:09.893 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBAS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:09.896 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBAS3.SA
+2025-06-23 19:49:12.563 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRKM5.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:12.568 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRKM5.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:12.571 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRKM5.SA
+2025-06-23 19:49:14.979 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRAV3.SA - Registros brutos recebidos: 1147
+2025-06-23 19:49:14.983 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BRAV3.SA - 2 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:49:14.984 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRAV3.SA - Registros válidos após limpeza e corte até ontem: 1145
+2025-06-23 19:49:14.988 | INFO     | __main__:<module>:221 - Atualizados 1145 registros para BRAV3.SA
+2025-06-23 19:49:17.646 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRFS3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:17.651 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRFS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:17.654 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRFS3.SA
+2025-06-23 19:49:20.280 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BPAC11.SA - Registros brutos recebidos: 2071
+2025-06-23 19:49:20.285 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BPAC11.SA - Registros válidos após limpeza e corte até ontem: 2071
+2025-06-23 19:49:20.288 | INFO     | __main__:<module>:221 - Atualizados 2071 registros para BPAC11.SA
+2025-06-23 19:49:22.680 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CXSE3.SA - Registros brutos recebidos: 1034
+2025-06-23 19:49:22.683 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CXSE3.SA - Registros válidos após limpeza e corte até ontem: 1034
+2025-06-23 19:49:22.686 | INFO     | __main__:<module>:221 - Atualizados 1034 registros para CXSE3.SA
+2025-06-23 19:49:26.007 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CRFB3.SA - Registros brutos recebidos: 1971
+2025-06-23 19:49:26.011 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - CRFB3.SA - 14 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:49:26.012 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CRFB3.SA - Registros válidos após limpeza e corte até ontem: 1957
+2025-06-23 19:49:26.016 | INFO     | __main__:<module>:221 - Atualizados 1957 registros para CRFB3.SA
+2025-06-23 19:49:29.592 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CCRO3.SA - Registros brutos recebidos: 2484
+2025-06-23 19:49:29.596 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CCRO3.SA - Registros válidos após limpeza e corte até ontem: 2484
+2025-06-23 19:49:29.599 | INFO     | __main__:<module>:221 - Atualizados 2484 registros para CCRO3.SA
+2025-06-23 19:49:32.421 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMIG4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:32.426 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMIG4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:32.430 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CMIG4.SA
+2025-06-23 19:49:35.173 | INFO     | __main__:obter_dados_historicos_yahoo:103 - COGN3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:35.178 | INFO     | __main__:obter_dados_historicos_yahoo:121 - COGN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:35.182 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para COGN3.SA
+2025-06-23 19:49:37.877 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CPLE6.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:37.882 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CPLE6.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:37.886 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CPLE6.SA
+2025-06-23 19:49:40.341 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CSAN3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:40.345 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CSAN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:40.348 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CSAN3.SA
+2025-06-23 19:49:43.005 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CPFE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:43.011 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CPFE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:43.014 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CPFE3.SA
+2025-06-23 19:49:45.373 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMIN3.SA - Registros brutos recebidos: 1081
+2025-06-23 19:49:45.378 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMIN3.SA - Registros válidos após limpeza e corte até ontem: 1081
+2025-06-23 19:49:45.381 | INFO     | __main__:<module>:221 - Atualizados 1081 registros para CMIN3.SA
+2025-06-23 19:49:48.471 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CVCB3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:48.475 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CVCB3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:48.479 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CVCB3.SA
+2025-06-23 19:49:51.063 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CYRE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:51.068 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CYRE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:51.071 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CYRE3.SA
+2025-06-23 19:49:53.725 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ELET3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:53.731 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ELET3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:53.735 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ELET3.SA
+2025-06-23 19:49:56.349 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ELET6.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:56.382 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ELET6.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:56.385 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ELET6.SA
+2025-06-23 19:49:58.981 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EMBR3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:49:58.985 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EMBR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:49:58.988 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EMBR3.SA
+2025-06-23 19:50:01.845 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ENGI11.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:01.851 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ENGI11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:01.854 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ENGI11.SA
+2025-06-23 19:50:04.537 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ENEV3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:04.543 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ENEV3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:04.546 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ENEV3.SA
+2025-06-23 19:50:07.201 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EGIE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:07.206 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EGIE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:07.209 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EGIE3.SA
+2025-06-23 19:50:10.008 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EQTL3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:10.012 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EQTL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:10.015 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EQTL3.SA
+2025-06-23 19:50:12.586 | INFO     | __main__:obter_dados_historicos_yahoo:103 - FLRY3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:12.590 | INFO     | __main__:obter_dados_historicos_yahoo:121 - FLRY3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:12.593 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para FLRY3.SA
+2025-06-23 19:50:15.294 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GGBR4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:15.298 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GGBR4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:15.301 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para GGBR4.SA
+2025-06-23 19:50:17.945 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GOAU4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:17.949 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GOAU4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:17.953 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para GOAU4.SA
+2025-06-23 19:50:20.705 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NTCO3.SA - Registros brutos recebidos: 1368
+2025-06-23 19:50:20.708 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NTCO3.SA - Registros válidos após limpeza e corte até ontem: 1368
+2025-06-23 19:50:20.711 | INFO     | __main__:<module>:221 - Atualizados 1368 registros para NTCO3.SA
+2025-06-23 19:50:23.358 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HAPV3.SA - Registros brutos recebidos: 1776
+2025-06-23 19:50:23.363 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HAPV3.SA - Registros válidos após limpeza e corte até ontem: 1776
+2025-06-23 19:50:23.367 | INFO     | __main__:<module>:221 - Atualizados 1776 registros para HAPV3.SA
+2025-06-23 19:50:26.305 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HYPE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:26.312 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HYPE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:26.316 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para HYPE3.SA
+2025-06-23 19:50:28.792 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IGTI11.SA - Registros brutos recebidos: 894
+2025-06-23 19:50:28.796 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IGTI11.SA - Registros válidos após limpeza e corte até ontem: 894
+2025-06-23 19:50:28.800 | INFO     | __main__:<module>:221 - Atualizados 894 registros para IGTI11.SA
+2025-06-23 19:50:36.681 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IRBR3.SA - Registros brutos recebidos: 1965
+2025-06-23 19:50:36.689 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IRBR3.SA - Registros válidos após limpeza e corte até ontem: 1965
+2025-06-23 19:50:36.694 | INFO     | __main__:<module>:221 - Atualizados 1965 registros para IRBR3.SA
+2025-06-23 19:50:40.259 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ISAE4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:40.274 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ISAE4.SA - 11 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:50:40.277 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ISAE4.SA - Registros válidos após limpeza e corte até ontem: 2474
+2025-06-23 19:50:40.284 | INFO     | __main__:<module>:221 - Atualizados 2474 registros para ISAE4.SA
+2025-06-23 19:50:43.046 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITSA4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:43.058 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITSA4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:43.065 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITSA4.SA
+2025-06-23 19:50:45.845 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITUB4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:45.860 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITUB4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:45.873 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITUB4.SA
+2025-06-23 19:50:50.804 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JBSS3.SA - Registros brutos recebidos: 2484
+2025-06-23 19:50:50.809 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JBSS3.SA - Registros válidos após limpeza e corte até ontem: 2484
+2025-06-23 19:50:50.812 | INFO     | __main__:<module>:221 - Atualizados 2484 registros para JBSS3.SA
+2025-06-23 19:50:53.383 | INFO     | __main__:obter_dados_historicos_yahoo:103 - KLBN11.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:53.389 | INFO     | __main__:obter_dados_historicos_yahoo:121 - KLBN11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:53.393 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para KLBN11.SA
+2025-06-23 19:50:56.320 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RENT3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:50:56.326 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RENT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:50:56.330 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RENT3.SA
+2025-06-23 19:51:04.060 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LREN3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:04.066 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LREN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:04.069 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para LREN3.SA
+2025-06-23 19:51:06.630 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LWSA3.SA - Registros brutos recebidos: 1336
+2025-06-23 19:51:06.636 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LWSA3.SA - Registros válidos após limpeza e corte até ontem: 1336
+2025-06-23 19:51:06.641 | INFO     | __main__:<module>:221 - Atualizados 1336 registros para LWSA3.SA
+2025-06-23 19:51:09.648 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MGLU3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:09.653 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MGLU3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:09.657 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MGLU3.SA
+2025-06-23 19:51:12.731 | INFO     | __main__:obter_dados_historicos_yahoo:103 - POMO4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:12.736 | INFO     | __main__:obter_dados_historicos_yahoo:121 - POMO4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:12.740 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para POMO4.SA
+2025-06-23 19:51:15.789 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MRFG3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:15.794 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MRFG3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:15.798 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MRFG3.SA
+2025-06-23 19:51:18.469 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BEEF3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:18.475 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BEEF3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:18.478 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BEEF3.SA
+2025-06-23 19:51:21.229 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MRVE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:21.235 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MRVE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:21.240 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MRVE3.SA
+2025-06-23 19:51:24.243 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MULT3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:24.248 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MULT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:24.252 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MULT3.SA
+2025-06-23 19:51:26.744 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PCAR3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:26.749 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PCAR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:26.753 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PCAR3.SA
+2025-06-23 19:51:29.671 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETR3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:29.679 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:29.684 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PETR3.SA
+2025-06-23 19:51:32.436 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETR4.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:32.443 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETR4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:32.447 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PETR4.SA
+2025-06-23 19:51:35.066 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RECV3.SA - Registros brutos recebidos: 1031
+2025-06-23 19:51:35.070 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RECV3.SA - Registros válidos após limpeza e corte até ontem: 1031
+2025-06-23 19:51:35.073 | INFO     | __main__:<module>:221 - Atualizados 1031 registros para RECV3.SA
+2025-06-23 19:51:37.609 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PRIO3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:37.615 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PRIO3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:37.618 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PRIO3.SA
+2025-06-23 19:51:40.255 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETZ3.SA - Registros brutos recebidos: 1185
+2025-06-23 19:51:40.259 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETZ3.SA - Registros válidos após limpeza e corte até ontem: 1185
+2025-06-23 19:51:40.262 | INFO     | __main__:<module>:221 - Atualizados 1185 registros para PETZ3.SA
+2025-06-23 19:51:43.018 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PSSA3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:43.023 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PSSA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:43.026 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PSSA3.SA
+2025-06-23 19:51:45.676 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RADL3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:45.682 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RADL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:45.685 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RADL3.SA
+2025-06-23 19:51:48.503 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RAIZ4.SA - Registros brutos recebidos: 967
+2025-06-23 19:51:48.507 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RAIZ4.SA - Registros válidos após limpeza e corte até ontem: 967
+2025-06-23 19:51:48.510 | INFO     | __main__:<module>:221 - Atualizados 967 registros para RAIZ4.SA
+2025-06-23 19:51:50.997 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RDOR3.SA - Registros brutos recebidos: 1123
+2025-06-23 19:51:51.001 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RDOR3.SA - Registros válidos após limpeza e corte até ontem: 1123
+2025-06-23 19:51:51.003 | INFO     | __main__:<module>:221 - Atualizados 1123 registros para RDOR3.SA
+2025-06-23 19:51:53.975 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RAIL3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:53.980 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RAIL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:53.983 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RAIL3.SA
+2025-06-23 19:51:56.719 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SBSP3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:56.725 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SBSP3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:56.728 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SBSP3.SA
+2025-06-23 19:51:59.554 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SANB11.SA - Registros brutos recebidos: 2485
+2025-06-23 19:51:59.559 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SANB11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:51:59.563 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SANB11.SA
+2025-06-23 19:52:02.370 | INFO     | __main__:obter_dados_historicos_yahoo:103 - STBP3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:02.377 | INFO     | __main__:obter_dados_historicos_yahoo:121 - STBP3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:02.382 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para STBP3.SA
+2025-06-23 19:52:05.103 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SMTO3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:05.108 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SMTO3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:05.111 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SMTO3.SA
+2025-06-23 19:52:07.645 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CSNA3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:07.650 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CSNA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:07.654 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CSNA3.SA
+2025-06-23 19:52:10.341 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SLCE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:10.347 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SLCE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:10.351 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SLCE3.SA
+2025-06-23 19:52:13.122 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SUZB3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:13.127 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SUZB3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:13.131 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SUZB3.SA
+2025-06-23 19:52:15.745 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TAEE11.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:15.751 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TAEE11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:15.754 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TAEE11.SA
+2025-06-23 19:52:18.494 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VIVT3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:18.500 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VIVT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:18.504 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VIVT3.SA
+2025-06-23 19:52:21.295 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TIMS3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:21.305 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TIMS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:21.310 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TIMS3.SA
+2025-06-23 19:52:24.090 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TOTS3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:24.094 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TOTS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:24.098 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TOTS3.SA
+2025-06-23 19:52:26.756 | INFO     | __main__:obter_dados_historicos_yahoo:103 - UGPA3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:26.761 | INFO     | __main__:obter_dados_historicos_yahoo:121 - UGPA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:26.765 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para UGPA3.SA
+2025-06-23 19:52:29.545 | INFO     | __main__:obter_dados_historicos_yahoo:103 - USIM5.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:29.550 | INFO     | __main__:obter_dados_historicos_yahoo:121 - USIM5.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:29.553 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para USIM5.SA
+2025-06-23 19:52:32.108 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VALE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:32.144 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VALE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:32.148 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VALE3.SA
+2025-06-23 19:52:34.826 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VAMO3.SA - Registros brutos recebidos: 1093
+2025-06-23 19:52:34.831 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VAMO3.SA - Registros válidos após limpeza e corte até ontem: 1093
+2025-06-23 19:52:34.834 | INFO     | __main__:<module>:221 - Atualizados 1093 registros para VAMO3.SA
+2025-06-23 19:52:37.619 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VBBR3.SA - Registros brutos recebidos: 1806
+2025-06-23 19:52:37.623 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VBBR3.SA - Registros válidos após limpeza e corte até ontem: 1806
+2025-06-23 19:52:37.626 | INFO     | __main__:<module>:221 - Atualizados 1806 registros para VBBR3.SA
+2025-06-23 19:52:40.152 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VIVA3.SA - Registros brutos recebidos: 1414
+2025-06-23 19:52:40.161 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VIVA3.SA - Registros válidos após limpeza e corte até ontem: 1414
+2025-06-23 19:52:40.168 | INFO     | __main__:<module>:221 - Atualizados 1414 registros para VIVA3.SA
+2025-06-23 19:52:43.180 | INFO     | __main__:obter_dados_historicos_yahoo:103 - WEGE3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:43.192 | INFO     | __main__:obter_dados_historicos_yahoo:121 - WEGE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:43.199 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para WEGE3.SA
+2025-06-23 19:52:45.872 | INFO     | __main__:obter_dados_historicos_yahoo:103 - YDUQ3.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:45.882 | INFO     | __main__:obter_dados_historicos_yahoo:121 - YDUQ3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:45.892 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para YDUQ3.SA
+2025-06-23 19:52:50.174 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\acoes_ibov.csv (190270 registros)
+2025-06-23 19:52:50.194 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\bdrs.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:52:50.202 | INFO     | __main__:<module>:210 - Iniciando coleta para bdrs.csv (36 tickers)
+2025-06-23 19:52:51.891 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JPMC34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:51.898 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JPMC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:51.903 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para JPMC34.SA
+2025-06-23 19:52:54.372 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BKNG34.SA - Registros brutos recebidos: 1515
+2025-06-23 19:52:54.376 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BKNG34.SA - Registros válidos após limpeza e corte até ontem: 1515
+2025-06-23 19:52:54.379 | INFO     | __main__:<module>:221 - Atualizados 1515 registros para BKNG34.SA
+2025-06-23 19:52:57.116 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BERK34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:52:57.122 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BERK34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:52:57.127 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BERK34.SA
+2025-06-23 19:53:00.052 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TSMC34.SA - Registros brutos recebidos: 1404
+2025-06-23 19:53:00.057 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TSMC34.SA - Registros válidos após limpeza e corte até ontem: 1404
+2025-06-23 19:53:00.061 | INFO     | __main__:<module>:221 - Atualizados 1404 registros para TSMC34.SA
+2025-06-23 19:53:02.561 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NFLX34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:02.567 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NFLX34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:02.570 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para NFLX34.SA
+2025-06-23 19:53:05.266 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GOGL34.SA - Registros brutos recebidos: 2273
+2025-06-23 19:53:05.270 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GOGL34.SA - Registros válidos após limpeza e corte até ontem: 2273
+2025-06-23 19:53:05.274 | INFO     | __main__:<module>:221 - Atualizados 2273 registros para GOGL34.SA
+2025-06-23 19:53:07.743 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MELI34.SA - Registros brutos recebidos: 1499
+2025-06-23 19:53:07.748 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MELI34.SA - Registros válidos após limpeza e corte até ontem: 1499
+2025-06-23 19:53:07.751 | INFO     | __main__:<module>:221 - Atualizados 1499 registros para MELI34.SA
+2025-06-23 19:53:10.429 | INFO     | __main__:obter_dados_historicos_yahoo:103 - M1TA34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:10.434 | INFO     | __main__:obter_dados_historicos_yahoo:121 - M1TA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:10.437 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para M1TA34.SA
+2025-06-23 19:53:13.087 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RIGG34.SA - Registros brutos recebidos: 2214
+2025-06-23 19:53:13.093 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RIGG34.SA - Registros válidos após limpeza e corte até ontem: 2214
+2025-06-23 19:53:13.096 | INFO     | __main__:<module>:221 - Atualizados 2214 registros para RIGG34.SA
+2025-06-23 19:53:15.764 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CHVX34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:15.768 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CHVX34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:15.773 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CHVX34.SA
+2025-06-23 19:53:18.268 | INFO     | __main__:obter_dados_historicos_yahoo:103 - INBR32.SA - Registros brutos recebidos: 702
+2025-06-23 19:53:18.272 | INFO     | __main__:obter_dados_historicos_yahoo:121 - INBR32.SA - Registros válidos após limpeza e corte até ontem: 702
+2025-06-23 19:53:18.275 | INFO     | __main__:<module>:221 - Atualizados 702 registros para INBR32.SA
+2025-06-23 19:53:20.794 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TSLA34.SA - Registros brutos recebidos: 2096
+2025-06-23 19:53:20.799 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TSLA34.SA - Registros válidos após limpeza e corte até ontem: 2096
+2025-06-23 19:53:20.802 | INFO     | __main__:<module>:221 - Atualizados 2096 registros para TSLA34.SA
+2025-06-23 19:53:23.523 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MSFT34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:23.528 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MSFT34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:23.532 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MSFT34.SA
+2025-06-23 19:53:26.071 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IVVB11.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:26.076 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - IVVB11.SA - 27 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:53:26.077 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IVVB11.SA - Registros válidos após limpeza e corte até ontem: 2458
+2025-06-23 19:53:26.080 | INFO     | __main__:<module>:221 - Atualizados 2458 registros para IVVB11.SA
+2025-06-23 19:53:28.592 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VISA34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:28.597 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VISA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:28.601 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VISA34.SA
+2025-06-23 19:53:31.606 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BOAC34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:31.611 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BOAC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:31.614 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BOAC34.SA
+2025-06-23 19:53:34.346 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GMCO34.SA - Registros brutos recebidos: 2155
+2025-06-23 19:53:34.352 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GMCO34.SA - Registros válidos após limpeza e corte até ontem: 2155
+2025-06-23 19:53:34.354 | INFO     | __main__:<module>:221 - Atualizados 2155 registros para GMCO34.SA
+2025-06-23 19:53:37.181 | INFO     | __main__:obter_dados_historicos_yahoo:103 - COCA34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:37.187 | INFO     | __main__:obter_dados_historicos_yahoo:121 - COCA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:37.193 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para COCA34.SA
+2025-06-23 19:53:39.860 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MSCD34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:39.865 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MSCD34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:39.869 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MSCD34.SA
+2025-06-23 19:53:42.442 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HOME34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:42.447 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HOME34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:42.450 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para HOME34.SA
+2025-06-23 19:53:45.234 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMGN34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:45.239 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMGN34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:45.242 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AMGN34.SA
+2025-06-23 19:53:47.882 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMZO34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:47.887 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMZO34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:47.891 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AMZO34.SA
+2025-06-23 19:53:50.505 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JNJB34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:50.510 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JNJB34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:50.513 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para JNJB34.SA
+2025-06-23 19:53:52.942 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SSFO34.SA - Registros brutos recebidos: 2261
+2025-06-23 19:53:52.945 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SSFO34.SA - Registros válidos após limpeza e corte até ontem: 2261
+2025-06-23 19:53:52.949 | INFO     | __main__:<module>:221 - Atualizados 2261 registros para SSFO34.SA
+2025-06-23 19:53:55.541 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NVDC34.SA - Registros brutos recebidos: 1521
+2025-06-23 19:53:55.545 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NVDC34.SA - Registros válidos após limpeza e corte até ontem: 1521
+2025-06-23 19:53:55.548 | INFO     | __main__:<module>:221 - Atualizados 1521 registros para NVDC34.SA
+2025-06-23 19:53:58.417 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AAPL34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:53:58.423 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AAPL34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:53:58.426 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AAPL34.SA
+2025-06-23 19:54:01.099 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMCS34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:01.105 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMCS34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:01.109 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CMCS34.SA
+2025-06-23 19:54:03.584 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VERZ34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:03.588 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VERZ34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:03.591 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VERZ34.SA
+2025-06-23 19:54:06.119 | INFO     | __main__:obter_dados_historicos_yahoo:103 - UNHH34.SA - Registros brutos recebidos: 1495
+2025-06-23 19:54:06.123 | INFO     | __main__:obter_dados_historicos_yahoo:121 - UNHH34.SA - Registros válidos após limpeza e corte até ontem: 1495
+2025-06-23 19:54:06.127 | INFO     | __main__:<module>:221 - Atualizados 1495 registros para UNHH34.SA
+2025-06-23 19:54:09.182 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DISB34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:09.186 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DISB34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:09.189 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para DISB34.SA
+2025-06-23 19:54:11.739 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AIRB34.SA - Registros brutos recebidos: 1094
+2025-06-23 19:54:11.743 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AIRB34.SA - Registros válidos após limpeza e corte até ontem: 1094
+2025-06-23 19:54:11.745 | INFO     | __main__:<module>:221 - Atualizados 1094 registros para AIRB34.SA
+2025-06-23 19:54:14.497 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PFIZ34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:14.501 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PFIZ34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:14.504 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PFIZ34.SA
+2025-06-23 19:54:17.058 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AURA33.SA - Registros brutos recebidos: 1235
+2025-06-23 19:54:17.061 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AURA33.SA - Registros válidos após limpeza e corte até ontem: 1235
+2025-06-23 19:54:17.064 | INFO     | __main__:<module>:221 - Atualizados 1235 registros para AURA33.SA
+2025-06-23 19:54:20.332 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NIKE34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:20.337 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NIKE34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:20.339 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para NIKE34.SA
+2025-06-23 19:54:23.066 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITLC34.SA - Registros brutos recebidos: 2485
+2025-06-23 19:54:23.070 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITLC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 19:54:23.073 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITLC34.SA
+2025-06-23 19:54:25.560 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BABA34.SA - Registros brutos recebidos: 1379
+2025-06-23 19:54:25.563 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BABA34.SA - Registros válidos após limpeza e corte até ontem: 1379
+2025-06-23 19:54:25.566 | INFO     | __main__:<module>:221 - Atualizados 1379 registros para BABA34.SA
+2025-06-23 19:54:27.699 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\bdrs.csv (77486 registros)
+2025-06-23 19:54:27.717 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\commodities.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:54:27.721 | INFO     | __main__:<module>:210 - Iniciando coleta para commodities.csv (7 tickers)
+2025-06-23 19:54:29.262 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BZ=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:29.266 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BZ=F - 4 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:29.268 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BZ=F - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 19:54:29.270 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para BZ=F
+2025-06-23 19:54:31.605 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GC=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:31.609 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - GC=F - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:31.610 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GC=F - Registros válidos após limpeza e corte até ontem: 2510
+2025-06-23 19:54:31.613 | INFO     | __main__:<module>:221 - Atualizados 2510 registros para GC=F
+2025-06-23 19:54:34.108 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SI=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:34.113 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - SI=F - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:34.114 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SI=F - Registros válidos após limpeza e corte até ontem: 2510
+2025-06-23 19:54:34.116 | INFO     | __main__:<module>:221 - Atualizados 2510 registros para SI=F
+2025-06-23 19:54:36.498 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ZS=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:36.503 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ZS=F - 5 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:36.504 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ZS=F - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:54:36.508 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ZS=F
+2025-06-23 19:54:38.968 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ZC=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:38.972 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ZC=F - 7 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:38.973 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ZC=F - Registros válidos após limpeza e corte até ontem: 2509
+2025-06-23 19:54:38.976 | INFO     | __main__:<module>:221 - Atualizados 2509 registros para ZC=F
+2025-06-23 19:54:41.705 | INFO     | __main__:obter_dados_historicos_yahoo:103 - KC=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:41.717 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - KC=F - 4 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:41.720 | INFO     | __main__:obter_dados_historicos_yahoo:121 - KC=F - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 19:54:41.726 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para KC=F
+2025-06-23 19:54:44.517 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LE=F - Registros brutos recebidos: 2516
+2025-06-23 19:54:44.528 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - LE=F - 5 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:44.531 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LE=F - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:54:44.541 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para LE=F
+2025-06-23 19:54:46.094 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\commodities.csv (17575 registros)
+2025-06-23 19:54:46.119 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\moedas.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:54:46.124 | INFO     | __main__:<module>:210 - Iniciando coleta para moedas.csv (2 tickers)
+2025-06-23 19:54:47.580 | INFO     | __main__:obter_dados_historicos_yahoo:103 - USDBRL=X - Registros brutos recebidos: 2608
+2025-06-23 19:54:47.585 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - USDBRL=X - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:47.586 | INFO     | __main__:obter_dados_historicos_yahoo:121 - USDBRL=X - Registros válidos após limpeza e corte até ontem: 2602
+2025-06-23 19:54:47.590 | INFO     | __main__:<module>:221 - Atualizados 2602 registros para USDBRL=X
+2025-06-23 19:54:50.290 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EURBRL=X - Registros brutos recebidos: 2608
+2025-06-23 19:54:50.295 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - EURBRL=X - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:54:50.295 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EURBRL=X - Registros válidos após limpeza e corte até ontem: 2602
+2025-06-23 19:54:50.299 | INFO     | __main__:<module>:221 - Atualizados 2602 registros para EURBRL=X
+2025-06-23 19:54:51.309 | INFO     | __main__:<module>:236 - Coluna Volume removida de moedas.csv (todos zeros)
+2025-06-23 19:54:51.390 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\moedas.csv (5204 registros)
+2025-06-23 19:54:51.414 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\criptos.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:54:51.416 | INFO     | __main__:<module>:210 - Iniciando coleta para criptos.csv (14 tickers)
+2025-06-23 19:54:53.383 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BTC-USD - Registros brutos recebidos: 3651
+2025-06-23 19:54:53.390 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BTC-USD - Registros válidos após limpeza e corte até ontem: 3651
+2025-06-23 19:54:53.394 | INFO     | __main__:<module>:221 - Atualizados 3651 registros para BTC-USD
+2025-06-23 19:54:56.012 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ETH-USD - Registros brutos recebidos: 2784
+2025-06-23 19:54:56.033 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ETH-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:54:56.036 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para ETH-USD
+2025-06-23 19:54:59.035 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BNB-USD - Registros brutos recebidos: 2784
+2025-06-23 19:54:59.040 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BNB-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:54:59.042 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para BNB-USD
+2025-06-23 19:55:01.782 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SOL-USD - Registros brutos recebidos: 1901
+2025-06-23 19:55:01.786 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SOL-USD - Registros válidos após limpeza e corte até ontem: 1901
+2025-06-23 19:55:01.790 | INFO     | __main__:<module>:221 - Atualizados 1901 registros para SOL-USD
+2025-06-23 19:55:04.758 | INFO     | __main__:obter_dados_historicos_yahoo:103 - XRP-USD - Registros brutos recebidos: 2784
+2025-06-23 19:55:04.763 | INFO     | __main__:obter_dados_historicos_yahoo:121 - XRP-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:55:04.766 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para XRP-USD
+2025-06-23 19:55:07.601 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ADA-USD - Registros brutos recebidos: 2784
+2025-06-23 19:55:07.606 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ADA-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:55:07.609 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para ADA-USD
+2025-06-23 19:55:10.531 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DOGE-USD - Registros brutos recebidos: 2784
+2025-06-23 19:55:10.536 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DOGE-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:55:10.540 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para DOGE-USD
+2025-06-23 19:55:13.200 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AVAX-USD - Registros brutos recebidos: 1807
+2025-06-23 19:55:13.203 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - AVAX-USD - 69 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:13.204 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AVAX-USD - Registros válidos após limpeza e corte até ontem: 1738
+2025-06-23 19:55:13.207 | INFO     | __main__:<module>:221 - Atualizados 1738 registros para AVAX-USD
+2025-06-23 19:55:18.665 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DOT-USD - Registros brutos recebidos: 1769
+2025-06-23 19:55:18.669 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DOT-USD - Registros válidos após limpeza e corte até ontem: 1769
+2025-06-23 19:55:18.672 | INFO     | __main__:<module>:221 - Atualizados 1769 registros para DOT-USD
+2025-06-23 19:55:22.037 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MATIC-USD - Registros brutos recebidos: 2248
+2025-06-23 19:55:22.043 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - MATIC-USD - 90 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:22.045 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MATIC-USD - Registros válidos após limpeza e corte até ontem: 2158
+2025-06-23 19:55:22.048 | INFO     | __main__:<module>:221 - Atualizados 2158 registros para MATIC-USD
+2025-06-23 19:55:25.203 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LTC-USD - Registros brutos recebidos: 3651
+2025-06-23 19:55:25.209 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LTC-USD - Registros válidos após limpeza e corte até ontem: 3651
+2025-06-23 19:55:25.212 | INFO     | __main__:<module>:221 - Atualizados 3651 registros para LTC-USD
+2025-06-23 19:55:27.808 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LINK-USD - Registros brutos recebidos: 2784
+2025-06-23 19:55:27.813 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LINK-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 19:55:27.816 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para LINK-USD
+2025-06-23 19:55:31.043 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TON-USD - Registros brutos recebidos: 1760
+2025-06-23 19:55:31.047 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TON-USD - Registros válidos após limpeza e corte até ontem: 1760
+2025-06-23 19:55:31.050 | INFO     | __main__:<module>:221 - Atualizados 1760 registros para TON-USD
+2025-06-23 19:55:33.802 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NEAR-USD - Registros brutos recebidos: 1714
+2025-06-23 19:55:33.808 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NEAR-USD - Registros válidos após limpeza e corte até ontem: 1714
+2025-06-23 19:55:33.811 | INFO     | __main__:<module>:221 - Atualizados 1714 registros para NEAR-USD
+2025-06-23 19:55:35.301 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\criptos.csv (35046 registros)
+2025-06-23 19:55:35.317 | WARNING  | __main__:safe_read_csv:34 - Arquivo dados\juros.csv vazio ou sem coluna 'Date', inicializando DataFrame vazio. Detalhe: Missing column provided to 'parse_dates': 'Date'
+2025-06-23 19:55:35.319 | INFO     | __main__:<module>:210 - Iniciando coleta para juros.csv (5 tickers)
+2025-06-23 19:55:36.989 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^IRX - Registros brutos recebidos: 2607
+2025-06-23 19:55:36.994 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^IRX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:36.996 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^IRX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:55:36.999 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^IRX
+2025-06-23 19:55:39.579 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^FVX - Registros brutos recebidos: 2607
+2025-06-23 19:55:39.583 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^FVX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:39.584 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^FVX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:55:39.587 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^FVX
+2025-06-23 19:55:42.988 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^TNX - Registros brutos recebidos: 2607
+2025-06-23 19:55:42.992 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^TNX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:42.993 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^TNX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:55:42.996 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^TNX
+2025-06-23 19:55:45.832 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^TYX - Registros brutos recebidos: 2607
+2025-06-23 19:55:45.836 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^TYX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 19:55:45.837 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^TYX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 19:55:45.841 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^TYX
+2025-06-23 19:55:49.121 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EDV - Registros brutos recebidos: 2512
+2025-06-23 19:55:49.126 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EDV - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 19:55:49.129 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para EDV
+2025-06-23 19:55:50.311 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\juros.csv (12556 registros)
+2025-06-23 19:55:50.311 | INFO     | __main__:<module>:245 - Coleta completa!
+2025-06-23 19:55:51.933 | INFO     | __main__:<module>:55 - Iniciando selic_meta (BCB Séries 4189)
+2025-06-23 19:55:52.762 | INFO     | __main__:<module>:72 - Nenhuma atualização para selic_meta
+2025-06-23 19:55:52.778 | INFO     | __main__:<module>:55 - Iniciando cdi_over (BCB Séries 4390)
+2025-06-23 19:55:53.540 | INFO     | __main__:<module>:72 - Nenhuma atualização para cdi_over
+2025-06-23 19:59:03.207 | INFO     | __main__:buscar_dados_tesouro:27 - Consultando dados do Tesouro Direto...
+2025-06-23 19:59:03.578 | INFO     | __main__:salvar_historico_incremental:86 - Histórico atualizado com 58 novos registros.
+2025-06-23 19:59:03.579 | INFO     | __main__:<module>:99 - Coleta e salvamento concluídos com sucesso!
+2025-06-23 21:01:52.102 | INFO     | __main__:<module>:210 - Iniciando coleta para acoes_ibov.csv (87 tickers)
+2025-06-23 21:01:53.928 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ALOS3.SA - Registros brutos recebidos: 1463
+2025-06-23 21:01:53.935 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ALOS3.SA - 2 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:01:53.937 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ALOS3.SA - Registros válidos após limpeza e corte até ontem: 1461
+2025-06-23 21:01:53.941 | INFO     | __main__:<module>:221 - Atualizados 1461 registros para ALOS3.SA
+2025-06-23 21:01:56.633 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ABEV3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:01:56.639 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ABEV3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:01:56.643 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ABEV3.SA
+2025-06-23 21:01:59.469 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ASAI3.SA - Registros brutos recebidos: 1076
+2025-06-23 21:01:59.477 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ASAI3.SA - Registros válidos após limpeza e corte até ontem: 1076
+2025-06-23 21:01:59.484 | INFO     | __main__:<module>:221 - Atualizados 1076 registros para ASAI3.SA
+2025-06-23 21:02:02.268 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AURE3.SA - Registros brutos recebidos: 808
+2025-06-23 21:02:02.275 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AURE3.SA - Registros válidos após limpeza e corte até ontem: 808
+2025-06-23 21:02:02.283 | INFO     | __main__:<module>:221 - Atualizados 808 registros para AURE3.SA
+2025-06-23 21:02:04.592 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMOB3.SA - Registros brutos recebidos: 126
+2025-06-23 21:02:04.596 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMOB3.SA - Registros válidos após limpeza e corte até ontem: 126
+2025-06-23 21:02:04.600 | INFO     | __main__:<module>:221 - Atualizados 126 registros para AMOB3.SA
+2025-06-23 21:02:07.306 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AZUL4.SA - Registros brutos recebidos: 2041
+2025-06-23 21:02:07.311 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AZUL4.SA - Registros válidos após limpeza e corte até ontem: 2041
+2025-06-23 21:02:07.315 | INFO     | __main__:<module>:221 - Atualizados 2041 registros para AZUL4.SA
+2025-06-23 21:02:09.990 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AZZA3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:09.994 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AZZA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:09.997 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AZZA3.SA
+2025-06-23 21:02:12.771 | INFO     | __main__:obter_dados_historicos_yahoo:103 - B3SA3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:12.776 | INFO     | __main__:obter_dados_historicos_yahoo:121 - B3SA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:12.778 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para B3SA3.SA
+2025-06-23 21:02:15.625 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBSE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:15.630 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBSE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:15.633 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBSE3.SA
+2025-06-23 21:02:18.280 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBDC3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:18.285 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBDC3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:18.288 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBDC3.SA
+2025-06-23 21:02:20.926 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBDC4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:20.931 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBDC4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:20.934 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBDC4.SA
+2025-06-23 21:02:23.540 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRAP4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:23.547 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRAP4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:23.554 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRAP4.SA
+2025-06-23 21:02:26.350 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BBAS3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:26.357 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BBAS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:26.362 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BBAS3.SA
+2025-06-23 21:02:29.153 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRKM5.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:29.159 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRKM5.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:29.164 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRKM5.SA
+2025-06-23 21:02:32.483 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRAV3.SA - Registros brutos recebidos: 1147
+2025-06-23 21:02:32.596 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BRAV3.SA - 2 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:02:32.675 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRAV3.SA - Registros válidos após limpeza e corte até ontem: 1145
+2025-06-23 21:02:32.725 | INFO     | __main__:<module>:221 - Atualizados 1145 registros para BRAV3.SA
+2025-06-23 21:02:36.011 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BRFS3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:36.018 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BRFS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:36.024 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BRFS3.SA
+2025-06-23 21:02:38.815 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BPAC11.SA - Registros brutos recebidos: 2071
+2025-06-23 21:02:38.819 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BPAC11.SA - Registros válidos após limpeza e corte até ontem: 2071
+2025-06-23 21:02:38.821 | INFO     | __main__:<module>:221 - Atualizados 2071 registros para BPAC11.SA
+2025-06-23 21:02:41.536 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CXSE3.SA - Registros brutos recebidos: 1034
+2025-06-23 21:02:41.542 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CXSE3.SA - Registros válidos após limpeza e corte até ontem: 1034
+2025-06-23 21:02:41.546 | INFO     | __main__:<module>:221 - Atualizados 1034 registros para CXSE3.SA
+2025-06-23 21:02:45.045 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CRFB3.SA - Registros brutos recebidos: 1971
+2025-06-23 21:02:45.062 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - CRFB3.SA - 14 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:02:45.067 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CRFB3.SA - Registros válidos após limpeza e corte até ontem: 1957
+2025-06-23 21:02:45.080 | INFO     | __main__:<module>:221 - Atualizados 1957 registros para CRFB3.SA
+2025-06-23 21:02:48.548 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CCRO3.SA - Registros brutos recebidos: 2484
+2025-06-23 21:02:48.560 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CCRO3.SA - Registros válidos após limpeza e corte até ontem: 2484
+2025-06-23 21:02:48.567 | INFO     | __main__:<module>:221 - Atualizados 2484 registros para CCRO3.SA
+2025-06-23 21:02:51.242 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMIG4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:51.247 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMIG4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:51.252 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CMIG4.SA
+2025-06-23 21:02:53.908 | INFO     | __main__:obter_dados_historicos_yahoo:103 - COGN3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:53.913 | INFO     | __main__:obter_dados_historicos_yahoo:121 - COGN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:53.916 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para COGN3.SA
+2025-06-23 21:02:56.904 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CPLE6.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:56.909 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CPLE6.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:56.911 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CPLE6.SA
+2025-06-23 21:02:59.682 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CSAN3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:02:59.688 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CSAN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:02:59.692 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CSAN3.SA
+2025-06-23 21:03:02.794 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CPFE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:02.808 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CPFE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:02.815 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CPFE3.SA
+2025-06-23 21:03:05.244 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMIN3.SA - Registros brutos recebidos: 1081
+2025-06-23 21:03:05.252 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMIN3.SA - Registros válidos após limpeza e corte até ontem: 1081
+2025-06-23 21:03:05.258 | INFO     | __main__:<module>:221 - Atualizados 1081 registros para CMIN3.SA
+2025-06-23 21:03:08.267 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CVCB3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:08.273 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CVCB3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:08.277 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CVCB3.SA
+2025-06-23 21:03:10.965 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CYRE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:10.969 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CYRE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:10.972 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CYRE3.SA
+2025-06-23 21:03:29.583 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ELET3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:29.589 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ELET3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:29.593 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ELET3.SA
+2025-06-23 21:03:32.726 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ELET6.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:32.751 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ELET6.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:32.754 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ELET6.SA
+2025-06-23 21:03:35.423 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EMBR3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:35.429 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EMBR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:35.434 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EMBR3.SA
+2025-06-23 21:03:38.076 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ENGI11.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:38.081 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ENGI11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:38.084 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ENGI11.SA
+2025-06-23 21:03:40.695 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ENEV3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:40.699 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ENEV3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:40.701 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ENEV3.SA
+2025-06-23 21:03:43.492 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EGIE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:43.498 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EGIE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:43.502 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EGIE3.SA
+2025-06-23 21:03:46.490 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EQTL3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:46.495 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EQTL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:46.500 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para EQTL3.SA
+2025-06-23 21:03:49.291 | INFO     | __main__:obter_dados_historicos_yahoo:103 - FLRY3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:49.295 | INFO     | __main__:obter_dados_historicos_yahoo:121 - FLRY3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:49.298 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para FLRY3.SA
+2025-06-23 21:03:51.973 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GGBR4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:51.983 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GGBR4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:51.990 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para GGBR4.SA
+2025-06-23 21:03:55.113 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GOAU4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:03:55.127 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GOAU4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:03:55.139 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para GOAU4.SA
+2025-06-23 21:03:58.063 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NTCO3.SA - Registros brutos recebidos: 1368
+2025-06-23 21:03:58.066 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NTCO3.SA - Registros válidos após limpeza e corte até ontem: 1368
+2025-06-23 21:03:58.069 | INFO     | __main__:<module>:221 - Atualizados 1368 registros para NTCO3.SA
+2025-06-23 21:04:00.907 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HAPV3.SA - Registros brutos recebidos: 1776
+2025-06-23 21:04:00.910 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HAPV3.SA - Registros válidos após limpeza e corte até ontem: 1776
+2025-06-23 21:04:00.913 | INFO     | __main__:<module>:221 - Atualizados 1776 registros para HAPV3.SA
+2025-06-23 21:04:03.636 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HYPE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:03.640 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HYPE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:03.642 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para HYPE3.SA
+2025-06-23 21:04:06.027 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IGTI11.SA - Registros brutos recebidos: 894
+2025-06-23 21:04:06.031 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IGTI11.SA - Registros válidos após limpeza e corte até ontem: 894
+2025-06-23 21:04:06.033 | INFO     | __main__:<module>:221 - Atualizados 894 registros para IGTI11.SA
+2025-06-23 21:04:08.663 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IRBR3.SA - Registros brutos recebidos: 1965
+2025-06-23 21:04:08.666 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IRBR3.SA - Registros válidos após limpeza e corte até ontem: 1965
+2025-06-23 21:04:08.669 | INFO     | __main__:<module>:221 - Atualizados 1965 registros para IRBR3.SA
+2025-06-23 21:04:11.399 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ISAE4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:11.402 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ISAE4.SA - 11 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:04:11.403 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ISAE4.SA - Registros válidos após limpeza e corte até ontem: 2474
+2025-06-23 21:04:11.405 | INFO     | __main__:<module>:221 - Atualizados 2474 registros para ISAE4.SA
+2025-06-23 21:04:23.109 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITSA4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:23.113 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITSA4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:23.115 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITSA4.SA
+2025-06-23 21:04:25.824 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITUB4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:25.828 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITUB4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:25.830 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITUB4.SA
+2025-06-23 21:04:28.948 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JBSS3.SA - Registros brutos recebidos: 2484
+2025-06-23 21:04:28.955 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JBSS3.SA - Registros válidos após limpeza e corte até ontem: 2484
+2025-06-23 21:04:28.958 | INFO     | __main__:<module>:221 - Atualizados 2484 registros para JBSS3.SA
+2025-06-23 21:04:31.622 | INFO     | __main__:obter_dados_historicos_yahoo:103 - KLBN11.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:31.626 | INFO     | __main__:obter_dados_historicos_yahoo:121 - KLBN11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:31.628 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para KLBN11.SA
+2025-06-23 21:04:34.427 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RENT3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:34.431 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RENT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:34.433 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RENT3.SA
+2025-06-23 21:04:37.104 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LREN3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:37.108 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LREN3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:37.110 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para LREN3.SA
+2025-06-23 21:04:39.859 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LWSA3.SA - Registros brutos recebidos: 1336
+2025-06-23 21:04:39.864 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LWSA3.SA - Registros válidos após limpeza e corte até ontem: 1336
+2025-06-23 21:04:39.868 | INFO     | __main__:<module>:221 - Atualizados 1336 registros para LWSA3.SA
+2025-06-23 21:04:42.764 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MGLU3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:42.772 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MGLU3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:42.778 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MGLU3.SA
+2025-06-23 21:04:45.429 | INFO     | __main__:obter_dados_historicos_yahoo:103 - POMO4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:45.433 | INFO     | __main__:obter_dados_historicos_yahoo:121 - POMO4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:45.435 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para POMO4.SA
+2025-06-23 21:04:48.150 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MRFG3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:48.160 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MRFG3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:48.165 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MRFG3.SA
+2025-06-23 21:04:50.567 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BEEF3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:50.573 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BEEF3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:50.577 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BEEF3.SA
+2025-06-23 21:04:53.293 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MRVE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:53.296 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MRVE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:53.298 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MRVE3.SA
+2025-06-23 21:04:56.482 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MULT3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:56.486 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MULT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:56.488 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MULT3.SA
+2025-06-23 21:04:59.888 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PCAR3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:04:59.892 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PCAR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:04:59.895 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PCAR3.SA
+2025-06-23 21:05:02.696 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETR3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:02.701 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETR3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:02.704 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PETR3.SA
+2025-06-23 21:05:05.267 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETR4.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:05.270 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETR4.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:05.273 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PETR4.SA
+2025-06-23 21:05:07.757 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RECV3.SA - Registros brutos recebidos: 1031
+2025-06-23 21:05:07.764 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RECV3.SA - Registros válidos após limpeza e corte até ontem: 1031
+2025-06-23 21:05:07.771 | INFO     | __main__:<module>:221 - Atualizados 1031 registros para RECV3.SA
+2025-06-23 21:05:10.430 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PRIO3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:10.438 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PRIO3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:10.444 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PRIO3.SA
+2025-06-23 21:05:12.946 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PETZ3.SA - Registros brutos recebidos: 1185
+2025-06-23 21:05:12.949 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PETZ3.SA - Registros válidos após limpeza e corte até ontem: 1185
+2025-06-23 21:05:12.951 | INFO     | __main__:<module>:221 - Atualizados 1185 registros para PETZ3.SA
+2025-06-23 21:05:15.756 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PSSA3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:15.761 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PSSA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:15.764 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PSSA3.SA
+2025-06-23 21:05:18.603 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RADL3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:18.607 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RADL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:18.610 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RADL3.SA
+2025-06-23 21:05:21.120 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RAIZ4.SA - Registros brutos recebidos: 967
+2025-06-23 21:05:21.127 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RAIZ4.SA - Registros válidos após limpeza e corte até ontem: 967
+2025-06-23 21:05:21.132 | INFO     | __main__:<module>:221 - Atualizados 967 registros para RAIZ4.SA
+2025-06-23 21:05:23.910 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RDOR3.SA - Registros brutos recebidos: 1123
+2025-06-23 21:05:23.913 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RDOR3.SA - Registros válidos após limpeza e corte até ontem: 1123
+2025-06-23 21:05:23.915 | INFO     | __main__:<module>:221 - Atualizados 1123 registros para RDOR3.SA
+2025-06-23 21:05:26.850 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RAIL3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:26.853 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RAIL3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:26.855 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para RAIL3.SA
+2025-06-23 21:05:29.678 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SBSP3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:29.682 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SBSP3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:29.684 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SBSP3.SA
+2025-06-23 21:05:32.147 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SANB11.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:32.151 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SANB11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:32.154 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SANB11.SA
+2025-06-23 21:05:34.863 | INFO     | __main__:obter_dados_historicos_yahoo:103 - STBP3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:34.867 | INFO     | __main__:obter_dados_historicos_yahoo:121 - STBP3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:34.869 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para STBP3.SA
+2025-06-23 21:05:37.965 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SMTO3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:37.969 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SMTO3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:37.971 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SMTO3.SA
+2025-06-23 21:05:40.799 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CSNA3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:40.803 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CSNA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:40.806 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CSNA3.SA
+2025-06-23 21:05:43.240 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SLCE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:43.245 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SLCE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:43.249 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SLCE3.SA
+2025-06-23 21:05:46.010 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SUZB3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:46.014 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SUZB3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:46.017 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para SUZB3.SA
+2025-06-23 21:05:48.903 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TAEE11.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:48.908 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TAEE11.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:48.910 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TAEE11.SA
+2025-06-23 21:05:52.272 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VIVT3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:52.276 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VIVT3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:52.279 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VIVT3.SA
+2025-06-23 21:05:54.912 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TIMS3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:54.916 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TIMS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:54.918 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TIMS3.SA
+2025-06-23 21:05:57.658 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TOTS3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:05:57.662 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TOTS3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:05:57.665 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para TOTS3.SA
+2025-06-23 21:06:00.196 | INFO     | __main__:obter_dados_historicos_yahoo:103 - UGPA3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:00.201 | INFO     | __main__:obter_dados_historicos_yahoo:121 - UGPA3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:00.203 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para UGPA3.SA
+2025-06-23 21:06:02.922 | INFO     | __main__:obter_dados_historicos_yahoo:103 - USIM5.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:02.927 | INFO     | __main__:obter_dados_historicos_yahoo:121 - USIM5.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:02.930 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para USIM5.SA
+2025-06-23 21:06:05.963 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VALE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:05.987 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VALE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:05.989 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VALE3.SA
+2025-06-23 21:06:08.497 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VAMO3.SA - Registros brutos recebidos: 1093
+2025-06-23 21:06:08.501 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VAMO3.SA - Registros válidos após limpeza e corte até ontem: 1093
+2025-06-23 21:06:08.503 | INFO     | __main__:<module>:221 - Atualizados 1093 registros para VAMO3.SA
+2025-06-23 21:06:11.063 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VBBR3.SA - Registros brutos recebidos: 1806
+2025-06-23 21:06:11.066 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VBBR3.SA - Registros válidos após limpeza e corte até ontem: 1806
+2025-06-23 21:06:11.068 | INFO     | __main__:<module>:221 - Atualizados 1806 registros para VBBR3.SA
+2025-06-23 21:06:13.587 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VIVA3.SA - Registros brutos recebidos: 1414
+2025-06-23 21:06:13.590 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VIVA3.SA - Registros válidos após limpeza e corte até ontem: 1414
+2025-06-23 21:06:13.592 | INFO     | __main__:<module>:221 - Atualizados 1414 registros para VIVA3.SA
+2025-06-23 21:06:16.291 | INFO     | __main__:obter_dados_historicos_yahoo:103 - WEGE3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:16.295 | INFO     | __main__:obter_dados_historicos_yahoo:121 - WEGE3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:16.297 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para WEGE3.SA
+2025-06-23 21:06:18.945 | INFO     | __main__:obter_dados_historicos_yahoo:103 - YDUQ3.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:18.948 | INFO     | __main__:obter_dados_historicos_yahoo:121 - YDUQ3.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:18.951 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para YDUQ3.SA
+2025-06-23 21:06:22.930 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\acoes_ibov.csv (190270 registros)
+2025-06-23 21:06:22.935 | INFO     | __main__:<module>:210 - Iniciando coleta para bdrs.csv (36 tickers)
+2025-06-23 21:06:24.997 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JPMC34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:25.001 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JPMC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:25.003 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para JPMC34.SA
+2025-06-23 21:06:27.576 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BKNG34.SA - Registros brutos recebidos: 1515
+2025-06-23 21:06:27.579 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BKNG34.SA - Registros válidos após limpeza e corte até ontem: 1515
+2025-06-23 21:06:27.581 | INFO     | __main__:<module>:221 - Atualizados 1515 registros para BKNG34.SA
+2025-06-23 21:06:30.314 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BERK34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:30.317 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BERK34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:30.319 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BERK34.SA
+2025-06-23 21:06:32.884 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TSMC34.SA - Registros brutos recebidos: 1404
+2025-06-23 21:06:32.888 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TSMC34.SA - Registros válidos após limpeza e corte até ontem: 1404
+2025-06-23 21:06:32.891 | INFO     | __main__:<module>:221 - Atualizados 1404 registros para TSMC34.SA
+2025-06-23 21:06:35.392 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NFLX34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:35.396 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NFLX34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:35.399 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para NFLX34.SA
+2025-06-23 21:06:37.997 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GOGL34.SA - Registros brutos recebidos: 2273
+2025-06-23 21:06:38.002 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GOGL34.SA - Registros válidos após limpeza e corte até ontem: 2273
+2025-06-23 21:06:38.004 | INFO     | __main__:<module>:221 - Atualizados 2273 registros para GOGL34.SA
+2025-06-23 21:06:40.525 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MELI34.SA - Registros brutos recebidos: 1499
+2025-06-23 21:06:40.533 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MELI34.SA - Registros válidos após limpeza e corte até ontem: 1499
+2025-06-23 21:06:40.538 | INFO     | __main__:<module>:221 - Atualizados 1499 registros para MELI34.SA
+2025-06-23 21:06:43.384 | INFO     | __main__:obter_dados_historicos_yahoo:103 - M1TA34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:43.393 | INFO     | __main__:obter_dados_historicos_yahoo:121 - M1TA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:43.400 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para M1TA34.SA
+2025-06-23 21:06:45.910 | INFO     | __main__:obter_dados_historicos_yahoo:103 - RIGG34.SA - Registros brutos recebidos: 2214
+2025-06-23 21:06:45.913 | INFO     | __main__:obter_dados_historicos_yahoo:121 - RIGG34.SA - Registros válidos após limpeza e corte até ontem: 2214
+2025-06-23 21:06:45.916 | INFO     | __main__:<module>:221 - Atualizados 2214 registros para RIGG34.SA
+2025-06-23 21:06:48.542 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CHVX34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:48.545 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CHVX34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:48.547 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CHVX34.SA
+2025-06-23 21:06:51.055 | INFO     | __main__:obter_dados_historicos_yahoo:103 - INBR32.SA - Registros brutos recebidos: 702
+2025-06-23 21:06:51.059 | INFO     | __main__:obter_dados_historicos_yahoo:121 - INBR32.SA - Registros válidos após limpeza e corte até ontem: 702
+2025-06-23 21:06:51.061 | INFO     | __main__:<module>:221 - Atualizados 702 registros para INBR32.SA
+2025-06-23 21:06:53.753 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TSLA34.SA - Registros brutos recebidos: 2096
+2025-06-23 21:06:53.757 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TSLA34.SA - Registros válidos após limpeza e corte até ontem: 2096
+2025-06-23 21:06:53.760 | INFO     | __main__:<module>:221 - Atualizados 2096 registros para TSLA34.SA
+2025-06-23 21:06:56.404 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MSFT34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:56.408 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MSFT34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:06:56.411 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MSFT34.SA
+2025-06-23 21:06:59.384 | INFO     | __main__:obter_dados_historicos_yahoo:103 - IVVB11.SA - Registros brutos recebidos: 2485
+2025-06-23 21:06:59.387 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - IVVB11.SA - 27 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:06:59.388 | INFO     | __main__:obter_dados_historicos_yahoo:121 - IVVB11.SA - Registros válidos após limpeza e corte até ontem: 2458
+2025-06-23 21:06:59.390 | INFO     | __main__:<module>:221 - Atualizados 2458 registros para IVVB11.SA
+2025-06-23 21:07:02.023 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VISA34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:02.028 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VISA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:02.031 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VISA34.SA
+2025-06-23 21:07:04.764 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BOAC34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:04.768 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BOAC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:04.771 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para BOAC34.SA
+2025-06-23 21:07:07.510 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GMCO34.SA - Registros brutos recebidos: 2155
+2025-06-23 21:07:07.514 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GMCO34.SA - Registros válidos após limpeza e corte até ontem: 2155
+2025-06-23 21:07:07.516 | INFO     | __main__:<module>:221 - Atualizados 2155 registros para GMCO34.SA
+2025-06-23 21:07:10.225 | INFO     | __main__:obter_dados_historicos_yahoo:103 - COCA34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:10.229 | INFO     | __main__:obter_dados_historicos_yahoo:121 - COCA34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:10.232 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para COCA34.SA
+2025-06-23 21:07:12.879 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MSCD34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:12.884 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MSCD34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:12.886 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para MSCD34.SA
+2025-06-23 21:07:15.376 | INFO     | __main__:obter_dados_historicos_yahoo:103 - HOME34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:15.379 | INFO     | __main__:obter_dados_historicos_yahoo:121 - HOME34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:15.382 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para HOME34.SA
+2025-06-23 21:07:18.333 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMGN34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:18.337 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMGN34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:18.340 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AMGN34.SA
+2025-06-23 21:07:20.970 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AMZO34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:20.974 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AMZO34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:20.976 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AMZO34.SA
+2025-06-23 21:07:23.615 | INFO     | __main__:obter_dados_historicos_yahoo:103 - JNJB34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:23.619 | INFO     | __main__:obter_dados_historicos_yahoo:121 - JNJB34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:23.621 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para JNJB34.SA
+2025-06-23 21:07:26.238 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SSFO34.SA - Registros brutos recebidos: 2261
+2025-06-23 21:07:26.243 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SSFO34.SA - Registros válidos após limpeza e corte até ontem: 2261
+2025-06-23 21:07:26.245 | INFO     | __main__:<module>:221 - Atualizados 2261 registros para SSFO34.SA
+2025-06-23 21:07:28.847 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NVDC34.SA - Registros brutos recebidos: 1521
+2025-06-23 21:07:28.850 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NVDC34.SA - Registros válidos após limpeza e corte até ontem: 1521
+2025-06-23 21:07:28.853 | INFO     | __main__:<module>:221 - Atualizados 1521 registros para NVDC34.SA
+2025-06-23 21:07:31.477 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AAPL34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:31.481 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AAPL34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:31.484 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para AAPL34.SA
+2025-06-23 21:07:34.224 | INFO     | __main__:obter_dados_historicos_yahoo:103 - CMCS34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:34.228 | INFO     | __main__:obter_dados_historicos_yahoo:121 - CMCS34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:34.231 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para CMCS34.SA
+2025-06-23 21:07:36.873 | INFO     | __main__:obter_dados_historicos_yahoo:103 - VERZ34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:36.878 | INFO     | __main__:obter_dados_historicos_yahoo:121 - VERZ34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:36.881 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para VERZ34.SA
+2025-06-23 21:07:39.494 | INFO     | __main__:obter_dados_historicos_yahoo:103 - UNHH34.SA - Registros brutos recebidos: 1495
+2025-06-23 21:07:39.500 | INFO     | __main__:obter_dados_historicos_yahoo:121 - UNHH34.SA - Registros válidos após limpeza e corte até ontem: 1495
+2025-06-23 21:07:39.504 | INFO     | __main__:<module>:221 - Atualizados 1495 registros para UNHH34.SA
+2025-06-23 21:07:42.504 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DISB34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:42.508 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DISB34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:42.509 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para DISB34.SA
+2025-06-23 21:07:44.991 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AIRB34.SA - Registros brutos recebidos: 1094
+2025-06-23 21:07:44.994 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AIRB34.SA - Registros válidos após limpeza e corte até ontem: 1094
+2025-06-23 21:07:44.996 | INFO     | __main__:<module>:221 - Atualizados 1094 registros para AIRB34.SA
+2025-06-23 21:07:47.829 | INFO     | __main__:obter_dados_historicos_yahoo:103 - PFIZ34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:47.834 | INFO     | __main__:obter_dados_historicos_yahoo:121 - PFIZ34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:47.837 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para PFIZ34.SA
+2025-06-23 21:07:50.484 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AURA33.SA - Registros brutos recebidos: 1235
+2025-06-23 21:07:50.487 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AURA33.SA - Registros válidos após limpeza e corte até ontem: 1235
+2025-06-23 21:07:50.489 | INFO     | __main__:<module>:221 - Atualizados 1235 registros para AURA33.SA
+2025-06-23 21:07:53.547 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NIKE34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:53.553 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NIKE34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:53.556 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para NIKE34.SA
+2025-06-23 21:07:56.225 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ITLC34.SA - Registros brutos recebidos: 2485
+2025-06-23 21:07:56.230 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ITLC34.SA - Registros válidos após limpeza e corte até ontem: 2485
+2025-06-23 21:07:56.232 | INFO     | __main__:<module>:221 - Atualizados 2485 registros para ITLC34.SA
+2025-06-23 21:07:58.891 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BABA34.SA - Registros brutos recebidos: 1379
+2025-06-23 21:07:58.894 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BABA34.SA - Registros válidos após limpeza e corte até ontem: 1379
+2025-06-23 21:07:58.897 | INFO     | __main__:<module>:221 - Atualizados 1379 registros para BABA34.SA
+2025-06-23 21:08:02.311 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\bdrs.csv (77486 registros)
+2025-06-23 21:08:02.314 | INFO     | __main__:<module>:210 - Iniciando coleta para commodities.csv (7 tickers)
+2025-06-23 21:08:03.771 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BZ=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:03.775 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BZ=F - 4 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:03.776 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BZ=F - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 21:08:03.779 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para BZ=F
+2025-06-23 21:08:06.474 | INFO     | __main__:obter_dados_historicos_yahoo:103 - GC=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:06.479 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - GC=F - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:06.480 | INFO     | __main__:obter_dados_historicos_yahoo:121 - GC=F - Registros válidos após limpeza e corte até ontem: 2510
+2025-06-23 21:08:06.483 | INFO     | __main__:<module>:221 - Atualizados 2510 registros para GC=F
+2025-06-23 21:08:09.183 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SI=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:09.187 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - SI=F - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:09.188 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SI=F - Registros válidos após limpeza e corte até ontem: 2510
+2025-06-23 21:08:09.190 | INFO     | __main__:<module>:221 - Atualizados 2510 registros para SI=F
+2025-06-23 21:08:11.914 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ZS=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:11.919 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ZS=F - 5 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:11.920 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ZS=F - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:08:11.923 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ZS=F
+2025-06-23 21:08:14.545 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ZC=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:14.548 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ZC=F - 7 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:14.549 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ZC=F - Registros válidos após limpeza e corte até ontem: 2509
+2025-06-23 21:08:14.552 | INFO     | __main__:<module>:221 - Atualizados 2509 registros para ZC=F
+2025-06-23 21:08:17.221 | INFO     | __main__:obter_dados_historicos_yahoo:103 - KC=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:17.225 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - KC=F - 4 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:17.226 | INFO     | __main__:obter_dados_historicos_yahoo:121 - KC=F - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 21:08:17.228 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para KC=F
+2025-06-23 21:08:19.683 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LE=F - Registros brutos recebidos: 2516
+2025-06-23 21:08:19.687 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - LE=F - 5 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:19.688 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LE=F - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:08:19.690 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para LE=F
+2025-06-23 21:08:20.885 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\commodities.csv (17575 registros)
+2025-06-23 21:08:20.886 | INFO     | __main__:<module>:210 - Iniciando coleta para moedas.csv (2 tickers)
+2025-06-23 21:08:22.855 | INFO     | __main__:obter_dados_historicos_yahoo:103 - USDBRL=X - Registros brutos recebidos: 2608
+2025-06-23 21:08:22.859 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - USDBRL=X - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:22.859 | INFO     | __main__:obter_dados_historicos_yahoo:121 - USDBRL=X - Registros válidos após limpeza e corte até ontem: 2602
+2025-06-23 21:08:22.862 | INFO     | __main__:<module>:221 - Atualizados 2602 registros para USDBRL=X
+2025-06-23 21:08:25.617 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EURBRL=X - Registros brutos recebidos: 2608
+2025-06-23 21:08:25.621 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - EURBRL=X - 6 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:25.621 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EURBRL=X - Registros válidos após limpeza e corte até ontem: 2602
+2025-06-23 21:08:25.624 | INFO     | __main__:<module>:221 - Atualizados 2602 registros para EURBRL=X
+2025-06-23 21:08:26.630 | INFO     | __main__:<module>:236 - Coluna Volume removida de moedas.csv (todos zeros)
+2025-06-23 21:08:26.687 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\moedas.csv (5204 registros)
+2025-06-23 21:08:26.688 | INFO     | __main__:<module>:210 - Iniciando coleta para criptos.csv (14 tickers)
+2025-06-23 21:08:28.597 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BTC-USD - Registros brutos recebidos: 3652
+2025-06-23 21:08:28.601 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BTC-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:28.602 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BTC-USD - Registros válidos após limpeza e corte até ontem: 3651
+2025-06-23 21:08:28.605 | INFO     | __main__:<module>:221 - Atualizados 3651 registros para BTC-USD
+2025-06-23 21:08:31.541 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ETH-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:31.562 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ETH-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:31.562 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ETH-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:31.565 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para ETH-USD
+2025-06-23 21:08:34.458 | INFO     | __main__:obter_dados_historicos_yahoo:103 - BNB-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:34.461 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - BNB-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:34.462 | INFO     | __main__:obter_dados_historicos_yahoo:121 - BNB-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:34.464 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para BNB-USD
+2025-06-23 21:08:37.088 | INFO     | __main__:obter_dados_historicos_yahoo:103 - SOL-USD - Registros brutos recebidos: 1902
+2025-06-23 21:08:37.091 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - SOL-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:37.092 | INFO     | __main__:obter_dados_historicos_yahoo:121 - SOL-USD - Registros válidos após limpeza e corte até ontem: 1901
+2025-06-23 21:08:37.095 | INFO     | __main__:<module>:221 - Atualizados 1901 registros para SOL-USD
+2025-06-23 21:08:40.007 | INFO     | __main__:obter_dados_historicos_yahoo:103 - XRP-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:40.013 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - XRP-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:40.015 | INFO     | __main__:obter_dados_historicos_yahoo:121 - XRP-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:40.019 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para XRP-USD
+2025-06-23 21:08:42.867 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ADA-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:42.873 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ADA-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:42.876 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ADA-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:42.881 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para ADA-USD
+2025-06-23 21:08:45.466 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DOGE-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:45.470 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - DOGE-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:45.471 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DOGE-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:45.473 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para DOGE-USD
+2025-06-23 21:08:48.192 | INFO     | __main__:obter_dados_historicos_yahoo:103 - AVAX-USD - Registros brutos recebidos: 1808
+2025-06-23 21:08:48.195 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - AVAX-USD - 70 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:48.196 | INFO     | __main__:obter_dados_historicos_yahoo:121 - AVAX-USD - Registros válidos após limpeza e corte até ontem: 1738
+2025-06-23 21:08:48.198 | INFO     | __main__:<module>:221 - Atualizados 1738 registros para AVAX-USD
+2025-06-23 21:08:50.835 | INFO     | __main__:obter_dados_historicos_yahoo:103 - DOT-USD - Registros brutos recebidos: 1770
+2025-06-23 21:08:50.838 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - DOT-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:50.839 | INFO     | __main__:obter_dados_historicos_yahoo:121 - DOT-USD - Registros válidos após limpeza e corte até ontem: 1769
+2025-06-23 21:08:50.841 | INFO     | __main__:<module>:221 - Atualizados 1769 registros para DOT-USD
+2025-06-23 21:08:53.674 | INFO     | __main__:obter_dados_historicos_yahoo:103 - MATIC-USD - Registros brutos recebidos: 2249
+2025-06-23 21:08:53.678 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - MATIC-USD - 91 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:53.679 | INFO     | __main__:obter_dados_historicos_yahoo:121 - MATIC-USD - Registros válidos após limpeza e corte até ontem: 2158
+2025-06-23 21:08:53.681 | INFO     | __main__:<module>:221 - Atualizados 2158 registros para MATIC-USD
+2025-06-23 21:08:57.015 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LTC-USD - Registros brutos recebidos: 3652
+2025-06-23 21:08:57.021 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - LTC-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:57.021 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LTC-USD - Registros válidos após limpeza e corte até ontem: 3651
+2025-06-23 21:08:57.023 | INFO     | __main__:<module>:221 - Atualizados 3651 registros para LTC-USD
+2025-06-23 21:08:59.990 | INFO     | __main__:obter_dados_historicos_yahoo:103 - LINK-USD - Registros brutos recebidos: 2785
+2025-06-23 21:08:59.994 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - LINK-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:08:59.995 | INFO     | __main__:obter_dados_historicos_yahoo:121 - LINK-USD - Registros válidos após limpeza e corte até ontem: 2784
+2025-06-23 21:08:59.997 | INFO     | __main__:<module>:221 - Atualizados 2784 registros para LINK-USD
+2025-06-23 21:09:03.282 | INFO     | __main__:obter_dados_historicos_yahoo:103 - TON-USD - Registros brutos recebidos: 1761
+2025-06-23 21:09:03.286 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - TON-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:03.287 | INFO     | __main__:obter_dados_historicos_yahoo:121 - TON-USD - Registros válidos após limpeza e corte até ontem: 1760
+2025-06-23 21:09:03.289 | INFO     | __main__:<module>:221 - Atualizados 1760 registros para TON-USD
+2025-06-23 21:09:06.008 | INFO     | __main__:obter_dados_historicos_yahoo:103 - NEAR-USD - Registros brutos recebidos: 1715
+2025-06-23 21:09:06.012 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - NEAR-USD - 1 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:06.012 | INFO     | __main__:obter_dados_historicos_yahoo:121 - NEAR-USD - Registros válidos após limpeza e corte até ontem: 1714
+2025-06-23 21:09:06.015 | INFO     | __main__:<module>:221 - Atualizados 1714 registros para NEAR-USD
+2025-06-23 21:09:07.513 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\criptos.csv (35046 registros)
+2025-06-23 21:09:07.515 | INFO     | __main__:<module>:210 - Iniciando coleta para juros.csv (5 tickers)
+2025-06-23 21:09:09.300 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^IRX - Registros brutos recebidos: 2607
+2025-06-23 21:09:09.304 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^IRX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:09.305 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^IRX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:09:09.308 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^IRX
+2025-06-23 21:09:11.995 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^FVX - Registros brutos recebidos: 2607
+2025-06-23 21:09:11.999 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^FVX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:12.000 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^FVX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:09:12.003 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^FVX
+2025-06-23 21:09:14.837 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^TNX - Registros brutos recebidos: 2607
+2025-06-23 21:09:14.842 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^TNX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:14.844 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^TNX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:09:14.847 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^TNX
+2025-06-23 21:09:17.676 | INFO     | __main__:obter_dados_historicos_yahoo:103 - ^TYX - Registros brutos recebidos: 2607
+2025-06-23 21:09:17.680 | WARNING  | __main__:obter_dados_historicos_yahoo:117 - ^TYX - 96 linhas removidas por dados essenciais ausentes (OHLC/Adj Close)
+2025-06-23 21:09:17.681 | INFO     | __main__:obter_dados_historicos_yahoo:121 - ^TYX - Registros válidos após limpeza e corte até ontem: 2511
+2025-06-23 21:09:17.685 | INFO     | __main__:<module>:221 - Atualizados 2511 registros para ^TYX
+2025-06-23 21:09:20.356 | INFO     | __main__:obter_dados_historicos_yahoo:103 - EDV - Registros brutos recebidos: 2512
+2025-06-23 21:09:20.362 | INFO     | __main__:obter_dados_historicos_yahoo:121 - EDV - Registros válidos após limpeza e corte até ontem: 2512
+2025-06-23 21:09:20.364 | INFO     | __main__:<module>:221 - Atualizados 2512 registros para EDV
+2025-06-23 21:09:21.590 | INFO     | __main__:<module>:241 - Arquivo salvo: dados\juros.csv (12556 registros)
+2025-06-23 21:09:21.590 | INFO     | __main__:<module>:245 - Coleta completa!

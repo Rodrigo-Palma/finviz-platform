@@ -26,7 +26,6 @@ Inclui modelos preditivos com:
 ```bash
 finviz-platform/
 ├── coletor.py                              # Coleta automática de dados do Yahoo Finance
-├── fazer_previsao.py                       # Geração de previsões com modelos treinados
 ├── ml_pipeline_forecasting.py              # Pipeline ARIMA/Prophet (forecasting tradicional)
 ├── ml_pipeline_forecasting_deep.py         # Pipeline Deep/ML (Random Forest, XGBoost, LSTM)
 ├── ml_pipeline_forecasting_markov.py       # Pipeline Markov/Hidden Markov

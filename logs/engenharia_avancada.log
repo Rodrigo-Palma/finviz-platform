@@ -93,3 +93,49 @@
 2025-06-20 19:44:30.368 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
 2025-06-20 19:44:30.371 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
 2025-06-20 19:44:30.371 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-23 19:59:17.126 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-23 19:59:53.131 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
+2025-06-23 20:00:07.136 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
+2025-06-23 20:00:10.362 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
+2025-06-23 20:00:17.201 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
+2025-06-23 20:00:17.216 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-23 20:00:19.450 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
+2025-06-23 20:00:19.455 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-23 20:00:19.460 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-23 20:00:19.653 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
+2025-06-23 20:00:19.679 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
+2025-06-23 20:00:20.363 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
+2025-06-23 20:00:20.380 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-23 20:00:20.381 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-23 20:59:38.559 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-23 20:59:38.573 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-23 20:59:38.575 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-23 20:59:38.578 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-23 20:59:38.581 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-23 20:59:38.582 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-23 21:00:45.470 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-23 21:00:45.493 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-23 21:00:45.499 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-23 21:00:45.505 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-23 21:00:45.510 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-23 21:00:45.511 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-23 21:01:29.252 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-23 21:01:29.264 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-23 21:01:29.267 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-23 21:01:29.269 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-23 21:01:29.271 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-23 21:01:29.272 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
+2025-06-23 21:10:30.495 | INFO     | __main__:<module>:127 - Iniciando engenharia de atributos avançada incremental com LAGs...
+2025-06-23 21:11:03.367 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\acoes_ibov.csv
+2025-06-23 21:11:15.342 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\bdrs.csv
+2025-06-23 21:11:18.002 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\commodities.csv
+2025-06-23 21:11:24.279 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\criptos.csv
+2025-06-23 21:11:24.282 | WARNING  | __main__:<module>:154 - Arquivo ignorado: historico_tesouro.csv (faltam colunas obrigatórias)
+2025-06-23 21:11:26.261 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\juros.csv
+2025-06-23 21:11:26.264 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_cdi_over.csv (faltam colunas obrigatórias)
+2025-06-23 21:11:26.266 | WARNING  | __main__:<module>:154 - Arquivo ignorado: juros_brasil_selic_meta.csv (faltam colunas obrigatórias)
+2025-06-23 21:11:26.336 | WARNING  | __main__:calcular_obv:65 - Coluna 'Volume' não encontrada. Pulando cálculo de OBV.
+2025-06-23 21:11:26.352 | WARNING  | __main__:criar_lags:100 - Coluna 'Volume' não encontrada para criação de LAGs. Pulando...
+2025-06-23 21:11:26.974 | INFO     | __main__:<module>:162 - Arquivo incremental salvo: dados_transformados\moedas.csv
+2025-06-23 21:11:26.977 | WARNING  | __main__:<module>:154 - Arquivo ignorado: nome_ativos.csv (faltam colunas obrigatórias)
+2025-06-23 21:11:26.978 | INFO     | __main__:<module>:167 - Engenharia de atributos incremental concluída! Arquivos salvos em 'dados_transformados'.
