@@ -2302,3 +2302,458 @@
 2025-06-19 19:32:31.215 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EURBRL=X_HMM _ Baixa.png
 2025-06-19 19:32:32.123 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_USDBRL=X_HMM _ Baixa.png
 2025-06-19 19:32:32.677 | INFO     | __main__:<module>:373 - Pipeline finalizado com sucesso!
+2025-06-27 22:08:52.185 | INFO     | __main__:<module>:345 - Iniciando pipeline de forecasting Markov...
+2025-06-27 22:08:55.499 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ABEV3.SA
+2025-06-27 22:08:55.573 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ALOS3.SA
+2025-06-27 22:08:55.590 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | AMOB3.SA
+2025-06-27 22:08:55.619 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ASAI3.SA
+2025-06-27 22:08:57.338 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:08:57.694 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:08:57.755 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:08:58.555 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:09:01.915 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMOB3.SA_HMM _ Média.png
+2025-06-27 22:09:01.917 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | AURE3.SA
+2025-06-27 22:09:02.720 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:09:03.874 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ASAI3.SA_HMM _ Média.png
+2025-06-27 22:09:03.885 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | AZUL4.SA
+2025-06-27 22:09:05.263 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ALOS3.SA_HMM _ Média.png
+2025-06-27 22:09:05.280 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | AZZA3.SA
+2025-06-27 22:09:05.421 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:06.448 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:06.540 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ABEV3.SA_HMM _ Baixa.png
+2025-06-27 22:09:06.541 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | B3SA3.SA
+2025-06-27 22:09:08.119 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:09.310 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AURE3.SA_HMM _ Baixa.png
+2025-06-27 22:09:09.313 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BBAS3.SA
+2025-06-27 22:09:11.733 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:12.938 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AZUL4.SA_HMM _ Média.png
+2025-06-27 22:09:12.950 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BBDC3.SA
+2025-06-27 22:09:14.115 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:09:15.016 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AZZA3.SA_HMM _ Média.png
+2025-06-27 22:09:15.033 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BBDC4.SA
+2025-06-27 22:09:15.977 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_B3SA3.SA_HMM _ Média.png
+2025-06-27 22:09:15.978 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BBSE3.SA
+2025-06-27 22:09:16.491 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:16.569 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:09:17.742 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBAS3.SA_HMM _ Média.png
+2025-06-27 22:09:17.744 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BEEF3.SA
+2025-06-27 22:09:18.626 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:21.810 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBDC3.SA_HMM _ Baixa.png
+2025-06-27 22:09:21.819 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BPAC11.SA
+2025-06-27 22:09:22.477 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:23.249 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBSE3.SA_HMM _ Baixa.png
+2025-06-27 22:09:23.251 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BRAP4.SA
+2025-06-27 22:09:23.907 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:24.793 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BBDC4.SA_HMM _ Média.png
+2025-06-27 22:09:24.809 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BRAV3.SA
+2025-06-27 22:09:25.455 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:27.115 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BEEF3.SA_HMM _ Média.png
+2025-06-27 22:09:27.117 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BRFS3.SA
+2025-06-27 22:09:27.815 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:28.660 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BPAC11.SA_HMM _ Média.png
+2025-06-27 22:09:28.663 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | BRKM5.SA
+2025-06-27 22:09:30.540 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:09:31.894 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRAP4.SA_HMM _ Média.png
+2025-06-27 22:09:31.895 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CCRO3.SA
+2025-06-27 22:09:32.420 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRAV3.SA_HMM _ Média.png
+2025-06-27 22:09:32.438 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CMIG4.SA
+2025-06-27 22:09:33.001 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:33.684 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:35.033 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRFS3.SA_HMM _ Média.png
+2025-06-27 22:09:35.035 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CMIN3.SA
+2025-06-27 22:09:35.384 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:36.529 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BRKM5.SA_HMM _ Média.png
+2025-06-27 22:09:36.531 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | COGN3.SA
+2025-06-27 22:09:39.215 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:39.832 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CCRO3.SA_HMM _ Média.png
+2025-06-27 22:09:39.834 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CPFE3.SA
+2025-06-27 22:09:40.431 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMIG4.SA_HMM _ Média.png
+2025-06-27 22:09:40.432 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CPLE6.SA
+2025-06-27 22:09:40.692 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:09:40.965 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:41.640 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMIN3.SA_HMM _ Média.png
+2025-06-27 22:09:41.641 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CRFB3.SA
+2025-06-27 22:09:43.327 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:46.335 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_COGN3.SA_HMM _ Média.png
+2025-06-27 22:09:46.335 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CSAN3.SA
+2025-06-27 22:09:46.751 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:47.515 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CPLE6.SA_HMM _ Média.png
+2025-06-27 22:09:47.517 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CSNA3.SA
+2025-06-27 22:09:48.229 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CPFE3.SA_HMM _ Baixa.png
+2025-06-27 22:09:48.231 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CVCB3.SA
+2025-06-27 22:09:49.457 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:49.684 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:09:51.918 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CRFB3.SA_HMM _ Média.png
+2025-06-27 22:09:51.919 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CXSE3.SA
+2025-06-27 22:09:52.966 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:09:53.438 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CSAN3.SA_HMM _ Média.png
+2025-06-27 22:09:53.439 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | CYRE3.SA
+2025-06-27 22:09:54.834 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:09:55.583 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CVCB3.SA_HMM _ Média.png
+2025-06-27 22:09:55.586 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | EGIE3.SA
+2025-06-27 22:09:56.644 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:09:56.807 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CSNA3.SA_HMM _ Média.png
+2025-06-27 22:09:56.821 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ELET3.SA
+2025-06-27 22:09:58.013 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:09:59.746 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CXSE3.SA_HMM _ Baixa.png
+2025-06-27 22:09:59.757 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ELET6.SA
+2025-06-27 22:10:00.592 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:10:02.143 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CYRE3.SA_HMM _ Média.png
+2025-06-27 22:10:02.159 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | EMBR3.SA
+2025-06-27 22:10:03.701 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EGIE3.SA_HMM _ Baixa.png
+2025-06-27 22:10:03.702 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ENEV3.SA
+2025-06-27 22:10:04.050 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:04.540 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:05.558 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ELET3.SA_HMM _ Média.png
+2025-06-27 22:10:05.572 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ENGI11.SA
+2025-06-27 22:10:06.503 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:10:08.219 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ELET6.SA_HMM _ Média.png
+2025-06-27 22:10:08.232 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | EQTL3.SA
+2025-06-27 22:10:09.090 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:10:11.128 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EMBR3.SA_HMM _ Média.png
+2025-06-27 22:10:11.145 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | FLRY3.SA
+2025-06-27 22:10:11.848 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:10:12.561 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ENEV3.SA_HMM _ Média.png
+2025-06-27 22:10:12.563 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | GGBR4.SA
+2025-06-27 22:10:13.479 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:13.521 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ENGI11.SA_HMM _ Baixa.png
+2025-06-27 22:10:13.523 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | GOAU4.SA
+2025-06-27 22:10:14.567 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:17.286 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EQTL3.SA_HMM _ Baixa.png
+2025-06-27 22:10:17.295 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | HAPV3.SA
+2025-06-27 22:10:19.002 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:10:20.061 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_FLRY3.SA_HMM _ Baixa.png
+2025-06-27 22:10:20.076 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | HYPE3.SA
+2025-06-27 22:10:20.974 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:10:21.113 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GOAU4.SA_HMM _ Média.png
+2025-06-27 22:10:21.114 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | IGTI11.SA
+2025-06-27 22:10:21.985 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:10:23.259 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GGBR4.SA_HMM _ Média.png
+2025-06-27 22:10:23.271 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | IRBR3.SA
+2025-06-27 22:10:24.115 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:10:26.618 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HAPV3.SA_HMM _ Média.png
+2025-06-27 22:10:26.627 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ISAE4.SA
+2025-06-27 22:10:28.066 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:10:28.618 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HYPE3.SA_HMM _ Baixa.png
+2025-06-27 22:10:28.620 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ITSA4.SA
+2025-06-27 22:10:29.148 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IGTI11.SA_HMM _ Baixa.png
+2025-06-27 22:10:29.149 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | ITUB4.SA
+2025-06-27 22:10:29.394 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:10:29.911 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:10:30.469 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IRBR3.SA_HMM _ Média.png
+2025-06-27 22:10:30.471 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | JBSS3.SA
+2025-06-27 22:10:32.586 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:10:34.403 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ISAE4.SA_HMM _ Baixa.png
+2025-06-27 22:10:34.411 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | KLBN11.SA
+2025-06-27 22:10:35.147 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:10:37.225 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITUB4.SA_HMM _ Baixa.png
+2025-06-27 22:10:37.235 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | LREN3.SA
+2025-06-27 22:10:38.447 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:10:39.771 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITSA4.SA_HMM _ Baixa.png
+2025-06-27 22:10:39.776 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | LWSA3.SA
+2025-06-27 22:10:40.282 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JBSS3.SA_HMM _ Média.png
+2025-06-27 22:10:40.284 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | MGLU3.SA
+2025-06-27 22:10:40.335 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:41.387 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_KLBN11.SA_HMM _ Baixa.png
+2025-06-27 22:10:41.390 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | MRFG3.SA
+2025-06-27 22:10:41.961 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:10:42.890 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:10:45.253 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LREN3.SA_HMM _ Média.png
+2025-06-27 22:10:45.254 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | MRVE3.SA
+2025-06-27 22:10:45.853 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:10:47.904 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LWSA3.SA_HMM _ Média.png
+2025-06-27 22:10:47.909 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | MULT3.SA
+2025-06-27 22:10:50.844 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:10:52.018 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MGLU3.SA_HMM _ Média.png
+2025-06-27 22:10:52.025 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | NTCO3.SA
+2025-06-27 22:10:52.595 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MRFG3.SA_HMM _ Média.png
+2025-06-27 22:10:52.602 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PCAR3.SA
+2025-06-27 22:10:53.468 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:53.521 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:56.353 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MRVE3.SA_HMM _ Média.png
+2025-06-27 22:10:56.363 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PETR3.SA
+2025-06-27 22:10:57.479 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MULT3.SA_HMM _ Baixa.png
+2025-06-27 22:10:57.489 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PETR4.SA
+2025-06-27 22:10:58.155 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:58.391 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PCAR3.SA_HMM _ Média.png
+2025-06-27 22:10:58.392 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PETZ3.SA
+2025-06-27 22:10:58.709 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:10:58.880 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:00.028 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NTCO3.SA_HMM _ Média.png
+2025-06-27 22:11:00.030 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | POMO4.SA
+2025-06-27 22:11:01.494 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:11:04.028 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETR3.SA_HMM _ Média.png
+2025-06-27 22:11:04.029 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PRIO3.SA
+2025-06-27 22:11:04.819 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:05.210 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETR4.SA_HMM _ Média.png
+2025-06-27 22:11:05.212 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | PSSA3.SA
+2025-06-27 22:11:06.327 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PETZ3.SA_HMM _ Média.png
+2025-06-27 22:11:06.340 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RADL3.SA
+2025-06-27 22:11:06.555 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:11:07.186 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:11:09.267 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_POMO4.SA_HMM _ Média.png
+2025-06-27 22:11:09.268 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RAIL3.SA
+2025-06-27 22:11:10.070 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:10.933 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PRIO3.SA_HMM _ Média.png
+2025-06-27 22:11:10.945 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RAIZ4.SA
+2025-06-27 22:11:11.512 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:13.796 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PSSA3.SA_HMM _ Baixa.png
+2025-06-27 22:11:13.807 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RDOR3.SA
+2025-06-27 22:11:14.333 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:11:14.793 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RADL3.SA_HMM _ Baixa.png
+2025-06-27 22:11:14.794 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RECV3.SA
+2025-06-27 22:11:15.218 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:16.120 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RAIZ4.SA_HMM _ Média.png
+2025-06-27 22:11:16.121 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | RENT3.SA
+2025-06-27 22:11:17.329 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:19.295 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RAIL3.SA_HMM _ Média.png
+2025-06-27 22:11:19.314 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | SANB11.SA
+2025-06-27 22:11:20.639 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:11:21.126 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RECV3.SA_HMM _ Média.png
+2025-06-27 22:11:21.128 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | SBSP3.SA
+2025-06-27 22:11:22.772 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:11:22.999 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RDOR3.SA_HMM _ Média.png
+2025-06-27 22:11:23.010 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | SLCE3.SA
+2025-06-27 22:11:24.396 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:24.555 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RENT3.SA_HMM _ Média.png
+2025-06-27 22:11:24.557 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | SMTO3.SA
+2025-06-27 22:11:27.050 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:28.074 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SANB11.SA_HMM _ Baixa.png
+2025-06-27 22:11:28.076 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | STBP3.SA
+2025-06-27 22:11:28.408 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:29.484 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SBSP3.SA_HMM _ Média.png
+2025-06-27 22:11:29.485 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | SUZB3.SA
+2025-06-27 22:11:31.575 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:11:33.196 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SLCE3.SA_HMM _ Média.png
+2025-06-27 22:11:33.209 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | TAEE11.SA
+2025-06-27 22:11:34.467 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_STBP3.SA_HMM _ Média.png
+2025-06-27 22:11:34.469 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | TIMS3.SA
+2025-06-27 22:11:34.570 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:11:35.751 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:11:36.033 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SMTO3.SA_HMM _ Média.png
+2025-06-27 22:11:36.049 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | TOTS3.SA
+2025-06-27 22:11:37.601 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:39.252 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SUZB3.SA_HMM _ Baixa.png
+2025-06-27 22:11:39.254 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | UGPA3.SA
+2025-06-27 22:11:40.132 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:11:42.293 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TAEE11.SA_HMM _ Baixa.png
+2025-06-27 22:11:42.307 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | USIM5.SA
+2025-06-27 22:11:42.934 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TIMS3.SA_HMM _ Baixa.png
+2025-06-27 22:11:42.947 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | VALE3.SA
+2025-06-27 22:11:44.101 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:44.592 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TOTS3.SA_HMM _ Média.png
+2025-06-27 22:11:44.594 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | VAMO3.SA
+2025-06-27 22:11:44.809 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:11:45.202 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:46.450 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_UGPA3.SA_HMM _ Média.png
+2025-06-27 22:11:46.452 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | VBBR3.SA
+2025-06-27 22:11:46.922 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:49.917 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VALE3.SA_HMM _ Média.png
+2025-06-27 22:11:49.929 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | VIVA3.SA
+2025-06-27 22:11:51.426 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:11:51.598 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VAMO3.SA_HMM _ Média.png
+2025-06-27 22:11:51.608 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | VIVT3.SA
+2025-06-27 22:11:52.953 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:11:53.857 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_USIM5.SA_HMM _ Média.png
+2025-06-27 22:11:53.860 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | WEGE3.SA
+2025-06-27 22:11:54.694 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VBBR3.SA_HMM _ Média.png
+2025-06-27 22:11:54.696 | INFO     | __main__:processar_ticker:317 - Iniciando acoes_ibov.csv | YDUQ3.SA
+2025-06-27 22:11:55.101 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:11:56.216 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:11:58.706 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VIVA3.SA_HMM _ Média.png
+2025-06-27 22:11:59.701 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VIVT3.SA_HMM _ Baixa.png
+2025-06-27 22:12:00.907 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_YDUQ3.SA_HMM _ Média.png
+2025-06-27 22:12:01.353 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_WEGE3.SA_HMM _ Baixa.png
+2025-06-27 22:12:02.687 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | AAPL34.SA
+2025-06-27 22:12:02.697 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | AIRB34.SA
+2025-06-27 22:12:02.709 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | AMGN34.SA
+2025-06-27 22:12:02.734 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | AMZO34.SA
+2025-06-27 22:12:03.915 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:03.932 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:12:04.190 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:04.351 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:09.030 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AIRB34.SA_HMM _ Média.png
+2025-06-27 22:12:09.033 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | AURA33.SA
+2025-06-27 22:12:09.711 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:12:10.623 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AAPL34.SA_HMM _ Baixa.png
+2025-06-27 22:12:10.637 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | BABA34.SA
+2025-06-27 22:12:11.629 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:12.446 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMGN34.SA_HMM _ Baixa.png
+2025-06-27 22:12:12.455 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | BERK34.SA
+2025-06-27 22:12:13.325 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:14.146 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AMZO34.SA_HMM _ Baixa.png
+2025-06-27 22:12:14.149 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | BKNG34.SA
+2025-06-27 22:12:14.649 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:12:15.689 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AURA33.SA_HMM _ Média.png
+2025-06-27 22:12:15.704 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | BOAC34.SA
+2025-06-27 22:12:16.591 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:12:18.491 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BABA34.SA_HMM _ Média.png
+2025-06-27 22:12:18.502 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | CHVX34.SA
+2025-06-27 22:12:19.683 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:12:21.127 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BKNG34.SA_HMM _ Média.png
+2025-06-27 22:12:21.129 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | CMCS34.SA
+2025-06-27 22:12:23.202 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:24.046 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BERK34.SA_HMM _ Baixa.png
+2025-06-27 22:12:24.049 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | COCA34.SA
+2025-06-27 22:12:25.321 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:25.701 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BOAC34.SA_HMM _ Baixa.png
+2025-06-27 22:12:25.703 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | DISB34.SA
+2025-06-27 22:12:26.236 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:12:27.568 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CHVX34.SA_HMM _ Baixa.png
+2025-06-27 22:12:27.570 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | GMCO34.SA
+2025-06-27 22:12:28.237 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:32.123 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_CMCS34.SA_HMM _ Baixa.png
+2025-06-27 22:12:32.144 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | GOGL34.SA
+2025-06-27 22:12:33.069 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_COCA34.SA_HMM _ Baixa.png
+2025-06-27 22:12:33.071 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | HOME34.SA
+2025-06-27 22:12:33.440 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Baixa
+2025-06-27 22:12:34.783 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:34.843 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GMCO34.SA_HMM _ Média.png
+2025-06-27 22:12:34.844 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | INBR32.SA
+2025-06-27 22:12:35.216 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:12:36.537 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DISB34.SA_HMM _ Baixa.png
+2025-06-27 22:12:36.539 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | ITLC34.SA
+2025-06-27 22:12:37.594 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:12:40.932 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_INBR32.SA_HMM _ Média.png
+2025-06-27 22:12:40.938 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | IVVB11.SA
+2025-06-27 22:12:41.455 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GOGL34.SA_HMM _ Baixa.png
+2025-06-27 22:12:41.471 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | JNJB34.SA
+2025-06-27 22:12:42.059 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:42.932 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:44.603 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_HOME34.SA_HMM _ Baixa.png
+2025-06-27 22:12:44.620 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | JPMC34.SA
+2025-06-27 22:12:47.188 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:47.927 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ITLC34.SA_HMM _ Média.png
+2025-06-27 22:12:47.954 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | M1TA34.SA
+2025-06-27 22:12:49.763 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_IVVB11.SA_HMM _ Baixa.png
+2025-06-27 22:12:49.765 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | MELI34.SA
+2025-06-27 22:12:50.662 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:50.930 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:51.886 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JNJB34.SA_HMM _ Baixa.png
+2025-06-27 22:12:51.888 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | MSCD34.SA
+2025-06-27 22:12:53.846 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:55.482 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_JPMC34.SA_HMM _ Baixa.png
+2025-06-27 22:12:55.485 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | MSFT34.SA
+2025-06-27 22:12:56.093 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:12:57.256 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MELI34.SA_HMM _ Média.png
+2025-06-27 22:12:57.266 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | NFLX34.SA
+2025-06-27 22:12:58.811 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:12:59.592 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_M1TA34.SA_HMM _ Média.png
+2025-06-27 22:12:59.593 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | NIKE34.SA
+2025-06-27 22:13:00.306 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:01.226 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MSCD34.SA_HMM _ Baixa.png
+2025-06-27 22:13:01.227 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | NVDC34.SA
+2025-06-27 22:13:02.292 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:13:06.491 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NFLX34.SA_HMM _ Média.png
+2025-06-27 22:13:06.503 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | PFIZ34.SA
+2025-06-27 22:13:07.187 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NIKE34.SA_HMM _ Baixa.png
+2025-06-27 22:13:07.188 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | RIGG34.SA
+2025-06-27 22:13:07.842 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:07.849 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:08.098 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MSFT34.SA_HMM _ Baixa.png
+2025-06-27 22:13:08.100 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | SSFO34.SA
+2025-06-27 22:13:09.139 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NVDC34.SA_HMM _ Média.png
+2025-06-27 22:13:09.141 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | TSLA34.SA
+2025-06-27 22:13:09.242 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:10.542 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:13:13.648 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_RIGG34.SA_HMM _ Média.png
+2025-06-27 22:13:13.658 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | TSMC34.SA
+2025-06-27 22:13:15.071 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:15.339 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_PFIZ34.SA_HMM _ Baixa.png
+2025-06-27 22:13:15.340 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | UNHH34.SA
+2025-06-27 22:13:15.933 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SSFO34.SA_HMM _ Média.png
+2025-06-27 22:13:15.936 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | VERZ34.SA
+2025-06-27 22:13:16.260 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:17.281 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TSLA34.SA_HMM _ Média.png
+2025-06-27 22:13:17.282 | INFO     | __main__:processar_ticker:317 - Iniciando bdrs.csv | VISA34.SA
+2025-06-27 22:13:17.353 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:13:19.097 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:21.514 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TSMC34.SA_HMM _ Média.png
+2025-06-27 22:13:23.625 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_UNHH34.SA_HMM _ Média.png
+2025-06-27 22:13:24.148 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VERZ34.SA_HMM _ Baixa.png
+2025-06-27 22:13:24.312 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_VISA34.SA_HMM _ Baixa.png
+2025-06-27 22:13:24.642 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | BZ=F
+2025-06-27 22:13:24.645 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | GC=F
+2025-06-27 22:13:24.655 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | KC=F
+2025-06-27 22:13:24.665 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | LE=F
+2025-06-27 22:13:25.243 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:25.652 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:13:25.962 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:26.163 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:31.327 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_GC=F_HMM _ Baixa.png
+2025-06-27 22:13:31.332 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | SI=F
+2025-06-27 22:13:31.657 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BZ=F_HMM _ Média.png
+2025-06-27 22:13:31.658 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | ZC=F
+2025-06-27 22:13:32.537 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_KC=F_HMM _ Média.png
+2025-06-27 22:13:32.538 | INFO     | __main__:processar_ticker:317 - Iniciando commodities.csv | ZS=F
+2025-06-27 22:13:32.727 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:32.829 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:33.194 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:13:34.413 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LE=F_HMM _ Baixa.png
+2025-06-27 22:13:38.208 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ZC=F_HMM _ Baixa.png
+2025-06-27 22:13:38.478 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SI=F_HMM _ Baixa.png
+2025-06-27 22:13:39.165 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ZS=F_HMM _ Baixa.png
+2025-06-27 22:13:39.932 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | ADA-USD
+2025-06-27 22:13:39.936 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | AVAX-USD
+2025-06-27 22:13:39.946 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | BNB-USD
+2025-06-27 22:13:39.953 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | BTC-USD
+2025-06-27 22:13:40.842 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:41.130 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:41.162 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Alta
+2025-06-27 22:13:41.188 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Alta
+2025-06-27 22:13:46.978 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_AVAX-USD_HMM _ Alta.png
+2025-06-27 22:13:46.989 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | DOGE-USD
+2025-06-27 22:13:47.464 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Alta
+2025-06-27 22:13:48.053 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ADA-USD_HMM _ Alta.png
+2025-06-27 22:13:48.055 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | DOT-USD
+2025-06-27 22:13:48.907 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:49.351 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BNB-USD_HMM _ Média.png
+2025-06-27 22:13:49.357 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | ETH-USD
+2025-06-27 22:13:50.078 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_BTC-USD_HMM _ Média.png
+2025-06-27 22:13:50.082 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | LINK-USD
+2025-06-27 22:13:50.852 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:51.894 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Alta
+2025-06-27 22:13:54.590 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DOGE-USD_HMM _ Alta.png
+2025-06-27 22:13:54.593 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | LTC-USD
+2025-06-27 22:13:55.952 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Média
+2025-06-27 22:13:56.209 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_DOT-USD_HMM _ Média.png
+2025-06-27 22:13:56.210 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | MATIC-USD
+2025-06-27 22:13:57.461 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LINK-USD_HMM _ Alta.png
+2025-06-27 22:13:57.473 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | NEAR-USD
+2025-06-27 22:13:58.050 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Alta
+2025-06-27 22:13:58.488 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Alta
+2025-06-27 22:14:00.252 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_ETH-USD_HMM _ Média.png
+2025-06-27 22:14:00.254 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | SOL-USD
+2025-06-27 22:14:01.585 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Alta
+2025-06-27 22:14:03.768 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_MATIC-USD_HMM _ Alta.png
+2025-06-27 22:14:03.779 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | TON-USD
+2025-06-27 22:14:04.243 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Alta
+2025-06-27 22:14:05.202 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_LTC-USD_HMM _ Média.png
+2025-06-27 22:14:05.204 | INFO     | __main__:processar_ticker:317 - Iniciando criptos.csv | XRP-USD
+2025-06-27 22:14:06.093 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_NEAR-USD_HMM _ Alta.png
+2025-06-27 22:14:06.218 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:14:08.884 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_TON-USD_HMM _ Alta.png
+2025-06-27 22:14:10.577 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_SOL-USD_HMM _ Alta.png
+2025-06-27 22:14:11.184 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_XRP-USD_HMM _ Média.png
+2025-06-27 22:14:11.440 | INFO     | __main__:processar_ticker:317 - Iniciando juros.csv | EDV
+2025-06-27 22:14:11.448 | INFO     | __main__:processar_ticker:317 - Iniciando juros.csv | ^FVX
+2025-06-27 22:14:11.452 | INFO     | __main__:processar_ticker:317 - Iniciando juros.csv | ^IRX
+2025-06-27 22:14:11.464 | INFO     | __main__:processar_ticker:317 - Iniciando juros.csv | ^TNX
+2025-06-27 22:14:12.119 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Alta
+2025-06-27 22:14:12.196 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Baixa
+2025-06-27 22:14:12.420 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Alta, Volatilidade: Média
+2025-06-27 22:14:12.897 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Baixa, Volatilidade: Média
+2025-06-27 22:14:17.547 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EDV_HMM _ Baixa.png
+2025-06-27 22:14:17.548 | INFO     | __main__:processar_ticker:317 - Iniciando juros.csv | ^TYX
+2025-06-27 22:14:17.932 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_^TNX_HMM _ Média.png
+2025-06-27 22:14:18.208 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_^IRX_HMM _ Alta.png
+2025-06-27 22:14:18.228 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:14:18.899 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_^FVX_HMM _ Média.png
+2025-06-27 22:14:20.708 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_^TYX_HMM _ Baixa.png
+2025-06-27 22:14:20.803 | INFO     | __main__:processar_ticker:317 - Iniciando moedas.csv | EURBRL=X
+2025-06-27 22:14:20.806 | INFO     | __main__:processar_ticker:317 - Iniciando moedas.csv | USDBRL=X
+2025-06-27 22:14:21.281 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:14:21.290 | INFO     | __main__:processar_ticker:325 - Regime de mercado identificado: Lateral, Volatilidade: Baixa
+2025-06-27 22:14:25.489 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_EURBRL=X_HMM _ Baixa.png
+2025-06-27 22:14:27.092 | INFO     | __main__:plotar_e_salvar:145 - Gráfico salvo: resultados\forecasting_markov\plots\plot_moedas_USDBRL=X_HMM _ Baixa.png
+2025-06-27 22:14:28.056 | INFO     | __main__:<module>:373 - Pipeline finalizado com sucesso!

@@ -548,3 +548,11 @@
 2025-06-19 19:40:15.115 | INFO     | __main__:avaliar_modelo:208 - Indicador de Overfitting - Acurácia: 0.0952 | AUC: 0.0913
 2025-06-19 19:40:15.158 | INFO     | __main__:<module>:258 - Modelo salvo: resultados\financeiro\modelos\moedas_modelo.pkl | Tempo total: 28.86s
 2025-06-19 19:40:15.160 | INFO     | __main__:<module>:263 - Pipeline concluído com sucesso.
+2025-06-27 22:14:31.781 | INFO     | __main__:<module>:227 - Iniciando pipeline para finanças...
+2025-06-27 22:14:35.042 | INFO     | __main__:preparar_dados:55 - Janela usada: 9m (3650 dias)
+2025-06-27 22:14:35.472 | INFO     | __main__:preparar_dados:84 - Features selecionadas: 13 de 26
+2025-06-27 22:14:35.548 | INFO     | __main__:treinar_modelo:130 - Usando 15 trials para otimização
+2025-06-27 22:18:43.306 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 1): {'max_depth': 5, 'learning_rate': 0.029678254378497918, 'n_estimators': 286, 'subsample': 0.6318666743206494, 'colsample_bytree': 0.6979225823759626, 'min_child_weight': 5, 'gamma': 0.9907576873975024, 'reg_alpha': 2.2462292837861586, 'reg_lambda': 1.9011577085479328}
+2025-06-27 22:23:00.390 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 2): {'max_depth': 4, 'learning_rate': 0.024578782110718296, 'n_estimators': 262, 'subsample': 0.6208324353833236, 'colsample_bytree': 0.5392696218446388, 'min_child_weight': 14, 'gamma': 0.6146425362756438, 'reg_alpha': 1.6743310862581766, 'reg_lambda': 1.6229928278623262}
+2025-06-27 22:27:10.468 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 3): {'max_depth': 5, 'learning_rate': 0.025245657494728103, 'n_estimators': 230, 'subsample': 0.6977263226922986, 'colsample_bytree': 0.5588702492744679, 'min_child_weight': 12, 'gamma': 0.7191793908342645, 'reg_alpha': 1.4043154461152654, 'reg_lambda': 1.7757161859986041}
+2025-06-27 22:34:31.048 | INFO     | __main__:treinar_modelo:140 - Melhores parâmetros para xgb (modelo 4): {'max_depth': 5, 'learning_rate': 0.018185802863930504, 'n_estimators': 272, 'subsample': 0.6979729919202575, 'colsample_bytree': 0.546516427592112, 'min_child_weight': 12, 'gamma': 0.6517506199952048, 'reg_alpha': 2.8383042453882816, 'reg_lambda': 1.6305584028055111}
